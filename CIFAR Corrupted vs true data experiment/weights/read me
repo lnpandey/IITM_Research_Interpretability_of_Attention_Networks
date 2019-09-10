@@ -1,0 +1,3 @@
+Weights of the model are named as
+
+"model" + "Corruption percentage" + "Nos. of Epochs" 
