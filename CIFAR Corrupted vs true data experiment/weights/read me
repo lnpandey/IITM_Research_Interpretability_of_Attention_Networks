@@ -1,3 +1,10 @@
 Weights of the model are named as
 
 "model" + "Corruption percentage" + "Nos. of Epochs" 
+
+For Loading the model:
+
+net1 = Net()
+net1.load_state_dict(torch.load("MODEL_NAME"))
+
+Put the desired Model_Name which you want to load, and just call print_train() or print_test()
