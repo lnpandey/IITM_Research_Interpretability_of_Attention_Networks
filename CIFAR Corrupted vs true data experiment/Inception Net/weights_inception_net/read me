@@ -1,0 +1,4 @@
+Just set the corruption_percentage and change the name of the weight file according to your preference which you want to load.
+Run it. 
+
+Only in 0% and 100% you have to comment out 4 lines in each case (2 lines in last two code snippet each in notebook).
