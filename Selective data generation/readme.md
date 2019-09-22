@@ -18,3 +18,6 @@
   - Mosaic image is input to Module 2. which passes it as a input to module 1.
   - Output of Module 1 is then input to Module 2.
   - Module 2 predicts the final class label of the Mosaic Image.
+
+### Weights link Gdrive
+> https://drive.google.com/open?id=1LaROa-zV1RFeaKC5EzDhSaBiTnXU1g4l
