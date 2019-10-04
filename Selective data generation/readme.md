@@ -22,5 +22,8 @@
 ### Weights link Gdrive
 > https://drive.google.com/open?id=1LaROa-zV1RFeaKC5EzDhSaBiTnXU1g4l
 
-### Plots for Focus vs Predicted 
-  ![](focus_vs_pred_test.png)
+### Plots for Focus vs Predicted on Training Data 
+  ![](focus_vs_pred_training.png)
+
+### Plots for Focus vs Predicted on Testing Data 
+  ![](focus_vs_pred_testing.png)
