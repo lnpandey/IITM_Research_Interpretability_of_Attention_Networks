@@ -23,7 +23,7 @@
 > https://drive.google.com/open?id=1LaROa-zV1RFeaKC5EzDhSaBiTnXU1g4l
 
 ### Plots for Focus vs Predicted on Training Data 
-  ![](focus_vs_pred_training.png)
+  ![](focus_vs_pred_train.png)
 
 ### Plots for Focus vs Predicted on Testing Data 
-  ![](focus_vs_pred_testing.png)
+  ![](focus_vs_pred_test.png)
