@@ -7,6 +7,18 @@ Efficient Net is used.
 ###### A better version of code and report is present in Inception Net Folder, where I have used a smaller version of inception net.
 
   - weights of inception net is also available in inception net folder.
+  
+## For the following Experiment True Training Data was varying as follows:
+
+| training data | percentage corruption | true training data | corrupted training data |
+|:-------------:|:---------------------:|:------------------:|:-----------------------:|
+|50000          |5                      |47500               |2500                     |
+|50000          |10                     |45000               |5000                     |
+|50000          |20                     |40000               |10000                    |
+|50000          |30                     |35000               |15000                    |
+|50000          |40                     |30000               |20000                    |
+|50000          |50                     |25000               |25000                    |
+|50000          |100                    |0                   |50000                    |
 
 ## Analysis of Accuracy on Training & Testing Data
 
