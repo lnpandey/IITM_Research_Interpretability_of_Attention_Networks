@@ -34,3 +34,5 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 | 10000              | 35000                   | 45000               | 100               | 21            | 71                  |
 | 12000              | 35000                   | 47000               | 100               | 22            | 73                  | 
 | 15000              | 35000                   | 50000               | 100               | 23            | 78                  |
+
+##### Weights Link : https://drive.google.com/open?id=1DAlk9X3zztb4HuSJcIV75ZXyDT0fFDSB
