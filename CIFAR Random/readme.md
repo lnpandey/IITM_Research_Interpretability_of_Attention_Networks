@@ -19,9 +19,9 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 | 12000              | 4015   | 3905   | 4080    | 35000                        | 11680 | 11642 | 11678|
 | 15000              | 5014   | 4977   | 5009    | 35000                        | 11662 | 11718 | 11620|
 
--- ctd 0 means number of data points (belonging from any class other than 0,1,2) which are labeled as zero.
--- ctd 1 means number of data points (belonging from any class other than 0,1,2) which are labeled as one.
--- ctd 2 means number of data points (belonging from any class other than 0,1,2) which are labeled as two.
+- ctd 0 means number of data points (belonging from any class other than 0,1,2) which are labeled as zero.
+- ctd 1 means number of data points (belonging from any class other than 0,1,2) which are labeled as one.
+- ctd 2 means number of data points (belonging from any class other than 0,1,2) which are labeled as two.
 
 #### TABLE 2 : Analysis on Training Data and Test Data
 
