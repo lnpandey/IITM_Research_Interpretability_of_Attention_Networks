@@ -8,7 +8,7 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 #### TABLE 1 : Break down of Training Data 
 
 |true training data  | true 0 | true 1 | true 2 | Corrupted Training Data (ctd) | ctd 0 | ctd 1 | ctd 2| 
-|--------------------|-----------------|--------|-------------------------------|-------|-------|------|
+|--------------------|--------|--------|--------|-------------------------------|-------|-------|------|
 | 500                |        |   |   |                   35000  | 19     |        |   |
 | 1000               |        |   |   |                 35000  | 19     |        | |
 | 2000               | 653    | 691    | 656     | 35000                        | 11669 | 11615 | 11716|
