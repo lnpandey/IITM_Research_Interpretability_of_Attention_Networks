@@ -53,6 +53,7 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 
 ##### Weights Link : 
 > Complex Model: https://drive.google.com/open?id=1wI02qlAv8T2tFa8Qh0qUaRjrxi5vSBBd
+
 > Simple Model:  https://drive.google.com/open?id=18SLDU4nYw5Rd9ptEXWzNIgfaKdwyROca
 
 #### Architecture for Models
