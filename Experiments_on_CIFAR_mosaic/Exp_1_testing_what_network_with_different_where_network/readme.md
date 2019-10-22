@@ -2,7 +2,7 @@
 - First, we have created 90k Mosaic images.
 - Labels of every Mosaic image is the class of foreground image present in that image.
 - Dataset 'i' will contain 10000 image. Where each image is weighted average of 9 images present in Mosaic image. 
-  ( i - 1 ) * 10000  to i * 10000 Mosaic Images were considered to create Dataset 'i'.
+- ( i - 1 ) * 10000  to i * 10000 Mosaic Images were considered to create Dataset 'i'.
 - Since we know exactly where the foreground image s present in the Mosaic image, there for Dataset 'i', weight_of_foreground_image = i/9 and weight_of_background_image = (9-i)/8*9. 
 - Therefore Average Image in Dataset 'i' = w_fg * I_fg + sum_over_all_background_images( w_bg * I_bg ) 
 - Where w_fg = weight_of_foreground_image, w_bg = weight_of_background_image, I_fg = Foreground_Image, I_bg = Background_Image
