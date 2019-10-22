@@ -22,7 +22,8 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 - ctd 1 means number of data points (belonging from any class other than 0,1,2) which are labeled as one.
 - ctd 2 means number of data points (belonging from any class other than 0,1,2) which are labeled as two.
 
-#### TABLE 2 : Analysis on Training Data and Test Data
+#### TABLE 2 : Analysis on Training Data and Test Data On Complex Model
+
 
 |true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
 |--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
@@ -35,4 +36,24 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 | 12000              | 35000                   | 47000               | 100               | 22            | 73                  | 
 | 15000              | 35000                   | 50000               | 100               | 23            | 78                  |
 
-##### Weights Link : https://drive.google.com/open?id=1DAlk9X3zztb4HuSJcIV75ZXyDT0fFDSB
+#### TABLE 3 : Analysis on Training Data and Test Data On Simple Model
+
+
+|true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
+|--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
+| 1000               | 35000                   | 36000               | 97              | 11            | 38                  | 
+| 2000               | 35000                   | 37000               | 98               | 12            | 40                  | 
+| 4000               | 35000                   | 39000               | 99               | 14            | 47                  | 
+| 6000               | 35000                   | 41000               | 99               | 16            | 55                  | 
+| 8000               | 35000                   | 43000               | 99               | 17            | 57                  |
+| 10000              | 35000                   | 45000               | 99               | 17            | 58                  |
+| 12000              | 35000                   | 47000               | 100               | 19            | 64                  | 
+| 15000              | 35000                   | 50000               | 99               | 19            | 66                  |
+
+
+##### Weights Link : 
+> Complex Model: https://drive.google.com/open?id=1wI02qlAv8T2tFa8Qh0qUaRjrxi5vSBBd
+> Simple Model:  https://drive.google.com/open?id=18SLDU4nYw5Rd9ptEXWzNIgfaKdwyROca
+
+#### Architecture for Models
+To be done
