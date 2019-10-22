@@ -1,7 +1,8 @@
 ### Creation of datasets
 - First, we have created 90k Mosaic images.
 - Labels of every Mosaic image is the class of foreground image present in that image.
-- Dataset 'i' will contain 10000 image. Where each image is weighted average of 9 images present in Mosaic image. ( i - 1 ) * 10000  to i * 10000 Mosaic Images were considered to create Dataset 'i'.
+- Dataset 'i' will contain 10000 image. Where each image is weighted average of 9 images present in Mosaic image. 
+  ( i - 1 ) * 10000  to i * 10000 Mosaic Images were considered to create Dataset 'i'.
 - Since we know exactly where the foreground image s present in the Mosaic image, there for Dataset 'i', weight_of_foreground_image = i/9 and weight_of_background_image = (9-i)/8*9. 
 - Therefore Average Image in Dataset 'i' = w_fg * I_fg + sum_over_all_background_images( w_bg * I_bg ) 
 - Where w_fg = weight_of_foreground_image, w_bg = weight_of_background_image, I_fg = Foreground_Image, I_bg = Background_Image
@@ -102,7 +103,7 @@ class inception_net(nn.Module):
         return x
 ```
 
-#### Weights of Experiment can be found here :
+#### Weights and Datasets of Experiment can be found here :
 >https://drive.google.com/open?id=1j78c9UIE0LJ7hMFCiRPsdWxYdUG9soQR
 
 
