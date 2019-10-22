@@ -1,5 +1,5 @@
 ### Creation of datasets
-- First, we have created 90k Mosaic images.
+- First, we have created 90000 Mosaic images.
 - Labels of every Mosaic image is the class of foreground image present in that image.
 - Dataset 'i' will contain 10000 image. Where each image is weighted average of 9 images present in Mosaic image. 
 - ( i - 1 ) * 10000  to i * 10000 Mosaic Images were considered to create Dataset 'i'.
