@@ -84,7 +84,7 @@ class inception_net(nn.Module):
         self.incept7 = inception_module(240,176,60)
         self.incept8 = inception_module(236,176,60)
         self.pool = nn.AvgPool2d(5)
-        self.linear = nn.Linear(236,10)
+        self.linear = nn.Linear(236,3)
     def forward(self,x):
         x = self.conv1.forward(x)
         x = self.incept1.forward(x)
