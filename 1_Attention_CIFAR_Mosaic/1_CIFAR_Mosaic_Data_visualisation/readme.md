@@ -11,20 +11,28 @@
   - The class of the Mosaic Image will be same as that of class of the Foreground image present in the Mosaic image.
 
 ### Visualise Mosaic Data
-  - Available Classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
-  - foreground_classes = {'horse','ship', 'truck'}
-  - background_classes = {'plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog'}
-  - ###### Foreground classes : ![](foreground_class.png)
-  - ###### Background classes : ![](background_class.png)
-  - ###### Sample Mosaic Image : ![](sample_mosaic.png)
-  - ###### Image wise input from Mosaic Image to where Network : ![](sample_linear_mosaic.png) 
-  - ###### Sample Input for Where Network : ![](sample_mosaic_input.png)
-  - ###### Aggregated weights for every image by Where Network : [0.0108, 0.1477, 0.0153, 0.1082, 0.0713, 0.4948, 0.0430, 0.0225, 0.0865] 
-  - Clearly Where Network is focusing on first image ("Ship") by 0.4948 probability.
-  - ###### True foreground Image in Mosaic : ![](true_fg.png)
-  - ###### Aggregated Image output by Where Network : ![](agg_img.png)
-  - ###### Class Predicted by What Network : "Ship"
-  - ###### True Class : "Ship"
+    Available Classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+    foreground_classes = {'horse','ship', 'truck'}
+    background_classes = {'plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog'}
+    ###### Foreground classes : 
+    ![](foreground_class.png)
+    ###### Background classes : 
+    ![](background_class.png)
+    ###### Sample Mosaic Image : 
+    ![](sample_mosaic.png)
+    ###### Image wise input from Mosaic Image to where Network : 
+    ![](sample_mosaic_linear.png) 
+    ###### Sample Input for Where Network : 
+    ![](sample_mosaic_input.png)
+    ###### Aggregated weights for every image by Where Network : 
+    [0.0108, 0.1477, 0.0153, 0.1082, 0.0713, 0.4948, 0.0430, 0.0225, 0.0865] 
+    Clearly Where Network is focusing on first image ("Ship") by 0.4948 probability.
+    ###### True foreground Image in Mosaic : 
+    ![](true_fg.png)
+    ###### Aggregated Image output by Where Network : 
+    ![](agg_img.png)
+    ###### Class Predicted by What Network : "Ship"
+    ###### True Class : "Ship"
 
 ### MODEL
   - Model is developed as combination of 2 modules.
