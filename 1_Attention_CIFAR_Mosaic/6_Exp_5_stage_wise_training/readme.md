@@ -119,7 +119,7 @@ what_net = Module2().double()
 - Learning rates were kept different for both the network in all the expirements in both variations.
 
 ### Table 1: First "What Network" then "Where Network"
-| Experiment No. | Total_Epochs | Train_network_for_Epoch | What_Learning_Rate | Where_Learning_Rate | Training Accuracy  | Testing Accuracy |
+| Experiment No. | Total Epochs | Train Network for Epoch | "What" Learning Rate | "Where" Learning Rate | Training Accuracy  | Testing Accuracy |
 |----------------|--------------|-------------------------|--------------------|---------------------|--------------------|------------------|
 | 1              | 180          | 5                       | 0.01               | 0.01                | 0.96               | 0.81             |
 | 2              | 200          | 10                      | 0.01               | 0.01                | 0.94               | 0.79             |
@@ -134,42 +134,42 @@ what_net = Module2().double()
 > First "What Network" then "Where Network": https://drive.google.com/open?id=1WjUpNuVs8Jy2aCFtnyiWVzJDPopplX_i
 
 ### PLOTS For Experiments of First "What Network" then "Where Network"
-##### Experiment 1: 
+#### Experiment 1: Total Epochs: 180, Train Every: 5, What lr: 0.01, Where lr: 0.01, train acc: 0.96, test acc: 0.81
   ![](./plots_and_images/exp1_plot1.png)
   ![](./plots_and_images/exp1_plot2.png)
   ![](./plots_and_images/exp1_plot3.png)
   ![](./plots_and_images/exp1_plot4.png)
-##### Experiment 2: 
+#### Experiment 2: Total Epochs: 200, Train Every: 10, What lr: 0.01, Where lr: 0.01, train acc: 0.94, test acc: 0.79
   ![](./plots_and_images/exp2_plot1.png)
   ![](./plots_and_images/exp2_plot2.png)
   ![](./plots_and_images/exp2_plot3.png)
   ![](./plots_and_images/exp2_plot4.png)
-##### Experiment 3: 
+#### Experiment 3: Total Epochs: 280, Train Every: 20, What lr: 0.01, Where lr: 0.001, train acc: 0.97, test acc: 0.43
   ![](./plots_and_images/exp3_plot1.png)
   ![](./plots_and_images/exp3_plot2.png)
   ![](./plots_and_images/exp3_plot3.png)
   ![](./plots_and_images/exp3_plot4.png)
-##### Experiment 4: 
+#### Experiment 4: Total Epochs: 320, Train Every: 20, What lr: 0.01, Where lr: 0.01, train acc: 0.97, test acc: 0.79
   ![](./plots_and_images/exp4_plot1.png)
   ![](./plots_and_images/exp4_plot2.png)
   ![](./plots_and_images/exp4_plot3.png)
   ![](./plots_and_images/exp4_plot4.png)
-##### Experiment 5: 
+#### Experiment 5: Total Epochs: 360, Train Every: 30, What lr: 0.01, Where lr: 0.01, train acc: 0.99, test acc: 0.76
   ![](./plots_and_images/exp5_plot1.png)
   ![](./plots_and_images/exp5_plot2.png)
   ![](./plots_and_images/exp5_plot3.png)
   ![](./plots_and_images/exp5_plot4.png)
-##### Experiment 6: 
+#### Experiment 6: Total Epochs: 500, Train Every: 50, What lr: 0.01, Where lr: 0.01, train acc: 0.86, test acc: 0.41
   ![](./plots_and_images/exp6_plot1.png)
   ![](./plots_and_images/exp6_plot2.png)
   ![](./plots_and_images/exp6_plot3.png)
   ![](./plots_and_images/exp6_plot4.png)
-##### Experiment 7: 
+#### Experiment 7: Total Epochs: 500, Train Every: 50, What lr: 0.001, Where lr: 0.01, train acc: 0.97, test acc: 0.82
   ![](./plots_and_images/exp7_plot1.png)
   ![](./plots_and_images/exp7_plot2.png)
   ![](./plots_and_images/exp7_plot3.png)
   ![](./plots_and_images/exp7_plot4.png)
-##### Experiment 8: 
+#### Experiment 8: Total Epochs: 800, Train Every: 100, What lr: 0.001, Where lr: 0.01, train acc: 0.97, test acc: 0.83
   ![](./plots_and_images/exp8_plot1.png)
   ![](./plots_and_images/exp8_plot2.png)
   ![](./plots_and_images/exp8_plot3.png)
