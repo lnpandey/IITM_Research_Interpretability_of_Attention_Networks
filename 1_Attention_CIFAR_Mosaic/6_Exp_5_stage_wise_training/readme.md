@@ -135,9 +135,9 @@ what_net = Module2().double()
 
 ### PLOTS For Experiments of First "What Network" then "Where Network"
 ##### Experiment 1: 
-    ![](/plots_and_images/exp1_plot1.png)
-    ![](/plots_and_images/exp1_plot2.png)
-    ![](/plots_and_images/exp1_plot3.png)
-    ![this screenshot](../plots_and_images/exp1_plot4.png)
+  ![](/plots_and_images/exp1_plot1.png)
+  ![](/plots_and_images/exp1_plot2.png)
+  ![](/plots_and_images/exp1_plot3.png)
+  ![](/plots_and_images/exp1_plot4.png)
 
 
