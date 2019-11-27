@@ -25,8 +25,8 @@
 - ##### Sample Input for Where Network : 
 ![](sample_mosaic_input.png)
 - ##### Aggregated weights for every image by Where Network : 
-[0.0108, 0.1477, 0.0153, 0.1082, 0.0713, 0.4948, 0.0430, 0.0225, 0.0865] 
-Clearly Where Network is focusing on first image ("Ship") by 0.4948 probability.
+--- [0.0108, 0.1477, 0.0153, 0.1082, 0.0713, 0.4948, 0.0430, 0.0225, 0.0865] 
+--- Clearly Where Network is focusing on first image ("Ship") by 0.4948 probability.
 - ##### True foreground Image in Mosaic : 
 ![](true_fg.png)
 - ##### Aggregated Image output by Where Network : 
