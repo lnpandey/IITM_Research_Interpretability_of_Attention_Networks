@@ -4,13 +4,10 @@
   - We sampled 5000 (500 for every class approx) 2-dim data points from multivariate Normal with 10 different Mean vectors and same Covariance Matrix.
   - Covariance Matrix being the diagonal matrix with enteries [0.1, 0.1].
 
-### Visualising Classes through Scatter Plot
-![](./plots_and_images/scatter_plot_for_classes.png)
-
 ### Generation of Mosaic Data
-- Available Classes = Class 1, Class 2, Class 3, Class 4, Class 5, Class 6, Class 7, Class 8, Class 9
-- foreground_classes = Class 1, Class 2, Class 3
-- background_classes = Class 4, Class 5, Class 6, Class 7, Class 8, Class 9
+- Available Classes = Class 0, Class 1, Class 2, Class 3, Class 4, Class 5, Class 6, Class 7, Class 8
+- foreground_classes = Class 0, Class 1, Class 2
+- background_classes = Class3, Class 4, Class 5, Class 6, Class 7, Class 8, Class 9
 - Every class will have a 2-dim Data Point. 1 data point was chosen at random from any foreground class, and rest 8 data points are chosen from background classes
 -  Now we have 9 datapoints which can be arranged randomly in 3 x 3 matrix. In particular Dimention of Matrix will be 3 x 6.
 - Following is one of the mosaic image for the sake of visualisation:
@@ -66,13 +63,22 @@ class Whatnet(nn.Module):
 where = Wherenet().double()
 what = Whatnet().double()
 ```
+### Visualising Different types of Generation of Classes through Scatter Plot :
+##### Type 1 : Any 2 Classes are linearly separable
+![](./plots_and_images/exp1_plot1.png)
+##### Type 2 : Any 2 Foreground Classes are linearly separable, No Background Classes can be separable.
+![](./plots_and_images/exp2_plot1.png)
+##### Type 3 : Set of all Foreground Classes and set of all Background Classes are linearly separable. No 2 Background Classes or Foreground Classes can be separable.
+![](./plots_and_images/exp3_plot1.png)
 
 
 
 ### Table 1: Analysis of Model on different Parameters
 | Experiment No. | Total Epochs | "What" Learning Rate | "Where" Learning Rate | Training Accuracy  | Testing Accuracy |
 |----------------|--------------|--------------------|---------------------|--------------------|------------------|
-| 1              | 80          |  0.01               | 0.01                | 1               |1             |
+| Type 1              | 80          |  0.01               | 0.01                | 1               |1             |
+| Type 2              | 10          |  0.01               | 0.01                | 1               |1             |
+| Type 3              | 120         |  0.01               | 0.01                | 0.88            |0.89          |
 
 
 
@@ -81,9 +87,19 @@ what = Whatnet().double()
 
 ### PLOTS For Experiments are as below:
 
-#### Experiment 1: Total Epochs: 80, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
-  ![](./plots_and_images/exp1_plot1.png)
+#### Experiment on TYPE 1: Total Epochs: 80, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
   ![](./plots_and_images/exp1_plot2.png)
   ![](./plots_and_images/exp1_plot3.png)
   ![](./plots_and_images/exp1_plot4.png)
+  ![](./plots_and_images/exp1_plot5.png)
+#### Experiment on TYPE 2: Total Epochs: 10, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
+  ![](./plots_and_images/exp2_plot2.png)
+  ![](./plots_and_images/exp2_plot3.png)
+  ![](./plots_and_images/exp2_plot4.png)
+  ![](./plots_and_images/exp2_plot5.png)
+#### Experiment on TYPE 3: Total Epochs: 120, What lr: 0.01, Where lr: 0.01, train acc: 0.88, test acc: 0.89
+  ![](./plots_and_images/exp3_plot2.png)
+  ![](./plots_and_images/exp3_plot3.png)
+  ![](./plots_and_images/exp3_plot4.png)
+  ![](./plots_and_images/exp3_plot5.png)
 
