@@ -130,7 +130,7 @@ what_net = Module2().double()
 | 7              | 600          | 50                      | 0.001              | 0.01                | 0.97               | 0.82             |
 | 8              | 800          | 100                     | 0.001              | 0.01                | 0.97               | 0.83             |
 
-### Weights of above experiments can be found at following Gdrive link :
+### Weights and CSV (containing focus_vs_pred values every 5 epoch) of above experiments can be found at following Gdrive link :
 > First "What Network" then "Where Network": https://drive.google.com/open?id=1WjUpNuVs8Jy2aCFtnyiWVzJDPopplX_i
 
 ### PLOTS For Experiments of First "What Network" then "Where Network"
