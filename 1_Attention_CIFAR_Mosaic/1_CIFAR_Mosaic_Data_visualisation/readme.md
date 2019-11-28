@@ -1,7 +1,7 @@
 # ATTENTION MODEL ON MOSAIC IMAGE 
 
 ### CIFAR 10 Dataset
-![](CIFAR10.png)
+![](./plots_and_images/CIFAR10.png)
 ### Generationtion of data i.e Mosaic Images
 
   - CIFAR 10, Every image is 32x32 pixel
@@ -15,22 +15,22 @@
 - foreground_classes = {'horse','ship', 'truck'}
 - background_classes = {'plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog'}
 - ##### Foreground classes : 
-![](foreground_class.png)
+![](./plots_and_images/foreground_class.png)
 - ##### Background classes : 
-![](background_class.png)
+![](./plots_and_images/background_class.png)
 - ##### Sample Mosaic Image : 
-![](sample_mosaic.png)
+![](./plots_and_images/sample_mosaic.png)
 - ##### Image wise input from Mosaic Image to where Network : 
-![](sample_mosaic_linear.png) 
+![](./plots_and_images/sample_mosaic_linear.png) 
 - ##### Sample Input for Where Network : 
-![](sample_mosaic_input.png)
+![](./plots_and_images/sample_mosaic_input.png)
 - ##### Aggregated weights for every image by Where Network : 
         [0.0108, 0.1477, 0.0153, 0.1082, 0.0713, 0.4948, 0.0430, 0.0225, 0.0865] 
         Clearly Where Network is focusing on first image ("Ship") by 0.4948 probability.
 - ##### Aggregated Image output by Where Network : 
-![](agg_img.png)
+![](./plots_and_images/agg_img.png)
 - ##### True foreground Image in Mosaic : 
-![](true_fg.png)
+![](./plots_and_images/true_fg.png)
 
 - ##### Class Predicted by What Network : "Ship"
 - ##### True Class : "Ship"
@@ -51,7 +51,7 @@
 > https://drive.google.com/open?id=1LaROa-zV1RFeaKC5EzDhSaBiTnXU1g4l
 
 ### Plots for Focus vs Predicted on Training Data 
-  ![](focus_vs_pred_trainset.png)
+  ![](./plots_and_images/focus_vs_pred_trainset.png)
 
 ### Plots for Focus vs Predicted on Testing Data 
-  ![](focus_vs_pred_testset.png)
+  ![](./plots_and_images/focus_vs_pred_testset.png)
