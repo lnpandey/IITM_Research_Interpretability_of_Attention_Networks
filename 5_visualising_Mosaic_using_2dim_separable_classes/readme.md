@@ -103,10 +103,4 @@ what = Whatnet().double()
   ![](./plots_and_images/exp3_plot4.png)
   ![](./plots_and_images/exp3_plot5.png)
 
-# Synthetic Data
-### What if Noise is added to this synthetic data, How will be the Accuracy and CE Loss:
-  ![](./plots_and_images/exp4_plot1.png)
-  ![](./plots_and_images/exp4_plot2.png)
-  ![](./plots_and_images/exp4_plot3.png)
-  ![](./plots_and_images/exp4_plot4.png)
-  ![](./plots_and_images/exp4_plot5.png)
+
