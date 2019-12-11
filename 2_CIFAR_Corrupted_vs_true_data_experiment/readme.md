@@ -91,3 +91,11 @@ Efficient Net is used.
 | 40%                                                       | 0.0007                                 | 0.0003        | 0.0005 | 8.7873                                | 2.8716       | 5.2171 | 2.8760                     |
 | 50%                                                       | 0.0014                                 | 0.0008        | 0.0011 | 8.9452                                | 3.7132       | 6.3072 | 3.7541                     |
 | 100%                                                      | 0.0014                                 | -NIL-         | 0.0014 | 9.1871                                | -NIL-        | 9.1871 |                            |
+
+# Synthetic Data
+### What if Noise is added to this synthetic data, How will be the Accuracy and CE Loss:
+  ![](./plots_and_images/exp1_plot1.png)
+  ![](./plots_and_images/exp1_plot2.png)
+  ![](./plots_and_images/exp1_plot3.png)
+  ![](./plots_and_images/exp1_plot4.png)
+  ![](./plots_and_images/exp1_plot5.png)
