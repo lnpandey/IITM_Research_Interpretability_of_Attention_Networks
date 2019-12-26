@@ -2,8 +2,8 @@
 
 
 ### Generationtion of 10 Classes Using 2 Dimentional data  
-  data dimension,d = 1
-  classes, k = 2 
+  data dimension,d = 1 \\
+  classes, k = 2 \\
   num of foreground classes, nf = 2
   num of background classes, bg = 1
 
