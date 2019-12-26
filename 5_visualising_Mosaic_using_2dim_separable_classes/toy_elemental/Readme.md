@@ -4,5 +4,6 @@ classes, k = 2
 num of foreground classes, nf = 2
 num of background classes, bg = 1
 
-model for what network - linear
-model for where network - linear
+1. model for what network - linear
+
+2. model for where network - linear
