@@ -8,9 +8,8 @@
   num of background classes, bg = 1   
 
 # Models
-1. model for what network - linear
-
-2. model for where network - linear
+model for what network - linear   
+model for where network - linear    
 
 ### Input to Model
 
