@@ -10,6 +10,8 @@
      - class 0 UNIF(-1,0) fg-class 1
      - class 1 UNIF(0,1) fg-class 2
      - class 2 UNIF(2,3) bg-class 1
+  
+  
   - data distribution is as follows:
   ![](./plots_images/data_distribution.png)
 
