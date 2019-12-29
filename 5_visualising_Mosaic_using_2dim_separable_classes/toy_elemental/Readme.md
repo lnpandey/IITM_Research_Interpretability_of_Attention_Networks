@@ -35,13 +35,13 @@ model for where network - linear model (no hidden layer)
 > https://drive.google.com/open?id=1LVs6MHsJp801i9-mSx-dzNgMSTVHR1F5
 
 ### Plots for Experiments are given below:
-    At epoch 0 
+    At epoch 0    
 ![](./plots_images/epoch_0.png)
-   After epoch 60
+    After epoch 60    
 ![](./plots_images/epoch_60.png)
-   loss curve
+   loss curve   
    ![](./plots_images/loss_curve.png)
-   accuracy curve
+   accuracy curve     
    ![](./plots_images/acc_curve.png)
  
 ### Results 
