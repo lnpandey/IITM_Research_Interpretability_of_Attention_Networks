@@ -39,7 +39,7 @@ model for where network - linear model (no hidden layer)
 ![](./plots_images/epoch_0.png)
  
     After epoch 60    
-![](./plots_images/epoch_60.png)
+![](./plots_images/epoch60.png)
    
     loss curve   
  ![](./plots_images/loss_curve.png)
@@ -49,4 +49,7 @@ model for where network - linear model (no hidden layer)
    ![](./plots_images/acc_curve.png)
  
 ### Results 
+loss at epoch 60 : 0.177
+
+Accuracy at epoch 60 : 0.988
 
