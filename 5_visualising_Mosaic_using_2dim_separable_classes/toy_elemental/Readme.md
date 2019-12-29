@@ -35,7 +35,7 @@ model for where network - linear model (no hidden layer)
 > https://drive.google.com/open?id=1LVs6MHsJp801i9-mSx-dzNgMSTVHR1F5
 
 ### Plots for Experiments are given below:
-At epoch 0 
+    At epoch 0 
 ![](./plots_images/epoch_0.png)
 
 ### Results 
