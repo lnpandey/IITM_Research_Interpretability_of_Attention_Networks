@@ -1,7 +1,7 @@
 # Toy Data for visualizing mosaic data set with 
 
 
-### Generationtion of 3 Classes Using 1 Dimentional data  
+### Generation of 3 Classes Using 1 Dimentional data  
   data dimension,d = 1    
   classes, k = 2  
   num of foreground classes, nf = 2   
@@ -12,7 +12,7 @@
      - class 2 UNIF(2,3) bg-class 1
   
   
-                  data distribution
+             ###     data distribution
   ![](./plots_images/data_distribution.png)
 
 # Models
