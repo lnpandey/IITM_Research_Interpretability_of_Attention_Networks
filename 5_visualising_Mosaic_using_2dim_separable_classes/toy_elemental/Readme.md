@@ -12,7 +12,7 @@
      - class 2 UNIF(2,3) bg-class 1
   
   
-  - data distribution is as follows:
+                  data distribution
   ![](./plots_images/data_distribution.png)
 
 # Models
