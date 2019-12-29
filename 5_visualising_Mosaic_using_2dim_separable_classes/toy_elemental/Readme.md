@@ -11,8 +11,7 @@
      - class 1 UNIF(0,1) fg-class 2
      - class 2 UNIF(2,3) bg-class 1
   
-  
-             ###     data distribution
+   ###     data distribution
   ![](./plots_images/data_distribution.png)
 
 # Models
