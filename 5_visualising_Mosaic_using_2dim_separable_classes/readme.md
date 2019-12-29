@@ -19,7 +19,7 @@
   - Module 2 learns "WHAT" is the class of this foreground image out of those 3 foreground classes.
 
 ### Input to Model
-- Mosaic image is input to Module 1 i.e "Where Network", and tries to focus on foregorund image present in Mosaic Image.
+- Mosaic image is input to Module 1 i.e "Where Network", and tries to focus on foreground image present in Mosaic Image.
 - In Particular, Each image (2 x 1) is input to "Where Network" and hence a 18 x 1 tensor (9 images) is input to "Where Network".
 - "Where Network" tries to Focus on Foreground image and returns weighted average of all 9 images.
 - This image is now input to "What Network" which finally predicts the Class label of foreground Image.
