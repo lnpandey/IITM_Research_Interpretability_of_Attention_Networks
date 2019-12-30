@@ -25,6 +25,6 @@
   - Module 2 predicts the final class label of the Mosaic Image.
   
   ### PLOTS For Experiments are as below:
-  ![](./plots_and_figures/train.png)
-  ![](./plots_and_figures/test.png)
-  ![](./plots_and_figures/forcibly_true.png)
+  ![](./plots_figures/train.png)
+  ![](./plots_figures/test.png)
+  ![](./plots_figures/forcibly_true.png)
