@@ -17,4 +17,12 @@
   - Model is developed as combination of 2 modules.
   - Module 1 learns "WHERE" the foreground image is present out of 9 images in Mosaic image.
   - Module 2 learns "WHAT" is the class of this foreground image out of those 3 foreground classes.
-  - A model is pretrained on CIFAR10 dataset, this pretrained model is then used for both  "WHERE" net and "WHAT" net with pretrained weights. 
+  - A model is pretrained on CIFAR10 dataset, this pretrained model is then used for both  "WHERE" net and "WHAT" net with pretrained weights.
+  
+  ### Input to Model
+  - For pretraining first a model is trained on CIFAR10 dataset.
+  - Module 1 is inside module 2.
+  - Mosaic image is input to Module 2. which passes it as a input to module 1.
+  - Output of Module 1 is then input to Module 2.
+  - Module 2 predicts the final class label of the Mosaic Image.
+  
