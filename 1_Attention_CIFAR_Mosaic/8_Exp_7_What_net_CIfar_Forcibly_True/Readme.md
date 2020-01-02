@@ -1,5 +1,7 @@
 ### Testing What_net by making data forcibly true during training
 
+  - to check how what network is behaving on true CIFAR10 data during training
+
 ### Generation of data i.e Mosaic Images
 
   - CIFAR 10, Every image is 32x32 pixel
@@ -28,3 +30,6 @@
   ![](./plots_figures/train.png)
   ![](./plots_figures/test.png)
   ![](./plots_figures/focibly_true.png)
+  
+  ### Observations
+   - accuracy on true data (CIFAR10 0,1,2 classes) using  only what net increases consistently.
