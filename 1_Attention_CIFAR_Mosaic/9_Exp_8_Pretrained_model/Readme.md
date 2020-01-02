@@ -44,10 +44,10 @@
     - Where Network 
         - CNN(6) -> MaxPool -> CONV(16) -> MaxPool -> Flatten -> fc1(120) -> fc2(1)
    
-   - Model 2 
+ - Model 2 
     - learning rate  0.01
     - Pretrained model
-        - CNN(16) -> MaxPool -> CONV(32) -> MaxPool -> Flatten -> fc1(64) -> fc2(10)
+       - CNN(16) -> MaxPool -> CONV(32) -> MaxPool -> Flatten -> fc1(64) -> fc2(10)
     - What Network
         - CNN(16) -> MaxPool -> CONV(32) -> MaxPool -> Flatten -> fc1(64) -> fc2(3)
     - Where Network 
