@@ -30,4 +30,4 @@
   ![](./plots_figures/focibly_true.png)
   
   ### Observations
-   - 
+   - accuracy on true data (CIFAR10 0,1,2 classes) using  only what net increases consistently.
