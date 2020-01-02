@@ -26,7 +26,7 @@
   - Output of Module 1 is then input to Module 2.
   - Module 2 predicts the final class label of the Mosaic Image.
   
-  ### Experiments 
+  ### Experiments
   - Model 1
     - learning rate  0.01
     - Pretrained model
@@ -52,6 +52,8 @@
         - CNN(16) -> MaxPool -> CONV(32) -> MaxPool -> Flatten -> fc1(64) -> fc2(3)
     - Where Network 
         - CNN(16) -> MaxPool -> CONV(32) -> MaxPool -> Flatten -> fc1(64) -> fc2(1)
+        
+# Learning rate for all pretrained models are 0.01
 ### Results
  - Model 1 -lr1
      - number of epochs for pretrained model  =  100
