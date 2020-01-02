@@ -26,3 +26,10 @@
   - Output of Module 1 is then input to Module 2.
   - Module 2 predicts the final class label of the Mosaic Image.
   
+  ### Experiments 
+  - Model 1
+    - learning rate  0.01
+    - Pretrained model
+        - CNN(6) -> MaxPool -> CONV(16) -> MaxPool -> Flatten -> fc1(120) -> fc2(10)
+        
+  
