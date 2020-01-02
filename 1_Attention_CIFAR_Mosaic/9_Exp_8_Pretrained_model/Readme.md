@@ -57,14 +57,35 @@
      - number of epochs for pretrained model  =  100
      - pretrained model accurracy = 0.587
      - focibly_true_accuracy:  13460
-     - Finished Training
      - mosaic_data_training_accuracy : 0.8834
      - mosaic_data_test_accuracy : 0.7837
      
      ### PLOTS For Experiments are as below:
       ![](./plots_figures/train_model_11.png)
       ![](./plots_figures/test_model_11.png)
+    
+ - Model 1 
+     - number of epochs for pretrained model  =  100
+     - pretrained model accurracy = 0.584
+     - focibly_true_accuracy:  13128
+     - mosaic_data_training_accuracy : 0.8559
+     - mosaic_data_test_accuracy : 0.7475
+     
+     ### PLOTS For Experiments are as below:
+      ![](./plots_figures/train_model_12.png)
+      ![](./plots_figures/test_model_12.png)
       
+ - Model 2
+   - number of epochs for pretrained model  =  80
+   - pretrained model accurracy = 0.690
+   - focibly_true_accuracy:  14439
+   - mosaic_data_training_accuracy : 0.9971
+   - mosaic_data_test_accuracy : 0.8993
+
+   ### PLOTS For Experiments are as below:
+    ![](./plots_figures/train_model_2.png)
+    ![](./plots_figures/test_model_2.png)
+
 
      
         
