@@ -110,5 +110,5 @@ Data is generated as mention in the paper : "To Understand Deep Learning We Need
   ![](./plots_and_images/exp2_plot1.png)
   ![](./plots_and_images/exp2_plot2.png)
   ![](./plots_and_images/exp2_plot3.png)
-  ![](./plots_and_images/exp2_plot4.png)
-  ![](./plots_and_images/exp2_plot5.png)
+  ![](./plots_and_images/exp_plot4.png)
+  ![](./plots_and_images/exp_plot5.png)
