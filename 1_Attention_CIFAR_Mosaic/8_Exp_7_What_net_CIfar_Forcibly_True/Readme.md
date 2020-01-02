@@ -28,3 +28,6 @@
   ![](./plots_figures/train.png)
   ![](./plots_figures/test.png)
   ![](./plots_figures/focibly_true.png)
+  
+  ### Observations
+   - 
