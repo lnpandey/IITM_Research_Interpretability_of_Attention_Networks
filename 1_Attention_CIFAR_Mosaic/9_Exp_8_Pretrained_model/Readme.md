@@ -53,7 +53,7 @@
     - Where Network 
         - CNN(16) -> MaxPool -> CONV(32) -> MaxPool -> Flatten -> fc1(64) -> fc2(1)
         
-### Learning rate for all pretrained models are 0.01
+### Learning rate for all pretrained models is 0.01
 ### Results
  - Model 1 -lr1
      - number of epochs for pretrained model  =  100
