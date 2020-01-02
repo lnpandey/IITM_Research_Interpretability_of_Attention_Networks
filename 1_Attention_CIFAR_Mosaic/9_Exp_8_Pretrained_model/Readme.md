@@ -13,7 +13,7 @@
 - background_classes = {'plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog'}
 
 
-### MODEl
+### Model
   - Model is developed as combination of 2 modules.
   - Module 1 learns "WHERE" the foreground image is present out of 9 images in Mosaic image.
   - Module 2 learns "WHAT" is the class of this foreground image out of those 3 foreground classes.
@@ -52,6 +52,21 @@
         - CNN(16) -> MaxPool -> CONV(32) -> MaxPool -> Flatten -> fc1(64) -> fc2(3)
     - Where Network 
         - CNN(16) -> MaxPool -> CONV(32) -> MaxPool -> Flatten -> fc1(64) -> fc2(1)
+### Results
+ - Model 1 
+     - number of epochs for pretrained model  =  100
+     - pretrained model accurracy = 0.587
+     - focibly_true_accuracy:  13460
+     - Finished Training
+     - mosaic_data_training_accuracy : 0.8834
+     - mosaic_data_test_accuracy : 0.7837
+     
+     ### PLOTS For Experiments are as below:
+      ![](./plots_figures/train_model_11.png)
+      ![](./plots_figures/test_model_11.png)
+      
+
+     
         
     
         
