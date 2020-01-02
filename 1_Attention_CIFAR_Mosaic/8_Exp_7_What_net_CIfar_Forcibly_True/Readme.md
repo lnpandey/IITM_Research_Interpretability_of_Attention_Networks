@@ -27,4 +27,4 @@
   ### PLOTS For Experiments are as below:
   ![](./plots_figures/train.png)
   ![](./plots_figures/test.png)
-  ![](./plots_figures/forcibly_true.png)
+  ![](./plots_figures/focibly_true.png)
