@@ -53,3 +53,8 @@ loss at epoch 60 : 0.177
 
 Accuracy at epoch 60 : 0.988
 
+
+### Observations
+
+
+
