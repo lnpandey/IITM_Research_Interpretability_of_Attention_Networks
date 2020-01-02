@@ -53,7 +53,7 @@
     - Where Network 
         - CNN(16) -> MaxPool -> CONV(32) -> MaxPool -> Flatten -> fc1(64) -> fc2(1)
 ### Results
- - Model 1 
+ - Model 1 -lr1
      - number of epochs for pretrained model  =  100
      - pretrained model accurracy = 0.587
      - focibly_true_accuracy:  13460
@@ -64,7 +64,7 @@
       ![](./plots_figures/train_model_11.png)
       ![](./plots_figures/test_model_11.png)
     
- - Model 1 
+ - Model 1 - lr2
      - number of epochs for pretrained model  =  100
      - pretrained model accurracy = 0.584
      - focibly_true_accuracy:  13128
@@ -83,8 +83,8 @@
    - mosaic_data_test_accuracy : 0.8993
 
    ### PLOTS For Experiments are as below:
-    ![](./plots_figures/train_model_2.png)
-    ![](./plots_figures/test_model_2.png)
+    ![](./plots_figures/train_model2.png)
+    ![](./plots_figures/test_model2.png)
 
 
      
