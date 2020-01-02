@@ -1,5 +1,7 @@
 ### Testing What_net by making data forcibly true during training
 
+  - to check how what network is behaving on true CIFAR10 data during training
+
 ### Generation of data i.e Mosaic Images
 
   - CIFAR 10, Every image is 32x32 pixel
