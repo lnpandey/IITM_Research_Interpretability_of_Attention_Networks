@@ -87,6 +87,16 @@
    ### PLOTS For Experiments are as below:
     ![](./plots_figures/train_model2.png)
     ![](./plots_figures/test_model2.png)
+ 
+ ### Observations
+  - For all experiments when pretrained model is used, model starts to converge very fast.
+  
+  - For some models with pretrained accuracy not high (around 60%), the cross-entropy loss during training for mosaic data stops around 0.40, training accuracy of around 0.85
+  
+  - If accuracy for pretrained model is good enough, then cross-entropy loss for mosaic data decreases to 0.02, training accuracy of around 0.99
+  
+  - pretraining the model on CIFAR10 data may add inherent bias for mosaic data created using CIFAR10 dataset.
+  
 
 
      
