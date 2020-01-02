@@ -95,6 +95,7 @@ Efficient Net is used.
 # Synthetic Data
 Data is generated as mention in the paper : "To Understand Deep Learning We Need to Understand Kernel Learning by Mikhail Belkin and Et al."
 > Paper can be found here: https://arxiv.org/pdf/1802.01396.pdf
+### Separable data
 ![](./plots_and_images/exp1_plot0.png)
 ### What if Noise is added to this synthetic data, How will be the Accuracy and CE Loss:
   ![](./plots_and_images/exp1_plot1.png)
@@ -102,3 +103,12 @@ Data is generated as mention in the paper : "To Understand Deep Learning We Need
   ![](./plots_and_images/exp1_plot3.png)
   ![](./plots_and_images/exp1_plot4.png)
   ![](./plots_and_images/exp1_plot5.png)
+
+ ### Non Separable data
+![](./plots_and_images/exp2_plot0.png)
+### What if Noise is added to this synthetic data, How will be the Accuracy and CE Loss:
+  ![](./plots_and_images/exp2_plot1.png)
+  ![](./plots_and_images/exp2_plot2.png)
+  ![](./plots_and_images/exp2_plot3.png)
+  ![](./plots_and_images/exp_plot4.png)
+  ![](./plots_and_images/exp_plot5.png)
