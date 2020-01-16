@@ -102,17 +102,17 @@ Data is generated as mention in the paper : "To Understand Deep Learning We Need
   - percentage test error plot
      
      ![](./PLOTS/0noise_.png)
-   -product of spectral norm of weights plot
+ -product of spectral norm of weights plot
       ![](./PLOTS/norm_0.png)
  - 1 percent noise , bayes error 0.5 percent, test data size 1000, 0 percent noise
     ![](./PLOTS/1noise_.png)
-   -product of spectral norm of weights plot
+ -product of spectral norm of weights plot
       ![](./PLOTS/norm_1.png)
 
  - 10 percent noise , bayes error 5 percent, test data size 1000, 0 percent noise
       ![](./PLOTS/10noise_.png)
 
-   -product of spectral norm of weights plot
+  -product of spectral norm of weights plot
       ![](./PLOTS/norm_10.png)
 
  ### Non Separable data
