@@ -121,6 +121,13 @@ class inception_net(nn.Module):
 | train on dataset 8      | 46 | 69 | 85 | 91 | 94 | 95 | 96 | 100 | 95 |
 | train on dataset 9      | 45 | 68 | 84 | 91 | 94 | 95 | 95 | 95 | 100 |
 
+### Observtions on above table:
+> As the weightage give to foreground image increases, classification network performance increases.
+> It is very astonishing to see that with only 2/9 weightage given to foreground image, the classification network is able to predict with accuracy of atleast 84%.
+> When the weightage is increased just by 1/9 i.e when the weightage is 3/9 the accuracy becomes atleast 91%.
 
 ### Plot of Training loss for all the Datasets :
  ![](training_loss_90k.png)
+ 
+ As the weightage of the foreground image is increasing from dataset1 to dataset9, model is converging faster.
+
