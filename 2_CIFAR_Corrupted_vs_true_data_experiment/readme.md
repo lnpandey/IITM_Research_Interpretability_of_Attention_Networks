@@ -100,8 +100,8 @@ Data is generated as mention in the paper : "To Understand Deep Learning We Need
 ### What if Noise is added to this synthetic data, How will be the Accuracy and CE Loss:
   - 0 percent noise , bayes error 0 percent, test data size 1000, 0 percent noise
   - percentage test error plot
-     ![](./PLOTS/0noise_.png){:class="img-responsive"}
-     ![](./PLOTS/0noise_.png){:height="50%" width="50%"}
+     
+     ![](./PLOTS/0noise_.png)
    -product of spectral norm of weights plot
       ![](./PLOTS/norm_0.png)
  - 1 percent noise , bayes error 0.5 percent, test data size 1000, 0 percent noise
