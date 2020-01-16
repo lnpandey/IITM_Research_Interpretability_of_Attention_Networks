@@ -102,7 +102,7 @@ Data is generated as mention in the paper : "To Understand Deep Learning We Need
   - percentage test error plot
 ![](./PLOTS/0noise_.png)
 -product of spectral norm of weights plot
-![](./PLOTS/norm_0%_.png)
+![](./PLOTS/norm_0.png)
  - 1 percent noise , bayes error 5 percent, test data size 1000, 0 percent noise
 ![](./PLOTS/1noise_.png)
 
