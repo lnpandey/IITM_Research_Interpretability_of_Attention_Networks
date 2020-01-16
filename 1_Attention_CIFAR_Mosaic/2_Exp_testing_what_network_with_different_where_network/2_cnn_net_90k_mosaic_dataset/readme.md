@@ -56,16 +56,21 @@ class Module2(nn.Module):
 
 | train\ test  | test on dataset 1 | test on dataset 2 | test on dataset 3 | test on dataset 4 | test on dataset 5 | test on dataset 6 | test on dataset 7 | test on dataset 8 | test on dataset 9|
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|----|
-| train on dataset 1      | 69 | 48 | 51 | 53 | 53 | 53 | 51 | 51 | 50 |
-| train on dataset 2      | 43 | 100 | 72 | 74 | 72 | 70 | 67 | 66 | 65 |
-| train on dataset 3      | 41 | 62 | 100 | 81 | 79 | 78 | 75 | 73 | 71 |     
-| train on dataset 4      | 40 | 57 | 76 | 100 | 87 | 85 | 84 | 83 | 81 |
-| train on dataset 5      | 37 | 52 | 72 | 84 | 100 | 88 | 88 | 86 | 84 |
-| train on dataset 6      | 37 | 47 | 65 | 80 | 88 | 100 | 90 | 90 | 88 |
-| train on dataset 7      | 36 | 43 | 58 | 74 | 84 | 90 | 100 | 91 | 90 |
-| train on dataset 8      | 34 | 38 | 52 | 68 | 80 | 87 | 91 | 100 | 92 |
-| train on dataset 9      | 34 | 38 | 48 | 61 | 75 | 84 | 89 | 91 | 100 |
+| train on dataset 1      | - | 48 | 51 | 53 | 53 | 53 | 51 | 51 | 50 |
+| train on dataset 2      | 43 | - | 72 | 74 | 72 | 70 | 67 | 66 | 65 |
+| train on dataset 3      | 41 | 62 | - | 81 | 79 | 78 | 75 | 73 | 71 |     
+| train on dataset 4      | 40 | 57 | 76 | - | 87 | 85 | 84 | 83 | 81 |
+| train on dataset 5      | 37 | 52 | 72 | 84 | - | 88 | 88 | 86 | 84 |
+| train on dataset 6      | 37 | 47 | 65 | 80 | 88 | - | 90 | 90 | 88 |
+| train on dataset 7      | 36 | 43 | 58 | 74 | 84 | 90 | - | 91 | 90 |
+| train on dataset 8      | 34 | 38 | 52 | 68 | 80 | 87 | 91 | - | 92 |
+| train on dataset 9      | 34 | 38 | 48 | 61 | 75 | 84 | 89 | 91 | - |
 
 
 ### Plot of Training loss for all the Datasets :
  ![](training_loss_90k_cnn.png)
+
+### Observations (same as MINI - Inception Net exp)
+- Even with 2/9 focus on foreground images, the classification network is still able to accurately classify 72\% of the times.
+- Notice the faster convergence of classification network with more confident focus networks. 
+- The classification network is powerful enough to pickup weak signals as well. This can be seen from  the significant improvement from dataset2 to dataset3 (and from dataset3 to dataset4).
