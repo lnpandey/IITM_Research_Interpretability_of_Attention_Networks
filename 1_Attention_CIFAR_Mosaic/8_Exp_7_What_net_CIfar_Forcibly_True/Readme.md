@@ -30,6 +30,6 @@
   ![](./plots_figures/train.png)
   ![](./plots_figures/test.png)
   ![](./plots_figures/focibly_true.png)
-  
+  ![](./plots_figures/focibly_true_test.png)
   ### Observations
-   - accuracy on true data (CIFAR10 0,1,2 classes) using  only what net increases consistently.
+   - accuracy increases Consistently (using only classification net) on true train data (original CIFAR10) as well as test data(original CIFAR10 Test data). We took only 3 classes from CIFAR10 i.e 0,1,2 classes.
