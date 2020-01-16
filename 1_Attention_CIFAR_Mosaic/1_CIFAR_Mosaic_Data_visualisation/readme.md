@@ -55,3 +55,8 @@
 
 ### Plots for Focus vs Predicted on Testing Data 
   ![](./plots_and_images/focus_vs_pred_testset.png)
+  
+### Observations
+- Test Plots are generated during training, every 5th epoch.
+- When argmax > 0.5 starts to increase, Focus_true_pred_true also starts to increase and the same with other measures.
+
