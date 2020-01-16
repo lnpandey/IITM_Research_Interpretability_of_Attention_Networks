@@ -104,5 +104,5 @@ Data is generated as mention in the paper : "To Understand Deep Learning We Need
 ![](./plots_and_images/exp2_plot0.png)
 ### What if Noise is added to this synthetic data, How will be the Accuracy and CE Loss:
 
-![](./plots_and_images/0_%_noise_.pdf)
+![](./plots_and_images/0%noise_.pdf)
 
