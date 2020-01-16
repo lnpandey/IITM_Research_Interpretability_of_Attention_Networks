@@ -111,16 +111,22 @@ class inception_net(nn.Module):
 
 | train\ test  | test on dataset 1 | test on dataset 2 | test on dataset 3 | test on dataset 4 | test on dataset 5 | test on dataset 6 | test on dataset 7 | test on dataset 8 | test on dataset 9|
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|----|
-| train on dataset 1      | 99 | 53 | 59 | 64 | 66 | 66 | 66 | 66 | 67 |
-| train on dataset 2      | 46 | 99 | 84 | 87 | 88 | 88 | 89 | 89 | 88 |
-| train on dataset 3      | 46 | 75 | 100 | 91 | 92 | 92 | 93 | 93 | 92 |     
-| train on dataset 4      | 46 | 72 | 87 | 100 | 94 | 95 | 95 | 94 | 95 |
-| train on dataset 5      | 45 | 70 | 86 | 92 | 100 | 95 | 95 | 95 | 95 |
-| train on dataset 6      | 45 | 70 | 84 | 91 | 94 | 99 | 95 | 95 | 95 |
-| train on dataset 7      | 45 | 68 | 83 | 90 | 93 | 94 | 99 | 94 | 94 |
-| train on dataset 8      | 46 | 69 | 85 | 91 | 94 | 95 | 96 | 100 | 95 |
-| train on dataset 9      | 45 | 68 | 84 | 91 | 94 | 95 | 95 | 95 | 100 |
+| train on dataset 1      | - | 53 | 59 | 64 | 66 | 66 | 66 | 66 | 67 |
+| train on dataset 2      | 46 | - | 84 | 87 | 88 | 88 | 89 | 89 | 88 |
+| train on dataset 3      | 46 | 75 | - | 91 | 92 | 92 | 93 | 93 | 92 |     
+| train on dataset 4      | 46 | 72 | 87 | - | 94 | 95 | 95 | 94 | 95 |
+| train on dataset 5      | 45 | 70 | 86 | 92 | - | 95 | 95 | 95 | 95 |
+| train on dataset 6      | 45 | 70 | 84 | 91 | 94 | - | 95 | 95 | 95 |
+| train on dataset 7      | 45 | 68 | 83 | 90 | 93 | 94 | - | 94 | 94 |
+| train on dataset 8      | 46 | 69 | 85 | 91 | 94 | 95 | 96 | - | 95 |
+| train on dataset 9      | 45 | 68 | 84 | 91 | 94 | 95 | 95 | 95 | - |
 
 
 ### Plot of Training loss for all the Datasets :
  ![](training_loss_90k.png)
+
+
+### Observations
+- Even with 2/9 focus on foreground images, the classification network is still able to accurately classify 84\% of the times.
+- Notice the faster convergence of classification network with more confident focus networks. 
+- The classification network is powerful enough to pickup weak signals as well. This can be seen from  the significant improvement from dataset2 to dataset3 (and from dataset3 to dataset4).
