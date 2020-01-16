@@ -103,6 +103,6 @@ Data is generated as mention in the paper : "To Understand Deep Learning We Need
  ### Non Separable data
 ![](./plots_and_images/exp2_plot0.png)
 ### What if Noise is added to this synthetic data, How will be the Accuracy and CE Loss:
-
+  - 10 percent noise , bayes error 5 percent, test data size 1000, 0 percent noise
 ![](./PLOTS/10noise_.png)
 
