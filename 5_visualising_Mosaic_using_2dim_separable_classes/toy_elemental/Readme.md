@@ -56,5 +56,28 @@ Accuracy at epoch 100 : 0.982
 
 ### Observations
 
+### Plots for Dimension 2 are given below:
+    Data Distribution :
+![](./plots_images/dim2_data_dist.png)
+    
+    At epoch 0    
+![](./plots_images/epoch_0_dim2.png)
+ 
+    After epoch 300    
+![](./plots_images/epoch_300_dim2.png)
+   
+    loss curve   
+ ![](./plots_images/loss_curve_dim2.png)
+   
+   
+    accuracy curve     
+   ![](./plots_images/acc_curve_dim2.png)
+   
+    Scatter Plot for 2D points:
+   ![](./plots_images/scatter_plot_dim2.png)
+ 
+### Results 
+loss at epoch 100 : 0.106
 
+Accuracy at epoch 100 : 0.987
 
