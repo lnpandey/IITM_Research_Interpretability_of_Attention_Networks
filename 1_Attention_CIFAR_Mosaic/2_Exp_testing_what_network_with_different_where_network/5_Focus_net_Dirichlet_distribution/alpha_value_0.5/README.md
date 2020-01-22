@@ -1,6 +1,6 @@
 ### Focus net output as Dirichlet Distribution
 
-- alpha value = 2
+- alpha value = 0.5
 
 
 ### Creation of datasets
@@ -39,15 +39,15 @@
 
 | train\ test  | test on dataset 1 | test on dataset 2 | test on dataset 3 | test on dataset 4 | test on dataset 5 | test on dataset 6 | test on dataset 7 | test on dataset 8 | test on dataset 9| test on dataset 10 |
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|----|----|
-| train dataset 1      | - | 57 | 60 | 60 | 50 | 61 | 61 | 61 | 61 | 59 |
-| train dataset 2      | 53 | - | 81 | 85 | 86 | 86 | 86 | 86 | 85 | 82 |
-| train dataset 3      | 49 | 70 | - | 93 | 95 | 95 | 95 | 95 | 94 | 90 |     
-| train dataset 4      | 47 | 67 | 86 | - | 98 | 98 | 98 | 98 | 98 | 93 |
-| train dataset 5      | 45 | 65 | 84 | 94 | - | 99 | 99 | 99 | 99 | 95 |
-| train dataset 6      | 44 | 62 | 81 | 93 | 98 | - | 99 | 99 | 99 | 95 |
-| train dataset 7      | 44 | 61 | 80 | 91 | 97 | 99 | - | 99 | 99 | 95 |
-| train dataset 8      | 44 | 60 | 78 | 90 | 96 | 99 | 99 | - | 99 | 95 |
-| train dataset 9      | 44 | 60 | 78 | 89 | 96 | 99 | 99 | 100 | - | 95 |
+| train dataset 1      | - | 46 | 51 | 55 | 58 | 60 | 61 | 61 | 61 | 59 |
+| train dataset 2      | 44 | - | 61 | 68 | 73 | 76 | 78 | 78 | 78 | 74 |
+| train dataset 3      | 45 | 57 | - | 79 | 85 | 89 | 90 | 90 | 90 | 86 |     
+| train dataset 4      | 45 | 57 | 71 | - | 90 | 94 | 96 | 96 | 96 | 91 |
+| train dataset 5      | 44 | 57 | 71 | 84 | - | 96 | 98 | 98 | 98 | 93 |
+| train dataset 6      | 42 | 55 | 69 | 82 | 90 | - | 98 | 98 | 98 | 94 |
+| train dataset 7      | 43 | 55 | 69 | 82 | 91 | 97 | - | 99 | 99 | 95 |
+| train dataset 8      | 42 | 54 | 68 | 81 | 89 | 96 | 99 | - | 99 | 95 |
+| train dataset 9      | 41 | 53 | 66 | 79 | 88 | 95 | 98 | 99 | - | 95 |
 
 
 
