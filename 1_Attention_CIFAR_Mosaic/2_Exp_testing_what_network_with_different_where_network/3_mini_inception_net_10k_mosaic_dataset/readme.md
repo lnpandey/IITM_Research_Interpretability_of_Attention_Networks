@@ -126,6 +126,6 @@ class inception_net(nn.Module):
 
 
 ### Plot of Training loss for all the Datasets :
- ![](training_loss_10k_mini_inception.png)
+ ![](Figure.png)
 
 ##### Observations are same as previous experiments
