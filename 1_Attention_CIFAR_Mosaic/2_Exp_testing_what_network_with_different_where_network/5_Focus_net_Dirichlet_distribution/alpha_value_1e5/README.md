@@ -39,15 +39,15 @@
 
 | train\ test  | test on dataset 1 | test on dataset 2 | test on dataset 3 | test on dataset 4 | test on dataset 5 | test on dataset 6 | test on dataset 7 | test on dataset 8 | test on dataset 9| test on dataset 10 |
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|----|----|
-| train dataset 1      | - | 57 | 60 | 60 | 50 | 61 | 61 | 61 | 61 | 59 |
-| train dataset 2      | 53 | - | 81 | 85 | 86 | 86 | 86 | 86 | 85 | 82 |
-| train dataset 3      | 49 | 70 | - | 93 | 95 | 95 | 95 | 95 | 94 | 90 |     
-| train dataset 4      | 47 | 67 | 86 | - | 98 | 98 | 98 | 98 | 98 | 93 |
-| train dataset 5      | 45 | 65 | 84 | 94 | - | 99 | 99 | 99 | 99 | 95 |
-| train dataset 6      | 44 | 62 | 81 | 93 | 98 | - | 99 | 99 | 99 | 95 |
-| train dataset 7      | 44 | 61 | 80 | 91 | 97 | 99 | - | 99 | 99 | 95 |
-| train dataset 8      | 44 | 60 | 78 | 90 | 96 | 99 | 99 | - | 99 | 95 |
-| train dataset 9      | 44 | 60 | 78 | 89 | 96 | 99 | 99 | 100 | - | 95 |
+| train dataset 1      | - | 93 | 79 | 73 | 71 | 70 | 69 | 69 | 69 | 68 |
+| train dataset 2      | 73 | - | 98 | 95 | 94 | 93 | 92 | 92 | 91 | 88 |
+| train dataset 3      | 52 | 91 | - | 99 | 98 | 97 | 97 | 96 | 96 | 92 |     
+| train dataset 4      | 48 | 80 | 98 | - | 99 | 99 | 99 | 99 | 99 | 94 |
+| train dataset 5      | 47 | 75 | 94 | 99 | - | 100 | 100 | 99 | 99 | 95 |
+| train dataset 6      | 45 | 72 | 91 | 98 | 99 | - | 99 | 99 | 99 | 95 |
+| train dataset 7      | 46 | 70 | 88 | 97 | 99 |100 | - | 100| 100 | 95 |
+| train dataset 8      | 45 | 70 | 88 | 96 | 99 | 99 | 100 | - |100 | 95 |
+| train dataset 9      | 45 | 69 | 86 | 94 | 98 | 99 | 99 | 99 | - | 95 |
 
 
 
