@@ -15,6 +15,9 @@
 - a_i can be calculated by a_i/ (a_i + 8*alpha) = i/9 where i in [1,8] where 'i' refer to 'i'th Dataset. 
 - For Dataset 9, only Foreground Image is considered.
 
+### Alpha value in Dirichlet Distribution:
+>> alpha = 0.001 for this experiment
+
 ### Datasets:
 - Parameter of distribution for Dataset 1 will be alpha for every image from mosaic.
 - Parameter of distribution for Dataset 2 will be 16/7*alpha for foreground image from mosaic and alpha for backgroud image.
