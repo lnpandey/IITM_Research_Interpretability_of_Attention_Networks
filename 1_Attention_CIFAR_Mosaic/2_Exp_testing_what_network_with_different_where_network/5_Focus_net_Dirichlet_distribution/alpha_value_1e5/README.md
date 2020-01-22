@@ -1,6 +1,6 @@
 ### Focus net output as Dirichlet Distribution
 
-- alpha value = 2
+- alpha value = 1e5
 
 
 ### Creation of datasets
