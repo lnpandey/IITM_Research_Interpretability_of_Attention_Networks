@@ -29,3 +29,26 @@
 ### Experiment brief:
 - Model ( what network) is trained on Dataset 'i', and Tested on all Dataset 'j', where j is not equal to i, j belongs to 1 to 9.
 - We want to see, as the "Where" network perform better, i.e from Dataset 1 to Dataset 9 ( "Where" network learns to focus better),  how the "what" network behaves.
+- Mini inception net has been used to train the classification network.
+
+#### Weights and Datasets of Experiment can be found here :
+>
+### Analysis of Accuracy on Training & Testing Data
+
+| train\ test  | test on dataset 1 | test on dataset 2 | test on dataset 3 | test on dataset 4 | test on dataset 5 | test on dataset 6 | test on dataset 7 | test on dataset 8 | test on dataset 9| test on dataset 10 |
+|----------|-----|-----|-----|-----|-----|-----|-----|-----|----|----|
+| train on dataset 1      | - | 93 | 78 | 72 | 71 | 70 | 70 | 70 | 70 | 68 |
+| train on dataset 2      | 73 | - | 98 | 95 | 93 | 92 | 91 | 91 | 91 | 88 |
+| train on dataset 3      | 51 | 92 | - | 99 | 99 | 98 | 98 | 97 | 97 | 93 |     
+| train on dataset 4      | 47 | 77 | 96 | - | 99 | 99 | 98 | 98 | 98 | 93 |
+| train on dataset 5      | 45 | 74 | 94 | 99 | - | 99 | 99 | 99 | 99 | 95 |
+| train on dataset 6      | 44 | 70 | 89 | 98 | 99 | - | 99 | 99 | 99 | 95 |
+| train on dataset 7      | 44 | 70 | 89 | 97 | 99 | 99 | - | 100 | 100 | 95 |
+| train on dataset 8      | 44 | 69 | 88 | 96 | 99 | 99 | 99 | - | 99 | 96 |
+| train on dataset 9      | 44 | 69 | 87 | 95 | 99 | 99 | 99 | 99 | - | 95 |
+
+
+### Plot of Training loss for all the Datasets :
+ ![](Figure.png)
+ 
+### Observations
