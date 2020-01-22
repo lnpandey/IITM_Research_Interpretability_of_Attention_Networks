@@ -1,5 +1,7 @@
 ### Focus net output as Dirichlet Distribution
 
+- alpha value = 1e-2
+
 
 ### Creation of datasets
 - First, we have created 20000 Mosaic images.
