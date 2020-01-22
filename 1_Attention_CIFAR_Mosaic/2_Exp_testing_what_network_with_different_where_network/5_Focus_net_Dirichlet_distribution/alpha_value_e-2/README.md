@@ -8,15 +8,11 @@
 - Dataset 1 to Dataset 9 are made from same 10k Mosaic Images.
 - Dataset 10 is made from 10000 to 20000 Mosaic Images which only contains the true Foreground Image present in every Mosaic Image.
 - We have modeled the output of Focus network using the Dirichlet distribution with parameters alpha 
-- Since we know exactly where the foreground image is present in the Mosaic image, therefore Dataset 'i', weight_of_foreground_image = a_i*alpha and weight_of_background_image = alpha. 
+- 
+- Since we know exactly where the foreground image is present in the Mosaic image, there fore Dataset 'i', weight_of_foreground_image = a_i*alpha and weight_of_background_image = alpha. 
 - Therefore Average Image in Dataset 'i' = w_fg * I_fg + sum_over_all_background_images( w_bg * I_bg ) 
 - Where w_fg = weight_of_foreground_image, w_bg = weight_of_background_image, I_fg = Foreground_Image, I_bg = Background_Image
 - w_fg = a_i*alpha, w_bg= alpha
-- a_i can be calculated by a_i/ (a_i + 8*alpha) = i/9 where i in [1,8] where 'i' refer to 'i'th Dataset. 
-- For Dataset 9, only Foreground Image is considered.
-
-### Alpha value in Dirichlet Distribution:
->> alpha = 0.001 for this experiment
 
 ### Datasets:
 - Parameter of distribution for Dataset 1 will be alpha for every image from mosaic.
@@ -33,3 +29,27 @@
 ### Experiment brief:
 - Model ( what network) is trained on Dataset 'i', and Tested on all Dataset 'j', where j is not equal to i, j belongs to 1 to 9.
 - We want to see, as the "Where" network perform better, i.e from Dataset 1 to Dataset 9 ( "Where" network learns to focus better),  how the "what" network behaves.
+- Mini inception net has been used to train the classification network.
+
+#### Weights and Datasets of Experiment can be found here :
+>
+### Analysis of Accuracy on Training & Testing Data
+
+| train\ test  | test on dataset 1 | test on dataset 2 | test on dataset 3 | test on dataset 4 | test on dataset 5 | test on dataset 6 | test on dataset 7 | test on dataset 8 | test on dataset 9| test on dataset 10 |
+|----------|-----|-----|-----|-----|-----|-----|-----|-----|----|----|
+| train on dataset 1      | - | 44 | 46 | 49 | 50 | 53 | 54 | 58 | 60 | 52 |
+| train on dataset 2      | 43 | - | 50 | 53 | 57 | 61 | 64 | 68 | 72 | 66 |
+| train on dataset 3      | 42 | 48 | - | 58 | 63 | 68 | 73 | 79 | 84 | 75 |     
+| train on dataset 4      | 43 | 48 | 55 | - | 66 | 72 | 78 | 84 | 89 | 81 |
+| train on dataset 5      | 43 | 48 | 54 | 61 | - | 74 | 80 | 87 | 92 | 84 |
+| train on dataset 6      | 43 | 49 | 55 | 63 | 70 | - | 83 | 90 | 96 | 89 |
+| train on dataset 7      | 42 | 49 | 56 | 63 | 70 | 77 | - | 91 | 97 | 91 |
+| train on dataset 8      | 42 | 48 | 56 | 63 | 71 | 78 | 85 | - | 99 | 93 |
+| train on dataset 9      | 41 | 48 | 55 | 63 | 71 | 78 | 85 | 93 | - | 95 |
+
+
+
+### Plot of Training loss for all the Datasets :
+ ![](Figure.png)
+ 
+### Observations
