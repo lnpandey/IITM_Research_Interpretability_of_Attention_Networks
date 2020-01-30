@@ -38,8 +38,8 @@ model for where network - linear model (no hidden layer)
     At epoch 0    
 ![](./plots_images/epoch_0.png)
  
-    After epoch 60    
-![](./plots_images/epoch60.png)
+    After epoch 100    
+![](./plots_images/epoch_100.png)
    
     loss curve   
  ![](./plots_images/loss_curve.png)
@@ -49,12 +49,35 @@ model for where network - linear model (no hidden layer)
    ![](./plots_images/acc_curve.png)
  
 ### Results 
-loss at epoch 60 : 0.177
+loss at epoch 100 : 0.188
 
-Accuracy at epoch 60 : 0.988
+Accuracy at epoch 100 : 0.982
 
 
 ### Observations
 
+### Plots for Dimension 2 are given below:
+    Data Distribution :
+![](./plots_images/dim2_data_dist.png)
+    
+    At epoch 0    
+![](./plots_images/epoch_0_dim2.png)
+ 
+    After epoch 300    
+![](./plots_images/epoch_300_dim2.png)
+   
+    loss curve   
+ ![](./plots_images/loss_curve_dim2.png)
+   
+   
+    accuracy curve     
+   ![](./plots_images/acc_curve_dim2.png)
+   
+    Scatter Plot for 2D points:
+   ![](./plots_images/scatter_plot_dim2.png)
+ 
+### Results 
+loss at epoch 100 : 0.106
 
+Accuracy at epoch 100 : 0.987
 
