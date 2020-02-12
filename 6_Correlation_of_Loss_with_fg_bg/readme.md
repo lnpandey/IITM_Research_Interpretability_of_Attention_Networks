@@ -62,9 +62,9 @@ where = Wherenet().double()
 what = Whatnet().double()
 ```
 
-### Gradient Deefinition
->grad_alpha_fg = Sum_over_data_points( (gradient(Loss) w.r.t alphas)*(Fg_one_hot) )/ size_of_training_data
->grad_alpha_bg = Sum_over_data_points( (gradient(Loss) w.r.t alphas)*(Bg_one_hot) )/ size_of_training_data
+### Gradient Definition
+>grad_alpha_fg = Sum_over_data_points( (gradient(Loss) w.r.t alphas)(Fg_one_hot) )/ size_of_training_data
+>grad_alpha_bg = Sum_over_data_points( (gradient(Loss) w.r.t alphas)(Bg_one_hot) )/ size_of_training_data
 
 
 ### Gradient(Loss) w.r.t alphas for Foreground and Background Classes
