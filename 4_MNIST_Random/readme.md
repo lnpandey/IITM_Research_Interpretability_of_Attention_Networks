@@ -33,12 +33,43 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 | 12665              | 47335                   | 60000               | 100               | 20            | 99                  |
 
 
+#### TABLE 3 : Analysis on Training Data and Test Data On Simple Model with ZERO Corruption
+
+|true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1 | 
+|--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
+| 100              | 0        | 100               | 100               | 20            | 98                  | 
+| 500              | 0        | 500               | 100               | 21            | 99                  | 
+| 1000             | 0        | 1000              | 100               | 21            | 99                  | 
+| 2000             | 0        | 2000              | 100               | 21            | 99                  | 
+| 4000             | 0        | 4000              | 100               | 21            | 99                  |
+| 6000             | 0        | 6000              | 100               | 21            | 99                  |
+| 8000             | 0        | 8000              | 100               | 21            | 99                  | 
+| 12665            | 0        | 12665             | 100               | 21            | 99                  |
+
+#### TABLE 4 : Analysis on Training Data and Test Data On Complex Model with ZERO Corruption
+
+|true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1 | 
+|--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
+| 100              | 0        | 100               | 100               | 19            | 93                  | 
+| 500              | 0        | 500               | 100               | 21            | 99                  | 
+| 1000             | 0        | 1000              | 100               | 21            | 99                  | 
+| 2000             | 0        | 2000              | 100               | 21            | 99                  | 
+| 4000             | 0        | 4000              | 100               | 21            | 99                  |
+| 6000             | 0        | 6000              | 100               | 21            | 99                  |
+| 8000             | 0        | 8000              | 100               | 21            | 99                  | 
+| 12665            | 0        | 12665             | 100               | 21            | 99                  |
 
 ##### Weights Link : 
 > Complex Model: https://drive.google.com/open?id=1H1yn0LLxcIq56CyQbxQ4VRRymRlNCJy6
 
 > Simple Model:  https://drive.google.com/open?id=1MoGeKZO3G5uHsYlo6ufDmiZXqUXUUes8
 
+> Complex Model with zero corruption: https://drive.google.com/open?id=1S0UL_QFPRy8LFLDnyfIN97UIZEN0i6_C
+
+> Simple Model with zero corruption:  https://drive.google.com/open?id=1Gtf00xIUWqHf31ynQJluCJFYD29_KE6y
+
+
 #### Architecture for Models
 Simple Model : 3 Inception Module
+
 Complex Model : Mini-Inception Net ( 8 Inception Modules )
