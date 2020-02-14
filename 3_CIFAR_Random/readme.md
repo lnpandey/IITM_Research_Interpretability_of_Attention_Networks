@@ -24,7 +24,6 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 
 #### TABLE 2 : Analysis on Training Data and Test Data On Complex Model
 
-
 |true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
 |--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
 | 1000               | 35000                   | 36000               | 100               | 11            | 38                  | 
@@ -36,21 +35,7 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 | 12000              | 35000                   | 47000               | 100               | 22            | 73                  | 
 | 15000              | 35000                   | 50000               | 100               | 23            | 78                  |
 
-### Table 3 : Analysis on Training Data and Test Data On Simple Model with ZERO Corruption
-
-|true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
-|--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
-| 1000               |    0                   | 1000                 | 100               | 23            | 79                  | 
-| 2000               |    0                   | 2000                 | 100               | 24            | 82                  | 
-| 4000               |    0                   | 4000                 | 100               | 25            | 84                  | 
-| 6000               |    0                   | 6000                 | 100               | 25            | 86                  | 
-| 8000               |    0                   | 8000                 | 100               | 26            | 86.93                  |
-| 10000              |    0                   | 10000                | 99                | 25            | 85.8                  |
-| 12000              |    0                   | 12000                | 100               | 26            | 88                  | 
-| 15000              |    0                   | 15000                | 100               | 26            | 88.53                  |
-
-
-#### TABLE 4 : Analysis on Training Data and Test Data On Simple Model
+#### TABLE 3 : Analysis on Training Data and Test Data On Simple Model
 
 
 |true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
@@ -64,7 +49,7 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 | 12000              | 35000                   | 47000               | 100               | 19            | 64                  | 
 | 15000              | 35000                   | 50000               | 99               | 19            | 66                  |
 
-#### TABLE 5 : Analysis on True Training Data and Test Data On Complex Model
+#### TABLE 4 : Analysis on True Training Data and Test Data On Complex Model with ZERO Corruption
 
 
 |true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
@@ -77,6 +62,19 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 | 10000              | 0                   | 10000               | 99               | 26            | 89                  |
 | 12000              | 0                   | 12000               | 100               | 26            | 88                  | 
 | 15000              | 0                   | 15000               | 100               | 26            | 88                  |
+
+### Table 5 : Analysis on Training Data and Test Data On Simple Model with ZERO Corruption
+
+|true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
+|--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
+| 1000               |    0                   | 1000                 | 100               | 23            | 79                  | 
+| 2000               |    0                   | 2000                 | 100               | 24            | 82                  | 
+| 4000               |    0                   | 4000                 | 100               | 25            | 84                  | 
+| 6000               |    0                   | 6000                 | 100               | 25            | 86                  | 
+| 8000               |    0                   | 8000                 | 100               | 26            | 86.93                  |
+| 10000              |    0                   | 10000                | 99                | 25            | 85.8                  |
+| 12000              |    0                   | 12000                | 100               | 26            | 88                  | 
+| 15000              |    0                   | 15000                | 100               | 26            | 88.53                  |
 
 
 ##### Weights Link : 
