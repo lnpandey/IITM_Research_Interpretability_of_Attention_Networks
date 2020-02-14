@@ -63,7 +63,7 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 | 12000              | 0                   | 12000               | 100               | 26            | 88                  | 
 | 15000              | 0                   | 15000               | 100               | 26            | 88                  |
 
-### Table 5 : Analysis on Training Data and Test Data On Simple Model with ZERO Corruption
+#### Table 5 : Analysis on Training Data and Test Data On Simple Model with ZERO Corruption
 
 |true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
 |--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
