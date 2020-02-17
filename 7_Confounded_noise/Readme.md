@@ -6,5 +6,5 @@
   - Original Data
     ![](sep_data_cor.png)
   - Data with noise
-    ![](sep_cor_noise.png)
+    ![](spe_cor_noise.png)
 
