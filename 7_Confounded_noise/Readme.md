@@ -36,30 +36,6 @@
 
 ![](sep120.png)
 
-Accuracy with 2 hidden layer (64-> 64->2)![](data30.png)
-Training   - 73
-Test   - 61
-no noise - 100
-
-- Simple model with 2 hidden layer
-![](simple2.png)
-
-Accuracy with linear model
-Training - 60
-Test - 59 
-no noise  - 50
-
-- Linear Model 
-![](linear.png)
-Accuracy with 1 hidden layer (256->2)
-Training   - 74
-Test   - 55
-no noise - 100
-
-- Simple model with 1 hidden layer 
-![](simple1.png)
-
-
 
 
 
