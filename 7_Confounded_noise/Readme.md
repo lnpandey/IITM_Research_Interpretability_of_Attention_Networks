@@ -3,8 +3,11 @@
   - a cluster of Linearly separable Data at center with noise
   - a non-linealry separable data with noise
 ## Linearly separable at Corner with noise 
-  - Original Data
+- Original Data
+
     ![](sep_data_cor.png)
-  - Data with noise
+    
+- Data with noise
+
     ![](spe_cor_noise.png)
 
