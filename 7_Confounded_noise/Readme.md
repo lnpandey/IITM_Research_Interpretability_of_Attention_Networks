@@ -72,6 +72,18 @@
 
 
 
+## Linearly separable at Center with noise
+
+- Original Data
+
+    ![](og_data_center.png)
+    
+- Data with noise
+
+    ![](og_data_cntr_noise.png)
+
+
+
 
 
 
