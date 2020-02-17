@@ -66,7 +66,6 @@
    - Training   - 74
    - Test   - 55 
    - no noise - 100
-   - Simple model with 1 hidden layer 
 
 
 ![](simple1.png)
