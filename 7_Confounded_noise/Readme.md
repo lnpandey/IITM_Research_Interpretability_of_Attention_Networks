@@ -86,6 +86,14 @@
  - Prediction
      
       ![](cen_pred.png)
+      
+      
+## Circle Moon Data with noise
+   - Original Data
+      
+   - Data with Noise
+   
+   - Prediction 
 
 
 
