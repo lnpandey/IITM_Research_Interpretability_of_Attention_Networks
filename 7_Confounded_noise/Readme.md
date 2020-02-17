@@ -38,6 +38,16 @@
 
 
 
+## Accuracy with 2 hidden layer (64-> 64->2)
+   - Training   - 73
+   - Test   - 61
+   - no noise - 100
+
+   - Simple model with 2 hidden layer
+
+
+![](simple2.png)
+
 
  
 
