@@ -45,7 +45,7 @@ A small plane denote the plane of FG classes:
 
 Training on Datasets can be visualise by:
 
-![](./plots_and_images/train_30.png)
+![](./plots_and_images/train30.png)
 
 Loss on Datasets can be visualise by:
 
