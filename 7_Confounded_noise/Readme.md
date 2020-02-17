@@ -81,6 +81,11 @@
 - Data with noise
 
     ![](og_data_cntr_noise.png)
+    
+   
+ - Prediction
+     
+      ![](cen_pred.png)
 
 
 
