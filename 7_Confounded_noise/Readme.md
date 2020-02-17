@@ -88,12 +88,20 @@
       ![](cen_pred.png)
       
       
-## Circle Moon Data with noise
+## Moon Data with noise
    - Original Data
+   
+   ![](og1.png)
+      
       
    - Data with Noise
    
+   ![](og1_noise.png)
+   
+   
    - Prediction 
+   
+   ![](pred1.png)
 
 
 
