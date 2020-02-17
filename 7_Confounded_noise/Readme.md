@@ -10,4 +10,58 @@
 - Data with noise
 
     ![](spe_cor_noise.png)
+    
+- TABLE 2 : Analysis with size of true data
+
+|true data  | Corrupted Data | Total Data | Training Accuracy | Test Accuracy |  Data Acc with no noise | 
+|-----------| ---------------| ---------- | ----------------- |---------------| ----------------------- |
+| 30        | 240            | 270        |   97              |   57          |  100                    |
+| 60        | 240            | 300        |   96              |   61          |  100                    | 
+| 90        | 240            | 330        |   96              |   66          |  100                    | 
+| 120       | 240            | 360        |   98              |   67          |  100                    | 
+
+-True Data size: 30
+
+![](data30.png)
+
+-True Data size: 60
+
+![](data60.png)
+
+-True Data size: 90
+
+![](data90.png)
+
+-True Data size: 120
+
+![](sep120.png)
+
+Accuracy with 2 hidden layer (64-> 64->2)![](data30.png)
+Training   - 73
+Test   - 61
+no noise - 100
+
+- Simple model with 2 hidden layer
+![](simple2.png)
+
+Accuracy with linear model
+Training - 60
+Test - 59 
+no noise  - 50
+
+- Linear Model 
+![](linear.png)
+Accuracy with 1 hidden layer (256->2)
+Training   - 74
+Test   - 55
+no noise - 100
+
+- Simple model with 1 hidden layer 
+![](simple1.png)
+
+
+
+
+
+ 
 
