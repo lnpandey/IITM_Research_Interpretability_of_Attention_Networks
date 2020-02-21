@@ -115,5 +115,6 @@ Loss on Datasets can be visualise by:
  
  ![](./plots_and_images/same_plane_var.png)
  
- Train accuracy 94%
- Test accuracy 92%
+   - Train accuracy 94%
+   
+   - Test accuracy 92%
