@@ -2,7 +2,7 @@
 
 ### CIFAR 10 Dataset
 ![](./plots_and_images/CIFAR10.png)
-### Generationtion of data i.e Mosaic Images
+### Generation of data i.e Mosaic Images
 
   - CIFAR 10, Every image is 32x32 pixel
   - Every Mosaic image is a collection of 9 images i.e 96x96 pixel viz a grid of 3x3 images.

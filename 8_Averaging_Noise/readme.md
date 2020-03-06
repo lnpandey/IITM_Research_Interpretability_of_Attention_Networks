@@ -108,3 +108,13 @@ Training on Datasets can be visualise by:
 Loss on Datasets can be visualise by:
 
 ![](./plots_and_images/loss_m_60.png)
+
+ ### 7. Same Plane High Variance 
+ 
+ Same plane data with high variance
+ 
+ ![](./plots_and_images/same_plane_var.png)
+ 
+   - Train accuracy 94%
+   
+   - Test accuracy 92%
