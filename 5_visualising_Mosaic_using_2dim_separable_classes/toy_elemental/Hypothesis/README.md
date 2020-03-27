@@ -59,3 +59,8 @@
     
     -  Accuracy 100%
     
+# Observations 
+  - When mosaic data is not linearly separable 
+     - The models needs attention to learn a good classifier.
+  - When mosiac data is linearly separable
+     - The model does not need attention to learn a good classifier.
