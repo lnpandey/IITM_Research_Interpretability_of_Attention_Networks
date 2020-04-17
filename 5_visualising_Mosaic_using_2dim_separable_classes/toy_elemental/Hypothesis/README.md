@@ -60,6 +60,26 @@
     
     -  Accuracy 100%
     
+  
+### D_2 K_3 NF_2 NB_1
+  # When Data is not linearly Separable
+    
+   - At epoch zero
+      
+      ![](./plots/D_2_at_e0.png)
+     
+   
+   - At epoch fifty
+      
+      ![](./plots/D2_at_e50.png)
+   
+   
+   - At epoch hundred
+    
+      ![](./plots/D_2_at_e100.png) 
+     
+   - Accuracy 100%
+    
 # Observations 
   - When mosaic data is not linearly separable 
      - The models needs attention to learn a good classifier.
