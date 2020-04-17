@@ -87,6 +87,36 @@
       ![](./plots/D_2_at_e100.png) 
      
    - Accuracy 100%
+   
+   
+   
+   # When Data is linearly Separable
+   - Data Distribution
+     
+      ![](./plots/ls_distr.png)
+   
+   - SVM with Linear Kernel with C value 1000
+      - Score 1  (Suggesting Mosaic data is linearly separable)
+    
+      
+    
+   - At epoch zero
+      
+      ![](./plots/ls_e0.png)
+        
+      
+      
+      ![](./plots/ls2_e0.png)
+
+   - At epoch hundred
+    
+      ![](./plots/ls_e100.png) 
+      
+      
+      
+      ![](./plots/ls2_e100.png)
+     
+   - Accuracy 100% , 2nd Case Accuracy is 100% at 5th epoch only
     
 # Observations 
   - When mosaic data is not linearly separable 
@@ -94,3 +124,4 @@
      - For higher dimension once it learns some good attention weights, the attention weight learning stops.
   - When mosaic data is linearly separable
      - The model does not need attention to learn a good classifier.
+     - For higher dimension model need not require to learn the attention weights, but is sometimes learning good attention weights.
