@@ -63,6 +63,14 @@
   
 ### D_2 K_3 NF_2 NB_1
   # When Data is not linearly Separable
+   - Data Distribution
+     
+      ![](./plots/d2_data_distr.png)
+   
+   - SVM with Linear Kernel with C value 1000
+      - Score 0.984  (Suggesting Mosaic data is not linearly separable)
+    
+      
     
    - At epoch zero
       
@@ -83,5 +91,6 @@
 # Observations 
   - When mosaic data is not linearly separable 
      - The models needs attention to learn a good classifier.
+     - For higher dimension once it learns some good attention weights, the attention weight learning stops.
   - When mosaic data is linearly separable
      - The model does not need attention to learn a good classifier.
