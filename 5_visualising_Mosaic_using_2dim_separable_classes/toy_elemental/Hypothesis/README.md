@@ -1,4 +1,5 @@
-  ### Attention is required only when data is not linearly separable.
+  ### Attention is required only when data is not linearly separable D_1  K_2 NF_2 NB_1
+  
   # Mosaic Data is not linearly separable
     - data distribution
     
