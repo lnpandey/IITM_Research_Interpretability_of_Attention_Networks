@@ -80,26 +80,55 @@ FG=1, (3,8,9)\in BG : #FTPT, #FFPT, # FTPF, #FFPF
 FG=1, (4,5,6)\in BG : #FTPT, #FFPT, # FTPF, #FFPF
 
 # FG = 0,1,2 and BG = 3,4,5,6,7,8,9
+>> Train Accuracy :
 ![](./images/train_012.PNG)
+
+>> Test Accuracy:
 ![](./images/test_012.PNG)
+
+>> Train Accuracy for each Foreground class:
 ![](./images/train_all_012.PNG)
 
 # FG = 1,2,3 and BG = 0,4,5,6,7,8,9
+>> Train Accuracy :
 ![](./images/train_123.PNG)
+
+>> Test Accuracy :
 ![](./images/test_123.PNG)
+
+>> Train Accuracy for each Foreground class:
 ![](./images/train_all_123.PNG)
+
+>> Test Accuracy for each Foreground class:
 ![](./images/test_all_123.PNG)
 
 # FG = 2,3,4 and BG = 0,1,5,6,7,8,9
+>> Train Accuracy :
 ![](./images/train_234.PNG)
+
+>> Test Accuracy :
+
 ![](./images/test_234.PNG)
+
+>> Train Accuracy for each Foreground class:
+
 ![](./images/train_all_234.PNG)
+
+>> Test Accuracy for each Foreground class:
+
 ![](./images/test_all_234.PNG)
 
 # FG = 3,4,5 and BG = 0,1,2,6,7,8,9
+>> Train Accuracy :
 ![](./images/train_345.PNG)
+
+>> Test Accuracy :
 ![](./images/test_345.PNG)
+
+>> Train Accuracy for each Foreground class:
 ![](./images/train_all_345.PNG)
+
+>> Test Accuracy for each Foreground class:
 ![](./images/test_all_345.PNG)
 
 
