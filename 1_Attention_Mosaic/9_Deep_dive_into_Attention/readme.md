@@ -79,3 +79,29 @@ FG=1, (3,8,9)\in BG : #FTPT, #FFPT, # FTPF, #FFPF
 
 FG=1, (4,5,6)\in BG : #FTPT, #FFPT, # FTPF, #FFPF
 
+# FG = 0,1,2 and BG = 3,4,5,6,7,8,9
+![](./images/train_012.png)
+![](./images/test_012.png)
+![](./images/train_all_012.png)
+
+# FG = 1,2,3 and BG = 0,4,5,6,7,8,9
+![](./images/train_123.png)
+![](./images/test_123.png)
+![](./images/train_all_123.png)
+![](./images/test_all_123.png)
+
+# FG = 2,3,4 and BG = 0,1,5,6,7,8,9
+![](./images/train_234.png)
+![](./images/test_234.png)
+![](./images/train_all_234.png)
+![](./images/test_all_234.png)
+
+# FG = 3,4,5 and BG = 0,1,2,6,7,8,9
+![](./images/train_345.png)
+![](./images/test_345.png)
+![](./images/train_all_345.png)
+![](./images/test_all_345.png)
+
+
+
+
