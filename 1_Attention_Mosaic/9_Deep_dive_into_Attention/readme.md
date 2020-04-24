@@ -87,7 +87,7 @@ FG=1, (4,5,6)\in BG : #FTPT, #FFPT, # FTPF, #FFPF
 ![](./images/test_012.PNG)
 
 >> Train Accuracy for each Foreground class:
-![](./images/train_all_012.PNG)
+![](./images/test_all_012.PNG)
 
 # FG = 1,2,3 and BG = 0,4,5,6,7,8,9
 >> Train Accuracy :
