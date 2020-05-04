@@ -16,10 +16,43 @@
      - At epoch zero
     
     ![](./plots/At_epoch_zero_not_Sep.PNG)
+    
+    
+    
+     - Focus output map
+    
+    ![](./plots/f1_nl_1.png)
+    
+    
+    ![](./plots/f1_nl_2.png)
      
-     - At epoch hundred
+    ![](./plots/f1_nl_3.png)
+    
+    
+     - Classification output map    
+     
+     ![](./plots/c1_nl_3.png)   
+    
+    
+    
+    - At epoch hundred
     
     ![](./plots/At__epoch_100_non_sep.PNG)
+    
+    
+    - Focus output map
+    
+    ![](./plots/f10_nl_1.png)
+    
+    
+    ![](./plots/f10_nl_2.png)
+     
+    ![](./plots/f10_nl_3.png)
+    
+    
+     - Classification output map    
+     
+     ![](./plots/c10_nl_3.png)  
     
     -  Accuracy 58.7%
      
@@ -29,9 +62,39 @@
     
     ![](./plots/gaw_at_epoch_zero_non_sep.PNG)
     
+    
+     - Focus output map
+    
+    ![](./plots/gf1_nl_1.png)
+    
+    
+    ![](./plots/gf1_nl_2.png)
+     
+    ![](./plots/gf1_nl_3.png)
+    
+    
+     - Classification output map    
+     
+     ![](./plots/gc1_nl_3.png)  
+    
      - At epoch hundred 
     
     ![](./plots/gaw_at_epoch_hun_non_sep.PNG)
+    
+    
+      - Focus output map
+    
+    ![](./plots/gf10_nl_1.png)
+    
+    
+    ![](./plots/gf10_nl_2.png)
+     
+    ![](./plots/gf10_nl_3.png)
+    
+    
+     - Classification output map    
+     
+     ![](./plots/gc10_nl_3.png) 
     
     - Accuracy 99.1%
     
