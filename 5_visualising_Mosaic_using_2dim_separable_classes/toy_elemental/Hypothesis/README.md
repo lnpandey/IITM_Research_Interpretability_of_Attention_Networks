@@ -133,16 +133,68 @@
    - At epoch zero
       
       ![](./plots/D_2_at_e0.png)
+      
+       
+    
+    
+   - Focus output map
+    
+    ![](./plots/f1_nl_1.png)
+    
+    
+    ![](./plots/f1_nl_2.png)
+
+    ![](./plots/f1_nl_3.png)
+    
+     - Classification output map    
+     
+     ![](./plots/c1_nl_3.png)   
+    
      
    
    - At epoch fifty
       
       ![](./plots/D2_at_e50.png)
+      
+          
+       
+    
+    
+   - Focus output map
+    
+    ![](./plots/f1_nl5_1.png)
+    
+    
+    ![](./plots/f1_nl5_2.png)
+
+    ![](./plots/f1_nl5_3.png)
+    
+   - Classification output map    
+     
+     ![](./plots/c1_nl5_3.png)   
    
    
    - At epoch hundred
     
       ![](./plots/D_2_at_e100.png) 
+     
+           
+       
+    
+    
+   - Focus output map
+    
+    ![](./plots/f1_nl10_1.png)
+    
+    
+    ![](./plots/f1_nl10_2.png)
+
+    ![](./plots/f1_nl10_3.png)
+    
+   - Classification output map    
+     
+     ![](./plots/c1_nl10_3.png)  
+     
      
    - Accuracy 100%
    
