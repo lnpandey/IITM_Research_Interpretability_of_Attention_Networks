@@ -82,20 +82,7 @@
    - At epoch zero
       
       ![](./plots/D_2_at_e0.png)
-      
-   - Focus output map
-    
-   ![](./plots/f2_l_1.png)
-    
-    
-   ![](./plots/f2_l_2.png)
-
-   ![](./plots/f2_l_3.png)
-    
-   - Classification output map    
-     
-   ![](./plots/c2_l_3.png)    
-      
+            
       
  
    - At epoch fifty
@@ -103,43 +90,13 @@
    ![](./plots/D2_at_e50.png)
       
           
-       
-    
-    
-   - Focus output map
-    
-   ![](./plots/f2_l5_1.png)
-    
-    
-   ![](./plots/f2_l5_2.png)
-
-   
-   ![](./plots/f2_l5_3.png)
-    
-   - Classification output map    
-     
-   ![](./plots/c2_l5_3.png)   
-   
-   
+      
    - At epoch hundred
     
    ![](./plots/D_2_at_e100.png) 
      
 
     
-   - Focus output map
-    
-   ![](./plots/f2_l10_1.png)
-    
-    
-   ![](./plots/f2_l10_2.png)
-
-   
-   ![](./plots/f2_l10_3.png)
-    
-   - Classification output map    
-     
-   ![](./plots/c2_l10_3.png)  
      
      
    - Accuracy 100%
@@ -166,50 +123,7 @@
       
       
       
-   - Focus output map
-    
-   ![](./plots/f2_nl_1.png)
-    
-    
-   ![](./plots/f2_nl_2.png)
-
-
-   ![](./plots/f2_nl_3.png)
-    
-    
-    
-    
-   - Classification output map    
-     
-   ![](./plots/c2_nl_3.png)  
       
-      
- 
-     
-     
-     
-   - At epoch fifty
-  
-  
-  
-  - Focus output map
-    
-    ![](./plots/f2_nl5_1.png)
-    
-    
-    ![](./plots/f2_nl5_2.png)
-
-    ![](./plots/f2_nl5_3.png)
-    
-    
-    
-    
-     - Classification output map    
-     
-     ![](./plots/c2_nl5_3.png)   
-     
-     
-     
 
    - At epoch hundred
     
@@ -222,25 +136,6 @@
       
       
       
-   - Focus output map
-    
-   
-   ![](./plots/f2_nl10_1.png)
-   
-   
-    
-   ![](./plots/f2_nl10_2.png)
-
-   
-   
-   ![](./plots/f2_nl10_3.png)
-    
-    
-    
-    
-   - Classification output map    
-     
-     ![](./plots/c2_nl10_3.png)   
      
    - Accuracy 100% , 2nd Case Accuracy is 100% at 5th epoch only
     
