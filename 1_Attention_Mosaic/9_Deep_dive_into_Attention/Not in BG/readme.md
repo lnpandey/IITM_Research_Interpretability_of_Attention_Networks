@@ -11,10 +11,10 @@
 >> Test Accuracy for each Foreground class:
 ![](./images/test_fg_012.PNG)
 
->> Train Accuracy Analysis for BG of Set Size 1:
+>> Train Accuracy Analysis for NOT in BG of Set Size 1:
 ![](./images/train_size1_012.PNG)
 
->> Test Accuracy Analysis for BG of Set Size 1:
+>> Test Accuracy Analysis for NOT in BG of Set Size 1:
 ![](./images/test_size1_012.PNG)
 
 
@@ -31,10 +31,10 @@
 >> Test Accuracy for each Foreground class:
 ![](./images/test_fg_123.PNG)
 
->> Train Accuracy Analysis for BG of Set Size 1:
+>> Train Accuracy Analysis for NOT in BG of Set Size 1:
 ![](./images/train_size1_123.PNG)
 
->> Test Accuracy Analysis for BG of Set Size 1:
+>> Test Accuracy Analysis for NOT in BG of Set Size 1:
 ![](./images/test_size1_123.PNG)
 
 
@@ -51,10 +51,10 @@
 >> Test Accuracy for each Foreground class:
 ![](./images/test_fg_234.PNG)
 
->> Train Accuracy Analysis for BG of Set Size 1:
+>> Train Accuracy Analysis for NOT in BG of Set Size 1:
 ![](./images/train_size1_234.PNG)
 
->> Test Accuracy Analysis for BG of Set Size 1:
+>> Test Accuracy Analysis for NOT in BG of Set Size 1:
 ![](./images/test_size1_234.PNG)
 
 
@@ -71,10 +71,10 @@
 >> Test Accuracy for each Foreground class:
 ![](./images/test_fg_345.PNG)
 
->> Train Accuracy Analysis for BG of Set Size 1:
+>> Train Accuracy Analysis for NOT in BG of Set Size 1:
 ![](./images/train_size1_345.PNG)
 
->> Test Accuracy Analysis for BG of Set Size 1:
+>> Test Accuracy Analysis for NOT in BG of Set Size 1:
 ![](./images/test_size1_345.PNG)
 
 
