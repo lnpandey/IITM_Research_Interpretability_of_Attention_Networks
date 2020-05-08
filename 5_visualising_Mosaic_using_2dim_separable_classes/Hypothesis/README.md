@@ -174,10 +174,52 @@
       ![](./plots/ls_e0.png)
         
       
+   - Focus Map 
+
+      ![](./plots/s_plot_1.png)
       
-      ![](./plots/ls2_e0.png)
       
       
+      ![](./plots/s_fm_1.png)
+
+
+   
+   - Classification Map
+       
+
+      ![](./plots/s_cm_1.png)
+
+      
+
+      ![](./plots/s_cm2_1.png)
+  
+      
+      
+
+
+
+   - At epoch fifty
+
+
+   - Focus Map 
+
+      ![](./plots/s_plot_50.png)
+      
+      
+      
+      ![](./plots/s_fm50_1.png)
+
+
+   
+   - Classification Map
+       
+
+      ![](./plots/s_cm100_1.png)
+
+      
+
+      ![](./plots/s_cm1002_1.png)
+ 
       
       
 
@@ -185,9 +227,28 @@
     
       ![](./plots/ls_e100.png) 
       
+     
+
+
+   - Focus Map 
+
+      ![](./plots/s_plot_100.png)
       
       
-      ![](./plots/ls2_e100.png)
+      
+      ![](./plots/s_fm100_1.png)
+
+
+   
+   - Classification Map
+       
+
+      ![](./plots/s_cm100_1.png)
+
+      
+
+      ![](./plots/s_cm1002_1.png)
+
       
       
       
