@@ -254,7 +254,7 @@
       
       
      
-   - Accuracy 100% , 2nd Case Accuracy is 100% at 5th epoch only
+   - Accuracy 100% 
     
 # Observations 
   - When mosaic data is not linearly separable 
