@@ -129,8 +129,8 @@ class Focus_Module(nn.Module):
     self.module1 = Module1(self.input,self.output)
 
   def forward(self, z):
-    print(z.shape)
-    print()
+    #print(z.shape)
+    #print()
     batch = z.shape[0]
     x = torch.zeros([batch,9],dtype=torch.float64)
     y = torch.zeros([batch,self.input, 32,32], dtype=torch.float64)
