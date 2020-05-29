@@ -70,7 +70,10 @@
   
 ### D_2 K_3 NF_2 NB_1
   # When Data is not linearly Separable
-   
+| Data_distribution  | Linear SVM score |
+| ------------------ | ------------- |
+|<img src= ./plots/data_distribution_ns.png width="48">  | 65.9  |
+| Content Cell  | Content Cell  |
    
    <!---  - Data Distribution
      
