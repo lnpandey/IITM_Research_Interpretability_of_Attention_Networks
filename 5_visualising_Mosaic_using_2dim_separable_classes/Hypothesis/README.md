@@ -70,7 +70,9 @@
   
 ### D_2 K_3 NF_2 NB_1
   # When Data is not linearly Separable
-   - Data Distribution
+   
+   
+   <!---  - Data Distribution
      
       ![](./plots/d2_data_distr.png)
    
@@ -122,7 +124,7 @@
     
      
      
-   - Accuracy 100%
+   - Accuracy 100%  -->
    
    
    
