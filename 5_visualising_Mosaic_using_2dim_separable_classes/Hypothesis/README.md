@@ -126,7 +126,7 @@
    
    
    
-   [//] : <> # When Data is linearly Separable
+   <!--- # When Data is linearly Separable
    - Data Distribution
      
       ![](./plots/ls_distr.png)
@@ -183,7 +183,7 @@
       
       
      
-   - Accuracy 100% 
+   - Accuracy 100% -->
     
 # Observations 
   - When mosaic data is not linearly separable 
