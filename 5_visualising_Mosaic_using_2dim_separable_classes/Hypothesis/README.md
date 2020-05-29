@@ -72,9 +72,9 @@
   # When Data is not linearly Separable
 | Data_distribution  | Linear SVM score | Accuracy | Analysis  |
 | ------------------ | ---------------- | -------- | --------  |
-|<img src= ./plots/data_distribution_ns1.png width="200">  | 65.9  | 94.5 | <img src= ./plots/trends1.png width="300">  |
-|<img src= ./plots/data_distribution_ns2.png width="200">  |  82.6 | 97.1 | <img src= ./plots/trends2.png width="300">  |
-|<img src= ./plots/data_distribution_ns3.png width="200">  | 75.2  | 96.5 | <img src= ./plots/trends3.png width="300">  |
+|<img src= ./plots/data_distribution_ns1.png width="200">  | 64.1  | 94.6 | <img src= ./plots/trends1.png width="300">  |
+|<img src= ./plots/data_distribution_ns2.png width="200">  |  80.6 | 95.4 | <img src= ./plots/trends2.png width="300">  |
+|<img src= ./plots/data_distribution_ns3.png width="200">  | 51.8  | 97.9 | <img src= ./plots/trends3.png width="300">  |
 |<img src= ./plots/data_distribution_ns4.png width="200">  |  74.8 | 95.2 | <img src= ./plots/trends4.png width="300">  |
 |<img src= ./plots/data_distribution_ns5.png width="200">  | 70.9  | 98.2 | <img src= ./plots/trends5.png width="300">  |
 |<img src= ./plots/data_distribution_ns6.png width="200">  | 83.5  | 94.2 | <img src= ./plots/trends6.png width="300">  |
