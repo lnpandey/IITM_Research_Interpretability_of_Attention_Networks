@@ -72,7 +72,7 @@
   # When Data is not linearly Separable
 | Data_distribution  | Linear SVM score |
 | ------------------ | ------------- |
-|<img src= ./plots/data_distribution_ns.png width="48">  | 65.9  |
+|<img src= ./plots/data_distribution_ns.png width="100">  | 65.9  |
 | Content Cell  | Content Cell  |
    
    <!---  - Data Distribution
