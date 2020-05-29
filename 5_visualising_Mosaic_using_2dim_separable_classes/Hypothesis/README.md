@@ -80,9 +80,11 @@
 |<img src= ./plots/data_distribution_ns6.png width="100">  |   |  | <img src= ./plots/trends6.png width="100">  |
 
  - After epoch zero
-    ![](./plots/plotns_1.png)
-    
-    
+   
+     - Averaged Data Plot
+     
+         ![](./plots/plotns_1.png) 
+       
      - Focus map
          
          ![](./plots/ns_fm_1.png)
@@ -95,7 +97,11 @@
  
  
  - After epoch hundred
-    ![](./plots/plot_2.png)
+ 
+    - Averaged Data plot
+        
+        
+        ![](./plots/plot_2.png)
     
     
      - Focus map
