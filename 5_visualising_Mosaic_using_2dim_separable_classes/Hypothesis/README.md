@@ -126,7 +126,7 @@
    
    
    
-   # When Data is linearly Separable
+   [//] : <> # When Data is linearly Separable
    - Data Distribution
      
       ![](./plots/ls_distr.png)
