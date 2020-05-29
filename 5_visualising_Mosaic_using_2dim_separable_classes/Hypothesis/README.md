@@ -70,10 +70,44 @@
   
 ### D_2 K_3 NF_2 NB_1
   # When Data is not linearly Separable
-| Data_distribution  | Linear SVM score |
-| ------------------ | ------------- |
-|<img src= ./plots/data_distribution_ns.png width="100">  | 65.9  |
-| Content Cell  | Content Cell  |
+| Data_distribution  | Linear SVM score | Accuracy | Analysis  |
+| ------------------ | ---------------- | -------- | --------  |
+|<img src= ./plots/data_distribution_ns1.png width="100">  | 65.9  | 94.5 | <img src= ./plots/trends1.png width="100">  |
+|<img src= ./plots/data_distribution_ns2.png width="100">  |   |  | <img src= ./plots/trends2.png width="100">  |
+|<img src= ./plots/data_distribution_ns3.png width="100">  |   |  | <img src= ./plots/trends3.png width="100">  |
+|<img src= ./plots/data_distribution_ns4.png width="100">  |   |  | <img src= ./plots/trends4.png width="100">  |
+|<img src= ./plots/data_distribution_ns5.png width="100">  |   |  | <img src= ./plots/trends5.png width="100">  |
+|<img src= ./plots/data_distribution_ns6.png width="100">  |   |  | <img src= ./plots/trends6.png width="100">  |
+
+ - After epoch zero
+    ![](./plots/plotns_1.png)
+    
+    
+     - Focus map
+         
+         ![](./plots/ns_fm_1.png)
+   
+     
+     
+     - Classification map
+        
+        ![](./plots/ns_cm_1.png)
+ 
+ 
+ - After epoch hundred
+    ![](./plots/plot_2.png)
+    
+    
+     - Focus map
+         
+         ![](./plots/ns_fm_2.png)
+   
+     
+     
+     - Classification map
+        
+        ![](./plots/ns_cm_2.png)
+
    
    <!---  - Data Distribution
      
