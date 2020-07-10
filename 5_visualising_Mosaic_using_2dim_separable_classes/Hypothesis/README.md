@@ -84,7 +84,7 @@
 
 |   Focus Map epoch 1 | Classification  Map epoch 1 |  Focus Map epoch last | Classification  Map epoch last | 
 |  ------------------ | --------------------------- |  ----------- | --------------------------- | 
-|<img src= ./plots/distribution1.png width="200">  | <img src= ./plots/distribution1.png width="200">  | <img src= ./plots/distribution1.png width="200">  | <img src= ./plots/distribution1.png width="200">  |
+|<img src= ./plots/f_map11.png width="200">  | <img src= ./plots/c_map11.png width="200">  | <img src= ./plots/f_map1l.png width="200">  | <img src= ./plots/c_map1l.png width="200">  |
    
    <!--- # When Data is linearly Separable
    - Data Distribution
