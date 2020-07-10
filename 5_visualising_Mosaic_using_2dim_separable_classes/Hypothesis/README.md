@@ -73,7 +73,7 @@
 | Data_distribution  | Linear SVM score | Accuracy | Analysis  |
 | ------------------ | ---------------- | -------- | --------  |
 |<img src= ./plots/distribution1.png width="150">  | 54.16  | 89.1 | <img src= ./plots/trends1.png width="150">  |
-|<img src= ./plots/data_distribution_ns2.png width="150">  |  80.6 | 95.4 | <img src= ./plots/trends2.png width="150">  |
+|<img src= ./plots/distribution2.png width="150">  |  80.6 | 95.4 | <img src= ./plots/trends2.png width="150">  |
 |<img src= ./plots/data_distribution_ns3.png width="150">  | 51.8  | 97.9 | <img src= ./plots/trends3.png width="150">  |
 |<img src= ./plots/data_distribution_ns4.png width="150">  |  74.8 | 95.2 | <img src= ./plots/trends4.png width="150">  |
 |<img src= ./plots/data_distribution_ns5.png width="150">  | 70.9  | 98.2 | <img src= ./plots/trends5.png width="150">  |
@@ -85,7 +85,7 @@
 |   Focus Map epoch 1 | Classification  Map epoch 1 |  Focus Map epoch last | Classification  Map epoch last | 
 |  ------------------ | --------------------------- |  ----------- | --------------------------- | 
 |<img src= ./plots/f_map11.png width="150">  | <img src= ./plots/c_map11.png width="150">  | <img src= ./plots/f_map1l.png width="150">  | <img src= ./plots/c_map1l.png width="150">  |
-   
+|<img src= ./plots/f_map21.png width="150">  | <img src= ./plots/c_map21.png width="150">  | <img src= ./plots/f_map2l.png width="150">  | <img src= ./plots/c_map2l.png width="150">  |
    <!--- # When Data is linearly Separable
    - Data Distribution
      
