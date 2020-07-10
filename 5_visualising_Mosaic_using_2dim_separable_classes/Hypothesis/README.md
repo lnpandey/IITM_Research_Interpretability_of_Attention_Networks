@@ -80,7 +80,11 @@
 |<img src= ./plots/data_distribution_ns6.png width="200">  | 83.5  | 94.2 | <img src= ./plots/trends6.png width="300">  |
 
      
-        
+ 
+
+|   Focus Map epoch 1 | Classification  Map epoch 1 |  Focus Map epoch last | Classification  Map epoch last | 
+|  ------------------ | --------------------------- |  ----------- | --------------------------- | 
+|<img src= ./plots/distribution1.png width="200">  | <img src= ./plots/distribution1.png width="200">  | <img src= ./plots/distribution1.png width="200">  | <img src= ./plots/distribution1.png width="200">  |
    
    <!--- # When Data is linearly Separable
    - Data Distribution
