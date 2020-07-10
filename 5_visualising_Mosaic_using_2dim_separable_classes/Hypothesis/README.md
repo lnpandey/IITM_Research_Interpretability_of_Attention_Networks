@@ -72,104 +72,15 @@
   # When Data is not linearly Separable
 | Data_distribution  | Linear SVM score | Accuracy | Analysis  |
 | ------------------ | ---------------- | -------- | --------  |
-|<img src= ./plots/data_distribution_ns1.png width="200">  | 64.1  | 94.6 | <img src= ./plots/trends1.png width="300">  |
+|<img src= ./plots/distribution1.png width="200">  | 54.16  | 89.1 | <img src= ./plots/trends1.png width="300">  |
 |<img src= ./plots/data_distribution_ns2.png width="200">  |  80.6 | 95.4 | <img src= ./plots/trends2.png width="300">  |
 |<img src= ./plots/data_distribution_ns3.png width="200">  | 51.8  | 97.9 | <img src= ./plots/trends3.png width="300">  |
 |<img src= ./plots/data_distribution_ns4.png width="200">  |  74.8 | 95.2 | <img src= ./plots/trends4.png width="300">  |
 |<img src= ./plots/data_distribution_ns5.png width="200">  | 70.9  | 98.2 | <img src= ./plots/trends5.png width="300">  |
 |<img src= ./plots/data_distribution_ns6.png width="200">  | 83.5  | 94.2 | <img src= ./plots/trends6.png width="300">  |
 
- - After epoch zero
-   
-     - Averaged Data Plot
      
-         ![](./plots/plotns_1.png) 
-       
-     - Focus map
-         
-         ![](./plots/ns_fm_1.png)
-   
-     
-     
-     - Classification map
         
-        ![](./plots/ns_cm_1.png)
- 
- 
- - After epoch 250
- 
-    - Averaged Data plot
-        
-        
-        ![](./plots/plot_2.png)
-    
-    
-     - Focus map
-         
-         ![](./plots/ns_fm_2.png)
-   
-     
-     
-     - Classification map
-        
-        ![](./plots/ns_cm_2.png)
-
-   
-   <!---  - Data Distribution
-     
-      ![](./plots/d2_data_distr.png)
-   
-   - SVM with Linear Kernel with C value 1000
-      - Score 0.984  (Suggesting Mosaic data is not linearly separable)
-    
-      
-    
-   - At epoch zero
-     
-   
-   - Focus Map 
-
-      
-      ![](./plots/plot_1.png)
-
-      ![](./plots/ns_fm_1.png)
-
-       
-   
-   - Classification Map
-       
-
-      ![](./plots/ns_cm1_1.png)
-            
-      
-             
-
-      
-          
-      
-   - At epoch hundred
-   
-
-   - Focus Map 
-
-      ![](./plots/plot_100.png)
-      
-      
-      
-      ![](./plots/ns_fm100_1.png)
-
-
-   
-   - Classification Map
-       
-
-      ![](./plots/ns_cm100_1.png)
-    
-     
-     
-   - Accuracy 100%  -->
-   
-   
    
    <!--- # When Data is linearly Separable
    - Data Distribution
