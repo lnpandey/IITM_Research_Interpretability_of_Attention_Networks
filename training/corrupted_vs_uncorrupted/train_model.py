@@ -86,8 +86,7 @@ def print_train(net,trainloader,criterion,mask):
   print("---"*20)
 
 
-def print_test(testset, corrupt_per,criterion,mask1): 
-  testset = corrupt_data(testset,corrupt_per)
+def print_test(net,testset, corrupt_per,criterion,mask1): 
   net.eval()
   test_loss = 0
   correct = 0
@@ -136,4 +135,4 @@ def training(net,trainloader,testloader,epochs,corrupt_per,train_mask,test_mask)
     test(net,testloader,criterion,epoch)
   if corrupt_per != 0:
     print_train(net,trainloader,criterion,train_mask)
-    print_test( net,testloader,criterion,test_mask)
+    print_test( net,testloader,corrupt_per,criterion,test_mask)
