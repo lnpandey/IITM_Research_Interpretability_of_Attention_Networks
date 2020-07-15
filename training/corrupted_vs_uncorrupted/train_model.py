@@ -86,7 +86,7 @@ def print_train(net,trainloader,criterion,mask):
   print("---"*20)
 
 
-def print_test(net,testset, corrupt_per,criterion,mask1): 
+def print_test(net,testlaoder, corrupt_per,criterion,mask1): 
   net.eval()
   test_loss = 0
   correct = 0
