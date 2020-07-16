@@ -92,8 +92,8 @@ def plot_analysis(data,title,legend =True):
   ax.plot(data[columns[0]],data[columns[4]], label =columns[4])
   if legend == True:
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-  ax.xlabel("epochs")
-  ax.ylabel("data")
+  ax.set_xlabel("epochs")
+  ax.set_ylabel("data")
   fig.savefig(title+".png")
   fig.savefig(title+".pdf")
     
