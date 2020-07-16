@@ -1,3 +1,4 @@
+import numpy as np
 def boundary_mosaic_points(boundary_points,y_boundary):
   x_b = []
   y_b = []
@@ -29,4 +30,4 @@ def boundary_mosaic_points(boundary_points,y_boundary):
           
   x_b = np.array(x_b) 
   y_b = np.array(y_b)
-  return x_b,y_b
+  return x_b,y_b,f_index
