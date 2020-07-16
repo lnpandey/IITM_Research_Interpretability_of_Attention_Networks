@@ -15,10 +15,10 @@ class Module1(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Module1,self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
     
-    self.conv1 = nn.Conv2d(self.input, 6, 5)
+    self.conv1 = nn.Conv2d(self.inputs, 6, 5)
     self.pool = nn.MaxPool2d(2, 2)
     self.conv2 = nn.Conv2d(6, 12, 5)
     self.conv3 = nn.Conv2d(12,20,5)
@@ -47,10 +47,10 @@ class Module2(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Module2,self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
     
-    self.conv1 = nn.Conv2d(self.input, 6, 5)
+    self.conv1 = nn.Conv2d(self.inputs, 6, 5)
     self.pool = nn.MaxPool2d(2, 2)
     self.conv2 = nn.Conv2d(6, 12, 5)
     self.conv3 = nn.Conv2d(12,20,5)
@@ -81,10 +81,10 @@ class Module3(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Module3,self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
     
-    self.conv1 = nn.Conv2d(self.input, 6, 5)
+    self.conv1 = nn.Conv2d(self.inputs, 6, 5)
     self.pool = nn.MaxPool2d(2, 2)
     self.conv2 = nn.Conv2d(6, 12, 5)
     self.conv3 = nn.Conv2d(12,20,5)
@@ -117,10 +117,10 @@ class Module4(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Module4,self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
     
-    self.conv1 = nn.Conv2d(self.input, 6, 5)
+    self.conv1 = nn.Conv2d(self.inputs, 6, 5)
     self.pool = nn.MaxPool2d(2, 2)
     self.conv2 = nn.Conv2d(6, 12, 5)
     self.conv3 = nn.Conv2d(12,20,5)
@@ -152,9 +152,9 @@ class Module5(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Module5,self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
-    self.conv1 = nn.Conv2d(self.input, 6, 5)
+    self.conv1 = nn.Conv2d(self.inputs, 6, 5)
     self.pool = nn.MaxPool2d(2, 2)
     self.conv2 = nn.Conv2d(6, 16, 5)
     self.fc1 = nn.Linear(16 * 5 * 5, 120)
@@ -182,9 +182,9 @@ class Focus_Module(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Focus_Module, self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
-    self.module1 = Module1(self.input,self.output)
+    self.module1 = Module1(self.inputs,self.output)
 
   def forward(self, z):
     #print(z.shape)
@@ -216,9 +216,9 @@ class Focus_Module2(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Focus_Module2, self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
-    self.module = Module2(self.input,self.output)
+    self.module = Module2(self.inputs,self.output)
 
   def forward(self, z):
     #print("flag1",z.shape)
@@ -259,9 +259,9 @@ class Focus_Module3(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Focus_Module3, self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
-    self.module = Module3(self.input,self.output)
+    self.module = Module3(self.inputs,self.output)
 
   def forward(self, z):
     #print("flag1",z.shape)
@@ -300,9 +300,9 @@ class Focus_Module4(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Focus_Module4, self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
-    self.module = Module4(self.input,self.output)
+    self.module = Module4(self.inputs,self.output)
 
   def forward(self, z):
     #print("flag1",z.shape)
@@ -338,9 +338,9 @@ class Focus_Module5(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Focus_Module5, self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
-    self.module = Module5(self.input,self.output)
+    self.module = Module5(self.inputs,self.output)
 
   def forward(self, z):
     #print("flag1",z.shape)
@@ -390,9 +390,9 @@ class Classification_Module(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Classification_Module,self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
-    self.conv1 = nn.Conv2d(self.input, 6, 5)
+    self.conv1 = nn.Conv2d(self.inputs, 6, 5)
     self.pool = nn.MaxPool2d(2, 2)
     self.conv2 = nn.Conv2d(6, 8, 5)
     self.fc1 = nn.Linear(16 * 5 * 5, 120)
@@ -415,7 +415,7 @@ class Classification_Module2(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Classification_Module2,self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
     self.fc1 = nn.Linear(20 *6  *6 , 120)
     self.fc2 = nn.Linear(120, 84)
@@ -436,9 +436,9 @@ class Classification_Module3(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Classification_Module3,self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
-    self.conv1 = nn.Conv2d(self.input, 20, 5)
+    self.conv1 = nn.Conv2d(self.inputs, 20, 5)
     self.fc1 = nn.Linear(20 *6  *6 , 120)
     self.fc2 = nn.Linear(120, 84)
     self.fc3 = nn.Linear(84, 10)
@@ -459,10 +459,10 @@ class Classification_Module4(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Classification_Module4,self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
     self.pool = nn.MaxPool2d(2, 2)
-    self.conv1 = nn.Conv2d(self.input, 12, 5)
+    self.conv1 = nn.Conv2d(self.inputs, 12, 5)
     self.conv2 = nn.Conv2d(12,20,5)
     self.fc1 = nn.Linear(20 *8  *8 , 120)
     self.fc2 = nn.Linear(120, 84)
@@ -486,16 +486,16 @@ class Classification_Module5(nn.Module):
   '''
   def __init__(self,inp,out):
     super(Classification_Module5,self).__init__()
-    self.input = inp
+    self.inputs = inp
     self.output = out
 
-    self.conv1 = nn.Conv2d(self.input, 6, 5)
+    self.conv1 = nn.Conv2d(self.inputs, 6, 5)
     self.pool = nn.MaxPool2d(2, 2)
     self.conv2 = nn.Conv2d(6, 16, 5)
     self.fc1 = nn.Linear(16 * 5 * 5, 120)
     self.fc2 = nn.Linear(120, 84)
     self.fc3 = nn.Linear(84, 10)
-    self.fc4 = nn.Linear(10,3)
+    self.fc4 = nn.Linear(10,self.output)
   def forward(self,x):
     x = self.pool(F.relu(self.conv1(x)))
     x= self.pool(F.relu(self.conv2(x)))
@@ -509,11 +509,11 @@ class Classification_Module5(nn.Module):
 
 
 class Focus_linear(nn.Module):
-    def __init__(self,input,output):
+    def __init__(self,inputs,output):
         super(Focus_linear,self).__init__()
-        self.input = input
+        self.inputs = inputs
         self.output = output
-        self.linear1 = nn.Linear(self.input,self.output)
+        self.linear1 = nn.Linear(self.inputs,self.output)
     def forward(self,z):
         batch = z.shape[0]
         x = torch.zeros([batch,3],dtype=torch.float64)
@@ -532,11 +532,11 @@ class Focus_linear(nn.Module):
         return x
 
 class Classification_linear(nn.Module):
-    def __init__(self,input,output):
+    def __init__(self,inputs,output):
         super(Classification_linear,self).__init__()
-        self.input = input
+        self.inputs= inputs
         self.output = output
-        self.linear1 = nn.Linear(self.input,self.output)
+        self.linear1 = nn.Linear(self.inputs,self.output)
 
     def forward(self,x):
         x = self.linear1(x)
@@ -544,10 +544,10 @@ class Classification_linear(nn.Module):
 
 class Focus_deep(nn.Module):
     def __init__(self,inputs,output):
-        super(Focus_linear,self).__init__()
+        super(Focus_deep,self).__init__()
         self.inputs = inputs
         self.output = output
-        self.linear1 = nn.Linear(self.input,4)  #,self.output)
+        self.linear1 = nn.Linear(self.inputs,4)  #,self.output)
         self.linear2 = nn.Linear(4,6) 
         self.linear3 = nn.Linear(6,self.output)
     def forward(self,z):
@@ -571,10 +571,10 @@ class Focus_deep(nn.Module):
 
 class Classification_deep(nn.Module):
     def __init__(self,inputs,output):
-        super(Classification_linear,self).__init__()
+        super(Classification_deep,self).__init__()
         self.inputs = inputs
         self.output = output
-        self.linear1 = nn.Linear(self.input,4)
+        self.linear1 = nn.Linear(self.inputs,4)
         self.linear2 = nn.Linear(4,6)
         self.linear3 = nn.Linear(6,self.output)
 
