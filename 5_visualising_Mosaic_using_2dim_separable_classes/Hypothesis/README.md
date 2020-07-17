@@ -76,7 +76,8 @@
 |<img src= ./plots/distribution2.png width="150">  |  61.7 | 68.5 | 81 | <img src= ./plots/trends2.png width="150">  |
 |<img src= ./plots/distribution3.png width="150">  | 66.40 | 67.1 |100.0 | <img src= ./plots/trends3.png width="150">  |
 |<img src= ./plots/distribution4.png width="150">  |  74.20 | 80.99 |94.9| <img src= ./plots/trends4.png width="150">  |
-|<img src= ./plots/distribution5.png width="150">  | 73.41  | 91.8 | <img src= ./plots/trends5.png width="150">  |
+|<img src= ./plots/distribution5.png width="150">  | 58.95  | 80.8 |93.4 | <img src= ./plots/trends5.png width="150">  |
+|<img src= ./plots/distribution5.png width="150">  |   |  |  | <img src= ./plots/trends6.png width="150">  |
 
 
      
@@ -89,6 +90,8 @@
 |<img src= ./plots/f_map31.png width="150">  | <img src= ./plots/c_map31.png width="150">  | <img src= ./plots/f_map3l.png width="150">  | <img src= ./plots/c_map3l.png width="150">  |
 |<img src= ./plots/f_map41.png width="150">  | <img src= ./plots/c_map41.png width="150">  | <img src= ./plots/f_map4l.png width="150">  | <img src= ./plots/c_map4l.png width="150">  |
 |<img src= ./plots/f_map51.png width="150">  | <img src= ./plots/c_map51.png width="150">  | <img src= ./plots/f_map5l.png width="150">  | <img src= ./plots/c_map5l.png width="150">  |
+|<img src= ./plots/f_map61.png width="150">  | <img src= ./plots/c_map61.png width="150">  | <img src= ./plots/f_map6l.png width="150">  | <img src= ./plots/c_map6l.png width="150">  |
+
 
 
 
