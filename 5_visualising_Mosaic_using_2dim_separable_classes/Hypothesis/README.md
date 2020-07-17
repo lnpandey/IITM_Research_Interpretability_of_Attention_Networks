@@ -70,9 +70,9 @@
   
 ### D_2 K_3 NF_2 NB_1
   # When Data is not linearly Separable
-| Data_distribution  | Linear SVM score | Accuracy | Analysis  |
-| ------------------ | ---------------- | -------- | --------  |
-|<img src= ./plots/distribution1.png width="150">  | 54.16  | 89.1 | <img src= ./plots/trends1.png width="150">  |
+| Data_distribution  | Linear SVM score |Deep NN Score| Accuracy | Analysis  |
+| ------------------ | ---------------- | ----------- |-------- | --------  |
+|<img src= ./plots/distribution1.png width="150">  | 61.7 | 68.2 | 93.1  | <img src= ./plots/trends1.png width="150">  |
 |<img src= ./plots/distribution2.png width="150">  |  54.16 | 66.4 | <img src= ./plots/trends2.png width="150">  |
 |<img src= ./plots/distribution3.png width="150">  | 72.2  | 96.0 | <img src= ./plots/trends3.png width="150">  |
 |<img src= ./plots/distribution4.png width="150">  |  70.15 |  87.5 | <img src= ./plots/trends4.png width="150">  |
