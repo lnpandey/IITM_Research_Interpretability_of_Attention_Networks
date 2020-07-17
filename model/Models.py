@@ -564,8 +564,8 @@ class Focus_deep(nn.Module):
             y = y+torch.mul(x1[:,None],z[:,2*i:2*i+2])
         return y , x 
     def helper(self,x):
-        x = self.linear1(x)
-        x = self.linear2(x)
+        x = F.relu(self.linear1(x))
+        x = F.relu(self.linear2(x))
         x = self.linear3(x)
         return x
 
@@ -579,7 +579,7 @@ class Classification_deep(nn.Module):
         self.linear3 = nn.Linear(6,self.output)
 
     def forward(self,x):
-        x = self.linear1(x)
-        x = self.linear2(x)
+        x = F.relu(self.linear1(x))
+        x = F.relu(self.linear2(x))
         x = self.linear3(x)
         return x    
