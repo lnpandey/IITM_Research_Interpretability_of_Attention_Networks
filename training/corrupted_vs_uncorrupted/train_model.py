@@ -1,4 +1,4 @@
-from corrupt_data import corrupt_data
+#from corrupt_data import corrupt_data
 import torch.nn as nn
 import torch.optim as optim
 import torch 
