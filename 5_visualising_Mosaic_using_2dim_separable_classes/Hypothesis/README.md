@@ -76,6 +76,7 @@
 |Data Distribution   | Linear SVM Accuracy on Mosaic Data |  Deep Network Accuracy on Mosaic Data | Linear Attention network Accuracy | Deep Attention Newtork Accuracy | Analysis Linear Attention Network | Analysis Deep Attention Network |
 | ------------------ | ----------------------------------- | ------------------------------------ | ------------------- | ------------------------------------------------- | ----------------------- | ------------------------------ |
 | <img src= ./plots/distribution1.png width="150">  | 66.4 |  88 .4 | 95  | 100 |<img src= ./plots/trends1.png width="150">   |  <img src= ./plots/trends1.png width="150">  |
+| <img src= ./plots/distribution1.png width="150">  | 66.4 |  88 .4 | 95  | 100 |<img src= ./plots/trends1.png width="150">   |  <img src= ./plots/trends1.png width="150">  |
 
 
 
