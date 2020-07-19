@@ -2,7 +2,7 @@ import torch
 from matplotlib import pyplot as plt
 import numpy as np
 
-def plot_scatter(x,y,title,legend = True):
+def plot_scatter(x,y,title,legend = True,save =False):
   fig = plt.figure(figsize = (6,6))
   ax = fig.gca()
   n = len(np.unique(y))
@@ -10,13 +10,14 @@ def plot_scatter(x,y,title,legend = True):
     ax.scatter(x[y==i,0],x[y==i,1],label="class_"+str(i))
   if legend == True:
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-  fig.savefig(title + ".png")
-  fig.savefig(title + ".pdf")
+  if save == True:
+    fig.savefig(title + ".png")
+    fig.savefig(title + ".pdf")
 
 def focus_map(focus_net):
   fig = plt.figure(figsize=(6,6))
   ax = fig.gca()
-  X,Y = torch.meshgrid(torch.linspace(-5,150,500), torch.linspace(-5,150,500))
+  X,Y = torch.meshgrid(torch.linspace(-10,155,500), torch.linspace(-10,155,500))
   n=X.shape[0]*X.shape[1]
   data = torch.zeros((n,2)).double()
   data[:,0]=X.reshape((-1,))
@@ -32,12 +33,14 @@ def focus_map(focus_net):
   Z = Z.reshape(X.shape)
   ax.set_title("focus_map")
   cax = ax.contourf(X,Y,Z,)
+  #ax.scatter(x[y==0,0],x[y==0,1])
+  #ax.scatter(x[y==1,0],x[y==1,1])
   fig.colorbar(cax)
 
-def classification_map(class_net):
+def classification_map(class_net,x,y):
   fig = plt.figure(figsize=(6,6))
   ax = fig.gca()
-  X,Y = torch.meshgrid(torch.linspace(-5,150,500), torch.linspace(-5,150,500))
+  X,Y = torch.meshgrid(torch.linspace(-10,155,500), torch.linspace(-10,155,500))
   n=X.shape[0]*X.shape[1]
   data = torch.zeros((n,2)).double()
   data[:,0]=X.reshape((-1,))
@@ -55,6 +58,9 @@ def classification_map(class_net):
   ax.set_title("classification map")
   cmap_val= torch.sigmoid(torch.Tensor(Z1- Z2) ).numpy() 
   cax = ax.contourf(X,Y,Z1)
+  ax.scatter(x[y==0,0],x[y==0,1],s = 50,c= 'tab:orange')
+  ax.scatter(x[y==1,0],x[y==1,1],s = 50,c = 'r')
+  ax.scatter(x[y==2,0],x[y==2,1],s = 50,c = 'y')
   fig.colorbar(cax)
 
 
