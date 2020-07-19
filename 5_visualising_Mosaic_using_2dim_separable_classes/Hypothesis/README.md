@@ -70,14 +70,25 @@
   
 ### D_2 K_3 NF_2 NB_1
   # When Data is not linearly Separable
-| Data_distribution  | Linear SVM score |Deep NN Score| Accuracy | Analysis  |
+
+
+
+|Data Distribution   | Linear SVM Accuracy on Mosaic Data |  Deep Network Accuracy on Mosaic Data | Linear Attention network Accuracy | Deep Attention Newtork Accuracy | Analysis Linear Attention Network | Analysis Deep Attention Network |
+| ------------------ | ----------------------------------- | ------------------------------------ | ------------------- | ------------------------------------------------- | ----------------------- | ------------------------------ |
+| <img src= ./plots/distribution1.png width="150">  | 66.4 |  88 .4 | 95  | 100 |<img src= ./plots/trends1.png width="150">   |  <img src= ./plots/trends1.png width="150">  |
+
+
+
+
+
+<--| Data_distribution  | Linear SVM score |Deep NN Score| Accuracy | Analysis  |
 | ------------------ | ---------------- | ----------- |-------- | --------  |
 |<img src= ./plots/distribution1.png width="150">  | 66.4 | 67.1875 | 79.7 | <img src= ./plots/trends1.png width="150">  |
 |<img src= ./plots/distribution2.png width="150">  |  62.2 | 69.2 | 69.1 | <img src= ./plots/trends2.png width="150">  |
 |<img src= ./plots/distribution3.png width="150">  | 59.375 | 80.9 | 100.0 | <img src= ./plots/trends3.png width="150">  |
 |<img src= ./plots/distribution4.png width="150">  |  77.60 | 81.28 |92.2| <img src= ./plots/trends4.png width="150">  |
 |<img src= ./plots/distribution5.png width="150">  | 66.97  | 78.32 |87.1| <img src= ./plots/trends5.png width="150">  |
-|<img src= ./plots/distribution5.png width="150">  | 68.2  | 88.150 | 96.4 | <img src= ./plots/trends6.png width="150">  |
+|<img src= ./plots/distribution5.png width="150">  | 68.2  | 88.150 | 96.4 | <img src= ./plots/trends6.png width="150">  |-->
 
 
      
