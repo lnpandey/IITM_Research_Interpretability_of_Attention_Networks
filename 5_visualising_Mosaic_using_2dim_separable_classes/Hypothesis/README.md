@@ -81,6 +81,21 @@
 
 
 
+
+|   Focus Map epoch 1 | Classification  Map epoch 1 |  Focus Map epoch last | Classification  Map epoch last | 
+|  ------------------ | --------------------------- |  ----------- | --------------------------- | 
+|<img src= ./plots/f_map11.png width="150">  | <img src= ./plots/c_map11.png width="150">  | <img src= ./plots/f_map1l.png width="150">  | <img src= ./plots/c_map1l.png width="150">  |
+|<img src= ./plots/f_map21.png width="150">  | <img src= ./plots/c_map21.png width="150">  | <img src= ./plots/f_map2l.png width="150">  | <img src= ./plots/c_map2l.png width="150">  |
+|<img src= ./plots/f_map31.png width="150">  | <img src= ./plots/c_map31.png width="150">  | <img src= ./plots/f_map3l.png width="150">  | <img src= ./plots/c_map3l.png width="150">  |
+|<img src= ./plots/f_map41.png width="150">  | <img src= ./plots/c_map41.png width="150">  | <img src= ./plots/f_map4l.png width="150">  | <img src= ./plots/c_map4l.png width="150">  |
+|<img src= ./plots/f_map51.png width="150">  | <img src= ./plots/c_map51.png width="150">  | <img src= ./plots/f_map5l.png width="150">  | <img src= ./plots/c_map5l.png width="150">  |
+|<img src= ./plots/f_map61.png width="150">  | <img src= ./plots/c_map61.png width="150">  | <img src= ./plots/f_map6l.png width="150">  | <img src= ./plots/c_map6l.png width="150">  |
+
+
+
+
+
+
 <!--- | Data_distribution  | Linear SVM score |Deep NN Score| Accuracy | Analysis  |
 | ------------------ | ---------------- | ----------- |-------- | --------  |
 |<img src= ./plots/distribution1.png width="150">  | 66.4 | 67.1875 | 79.7 | <img src= ./plots/trends1.png width="150">  |
@@ -94,14 +109,6 @@
      
  
 
-|   Focus Map epoch 1 | Classification  Map epoch 1 |  Focus Map epoch last | Classification  Map epoch last | 
-|  ------------------ | --------------------------- |  ----------- | --------------------------- | 
-|<img src= ./plots/f_map11.png width="150">  | <img src= ./plots/c_map11.png width="150">  | <img src= ./plots/f_map1l.png width="150">  | <img src= ./plots/c_map1l.png width="150">  |
-|<img src= ./plots/f_map21.png width="150">  | <img src= ./plots/c_map21.png width="150">  | <img src= ./plots/f_map2l.png width="150">  | <img src= ./plots/c_map2l.png width="150">  |
-|<img src= ./plots/f_map31.png width="150">  | <img src= ./plots/c_map31.png width="150">  | <img src= ./plots/f_map3l.png width="150">  | <img src= ./plots/c_map3l.png width="150">  |
-|<img src= ./plots/f_map41.png width="150">  | <img src= ./plots/c_map41.png width="150">  | <img src= ./plots/f_map4l.png width="150">  | <img src= ./plots/c_map4l.png width="150">  |
-|<img src= ./plots/f_map51.png width="150">  | <img src= ./plots/c_map51.png width="150">  | <img src= ./plots/f_map5l.png width="150">  | <img src= ./plots/c_map5l.png width="150">  |
-|<img src= ./plots/f_map61.png width="150">  | <img src= ./plots/c_map61.png width="150">  | <img src= ./plots/f_map6l.png width="150">  | <img src= ./plots/c_map6l.png width="150">  |
 
 
 
