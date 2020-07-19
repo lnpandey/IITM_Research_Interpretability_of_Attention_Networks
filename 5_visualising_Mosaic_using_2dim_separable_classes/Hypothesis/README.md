@@ -88,8 +88,8 @@
 |<img src= ./plots/f_map21.png width="150">  | <img src= ./plots/c_map21.png width="150">  | <img src= ./plots/f_map2l.png width="150">  | <img src= ./plots/c_map2l.png width="150">  |
 |<img src= ./plots/f_map31.png width="150">  | <img src= ./plots/c_map31.png width="150">  | <img src= ./plots/f_map3l.png width="150">  | <img src= ./plots/c_map3l.png width="150">  |
 |<img src= ./plots/f_map41.png width="150">  | <img src= ./plots/c_map41.png width="150">  | <img src= ./plots/f_map4l.png width="150">  | <img src= ./plots/c_map4l.png width="150">  |
-|<img src= ./plots/f_map51.png width="150">  | <img src= ./plots/c_map51.png width="150">  | <img src= ./plots/f_map5l.png width="150">  | <img src= ./plots/c_map5l.png width="150">  |
-|<img src= ./plots/f_map61.png width="150">  | <img src= ./plots/c_map61.png width="150">  | <img src= ./plots/f_map6l.png width="150">  | <img src= ./plots/c_map6l.png width="150">  |
+<!---|<img src= ./plots/f_map51.png width="150">  | <img src= ./plots/c_map51.png width="150">  | <img src= ./plots/f_map5l.png width="150">  | <img src= ./plots/c_map5l.png width="150">  |
+|<img src= ./plots/f_map61.png width="150">  | <img src= ./plots/c_map61.png width="150">  | <img src= ./plots/f_map6l.png width="150">  | <img src= ./plots/c_map6l.png width="150">  |---!>
 
 
 
