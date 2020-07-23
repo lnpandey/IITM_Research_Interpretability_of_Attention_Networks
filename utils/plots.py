@@ -102,4 +102,11 @@ def plot_analysis(data,title,legend =True):
   ax.set_ylabel("data")
   fig.savefig(title+".png")
   fig.savefig(title+".pdf")
+def imshow(img):
+  img = img / 2 + 0.5     # unnormalize
+  #npimg = img#.numpy()
+  fig = plt.figure(figsize=(6,6))
+  ax = fig.gca()
+  ax.imshow(np.transpose(npimg, (1, 2, 0)))
+  ax.show()
     
