@@ -109,7 +109,7 @@ class train_mosaic_network():
     true = np.concatenate(true,axis=0)
     alpha = np.concatenate(alpha,axis=0)
     if print_accuracy == True:
-      print("percentage train accuracy: ",train_acc/total) 
+      print("percentage accuracy: ",train_acc/total) 
     return true,pred,alpha,findx
 
   def save_models(self):
