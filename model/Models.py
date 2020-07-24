@@ -10,8 +10,10 @@ print(device)
 class Module1(nn.Module):
   
   '''
+  returns last layer output
   Input :  32X32X3 image
   Convolutional Network with 4 Conv layers 
+
   '''
   def __init__(self,inp,out):
     super(Module1,self).__init__()
@@ -42,7 +44,9 @@ class Module1(nn.Module):
 class Module2(nn.Module):
   
   '''
+  return last layer output, 3rd convolution layer output
   Input :  32X32X3 image
+  Output : x: last layer output, x1: 3rd convolution layer output
   Convolutional Network with 4 Conv layers 
   '''
   def __init__(self,inp,out):
@@ -76,8 +80,9 @@ class Module2(nn.Module):
 class Module3(nn.Module):
   
   '''
-  Input :  32X32X3 image
-  Convolutional Network with 4 Conv layers 
+     return last layer output, 2nd convolution layer output
+     Input :  32X32X3 image
+    Output : x: last layer output, x1: second convolution layer output 
   '''
   def __init__(self,inp,out):
     super(Module3,self).__init__()
@@ -112,8 +117,9 @@ class Module3(nn.Module):
 class Module4(nn.Module):
   
   '''
+     return last layer output, first convolution layer output
   Input :  32X32X3 image
-  Convolutional Network with 4 Conv layers 
+  Output : x: last layer output, x1: first convolution layer output
   '''
   def __init__(self,inp,out):
     super(Module4,self).__init__()
@@ -147,9 +153,11 @@ class Module4(nn.Module):
 class Module5(nn.Module):
   
   '''
+  return last layer output 
   Input :  32X32X3 image
-  Convolutional Network with 4 Conv layers 
-  '''
+  Convolutional Network with 2 Conv layers 
+  Output: returns last layer output
+   '''
   def __init__(self,inp,out):
     super(Module5,self).__init__()
     self.inputs = inp
@@ -178,7 +186,7 @@ class Module5(nn.Module):
 
 class Focus_Module(nn.Module):
   '''
-  Focus Network uses Module 1
+  Focus Network uses Module 1 averages at zeroth layer
   '''
   def __init__(self,inp,out):
     super(Focus_Module, self).__init__()
@@ -191,7 +199,7 @@ class Focus_Module(nn.Module):
     #print()
     batch = z.shape[0]
     x = torch.zeros([batch,9],dtype=torch.float64)
-    y = torch.zeros([batch,self.input, 32,32], dtype=torch.float64)
+    y = torch.zeros([batch,self.inputs, 32,32], dtype=torch.float64)
     x,y = x.to(device),y.to(device)
     for i in range(9):
       x[:,i] = self.helper(z[:,i])[:,0]
@@ -212,7 +220,7 @@ class Focus_Module(nn.Module):
 
 class Focus_Module2(nn.Module):
   '''
-  Focus Network uses Module 2
+  Focus Network uses Module 2 averages at 3rd conv layer
   '''
   def __init__(self,inp,out):
     super(Focus_Module2, self).__init__()
@@ -255,7 +263,7 @@ class Focus_Module2(nn.Module):
 
 class Focus_Module3(nn.Module):
   '''
-  Focus Network uses Module 3
+  Focus Network uses Module 3 averages at conv layer 2
   '''
   def __init__(self,inp,out):
     super(Focus_Module3, self).__init__()
@@ -296,7 +304,7 @@ class Focus_Module3(nn.Module):
 
 class Focus_Module4(nn.Module):
   '''
-  Focus Network uses Module 4
+  Focus Network uses Module 4 averages at conv layer 1
   '''
   def __init__(self,inp,out):
     super(Focus_Module4, self).__init__()
@@ -334,7 +342,7 @@ class Focus_Module4(nn.Module):
 
 class Focus_Module5(nn.Module):
   '''
-  Focus Network uses Module 4
+  Focus Network uses Module 5 averages at zroth layer
   '''
   def __init__(self,inp,out):
     super(Focus_Module5, self).__init__()
@@ -386,7 +394,7 @@ class Focus_Module5(nn.Module):
 
 class Classification_Module(nn.Module):
   '''
-  Classification Network  
+  Classification Network data averaged at zeroth layer 
   '''
   def __init__(self,inp,out):
     super(Classification_Module,self).__init__()
@@ -395,23 +403,27 @@ class Classification_Module(nn.Module):
     self.conv1 = nn.Conv2d(self.inputs, 6, 5)
     self.pool = nn.MaxPool2d(2, 2)
     self.conv2 = nn.Conv2d(6, 8, 5)
-    self.fc1 = nn.Linear(16 * 5 * 5, 120)
+    self.fc1 = nn.Linear(8 * 5 * 5, 120)
     self.fc2 = nn.Linear(120, 84)
     self.fc3 = nn.Linear(84, 10)
     self.fc4 = nn.Linear(10,self.output)
   def forward(self,x):
+    #print("input",x.shape)
     x = self.pool(F.relu(self.conv1(x)))
     x = self.pool(F.relu(self.conv2(x)))
-    x = x.view(-1,16*5*5)
+    #print("middle",x.shape)
+    x = x.view(-1,8*5*5)
+    #print()
     x = F.relu(self.fc1(x))
     x = F.relu(self.fc2(x))
     x = F.relu(self.fc3(x))
     x = self.fc4(x)
+    #print("output",x.shape)
     return x
 
 class Classification_Module2(nn.Module):
   '''
-  Classification Network  
+  Classification Network  averaged data at 3rd conv layer
   '''
   def __init__(self,inp,out):
     super(Classification_Module2,self).__init__()
@@ -432,7 +444,7 @@ class Classification_Module2(nn.Module):
 
 class Classification_Module3(nn.Module):
   '''
-  Classification Network  
+  Classification Network  averaged data at conv layer 2
   '''
   def __init__(self,inp,out):
     super(Classification_Module3,self).__init__()
@@ -455,7 +467,7 @@ class Classification_Module3(nn.Module):
 
 class Classification_Module4(nn.Module):
   '''
-  Classification Network  
+  Classification Network  averages data at conv layer 1
   '''
   def __init__(self,inp,out):
     super(Classification_Module4,self).__init__()
@@ -482,7 +494,7 @@ class Classification_Module4(nn.Module):
 
 class Classification_Module5(nn.Module):
   '''
-  Classification Network  
+  Classification Network  data averaged at zeroth conv layer
   '''
   def __init__(self,inp,out):
     super(Classification_Module5,self).__init__()
@@ -509,6 +521,9 @@ class Classification_Module5(nn.Module):
 
 
 class Focus_linear(nn.Module):
+    '''
+       linear focus network
+    '''
     def __init__(self,inputs,output):
         super(Focus_linear,self).__init__()
         self.inputs = inputs
@@ -532,6 +547,9 @@ class Focus_linear(nn.Module):
         return x
 
 class Classification_linear(nn.Module):
+    '''
+    linear classification network
+    '''
     def __init__(self,inputs,output):
         super(Classification_linear,self).__init__()
         self.inputs= inputs
@@ -543,6 +561,10 @@ class Classification_linear(nn.Module):
         return x  
 
 class Focus_deep(nn.Module):
+    '''
+       deep focus network averaged at zeroth layer
+       input : elemental data
+    '''
     def __init__(self,inputs,output):
         super(Focus_deep,self).__init__()
         self.inputs = inputs
@@ -570,6 +592,10 @@ class Focus_deep(nn.Module):
         return x
 
 class Classification_deep(nn.Module):
+    '''
+       input : elemental data
+       deep classification module data averaged at zeroth layer
+    '''
     def __init__(self,inputs,output):
         super(Classification_deep,self).__init__()
         self.inputs = inputs

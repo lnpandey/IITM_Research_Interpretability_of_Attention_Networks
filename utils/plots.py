@@ -88,20 +88,25 @@ def plot_training_metric(data,title):
   fig.savefig(title + ".png")
   fig.savefig(title + ".pdf")
 
-def plot_analysis(data,title,legend =True):
-  columns = data.columns
-  fig = plt.figure(figsize = (6,6))
-  ax = fig.gca()
-  ax.plot(data[columns[0]],data[columns[1]], label =columns[1])
-  ax.plot(data[columns[0]],data[columns[2]], label =columns[2])
-  ax.plot(data[columns[0]],data[columns[3]], label =columns[3]) 
-  ax.plot(data[columns[0]],data[columns[4]], label =columns[4])
-  if legend == True:
-    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+def plot_analysis(ax, data,legend =True):
+  #columns = data.columns
+  #fig = plt.figure(figsize = (6,6))
+  #ax = fig.gca()
+  ax.plot(data[0],data[1], label ="ftpt")
+  ax.plot(data[0],data[2], label ="ffpt")
+  ax.plot(data[0],data[3], label = "ftpf") 
+  ax.plot(data[0],data[4], label ="ffpf")
+  #if legend == True:
+    #ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
   ax.set_xlabel("epochs")
   ax.set_ylabel("data")
+  #fig.savefig(title+".png")
+  #fig.savefig(title+".pdf")
+  return ax
+
+def save_fig(fig,title):
   fig.savefig(title+".png")
-  fig.savefig(title+".pdf")
+  fig.savefig(title+".pdf")  
 def imshow(img):
   img = img / 2 + 0.5     # unnormalize
   #npimg = img#.numpy()
