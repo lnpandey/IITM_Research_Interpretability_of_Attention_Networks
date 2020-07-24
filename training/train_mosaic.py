@@ -7,6 +7,9 @@ import torch.nn as nn
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class train_mosaic_network():
+  '''
+     train mosaic data 
+  '''
   def __init__(self,focus_net,classification_net,trainloader,testloader):
     super(train_mosaic_network,self).__init__()
     self.focus_net = focus_net
@@ -19,7 +22,10 @@ class train_mosaic_network():
     self.train_loss = [] 
     self.train_analysis = []
     self.test_analysis = [] 
-  def train_epoch(self,epoch,analyse = True):
+  def train_epoch(self,epoch,analyse ):
+    '''
+       trains a one epoch, if analyse =True the store the analysis data also
+    '''
     running_loss = 0
     cnt = 0
     ep_loss = []
@@ -62,14 +68,20 @@ class train_mosaic_network():
     return ep_loss
 
 
-  def training(self,epochs):
+  def training(self,epochs,analyse=True):
+    '''
+       train given models for number of epochs 
+    '''
     print("Training started...")
     for epoch in range(epochs):
-      epoch_loss = self.train_epoch(epoch)
+      epoch_loss = self.train_epoch(epoch,analyse)
       self.train_loss.append(np.mean(epoch_loss))
     print("Finished Training")
 
   def predict(self,dataloader,print_accuracy=False):
+    '''
+    given dataloader predict for the network
+    '''
     train_acc = 0
     true = []
     pred = []
@@ -101,10 +113,16 @@ class train_mosaic_network():
     return true,pred,alpha,findx
 
   def save_models(self):
+    '''
+       save models
+    '''
     torch.save(self.focus_net.state_dict(),"focus_net.pt")
     torch.save(self.classification_net.state_dict(),"classification_net.pt")
 
   def analyse_data(self,alphas,lbls,predicted,f_idx):
+    '''
+       analyse data is created here
+    '''
     batch = len(predicted)
     amth,alth,ftpt,ffpt,ftpf,ffpf = 0,0,0,0,0,0
     for j in range (batch):
