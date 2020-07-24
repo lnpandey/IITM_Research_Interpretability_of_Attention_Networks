@@ -91,7 +91,7 @@ class train_mosaic_network():
         total += len(predicted) 
         pred.append(predicted.cpu().numpy())
       # print(predicted.detach().cpu().numpy())
-    train_acc += sum(predicted.cpu().numpy() == labels.cpu().numpy())
+        train_acc += sum(predicted.cpu().numpy() == labels.cpu().numpy())
     findx = np.concatenate(findx,axis=0)
     pred = np.concatenate(pred,axis=0)
     true = np.concatenate(true,axis=0)
