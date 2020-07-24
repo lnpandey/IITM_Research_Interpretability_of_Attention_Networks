@@ -3,6 +3,9 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 def plot_scatter(x,y,title,legend = True,save =False):
+  '''
+  scatter plot 
+  '''
   fig = plt.figure(figsize = (6,6))
   ax = fig.gca()
   n = len(np.unique(y))
@@ -15,6 +18,9 @@ def plot_scatter(x,y,title,legend = True,save =False):
     fig.savefig(title + ".pdf")
 
 def focus_map(focus_net):
+  '''
+     plot focus map for elemental data
+  '''
   fig = plt.figure(figsize=(6,6))
   ax = fig.gca()
   X,Y = torch.meshgrid(torch.linspace(-10,155,500), torch.linspace(-10,155,500))
@@ -38,6 +44,9 @@ def focus_map(focus_net):
   fig.colorbar(cax)
 
 def classification_map(class_net,x,y):
+  '''
+     plot classification map for elemental data
+  '''
   fig = plt.figure(figsize=(6,6))
   ax = fig.gca()
   X,Y = torch.meshgrid(torch.linspace(-10,155,500), torch.linspace(-10,155,500))
@@ -65,6 +74,9 @@ def classification_map(class_net,x,y):
 
 
 def disp_plot(data,avg_data,true_label,pred_label,alpha,true_idx):
+    '''
+      disp plots for elemental data with averaged data
+    '''
     fig = plt.figure(figsize=(6,6))
     ax = fig.gca()
     data = data.numpy()
@@ -82,32 +94,42 @@ def disp_plot(data,avg_data,true_label,pred_label,alpha,true_idx):
         ax.plot(avg_data[i,0], avg_data[i,1],marker="x", markersize=12, color= colors[i])
 
 def plot_training_metric(data,title):
+  '''
+     plot training metric
+  '''
   fig = plt.figure(figsize = (6,6))
   ax = fig.gca()
   ax.plot(data,label = title)
   fig.savefig(title + ".png")
   fig.savefig(title + ".pdf")
 
-def plot_analysis(ax, data,legend =True):
+def plot_analysis(data,legend =True):
+  '''
+     plot analysis
+  '''
   #columns = data.columns
-  #fig = plt.figure(figsize = (6,6))
-  #ax = fig.gca()
-  ax.plot(data[0],data[1], label ="ftpt")
-  ax.plot(data[0],data[2], label ="ffpt")
-  ax.plot(data[0],data[3], label = "ftpf") 
-  ax.plot(data[0],data[4], label ="ffpf")
-  #if legend == True:
-    #ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+  fig = plt.figure(figsize = (6,6))
+  ax = fig.gca()
+  ax.plot(data[:,0],data[:,1], label ="ftpt")
+  ax.plot(data[:,0],data[:,2], label ="ffpt")
+  ax.plot(data[:,0],data[:,3], label = "ftpf") 
+  ax.plot(data[:,0],data[:,4], label ="ffpf")
+  if legend == True:
+    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
   ax.set_xlabel("epochs")
   ax.set_ylabel("data")
-  #fig.savefig(title+".png")
-  #fig.savefig(title+".pdf")
-  return ax
+
 
 def save_fig(fig,title):
+  ''' 
+     save figures
+  '''
   fig.savefig(title+".png")
   fig.savefig(title+".pdf")  
 def imshow(img):
+  '''
+     show cifar image
+  '''
   img = img / 2 + 0.5     # unnormalize
   #npimg = img#.numpy()
   fig = plt.figure(figsize=(6,6))
