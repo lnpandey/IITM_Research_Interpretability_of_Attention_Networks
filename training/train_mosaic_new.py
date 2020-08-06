@@ -2,6 +2,7 @@ import torch
 from matplotlib import pyplot as plt
 import numpy as np
 from plots import plot_analysis,save_fig
+from plots import focus_map,classification_map
 import torch.optim as optim
 import torch.nn as nn
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -9,8 +10,10 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 class train_mosaic_network():
   '''
      train mosaic data 
+     elemental : True if data is 2 dimensional and we want to plot 2d data with network map
+     pass x,y if True, else x,y takes default value None 
   '''
-  def __init__(self,focus_net,classification_net,trainloader,testloader=None):
+  def __init__(self,focus_net,classification_net,trainloader,testloader=None,elemental=False,x=None,y=None):
     super(train_mosaic_network,self).__init__()
     self.focus_net = focus_net
     self.classification_net = classification_net
@@ -22,6 +25,9 @@ class train_mosaic_network():
     self.train_loss = [] 
     self.train_analysis = []
     self.test_analysis = [] 
+    self.elemental = elemental
+    self.x = x
+    self.y = y
   def train_epoch(self,epoch,analyse, train_loss, epochs_or_loss_flag,mini=80 ):
     '''
        trains a one epoch, if analyse =True the store the analysis data also
@@ -30,6 +36,9 @@ class train_mosaic_network():
     running_loss = 0
     cnt = 0
     ep_loss = []
+    if self.elemental ==True:
+      focus_map(self.focus_net,self.x,self.y)
+      classification_map(self.classification_net,self.x,self.y)
     for i, data in  enumerate(self.trainloader):
       inputs , labels , fgrnd_idx = data
       inputs,labels = inputs.to(device),labels.to(device)

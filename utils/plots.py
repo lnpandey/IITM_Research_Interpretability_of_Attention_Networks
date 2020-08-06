@@ -17,13 +17,13 @@ def plot_scatter(x,y,title,legend = True,save =False):
     fig.savefig(title + ".png")
     fig.savefig(title + ".pdf")
 
-def focus_map(focus_net):
+def focus_map(focus_net,x,y):
   '''
      plot focus map for elemental data
   '''
   fig = plt.figure(figsize=(6,6))
   ax = fig.gca()
-  X,Y = torch.meshgrid(torch.linspace(-10,155,500), torch.linspace(-10,155,500))
+  X,Y = torch.meshgrid(torch.linspace(-3,3,500), torch.linspace(-3,3,500))
   n=X.shape[0]*X.shape[1]
   data = torch.zeros((n,2)).double()
   data[:,0]=X.reshape((-1,))
@@ -39,8 +39,8 @@ def focus_map(focus_net):
   Z = Z.reshape(X.shape)
   ax.set_title("focus_map")
   cax = ax.contourf(X,Y,Z,)
-  #ax.scatter(x[y==0,0],x[y==0,1])
-  #ax.scatter(x[y==1,0],x[y==1,1])
+  for i in range(len(np.unique(y))):
+    ax.scatter(x[y==i,0],x[y==i,1],s = 50)#,c= 'tab:orange')
   fig.colorbar(cax)
 
 def classification_map(class_net,x,y):
@@ -49,7 +49,7 @@ def classification_map(class_net,x,y):
   '''
   fig = plt.figure(figsize=(6,6))
   ax = fig.gca()
-  X,Y = torch.meshgrid(torch.linspace(-10,155,500), torch.linspace(-10,155,500))
+  X,Y = torch.meshgrid(torch.linspace(-3,3,500), torch.linspace(-3,3,500))
   n=X.shape[0]*X.shape[1]
   data = torch.zeros((n,2)).double()
   data[:,0]=X.reshape((-1,))
@@ -67,9 +67,10 @@ def classification_map(class_net,x,y):
   ax.set_title("classification map")
   cmap_val= torch.sigmoid(torch.Tensor(Z1- Z2) ).numpy() 
   cax = ax.contourf(X,Y,Z1)
-  ax.scatter(x[y==0,0],x[y==0,1],s = 50,c= 'tab:orange')
-  ax.scatter(x[y==1,0],x[y==1,1],s = 50,c = 'r')
-  ax.scatter(x[y==2,0],x[y==2,1],s = 50,c = 'y')
+  for i in range(len(np.unique(y))):
+    ax.scatter(x[y==i,0],x[y==i,1],s = 50)#,c= 'tab:orange')
+  # ax.scatter(x[y==1,0],x[y==1,1],s = 50,c = 'r')
+  # ax.scatter(x[y==2,0],x[y==2,1],s = 50,c = 'y')
   fig.colorbar(cax)
 
 
