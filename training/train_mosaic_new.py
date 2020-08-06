@@ -10,7 +10,7 @@ class train_mosaic_network():
   '''
      train mosaic data 
   '''
-  def __init__(self,focus_net,classification_net,trainloader,testloader):
+  def __init__(self,focus_net,classification_net,trainloader,testloader=None):
     super(train_mosaic_network,self).__init__()
     self.focus_net = focus_net
     self.classification_net = classification_net
@@ -22,9 +22,10 @@ class train_mosaic_network():
     self.train_loss = [] 
     self.train_analysis = []
     self.test_analysis = [] 
-  def train_epoch(self,epoch,analyse, train_loss, epochs_or_loss_flag ):
+  def train_epoch(self,epoch,analyse, train_loss, epochs_or_loss_flag,mini=80 ):
     '''
        trains a one epoch, if analyse =True the store the analysis data also
+       mini: print loss after mini number of batches default value 80
     '''
     running_loss = 0
     cnt = 0
@@ -47,7 +48,7 @@ class train_mosaic_network():
       self.optimizer_classification.step()
     
       running_loss += loss.item()
-      mini = 80
+      #mini = 80
     
       if cnt % mini == mini-1:    # print every mini mini-batches
         print('[%d, %5d] loss: %.3f' %(epoch + 1, cnt + 1, running_loss / mini))
@@ -56,29 +57,33 @@ class train_mosaic_network():
       cnt=cnt+1
    
     if analyse ==True:
-      if epoch %5 ==0:
+      if epoch %5 ==4 or epoch == 0:
         tr_lbl,predicted,alphas,trn_findx = self.predict(self.trainloader) 
-        tst_lbl,tst_predicted,tst_alphas,tst_findx = self.predict(self.testloader)
         train_analysis = self.analyse_data(alphas,tr_lbl,predicted,trn_findx)
-        test_analysis = self.analyse_data(tst_alphas,tst_lbl,tst_predicted,tst_findx)
-        train_analysis.insert(0,epoch)
-        test_analysis.insert(0,epoch)
+        train_analysis.insert(0,epoch)        
         self.train_analysis.append(train_analysis)
-        self.test_analysis.append(test_analysis)
+        if self.testloader !=None:
+          tst_lbl,tst_predicted,tst_alphas,tst_findx = self.predict(self.testloader)
+          test_analysis = self.analyse_data(tst_alphas,tst_lbl,tst_predicted,tst_findx)
+          test_analysis.insert(0,epoch)
+          self.test_analysis.append(test_analysis)
+        
+        
     return ep_loss
 
 
-  def training(self,epochs=100000,analyse=True,train_loss=0.001, epochs_or_loss_flag = True):
+  def training(self,epochs=100000,analyse=True,train_loss=0.001,mini=80, epochs_or_loss_flag = True):
     '''
        train given models for number of epochs 
        epochs=100000 by default
        train_loss=0.001 by default
-       epochs_or_loss_flag = True , if training by epochs, if epochs_or_loss_flag = False, then train by training loss. 
+       epochs_or_loss_flag = True , if training by epochs, if epochs_or_loss_flag = False, then train by training loss.
+       mini : print loss after mini number of batches default value 80
        analyse=True , if you want to plot Focus-prediction analysis plot
     '''
     print("Training started...")
     for epoch in range(epochs):
-      epoch_loss = self.train_epoch(epoch,analyse,train_loss, epochs_or_loss_flag)
+      epoch_loss = self.train_epoch(epoch,analyse,train_loss, epochs_or_loss_flag,mini)
       self.train_loss.append(np.mean(epoch_loss))
     print("Finished Training")
 
