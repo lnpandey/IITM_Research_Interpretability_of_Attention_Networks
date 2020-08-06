@@ -68,15 +68,16 @@
     -  Accuracy 100%
     
   
-### D_2 K_3 NF_2 NB_1
+### D_2 K_3 NF_2 NB_1  and D_2 K_5 NF_2 NB_3
   # When Data is not linearly Separable
 
 
 
 |Data Distribution   | Linear SVM Accuracy on Mosaic Data |  Deep Network Accuracy on Mosaic Data | Linear Attention network Accuracy | Deep Attention Newtork Accuracy | Analysis Linear Attention Network | Analysis Deep Attention Network |
 | ------------------ | ----------------------------------- | ------------------------------------ | ------------------- | ------------------------------------------------- | ----------------------- | ------------------------------ |
-| <img src= ./plots/distribution1.png width="150">  | 75 |  80 |   | 100 |<img src= ./plots/trends1.png width="150">   |  <img src= ./plots/trends2.png width="150">  |
-| <img src= ./plots/distribution2.png width="150">  | 82 |  90.1 |  100 | 100 |<img src= ./plots/trends3.png width="150">   |  <img src= ./plots/trends4.png width="150">  | <img src= ./plots/trends4.png width="150">  |
+| <img src= ./plots/distribution1.png width="150">  | 75 |  80 |  100 | 100 |<img src= ./plots/trends1.png width="150">   |  <img src= ./plots/trends2.png width="150">  |
+| <img src= ./plots/distribution2.png width="150">  | 82 |  90.1 |  100 | 100 |<img src= ./plots/trends3.png width="150">   |  <img src= ./plots/trends4.png width="150">  | 
+| <img src= ./plots/distribution3.png width="150">  | 63.03  |  99.23 | 74.46  | 91.1 |<img src= ./plots/trends5.png width="150">   |  <img src= ./plots/trends6.png width="150">  | 
 
 
 
@@ -89,8 +90,8 @@
 |<img src= ./plots/f_map21.png width="150">  | <img src= ./plots/c_map21.png width="150">  | <img src= ./plots/f_map2l.png width="150">  | <img src= ./plots/c_map2l.png width="150">  |
 |<img src= ./plots/f_map31.png width="150">  | <img src= ./plots/c_map31.png width="150">  | <img src= ./plots/f_map3l.png width="150">  | <img src= ./plots/c_map3l.png width="150">  |
 |<img src= ./plots/f_map41.png width="150">  | <img src= ./plots/c_map41.png width="150">  | <img src= ./plots/f_map4l.png width="150">  | <img src= ./plots/c_map4l.png width="150">  |
-<!---|<img src= ./plots/f_map51.png width="150">  | <img src= ./plots/c_map51.png width="150">  | <img src= ./plots/f_map5l.png width="150">  | <img src= ./plots/c_map5l.png width="150">  |
-|<img src= ./plots/f_map61.png width="150">  | <img src= ./plots/c_map61.png width="150">  | <img src= ./plots/f_map6l.png width="150">  | <img src= ./plots/c_map6l.png width="150">  |---!>
+|<img src= ./plots/f_map51.png width="150">  | <img src= ./plots/c_map51.png width="150">  | <img src= ./plots/f_map5l.png width="150">  | <img src= ./plots/c_map5l.png width="150">  |
+|<img src= ./plots/f_map61.png width="150">  | <img src= ./plots/c_map61.png width="150">  | <img src= ./plots/f_map6l.png width="150">  | <img src= ./plots/c_map6l.png width="150">  |
 
 
 
