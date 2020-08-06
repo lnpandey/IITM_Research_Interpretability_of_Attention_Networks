@@ -45,8 +45,8 @@ class Classification_linear(nn.Module):
         self.linear1 = nn.Linear(self.inputs,self.output)
 
     def forward(self,x):
-        x = self.linear1(x)
-        return x  
+      x = self.linear1(x)
+      return x  
 
 class Focus_deep(nn.Module):
     '''
@@ -74,9 +74,9 @@ class Focus_deep(nn.Module):
             y = y+torch.mul(x1[:,None],z[:,2*i:2*i+2])
         return y , x 
     def helper(self,x):
-        x = F.relu(self.linear1(x))
-        x = self.linear2(x)
-        return x
+      x = F.relu(self.linear1(x))
+      x = self.linear2(x)
+      return x
 
 class Classification_deep(nn.Module):
     '''
@@ -91,6 +91,6 @@ class Classification_deep(nn.Module):
         self.linear2 = nn.Linear(50,self.output)
 
     def forward(self,x):
-        x = F.relu(self.linear1(x))
-        x = self.linear2(x)
-        return x    
+      x = F.relu(self.linear1(x))
+      x = self.linear2(x)
+      return x    

@@ -84,8 +84,6 @@ class train_network():
         inputs,labels = data
         true.append(labels)
         inputs,labels = inputs.to(device), labels.to(device)
-    
-        
         outputs = self.net(inputs)
         _,predicted = torch.max(outputs.data,1)
         total += len(predicted) 
