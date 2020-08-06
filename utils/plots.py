@@ -23,7 +23,7 @@ def focus_map(focus_net,x,y):
   '''
   fig = plt.figure(figsize=(6,6))
   ax = fig.gca()
-  X,Y = torch.meshgrid(torch.linspace(-3,3,500), torch.linspace(-3,3,500))
+  X,Y = torch.meshgrid(torch.linspace(-3.5,3.5,500), torch.linspace(-3.5,3.5,500))
   n=X.shape[0]*X.shape[1]
   data = torch.zeros((n,2)).double()
   data[:,0]=X.reshape((-1,))
@@ -49,7 +49,7 @@ def classification_map(class_net,x,y):
   '''
   fig = plt.figure(figsize=(6,6))
   ax = fig.gca()
-  X,Y = torch.meshgrid(torch.linspace(-3,3,500), torch.linspace(-3,3,500))
+  X,Y = torch.meshgrid(torch.linspace(-3.5,3.5,500), torch.linspace(-3.5,3.5,500))
   n=X.shape[0]*X.shape[1]
   data = torch.zeros((n,2)).double()
   data[:,0]=X.reshape((-1,))
