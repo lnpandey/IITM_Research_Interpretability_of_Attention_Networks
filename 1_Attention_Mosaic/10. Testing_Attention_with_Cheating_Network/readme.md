@@ -33,64 +33,64 @@
 
 
 ## Analysis of FTPT, FFPT, FTPF. FFPF for the above experiments
-#### Row 2 : | 2 | Random | Random | Both | 46 | 99 | 94 |
+#### Row 2 : | 2 | Focus is Random | Classify is Random | Train Both | 46 | 99 | 94 |
 On Training Data
 ![](./plots_and_images/train2.PNG)
 On Testing Data
 ![](./plots_and_images/test2.PNG)
-#### Row 3 : | 3 | Random | Random | Focus | 50 | 33 | 32 |
+#### Row 3 : | 3 | Focus is Random | Classify is Random | Train Focus | 50 | 33 | 32 |
 On Training Data
 ![](./plots_and_images/train3.PNG)
 On Testing Data
 ![](./plots_and_images/test3.PNG)
-#### Row 4 : | 4 | Random | Random | Classify | 51 | 99 | 43 |
+#### Row 4 : | 4 | Focus is Random | Classify is Random | Train Classify | 51 | 99 | 43 |
 On Training Data
 ![](./plots_and_images/train4.PNG)
 On Testing Data
 ![](./plots_and_images/test4.PNG)
-#### Row 6 : | 6 | Pre-Trained | Random | Both | 19 | 99 | 97 |
+#### Row 6 : | 6 | Focus is Pre-Trained | Classify is Random | Train Both | 19 | 99 | 97 |
 On Training Data
 ![](./plots_and_images/train6.PNG)
 On Testing Data
 ![](./plots_and_images/test6.PNG)
-#### Row 7 : | 7 | Pre-Trained | Random | Focus | 50 | 33 | 33 |
+#### Row 7 : | 7 | Focus is Pre-Trained | Classify is Random | Train Focus | 50 | 33 | 33 |
 On Training Data
 ![](./plots_and_images/train7.PNG)
 On Testing Data
 ![](./plots_and_images/test7.PNG)
-#### Row 8 : | 8 | Pre-Trained | Random | Classify | 113 | 99 | 90 |
+#### Row 8 : | 8 | Focus is Pre-Trained | Classify is Random | Train Classify | 113 | 99 | 90 |
 On Training Data
 ![](./plots_and_images/train8.PNG)
 On Testing Data
 ![](./plots_and_images/test8.PNG)
-#### Row 10 : | 10 | Random | Pre-Trained | Both | 52 | 99 | 93 |
+#### Row 10 : | 10 | Focus is Random | Classify is Pre-Trained | Train Both | 52 | 99 | 93 |
 On Training Data
 ![](./plots_and_images/train10.PNG)
 On Testing Data
 ![](./plots_and_images/test10.PNG)
-#### Row 11 : | 11 | Random | Pre-Trained | Focus | 20 | 47 | 45 |
+#### Row 11 : | 11 | Focus is Random | Classify is Pre-Trained | Train Focus | 20 | 47 | 45 |
 On Training Data
 ![](./plots_and_images/train11.PNG)
 On Testing Data
 ![](./plots_and_images/test11.PNG)
-#### Row 12 : | 12 | Random | Pre-Trained | Classify | 60 | 99 | 44 |
+#### Row 12 : | 12 | Focus is Random | Classify is Pre-Trained | Train Classify | 60 | 99 | 44 |
 On Training Data
 ![](./plots_and_images/train12.PNG)
 On Testing Data
 ![](./plots_and_images/test12.PNG)
-#### Row 14 : | 14 | Pre-Trained | Pre-Trained | Both | 4 | 99 | 99 |
+#### Row 14 : | 14 | Focus is Pre-Trained | Classify is Pre-Trained | Train Both | 4 | 99 | 99 |
 On Training Data
 ![](./plots_and_images/train14.PNG)
 On Testing Data
 ![](./plots_and_images/test14.PNG)
-#### Row 15 : | 15 | Pre-Trained | Pre-Trained | Focus | 200 | 40 | 39 |
+#### Row 15 : | 15 | Focus is Pre-Trained | Classify is Pre-Trained | Train Focus | 200 | 40 | 39 |
 On Training Data
 ![](./plots_and_images/train15_1.PNG)
 ![](./plots_and_images/train15_2.PNG)
 On Testing Data
 ![](./plots_and_images/test15_1.PNG)
 ![](./plots_and_images/test15_2.PNG)
-#### Row 16 : | 16 | Pre-Trained | Pre-Trained | Classify | 11 | 99 | 96 |
+#### Row 16 : | 16 | Focus is Pre-Trained | Classify is Pre-Trained | Train Classify | 11 | 99 | 96 |
 On Training Data
 ![](./plots_and_images/train16.PNG)
 On Testing Data
