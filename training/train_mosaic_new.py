@@ -13,14 +13,15 @@ class train_mosaic_network():
      elemental : True if data is 2 dimensional and we want to plot 2d data with network map
      pass x,y if True, else x,y takes default value None 
   '''
-  def __init__(self,focus_net,classification_net,trainloader,testloader=None,elemental=False,x=None,y=None):
+  def __init__(self,focus_net,classification_net,trainloader,testloader=None,elemental=False,x=None,y=None,lr=0.01):
     super(train_mosaic_network,self).__init__()
     self.focus_net = focus_net
     self.classification_net = classification_net
     self.trainloader = trainloader
     self.testloader = testloader
-    self.optimizer_focus = optim.SGD(focus_net.parameters(),lr = 0.01,momentum=0.9)
-    self.optimizer_classification = optim.SGD(classification_net.parameters(),lr =0.01, momentum=0.9)
+    self.lr = lr
+    self.optimizer_focus = optim.SGD(focus_net.parameters(),lr = self.lr,momentum=0.9)
+    self.optimizer_classification = optim.SGD(classification_net.parameters(),lr =self.lr, momentum=0.9)
     self.criterion = criterion = nn.CrossEntropyLoss() 
     self.train_loss = [] 
     self.train_analysis = []

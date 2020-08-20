@@ -11,24 +11,25 @@ class Focus_linear(nn.Module):
     '''
        linear focus network
     '''
-    def __init__(self,inputs,output,K):
+    def __init__(self,inputs,output,K,d):
         super(Focus_linear,self).__init__()
         self.inputs = inputs
         self.output = output
         self.K = K
+        self.d = d
         self.linear1 = nn.Linear(self.inputs,self.output)
     def forward(self,z):
         batch = z.shape[0]
         x = torch.zeros([batch,self.K],dtype=torch.float64)
-        y = torch.zeros([batch,2], dtype=torch.float64)
+        y = torch.zeros([batch,self.d], dtype=torch.float64)
         #x,y = x.to("cuda"),y.to("cuda")
         for i in range(self.K):
-            x[:,i] = self.helper(z[:,2*i:2*i+2])[:,0]
+            x[:,i] = self.helper(z[:,self.d*i:self.d*i+self.d])[:,0]
         x = F.softmax(x,dim=1)   # alphas
         x1 = x[:,0]
         for i in range(self.K):
             x1 = x[:,i]          
-            y = y+torch.mul(x1[:,None],z[:,2*i:2*i+2])
+            y = y+torch.mul(x1[:,None],z[:,self.d*i:self.d*i+self.d])
         return y , x 
     def helper(self,x):
         x = self.linear1(x)
@@ -53,25 +54,26 @@ class Focus_deep(nn.Module):
        deep focus network averaged at zeroth layer
        input : elemental data
     '''
-    def __init__(self,inputs,output,K):
+    def __init__(self,inputs,output,K,d):
         super(Focus_deep,self).__init__()
         self.inputs = inputs
         self.output = output
         self.K = K
+        self.d  = d
         self.linear1 = nn.Linear(self.inputs,50)  #,self.output)
         self.linear2 = nn.Linear(50,self.output) 
     def forward(self,z):
         batch = z.shape[0]
         x = torch.zeros([batch,self.K],dtype=torch.float64)
-        y = torch.zeros([batch,2], dtype=torch.float64)
+        y = torch.zeros([batch,self.d], dtype=torch.float64)
         #x,y = x.to("cuda"),y.to("cuda")
         for i in range(self.K):
-            x[:,i] = self.helper(z[:,2*i:2*i+2])[:,0]
+            x[:,i] = self.helper(z[:,self.d*i:self.d*i+self.d])[:,0]
         x = F.softmax(x,dim=1)   # alphas
         x1 = x[:,0]
         for i in range(self.K):
             x1 = x[:,i]          
-            y = y+torch.mul(x1[:,None],z[:,2*i:2*i+2])
+            y = y+torch.mul(x1[:,None],z[:,self.d*i:self.d*i+self.d])
         return y , x 
     def helper(self,x):
       x = F.relu(self.linear1(x))

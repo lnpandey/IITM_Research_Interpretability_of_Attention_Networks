@@ -26,6 +26,7 @@ class train_network():
     running_loss = 0
     cnt = 0
     ep_loss = []
+    self.net.train()
     for i, data in  enumerate(self.trainloader):
       inputs , labels = data
       inputs,labels = inputs.to(device),labels.to(device)
@@ -79,6 +80,7 @@ class train_network():
     true = []
     pred = []
     total = 0 
+    self.net.eval()
     with torch.no_grad():
       for i, data in enumerate(dataloader):
         inputs,labels = data
