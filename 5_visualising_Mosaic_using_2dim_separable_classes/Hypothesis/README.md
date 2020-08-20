@@ -68,7 +68,7 @@
     -  Accuracy 100%
     
   
-### D_2 K_3 NF_2 NB_1  and D_2 K_5 NF_2 NB_3
+### D_2 K_3 NF_2 NB_1  
   # When Data is not linearly Separable
 
 
@@ -96,6 +96,12 @@
 
 
 
+
+| Data     | Fg vs Bg Score(Linear) | fg1 vs fg2 score(Linear) | Linear SVM score (Mosaic) | Linear Attention Network Score | Deep Attention Network Score |
+| -------- | ---------------------- | ------------------------ | ------------------------  | ------------------------------ | ---------------------------- |
+| D_3_K_5  |    91                  |       93.1               |        63.8               |          91.6                  |    96.1                      |
+| D_4_K_5  |    80.4                |       89.39              |     68.433                |     80.26                      |     90.1                     |
+<!---| D_5_K_5  |---!>
 
 
 <!--- | Data_distribution  | Linear SVM score |Deep NN Score| Accuracy | Analysis  |
