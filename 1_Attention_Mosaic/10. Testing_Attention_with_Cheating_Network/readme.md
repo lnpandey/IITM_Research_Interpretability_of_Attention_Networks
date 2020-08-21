@@ -1,8 +1,182 @@
+### CNN - 3 Layer Architecture for Focus Net
+```python
+class Focus(nn.Module):
+  def __init__(self):
+    super(Focus, self).__init__()
+    self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=0)
+    self.pool = nn.MaxPool2d(2, 2)
+    self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, padding=0)
+    self.conv3 = nn.Conv2d(in_channels=64, out_channels=64, kernel_size=3, padding=0)
+    self.fc1 = nn.Linear(1024, 512)
+    self.fc2 = nn.Linear(512, 64)
+    self.fc3 = nn.Linear(64, 10)
+    self.fc4 = nn.Linear(10, 2)
+
+  def forward(self,z):  #y is avg image #z batch of list of 9 images
+    y = torch.zeros([batch,3, 32,32], dtype=torch.float64)
+    x = torch.zeros([batch,9],dtype=torch.float64)
+    y = y.to("cuda")
+    x = x.to("cuda")    
+    for i in range(9):
+        x[:,i] = self.helper(z[:,i])[:,0]
+    x = F.softmax(x,dim=1)
+    x1 = x[:,0]
+    torch.mul(x1[:,None,None,None],z[:,0])
+    for i in range(9):            
+      x1 = x[:,i]          
+      y = y + torch.mul(x1[:,None,None,None],z[:,i])
+    return x, y
+    
+  def helper(self, x):
+    x = self.pool(F.relu(self.conv1(x)))
+    x = self.pool(F.relu(self.conv2(x)))
+    # print(x.shape)
+    x = (F.relu(self.conv3(x)))
+    x =  x.view(x.size(0), -1)
+    # print(x.shape)
+    x = F.relu(self.fc1(x))
+    x = F.relu(self.fc2(x))
+    x = F.relu(self.fc3(x))
+    x = self.fc4(x)
+    return x
+```
+### CNN - 3 Layer Architecture for Classify Net
+```python
+class Classification(nn.Module):
+  def __init__(self):
+    super(Classification, self).__init__()
+    self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=0)
+    self.pool = nn.MaxPool2d(2, 2)
+    self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, padding=0)
+    self.conv3 = nn.Conv2d(in_channels=64, out_channels=64, kernel_size=3, padding=0)
+    self.fc1 = nn.Linear(1024, 512)
+    self.fc2 = nn.Linear(512, 64)
+    self.fc3 = nn.Linear(64, 10)
+    self.fc4 = nn.Linear(10,3)
+
+  def forward(self, x):
+    x = self.pool(F.relu(self.conv1(x)))
+    x = self.pool(F.relu(self.conv2(x)))
+    # print(x.shape)
+    x = (F.relu(self.conv3(x)))
+    x =  x.view(x.size(0), -1)
+    # print(x.shape)
+    x = F.relu(self.fc1(x))
+    x = F.relu(self.fc2(x))
+    x = F.relu(self.fc3(x))
+    x = self.fc4(x)
+    return x
+```
+### CNN - 6 Layer Architecture for Focus Net
+```python
+class Focus(nn.Module):
+  def __init__(self):
+    super(Focus, self).__init__()
+    self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=0)
+    self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, padding=0)
+    self.conv3 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=3, padding=0)
+    self.conv4 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
+    self.conv5 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
+    self.conv6 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=1)
+    self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+    self.batch_norm1 = nn.BatchNorm2d(32)
+    self.batch_norm2 = nn.BatchNorm2d(128)
+    self.dropout1 = nn.Dropout2d(p=0.05)
+    self.dropout2 = nn.Dropout2d(p=0.1)
+    self.fc1 = nn.Linear(128,64)
+    self.fc2 = nn.Linear(64, 32)
+    self.fc3 = nn.Linear(32, 10)
+    self.fc4 = nn.Linear(10, 2)
+
+  def forward(self,z):  #y is avg image #z batch of list of 9 images
+    y = torch.zeros([batch,3, 32,32], dtype=torch.float64)
+    x = torch.zeros([batch,9],dtype=torch.float64)
+    y = y.to("cuda")
+    x = x.to("cuda")    
+    for i in range(9):
+        x[:,i] = self.helper(z[:,i])[:,0]
+    x = F.softmax(x,dim=1)
+    x1 = x[:,0]
+    torch.mul(x1[:,None,None,None],z[:,0])
+    for i in range(9):            
+      x1 = x[:,i]          
+      y = y + torch.mul(x1[:,None,None,None],z[:,i])
+    return x, y
+    
+  def helper(self, x):
+    x = self.conv1(x)
+    x = F.relu(self.batch_norm1(x))
+    x = (F.relu(self.conv2(x)))
+    x = self.pool(x)    
+    x = self.conv3(x)
+    x = F.relu(self.batch_norm2(x))
+    x = (F.relu(self.conv4(x)))
+    x = self.pool(x)
+    x = self.dropout1(x)
+    x = self.conv5(x)
+    x = F.relu(self.batch_norm2(x))
+    x = (F.relu(self.conv6(x)))
+    x = self.pool(x)
+    x = x.view(x.size(0), -1)
+    x = self.dropout2(x)
+    x = F.relu(self.fc1(x))
+    x = F.relu(self.fc2(x))
+    x = self.dropout2(x)
+    x = F.relu(self.fc3(x))
+    x = self.fc4(x)
+    return x
+```
+### CNN - 6 Layer Architecture for Classify Net
+```python
+class Classification(nn.Module):
+  def __init__(self):
+    super(Classification, self).__init__()
+    self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=0)
+    self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, padding=0)
+    self.conv3 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=3, padding=0)
+    self.conv4 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
+    self.conv5 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
+    self.conv6 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=1)
+    self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+    self.batch_norm1 = nn.BatchNorm2d(32)
+    self.batch_norm2 = nn.BatchNorm2d(128)
+    self.dropout1 = nn.Dropout2d(p=0.05)
+    self.dropout2 = nn.Dropout2d(p=0.1)
+    self.fc1 = nn.Linear(128,64)
+    self.fc2 = nn.Linear(64, 32)
+    self.fc3 = nn.Linear(32, 10)
+    self.fc4 = nn.Linear(10, 3)
+
+  def forward(self,x):  
+    x = self.conv1(x)
+    x = F.relu(self.batch_norm1(x))
+    x = (F.relu(self.conv2(x)))
+    x = self.pool(x)    
+    x = self.conv3(x)
+    x = F.relu(self.batch_norm2(x))
+    x = (F.relu(self.conv4(x)))
+    x = self.pool(x)
+    x = self.dropout1(x)
+    x = self.conv5(x)
+    x = F.relu(self.batch_norm2(x))
+    x = (F.relu(self.conv6(x)))
+    x = self.pool(x)
+    x = x.view(x.size(0), -1)
+    x = self.dropout2(x)
+    x = F.relu(self.fc1(x))
+    x = F.relu(self.fc2(x))
+    x = self.dropout2(x)
+    x = F.relu(self.fc3(x))
+    x = self.fc4(x)
+    return x
+```
+
 ## Table 1: 10 Class classification on CIFAR 10
 |Model Used| Epochs | Train Accuracy | Test Accuracy |
 |----------|--------|----------------|---------------|
 |Mini-Inception | 23 | 100| 86 |
 |CNN - 6 Layers | 91 | 99| 81 |
+|CNN - 3 Layers | 47 | 99| 74 |
 
 ### Table 2: Using this CNN - 6 Layer, Trained Focus and Classify net
 |Network| Epochs | Train Accuracy | Test Accuracy |
@@ -10,8 +184,14 @@
 |Focus Net (Binary classification for fg) | 73 | 99| 89 |
 |Classify Net (3 class classification within fg classes) | 70 | 99| 89 |
 
+### Table 3: Using this CNN - 3 Layer, Trained Focus and Classify net
+|Network| Epochs | Train Accuracy | Test Accuracy |
+|----------|--------|----------------|---------------|
+|Focus Net (Binary classification for fg) | 56 | 100 | 86 |
+|Classify Net (3 class classification within fg classes) | 48 | 100 | 90 |
 
-### Tabel 3: Using Focus and Classify net of Table 2, following 16 experiments were performed
+
+### Tabel 4: Using Focus and Classify net of CNN - 6 Layer, following 16 experiments were performed
 |Sno.|Focus init |Classify init| Which module to be trained | Epoch | Train Acc | Test Acc | Train FTPT | Train FFPT | Train FTPF | Train FFPF | Test FTPT | Test FFPT | Test FTPF | Test FFPF | 
 |----|-------------------------|---------------------------------|----------------------------|-------|----------------|---------------|------------|------------|------------|------------|-----------|-----------|-----------|-----------|
 | 1 | Random | Random | - | 0 | 33 | 33 | 6 | 27 | 9 | 57 | 6 | 27 | 9 | 56 |
@@ -28,13 +208,13 @@
 | 12 | Random | Pre-Trained | Classify | 60 | 99 | 44 | 13 | 85 | 0 | 0 | 6 | 38 | 7 | 47 |
 | 13 | Pre-Trained | Pre-Trained | - | 0 | 97 | 97 | 97 | 0 | 2 | 0 | 97 | 0 | 2 | 0 |
 | 14 | Pre-Trained | Pre-Trained | Both | 3 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
-| 15 | Pre-Trained | Pre-Trained | Focus | 50| 39 39 | 9 | 29 | 0 | 59 | 9 | 30 | 0 | 59 |
+| 15 | Pre-Trained | Pre-Trained | Focus | 50| 39 | 39 | 9 | 29 | 0 | 59 | 9 | 30 | 0 | 59 |
 | 16 | Pre-Trained | Pre-Trained | Classify | 11 | 99 | 96 | 99 | 0 | 0 | 0 | 95 | 0 | 4 | 0 |
 
 
-## Analysis of FTPT, FFPT, FTPF. FFPF for the above experiments
+<!--- ## Analysis of FTPT, FFPT, FTPF. FFPF for the above experiments 
 #### Row 2 : | 2 | Focus is Random | Classify is Random | Train Both | 46 | 99 | 94 |
-On Training Data
+On Training Data 
 ![](./plots_and_images/train2.PNG)
 On Testing Data
 ![](./plots_and_images/test2.PNG)
@@ -94,125 +274,25 @@ On Testing Data
 On Training Data
 ![](./plots_and_images/train16.PNG)
 On Testing Data
-![](./plots_and_images/test16.PNG)
+![](./plots_and_images/test16.PNG)--->
 
-### CNN - 6 Layer Architecture for Focus Net
-```python
-class Focus(nn.Module):
-  def __init__(self):
-    super(Focus, self).__init__()
-    self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=0)
-    self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, padding=0)
-    self.conv3 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=3, padding=0)
-    self.conv4 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
-    self.conv5 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
-    self.conv6 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=1)
-    self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
-    self.batch_norm1 = nn.BatchNorm2d(32)
-    self.batch_norm2 = nn.BatchNorm2d(128)
-    self.dropout1 = nn.Dropout2d(p=0.05)
-    self.dropout2 = nn.Dropout2d(p=0.1)
-    self.fc1 = nn.Linear(128,64)
-    self.fc2 = nn.Linear(64, 32)
-    self.fc3 = nn.Linear(32, 10)
-    self.fc4 = nn.Linear(10, 1)
 
-  def forward(self,z):  #y is avg image #z batch of list of 9 images
-    y = torch.zeros([batch,3, 32,32], dtype=torch.float64)
-    x = torch.zeros([batch,9],dtype=torch.float64)
-    y = y.to("cuda")
-    x = x.to("cuda")
-    
-    for i in range(9):
-        x[:,i] = self.helper(z[:,i])[:,0]
-
-    x = F.softmax(x,dim=1)
-
-    x1 = x[:,0]
-    torch.mul(x1[:,None,None,None],z[:,0])
-    for i in range(9):            
-      x1 = x[:,i]          
-      y = y + torch.mul(x1[:,None,None,None],z[:,i])
-    return x, y
-    
-  def helper(self, x):
-    x = self.conv1(x)
-    x = F.relu(self.batch_norm1(x))
-
-    x = (F.relu(self.conv2(x)))
-    x = self.pool(x)
-    
-    x = self.conv3(x)
-    x = F.relu(self.batch_norm2(x))
-
-    x = (F.relu(self.conv4(x)))
-    x = self.pool(x)
-    x = self.dropout1(x)
-
-    x = self.conv5(x)
-    x = F.relu(self.batch_norm2(x))
-
-    x = (F.relu(self.conv6(x)))
-    x = self.pool(x)
-
-    x = x.view(x.size(0), -1)
-
-    x = self.dropout2(x)
-    x = F.relu(self.fc1(x))
-    x = F.relu(self.fc2(x))
-    x = self.dropout2(x)
-    x = F.relu(self.fc3(x))
-    x = self.fc4(x)
-    return x
-```
-### CNN - 6 Layer Architecture for Classify Net
-```python
-class Classification(nn.Module):
-  def __init__(self):
-    super(Classification, self).__init__()
-    self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=0)
-    self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, padding=0)
-    self.conv3 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=3, padding=0)
-    self.conv4 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
-    self.conv5 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
-    self.conv6 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=1)
-    self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
-    self.batch_norm1 = nn.BatchNorm2d(32)
-    self.batch_norm2 = nn.BatchNorm2d(128)
-    self.dropout1 = nn.Dropout2d(p=0.05)
-    self.dropout2 = nn.Dropout2d(p=0.1)
-    self.fc1 = nn.Linear(128,64)
-    self.fc2 = nn.Linear(64, 32)
-    self.fc3 = nn.Linear(32, 10)
-    self.fc4 = nn.Linear(10, 3)
-
-  def forward(self,x):  
-    x = self.conv1(x)
-    x = F.relu(self.batch_norm1(x))
-
-    x = (F.relu(self.conv2(x)))
-    x = self.pool(x)
-    
-    x = self.conv3(x)
-    x = F.relu(self.batch_norm2(x))
-
-    x = (F.relu(self.conv4(x)))
-    x = self.pool(x)
-    x = self.dropout1(x)
-
-    x = self.conv5(x)
-    x = F.relu(self.batch_norm2(x))
-
-    x = (F.relu(self.conv6(x)))
-    x = self.pool(x)
-
-    x = x.view(x.size(0), -1)
-
-    x = self.dropout2(x)
-    x = F.relu(self.fc1(x))
-    x = F.relu(self.fc2(x))
-    x = self.dropout2(x)
-    x = F.relu(self.fc3(x))
-    x = self.fc4(x)
-    return x
-```
+### Tabel 4: Using Focus and Classify net of CNN - 6 Layer, following 16 experiments were performed
+|Sno.|Focus init |Classify init| Which module to be trained | Epoch | Train Acc | Test Acc | Train FTPT | Train FFPT | Train FTPF | Train FFPF | Test FTPT | Test FFPT | Test FTPF | Test FFPF | 
+|----|-------------------------|---------------------------------|----------------------------|-------|----------------|---------------|------------|------------|------------|------------|-----------|-----------|-----------|-----------|
+| 1 | Random | Random | - | 0 | 33 | 33 | 6 | 27 | 9 | 57 | 6 | 27 | 9 | 56 |
+| 2 | Random | Random | Both | 46 | 99 | 93 | 84 | 14 | 0 | 0 | 79 | 13 | 2 | 3 |
+| 3 | Random | Random | Focus | 50 | 33 | 32 | 2 | 30 | 5 | 61 | 2 | 31 | 5 | 61 |
+| 4 | Random | Random | Classify | 51 | 99 | 43 | 11 | 87 | 0 | 0 | 5 | 38 | 6 | 49 |
+| 5 | Pre-Trained | Random | - | 0 | 33 | 33 | 14 | 18 | 30 | 36 | 14 | 18 | 30 | 36 |
+| 6 | Pre-Trained | Random | Both | 19 | 99 | 97 | 86 | 13 | 0 | 0 | 85 | 12 | 1 | 0 |
+| 7 | Pre-Trained | Random | Focus | 50 | 33 | 33 | 0 | 32 | 4 | 62 | 0 | 33 | 4 | 62 |
+| 8 | Pre-Trained | Random | Classify | 113 | 99 | 90 | 99 | 0 | 0 | 0 | 90 | 0 | 9 | 0 | 
+| 9 | Random | Pre-Trained | - | 0 | 47 | 47 | 5 | 41 | 6 | 46 | 5 | 41 | 6 | 46 |
+| 10 | Random | Pre-Trained | Both | 52 | 99 | 94 | 86 | 12 | 0 | 0 | 82 | 12 | 1 | 3 |
+| 11 | Random | Pre-Trained | Focus | 148 | 99 | 95 | 90 | 8 | 0 | 0 | 86 | 8 | 1 | 3 |
+| 12 | Random | Pre-Trained | Classify | 60 | 99 | 44 | 13 | 85 | 0 | 0 | 6 | 38 | 7 | 47 |
+| 13 | Pre-Trained | Pre-Trained | - | 0 | 97 | 97 | 97 | 0 | 2 | 0 | 97 | 0 | 2 | 0 |
+| 14 | Pre-Trained | Pre-Trained | Both | 3 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+| 15 | Pre-Trained | Pre-Trained | Focus | 50| 39 | 39 | 9 | 29 | 0 | 59 | 9 | 30 | 0 | 59 |
+| 16 | Pre-Trained | Pre-Trained | Classify | 11 | 99 | 96 | 99 | 0 | 0 | 0 | 95 | 0 | 4 | 0 |
