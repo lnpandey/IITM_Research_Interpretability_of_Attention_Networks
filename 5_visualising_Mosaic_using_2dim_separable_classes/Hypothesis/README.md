@@ -100,6 +100,7 @@
 | Data     | Fg vs Bg Score(Linear) | fg1 vs fg2 score(Linear) | Linear SVM score (Mosaic) | Linear Attention Network Score | Deep Attention Network Score |
 | -------- | ---------------------- | ------------------------ | ------------------------  | ------------------------------ | ---------------------------- |
 | D_3_K_5  |    91                  |       93.1               |     63.8                  |     91.6                       |    96.1                      |
+| D_3_K_5  |    80                  |       87.43              |     62                    |     76.73                      |    86.9                      |
 | D_4_K_5  |    80.4                |       89.89              |     68                    |     80                         |     88.93                    |
 | D_4_K_10 |    80.4                |       89.39              |     62.56                 |     73.86                      |     87.06                    |
 | D_5_K_5  |    86.2                |       83.33              |     62.9                  |     80.33                      |     96.36                    |
@@ -109,6 +110,7 @@
 | Data     |  Linear Attention Trends                    |    Deep Attention Trends                    |
 | ------   |  ---------------------------------------    |    --------------------------------------   |
 | D_3_K_5  | <img src= ./plots/trends_Linear_D_3.png width="150">  |  <img src= ./plots/trends_Deep_D_3.png width="150"> |
+| D_3_K_5  | <img src= ./plots/trends_Linear_D_3_K_5.png width="150">  |  <img src= ./plots/trends_Deep_D_3_K_5.png width="150"> |
 | D_4_K_5  | <img src= ./plots/trends_Linear_D_4_K_5.png width="150">  |  <img src= ./plots/trends_Deep_D_4_K_5.png width="150"> |
 | D_4_K_10 | <img src= ./plots/trends_Linear_D_4_K_10.png width="150"> |  <img src= ./plots/trends_Deep_D_4_K_10.png width="150"> |
 | D_5_K_5  | <img src= ./plots/trends_Linear_D_5_K_5.png width="150">  |  <img src= ./plots/trends_Deep_D_5_K_5.png width="150"> |
