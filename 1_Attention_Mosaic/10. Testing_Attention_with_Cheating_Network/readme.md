@@ -18,18 +18,18 @@
 | 2 | Random | Random | Both | 46 | 99 | 93 | 84 | 14 | 0 | 0 | 79 | 13 | 2 | 3 |
 | 3 | Random | Random | Focus | 50 | 33 | 32 | 2 | 30 | 5 | 61 | 2 | 31 | 5 | 61 |
 | 4 | Random | Random | Classify | 51 | 99 | 43 | 11 | 87 | 0 | 0 | 5 | 38 | 6 | 49 |
-| 5 | Pre-Trained | Random | - | 0 | 33 | 33 |
-| 6 | Pre-Trained | Random | Both | 19 | 99 | 97 |
-| 7 | Pre-Trained | Random | Focus | 50 | 33 | 33 |
-| 8 | Pre-Trained | Random | Classify | 113 | 99 | 90 |
-| 9 | Random | Pre-Trained | - | 0 | 47 | 47 |
-| 10 | Random | Pre-Trained | Both | 52 | 99 | 93 |
-| 11 | Random | Pre-Trained | Focus | 20 | 47 | 45 |
-| 12 | Random | Pre-Trained | Classify | 60 | 99 | 44 |
-| 13 | Pre-Trained | Pre-Trained | - | 0 | 97 | 97 |
-| 14 | Pre-Trained | Pre-Trained | Both | 4 | 99 | 99 |
-| 15 | Pre-Trained | Pre-Trained | Focus | 200 | 40 | 39 |
-| 16 | Pre-Trained | Pre-Trained | Classify | 11 | 99 | 96 |
+| 5 | Pre-Trained | Random | - | 0 | 33 | 33 | 14 | 18 | 30 | 36 | 14 | 18 | 30 | 36 |
+| 6 | Pre-Trained | Random | Both | 19 | 99 | 97 | 86 | 13 | 0 | 0 | 85 | 12 | 1 | 0 |
+| 7 | Pre-Trained | Random | Focus | 50 | 33 | 33 | 0 | 32 | 4 | 62 | 0 | 33 | 4 | 62 |
+| 8 | Pre-Trained | Random | Classify | 113 | 99 | 90 | 99 | 0 | 0 | 0 | 90 | 0 | 9 | 0 | 
+| 9 | Random | Pre-Trained | - | 0 | 47 | 47 | 5 | 41 | 6 | 46 | 5 | 41 | 6 | 46 |
+| 10 | Random | Pre-Trained | Both | 52 | 99 | 94 | 86 | 12 | 0 | 0 | 82 | 12 | 1 | 3 |
+| 11 | Random | Pre-Trained | Focus | 148 | 99 | 95 | 90 | 8 | 0 | 0 | 86 | 8 | 1 | 3 |
+| 12 | Random | Pre-Trained | Classify | 60 | 99 | 44 | 13 | 85 | 0 | 0 | 6 | 38 | 7 | 47 |
+| 13 | Pre-Trained | Pre-Trained | - | 0 | 97 | 97 | 97 | 0 | 2 | 0 | 97 | 0 | 2 | 0 |
+| 14 | Pre-Trained | Pre-Trained | Both | 3 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+| 15 | Pre-Trained | Pre-Trained | Focus | 50| 39 39 | 9 | 29 | 0 | 59 | 9 | 30 | 0 | 59 |
+| 16 | Pre-Trained | Pre-Trained | Classify | 11 | 99 | 96 | 99 | 0 | 0 | 0 | 95 | 0 | 4 | 0 |
 
 
 ## Analysis of FTPT, FFPT, FTPF. FFPF for the above experiments
