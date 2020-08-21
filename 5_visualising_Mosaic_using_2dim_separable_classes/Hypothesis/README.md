@@ -100,15 +100,71 @@
 | Data     | Fg vs Bg Score(Linear) | fg1 vs fg2 score(Linear) | Linear SVM score (Mosaic) | Linear Attention Network Score | Deep Attention Network Score |
 | -------- | ---------------------- | ------------------------ | ------------------------  | ------------------------------ | ---------------------------- |
 | D_3_K_5  |    91                  |       93.1               |     63.8                  |     91.6                       |    96.1                      |
-| D_4_K_5  |    80.4                |       89.39              |     68.43                 |     80.26                      |     90.1                     |
-| D_5_K_5  |    83.2                |       81.60              |     62.23                 |     75.7                       |     94.56                    |
+| D_4_K_5  |    80.4                |       89.89              |     68                    |     80                         |     88.93                    |
+| D_4_K_10 |    80.4                |       89.39              |     62.56                 |     73.86                      |     87.06                    |
+| D_5_K_5  |    86.2                |       83.33              |     62.9                  |     80.33                      |     96.36                    |
+| D_5_K_10 |    86.4                |       83.83              |     60.1                  |     78.4                       |     95.93                    |
 
 
 | Data     |  Linear Attention Trends                    |    Deep Attention Trends                    |
 | ------   |  ---------------------------------------    |    --------------------------------------   |
 | D_3_K_5  | <img src= ./plots/trends_Linear_D_3.png width="150">  |  <img src= ./plots/trends_Deep_D_3.png width="150"> |
-| D_4_K_5  | <img src= ./plots/trends_Linear_D_4.png width="150">  |  <img src= ./plots/trends_Deep_D_4.png width="150"> |
-| D_5_K_5  | <img src= ./plots/trends_Linear_D_5.png width="150">  |  <img src= ./plots/trends_Deep_D_5.png width="150"> |
+| D_4_K_5  | <img src= ./plots/trends_Linear_D_4_K_5.png width="150">  |  <img src= ./plots/trends_Deep_D_4_K_5.png width="150"> |
+| D_4_K_10 | <img src= ./plots/trends_Linear_D_4_K_10.png width="150"> |  <img src= ./plots/trends_Deep_D_4_K_10.png width="150"> |
+| D_5_K_5  | <img src= ./plots/trends_Linear_D_5_K_5.png width="150">  |  <img src= ./plots/trends_Deep_D_5_K_5.png width="150"> |
+| D_5_K_10 | <img src= ./plots/trends_Linear_D_5_K_10.png width="150"> |  <img src= ./plots/trends_Deep_D_5_K_10.png width="150"> |
+
+### Deep Attention Model
+```python
+class Focus_deep(nn.Module):
+    '''
+       deep focus network averaged at zeroth layer
+       input : elemental data
+    '''
+    def __init__(self,inputs,output,K,d):
+        super(Focus_deep,self).__init__()
+        self.inputs = inputs
+        self.output = output
+        self.K = K
+        self.d  = d
+        self.linear1 = nn.Linear(self.inputs,50)  #,self.output)
+        self.linear2 = nn.Linear(50,self.output) 
+    def forward(self,z):
+        batch = z.shape[0]
+        x = torch.zeros([batch,self.K],dtype=torch.float64)
+        y = torch.zeros([batch,self.d], dtype=torch.float64)
+        #x,y = x.to("cuda"),y.to("cuda")
+        for i in range(self.K):
+            x[:,i] = self.helper(z[:,self.d*i:self.d*i+self.d])[:,0]
+        x = F.softmax(x,dim=1)   # alphas
+        x1 = x[:,0]
+        for i in range(self.K):
+            x1 = x[:,i]          
+            y = y+torch.mul(x1[:,None],z[:,self.d*i:self.d*i+self.d])
+        return y , x 
+    def helper(self,x):
+      x = F.relu(self.linear1(x))
+      x = self.linear2(x)
+      return x
+
+class Classification_deep(nn.Module):
+    '''
+       input : elemental data
+       deep classification module data averaged at zeroth layer
+    '''
+    def __init__(self,inputs,output):
+        super(Classification_deep,self).__init__()
+        self.inputs = inputs
+        self.output = output
+        self.linear1 = nn.Linear(self.inputs,50)
+        self.linear2 = nn.Linear(50,self.output)
+
+    def forward(self,x):
+      x = F.relu(self.linear1(x))
+      x = self.linear2(x)
+      return x    
+```
+
 <!--- | Data_distribution  | Linear SVM score |Deep NN Score| Accuracy | Analysis  |
 | ------------------ | ---------------- | ----------- |-------- | --------  |
 |<img src= ./plots/distribution1.png width="150">  | 66.4 | 67.1875 | 79.7 | <img src= ./plots/trends1.png width="150">  |
