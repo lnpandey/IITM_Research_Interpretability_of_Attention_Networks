@@ -211,7 +211,20 @@ class Classification(nn.Module):
 | 15 | Pre-Trained | Pre-Trained | Focus | 50| 39 | 39 | 9 | 29 | 0 | 59 | 9 | 30 | 0 | 59 |
 | 16 | Pre-Trained | Pre-Trained | Classify | 11 | 99 | 96 | 99 | 0 | 0 | 0 | 95 | 0 | 4 | 0 |
 
-
+### Tabel 5: Using Focus and Classify net of CNN - 6 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
+|Exp No.|Focus init |Classify init| Which module to be trained | analysis of FTPT, FFPT, FTPF, FFPF on Training Data | analysis of FTPT, FFPT, FTPF, FFPF on Testing Data |
+|----|-----------|-------------|----------------------------|-----------------------------------------------------|----------------------------------------------------|
+| 2  | Random | Random | Both | <img src= ./plots_and_images/6layer_cnn/row2_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row2_test.JPG width="800"> |
+| 3  | Random | Random | Focus | <img src= ./plots_and_images/6layer_cnn/row3_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row3_test.JPG width="800"> |
+| 4  | Random | Random | Classify | <img src= ./plots_and_images/6layer_cnn/row4_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row4_test.JPG width="800"> |
+| 6  | Pre-Trained | Random | Both | <img src= ./plots_and_images/6layer_cnn/row6_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row6_test.JPG width="800"> |
+| 7  | Pre-Trained | Random | Focus | <img src= ./plots_and_images/6layer_cnn/row7_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row7_test.JPG width="800"> |
+| 8  | Pre-Trained | Random | Classify | <img src= ./plots_and_images/6layer_cnn/row8_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row8_test.JPG width="800"> |
+| 10  | Random | Pre-Trained | Both | <img src= ./plots_and_images/6layer_cnn/row10_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row10_test.JPG width="800"> |
+| 11  | Random | Pre-Trained | Focus | <img src= ./plots_and_images/6layer_cnn/row11_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row11_test.JPG width="800"> |
+| 12  | Random | Pre-Trained | Classify | <img src= ./plots_and_images/6layer_cnn/row12_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row12_test.JPG width="800"> |
+| 15  | Pre-Trained | Pre-Trained | Focus | <img src= ./plots_and_images/6layer_cnn/row15_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row15_test.JPG width="800"> |
+| 16  | Pre-Trained | Pre-Trained | Classify | <img src= ./plots_and_images/6layer_cnn/row16_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row16_test.JPG width="800"> |
 <!--- ## Analysis of FTPT, FFPT, FTPF. FFPF for the above experiments 
 #### Row 2 : | 2 | Focus is Random | Classify is Random | Train Both | 46 | 99 | 94 |
 On Training Data 
