@@ -277,22 +277,22 @@ On Testing Data
 ![](./plots_and_images/test16.PNG)--->
 
 
-### Tabel 4: Using Focus and Classify net of CNN - 6 Layer, following 16 experiments were performed
+### Tabel 5: Using Focus and Classify net of CNN - 3 Layer, following 16 experiments were performed
 |Sno.|Focus init |Classify init| Which module to be trained | Epoch | Train Acc | Test Acc | Train FTPT | Train FFPT | Train FTPF | Train FFPF | Test FTPT | Test FFPT | Test FTPF | Test FFPF | 
 |----|-------------------------|---------------------------------|----------------------------|-------|----------------|---------------|------------|------------|------------|------------|-----------|-----------|-----------|-----------|
-| 1 | Random | Random | - | 0 | 33 | 33 | 6 | 27 | 9 | 57 | 6 | 27 | 9 | 56 |
-| 2 | Random | Random | Both | 46 | 99 | 93 | 84 | 14 | 0 | 0 | 79 | 13 | 2 | 3 |
-| 3 | Random | Random | Focus | 50 | 33 | 32 | 2 | 30 | 5 | 61 | 2 | 31 | 5 | 61 |
-| 4 | Random | Random | Classify | 51 | 99 | 43 | 11 | 87 | 0 | 0 | 5 | 38 | 6 | 49 |
-| 5 | Pre-Trained | Random | - | 0 | 33 | 33 | 14 | 18 | 30 | 36 | 14 | 18 | 30 | 36 |
-| 6 | Pre-Trained | Random | Both | 19 | 99 | 97 | 86 | 13 | 0 | 0 | 85 | 12 | 1 | 0 |
-| 7 | Pre-Trained | Random | Focus | 50 | 33 | 33 | 0 | 32 | 4 | 62 | 0 | 33 | 4 | 62 |
-| 8 | Pre-Trained | Random | Classify | 113 | 99 | 90 | 99 | 0 | 0 | 0 | 90 | 0 | 9 | 0 | 
-| 9 | Random | Pre-Trained | - | 0 | 47 | 47 | 5 | 41 | 6 | 46 | 5 | 41 | 6 | 46 |
-| 10 | Random | Pre-Trained | Both | 52 | 99 | 94 | 86 | 12 | 0 | 0 | 82 | 12 | 1 | 3 |
-| 11 | Random | Pre-Trained | Focus | 148 | 99 | 95 | 90 | 8 | 0 | 0 | 86 | 8 | 1 | 3 |
-| 12 | Random | Pre-Trained | Classify | 60 | 99 | 44 | 13 | 85 | 0 | 0 | 6 | 38 | 7 | 47 |
-| 13 | Pre-Trained | Pre-Trained | - | 0 | 97 | 97 | 97 | 0 | 2 | 0 | 97 | 0 | 2 | 0 |
-| 14 | Pre-Trained | Pre-Trained | Both | 3 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
-| 15 | Pre-Trained | Pre-Trained | Focus | 50| 39 | 39 | 9 | 29 | 0 | 59 | 9 | 30 | 0 | 59 |
-| 16 | Pre-Trained | Pre-Trained | Classify | 11 | 99 | 96 | 99 | 0 | 0 | 0 | 95 | 0 | 4 | 0 |
+| 1 | Random | Random | - | 0 | 33 | 33 | 2 | 31 | 11 | 54 | 2 | 30 | 12 | 54 |
+| 2 | Random | Random | Both | 65 | 99 | 91 | 82 | 17 | 0 | 0 | 76 | 14 | 2 | 5 |
+| 3 | Random | Random | Focus | 50 | 33 | 33 | 3 | 30 | 5 | 61 | 3 | 30 | 5 | 61 |
+| 4 | Random | Random | Classify | 77 | 99 | 41 | 9 | 90 | 0 | 0 | 4 | 37 | 5 | 53 |
+| 5 | Pre-Trained | Random | - | 0 | 33 | 33 | 0 | 33 | 0 | 66 | 0 | 32 | 0 | 67 |
+| 6 | Pre-Trained | Random | Both | 25 | 99 | 96 | 80 | 19 | 0 | 0 | 77 | 18 | 2 | 1 |
+| 7 | Pre-Trained | Random | Focus | 50 | 33 | 32 | 0 | 33 | 0 | 66 | 0 | 32 | 0 | 67 |
+| 8 | Pre-Trained | Random | Classify | 17 | 97 | 87 | 97 | 0 | 2 | 0 | 87 | 0 | 12 | 0 | 
+| 9 | Random | Pre-Trained | - | 0 | 33 | 34 | 5 | 28 | 6 | 59 | 5 | 28 | 6 | 58 |
+| 10 | Random | Pre-Trained | Both | 60 | 99 | 93 | 83 | 15 | 0 | 0 | 78 | 14 | 1 | 5 |
+| 11 | Random | Pre-Trained | Focus | 56 | 99 | 91 | 84 | 14 | 0 | 0 | 79 | 12 | 1 | 6 |
+| 12 | Random | Pre-Trained | Classify | 71 | 99 | 42 | 14 | 85 | 0 | 0 | 6 | 35 | 7 | 50 |
+| 13 | Pre-Trained | Pre-Trained | - | 0 | 65 | 64 | 65 | 0 | 34 | 0 | 64 | 0 | 35 | 0 |
+| 14 | Pre-Trained | Pre-Trained | Both | 22 | 99 | 98 | 99 | 0 | 0 | 0 | 97 | 0 | 1 | 0 |
+| 15 | Pre-Trained | Pre-Trained | Focus | 50 | 37 | 37 | 5 | 31 | 0 | 62 | 5 | 31 | 0 | 62 |
+| 16 | Pre-Trained | Pre-Trained | Classify | 23 | 99 | 90 | 99 | 0 | 0 | 0 | 90 | 0 | 9 | 0 |
