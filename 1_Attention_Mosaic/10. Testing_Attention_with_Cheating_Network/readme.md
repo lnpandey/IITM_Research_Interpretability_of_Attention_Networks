@@ -12,12 +12,12 @@
 
 
 ### Tabel 3: Using Focus and Classify net of Table 2, following 16 experiments were performed
-|Sno.|Focus Net Initialisation |Classification Net Initialisation| Which module to be trained | Epoch | Train Accuracy | Test Accuracy |
-|----|-------------------------|---------------------------------|----------------------------|-------|----------------|---------------|
-| 1 | Random | Random | - | 0 | 33 | 33 |
-| 2 | Random | Random | Both | 46 | 99 | 94 |
-| 3 | Random | Random | Focus | 50 | 33 | 32 |
-| 4 | Random | Random | Classify | 51 | 99 | 43 |
+|Sno.|Focus init |Classify init| Which module to be trained | Epoch | Train Accuracy | Test Accuracy | Train FTPT | Train FFPT | Train FTPF | Train FFPF | Test FTPT | Test FFPT | Test FTPF | Test FFPF | 
+|----|-------------------------|---------------------------------|----------------------------|-------|----------------|---------------|------------|------------|------------|------------|-----------|-----------|-----------|-----------|
+| 1 | Random | Random | - | 0 | 33 | 33 | 6 | 27 | 9 | 57 | 6 | 27 | 9 | 56 |
+| 2 | Random | Random | Both | 46 | 99 | 93 | 84 | 14 | 0 | 0 | 79 | 13 | 2 | 3 |
+| 3 | Random | Random | Focus | 50 | 33 | 32 | 2 | 30 | 5 | 61 | 2 | 31 | 5 | 61 |
+| 4 | Random | Random | Classify | 51 | 99 | 43 | 11 | 87 | 0 | 0 | 5 | 38 | 6 | 49 |
 | 5 | Pre-Trained | Random | - | 0 | 33 | 33 |
 | 6 | Pre-Trained | Random | Both | 19 | 99 | 97 |
 | 7 | Pre-Trained | Random | Focus | 50 | 33 | 33 |
