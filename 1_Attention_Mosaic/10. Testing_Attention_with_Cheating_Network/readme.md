@@ -25,18 +25,18 @@
 | 2 | Random | Random | Both | 65 | 99 | 91 | 82 | 17 | 0 | 0 | 76 | 14 | 2 | 5 |
 | 3 | Random | Random | Focus | 50 | 33 | 33 | 3 | 30 | 5 | 61 | 3 | 30 | 5 | 61 |
 | 4 | Random | Random | Classify | 77 | 99 | 41 | 9 | 90 | 0 | 0 | 4 | 37 | 5 | 53 |
-| 5 | Pre-Trained | Random | - | 0 | 33 | 33 | 0 | 33 | 0 | 66 | 0 | 32 | 0 | 67 |
-| 6 | Pre-Trained | Random | Both | 25 | 99 | 96 | 80 | 19 | 0 | 0 | 77 | 18 | 2 | 1 |
-| 7 | Pre-Trained | Random | Focus | 50 | 33 | 32 | 0 | 33 | 0 | 66 | 0 | 32 | 0 | 67 |
-| 8 | Pre-Trained | Random | Classify | 17 | 97 | 87 | 97 | 0 | 2 | 0 | 87 | 0 | 12 | 0 | 
+| 5 | Pre-Trained | Random | - | 0 | 33 | 32 | 33 | 0 | 66 | 0 | 32 | 0 | 67 |  0 |
+| 6 | Pre-Trained | Random | Both | 32 | 99 | 95 | 92 | 6 | 0 | 0 | 89 | 6 | 1 | 2 |
+| 7 | Pre-Trained | Random | Focus | 50 | 33 | 33 | 33 | 0 | 66 | 0 | 33 | 0 | 66 |  0 |
+| 8 | Pre-Trained | Random | Classify | 18 | 99 | 97 | 99 | 0 | 0 | 0 | 97 | 0 | 2 | 0 | 
 | 9 | Random | Pre-Trained | - | 0 | 33 | 34 | 5 | 28 | 6 | 59 | 5 | 28 | 6 | 58 |
 | 10 | Random | Pre-Trained | Both | 60 | 99 | 93 | 83 | 15 | 0 | 0 | 78 | 14 | 1 | 5 |
 | 11 | Random | Pre-Trained | Focus | 56 | 99 | 91 | 84 | 14 | 0 | 0 | 79 | 12 | 1 | 6 |
 | 12 | Random | Pre-Trained | Classify | 71 | 99 | 42 | 14 | 85 | 0 | 0 | 6 | 35 | 7 | 50 |
-| 13 | Pre-Trained | Pre-Trained | - | 0 | 65 | 64 | 65 | 0 | 34 | 0 | 64 | 0 | 35 | 0 |
-| 14 | Pre-Trained | Pre-Trained | Both | 22 | 99 | 98 | 99 | 0 | 0 | 0 | 97 | 0 | 1 | 0 |
-| 15 | Pre-Trained | Pre-Trained | Focus | 50 | 37 | 37 | 5 | 31 | 0 | 62 | 5 | 31 | 0 | 62 |
-| 16 | Pre-Trained | Pre-Trained | Classify | 23 | 99 | 90 | 99 | 0 | 0 | 0 | 90 | 0 | 9 | 0 |
+| 13 | Pre-Trained | Pre-Trained | - | 0 | 100 | 100 | 100 | 0 | 0 | 0 | 100 | 0 | 0 | 0 |
+| 14 | Pre-Trained | Pre-Trained | Both | 1 | 100 | 100 |100 | 0 | 0 | 0 | 100 | 0 | 0 | 0 |
+| 15 | Pre-Trained | Pre-Trained | Focus | 1 | 100 | 100 |100 | 0 | 0 | 0 | 100 | 0 | 0 | 0 |
+| 16 | Pre-Trained | Pre-Trained | Classify | 1 | 100 | 100 |100 | 0 | 0 | 0 | 100 | 0 | 0 | 0 |
 
 
 ### Tabel 5: Using Focus and Classify net of CNN - 3 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
