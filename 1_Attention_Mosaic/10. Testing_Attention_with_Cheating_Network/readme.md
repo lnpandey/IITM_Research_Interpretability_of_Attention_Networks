@@ -107,7 +107,7 @@
 | 13 | Pre-Trained | Pre-Trained | - | 0 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
 | 14 | Pre-Trained | Pre-Trained | Both | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
 | 15 | Pre-Trained | Pre-Trained | Focus | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
-| 16 | Pre-Trained | Pre-Trained | Classify | 15 | 100 | 99 | 100 | 0 | 0 | 99 | 0 | 0 | 0 |
+| 16 | Pre-Trained | Pre-Trained | Classify | 15 | 100 | 99 | 100 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
 
 
 ### CNN - 3 Layer Architecture for Focus Net
