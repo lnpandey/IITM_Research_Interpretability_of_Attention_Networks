@@ -97,14 +97,14 @@
 
 
 
-| Data     | Fg vs Bg Score(Linear) | fg1 vs fg2 score(Linear) | Linear SVM score (Mosaic) | Linear Attention Network Score | Deep Attention Network Score |
-| -------- | ---------------------- | ------------------------ | ------------------------  | ------------------------------ | ---------------------------- |
-| D_3_K_5  |    91                  |       93.1               |     63.8                  |     91.6                       |    96.1                      |
-| D_3_K_5  |    80                  |       87.43              |     62                    |     76.73                      |    86.9                      |
-| D_4_K_5  |    80.4                |       89.89              |     68                    |     80                         |     88.93                    |
-| D_4_K_10 |    80.4                |       89.39              |     62.56                 |     73.86                      |     87.06                    |
-| D_5_K_5  |    86.2                |       83.33              |     62.9                  |     80.33                      |     96.36                    |
-| D_5_K_10 |    86.4                |       83.83              |     60.1                  |     78.4                       |     95.93                    |
+| Data    | Fg vs Bg Score(Linear) | fg1 vs fg2 score(Linear) | Linear SVM score(Mosaic) | Linear Attention Network Score | Deep Attention Network Score| Deep Network Score  |
+| --------| ---------------------- | ------------------------ | ------------------------ | ----------------------------- | ---------------------------- | ------------------  |   
+| D_3_K_5 |    91                  |       93.1               |     63.8                 |     91.6                      |    96.1                      |                     |
+| D_3_K_5 |    80                  |       87.43              |     62                   |     76.73                     |    86.9                      |                     |
+| D_4_K_5 |    80.4                |       89.89              |     68                   |     80                        |     88.93                    |                     |
+| D_4_K_10|    80.4                |       89.39              |     62.56                |     73.86                     |     87.06                    |     98.8            |
+| D_5_K_5 |    86.2                |       83.33              |     62.9                 |     80.33                     |     96.36                    |                     |
+| D_5_K_10|    86.4                |       83.83              |     60.1                 |     78.4                      |     95.93                    |                     |
 
 
 | Data     |  Linear Attention Trends                    |    Deep Attention Trends                    |
@@ -166,6 +166,44 @@ class Classification_deep(nn.Module):
       x = self.linear2(x)
       return x    
 ```
+### Synthetic Data Pretrained Models(Cheating)
+D_4 K_10 (Linear Model)
+| Focus Init      | Classification Init             | Training Module          | Training Acuracy  | Analysis                                                     |
+| --------------- | --------------------------      | ------------------------ | ----------- ----- | ---------------------------------------------------          |
+| Random          | Random                          |   -                      |    51.20      | NA                                                               |
+| Random          | Random                          |   Both                   |    73.73      | img src= ./plots/both_randomb_trends_D_4_K_10.png width="150">   |               
+| Random          | Random                          |   Focus                  |    62.7       | img src= ./plots/focus_randomb_trends_D_4_K_10.png width="150"> |
+| Random          | Random                          |   classify               |    59.96      | img src= ./plots/classify_randomb_trends_D_4_K_10.png width="150">|
+| Random          | Pretrained                      |   -                      |    56.56      | NA                                                         |
+| Random          | Pretrained                      |   Both                   |    73.8       | img src= ./plots/both_randomf_trends_D_4_K_10.png width="150"> |               
+| Random          | Pretrained                      |   Focus                  |    71.9       | img src= ./plots/focus_randomf_trends_D_4_K_10.png width="150">      |
+| Random          | Pretrained                      |   classify               |    54.5       | img src= ./plots/classify_randomf_trends_D_4_K_10.png width="150">      |    
+| Pretrained      | Random                          |   -                      |    49.86      | NA                                                         |
+| Pretrained      | Random                          |   Both                   |    74.76      | img src= ./plots/both_randomc_trends_D_4_K_10.png width="150"> |               
+| Pretrained      | Random                          |   Focus                  |    50.06      | img src= ./plots/focus_randomc_trends_D_4_K_10.png width="150">       |
+| Pretrained      | Random                          |   classify               |  73.63        | img src= ./plots/classify_randomc_trends_D_4_K_10.pngwidth="150">      | 
+| Pretrained      | Pretrained                      |   -                      | 73.46         | NA                                                         |
+| Pretrained      | Pretrained                      |   Both                   | 74.6          | img src= ./plots/both_norandom_trends_D_4_K_10 width="150">|               
+| Pretrained      | Pretrained                      |   Focus                  | 73.63         | img src= ./plots/focus_norandom_trends_D_4_K_10.png width="150">      |
+| Pretrained      | Pretrained                      |   classify               |   73.3        | img src= ./plots/classify_norandom_trends_D_4_K_10.pngwidth="150">      | 
+
+
+
+
+
+D_4 K_10 (Deep Model)
+| Focus Init      | Classification Init             | Training Module          | Training Acuracy         | Analysis                                              |
+| --------------- | --------------------------      | ------------------------ | ------------------------ | ---------------------------------------------------   |
+| Random          | Random                          |   -                      |        54.4              | NA                                                    |
+| Random          | Random                          |   Both                   |        88.06             | img src= ./plots/ch_trends_D_4_K_10.png width="150">  |               
+| Random          | Random                          |   Focus                  |        72.03             | img src= ./plots/chf_trends_D_4_K_10.png width="150"> |
+| Random          | Random                          |   classify               |        63.36             | img src= ./plots/chc_trends_D_4_K_10.png width="150"> |
+| Random          | Pretrained                      |   -                      |                      | NA                                                    |
+| Random          | Pretrained                      |   Both                   |                   | img src= ./plots/ch_trends_D_4_K_10.png width="150">  |               
+| Random          | Pretrained                      |   Focus                  |                     | img src= ./plots/chf_trends_D_4_K_10.png width="150"> |
+| Random          | Pretrained                      |   classify               |                     | img src= ./plots/chc_trends_D_4_K_10.png width="150"> |        
+
+
 
 <!--- | Data_distribution  | Linear SVM score |Deep NN Score| Accuracy | Analysis  |
 | ------------------ | ---------------- | ----------- |-------- | --------  |
