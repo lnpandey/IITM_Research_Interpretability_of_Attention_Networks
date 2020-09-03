@@ -11,12 +11,13 @@ class Focus_linear(nn.Module):
     '''
        linear focus network
     '''
-    def __init__(self,inputs,output,K,d):
+    def __init__(self,inputs,output,K,d,pretrained=False):
         super(Focus_linear,self).__init__()
         self.inputs = inputs
         self.output = output
         self.K = K
         self.d = d
+        self.pretrained = pretrained
         self.linear1 = nn.Linear(self.inputs,self.output)
     def forward(self,z):
         batch = z.shape[0]
@@ -33,8 +34,10 @@ class Focus_linear(nn.Module):
         return y , x 
     def helper(self,x):
         x = self.linear1(x)
+        if self.pretrained==True:
+          x = x[:,0] - x[:,1]
+          x = x[:,None]
         return x
-
 class Classification_linear(nn.Module):
     '''
     linear classification network
@@ -54,12 +57,13 @@ class Focus_deep(nn.Module):
        deep focus network averaged at zeroth layer
        input : elemental data
     '''
-    def __init__(self,inputs,output,K,d):
+    def __init__(self,inputs,output,K,d,pretrained=False):
         super(Focus_deep,self).__init__()
         self.inputs = inputs
         self.output = output
         self.K = K
         self.d  = d
+        self.pretrained = pretrained
         self.linear1 = nn.Linear(self.inputs,50)  #,self.output)
         self.linear2 = nn.Linear(50,self.output) 
     def forward(self,z):
@@ -78,6 +82,10 @@ class Focus_deep(nn.Module):
     def helper(self,x):
       x = F.relu(self.linear1(x))
       x = self.linear2(x)
+      #print(x.shape)
+      if self.pretrained ==True:
+        x = x[:,0]-x[:,1]
+        x = x[:,None]
       return x
 
 class Classification_deep(nn.Module):

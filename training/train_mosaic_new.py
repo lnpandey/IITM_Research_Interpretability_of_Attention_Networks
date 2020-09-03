@@ -29,10 +29,12 @@ class train_mosaic_network():
     self.elemental = elemental
     self.x = x
     self.y = y
-  def train_epoch(self,epoch,analyse, train_loss, epochs_or_loss_flag,mini=80 ):
+  def train_epoch(self,epoch,analyse, train_loss, epochs_or_loss_flag,mini=80 ,train_focus=True,train_classify=True):
     '''
        trains a one epoch, if analyse =True the store the analysis data also
        mini: print loss after mini number of batches default value 80
+       train focus: True if training focus
+       train classification: True if training classification
     '''
     running_loss = 0
     cnt = 0
@@ -43,9 +45,13 @@ class train_mosaic_network():
     for i, data in  enumerate(self.trainloader):
       inputs , labels , fgrnd_idx = data
       inputs,labels = inputs.to(device),labels.to(device)
-  
-      self.optimizer_focus.zero_grad()
-      self.optimizer_classification.zero_grad()
+      if train_focus ==True and train_classify==True:  
+        self.optimizer_focus.zero_grad()
+        self.optimizer_classification.zero_grad()
+      elif train_focus == False and train_classify ==True:
+        self.optimizer_classification.zero_grad()
+      elif train_focus == True and train_classify == False:
+        self.optimizer_focus.zero_grad()
     
       avg_data , alphas = self.focus_net(inputs)
       outputs = self.classification_net(avg_data)
@@ -53,9 +59,16 @@ class train_mosaic_network():
       _, predicted = torch.max(outputs.data, 1)
       loss = self.criterion(outputs, labels)
       loss.backward()
-    
-      self.optimizer_focus.step()
-      self.optimizer_classification.step()
+      if train_focus ==True and train_classify==True:  
+        self.optimizer_focus.step()
+        self.optimizer_classification.step()
+      elif train_focus == False and train_classify ==True:
+        self.optimizer_classification.step()
+      elif train_focus == True and train_classify == False:
+        self.optimizer_focus.step()
+        
+      #self.optimizer_focus.step()
+      #self.optimizer_classification.step()
     
       running_loss += loss.item()
       #mini = 80
@@ -82,7 +95,7 @@ class train_mosaic_network():
     return ep_loss
 
 
-  def training(self,epochs=100000,analyse=True,train_loss=0.001,mini=80, epochs_or_loss_flag = True):
+  def training(self,epochs=100000,analyse=True,train_loss=0.001,mini=80, epochs_or_loss_flag = True,train_focus=True,train_classify=True):
     '''
        train given models for number of epochs 
        epochs=100000 by default
@@ -90,10 +103,12 @@ class train_mosaic_network():
        epochs_or_loss_flag = True , if training by epochs, if epochs_or_loss_flag = False, then train by training loss.
        mini : print loss after mini number of batches default value 80
        analyse=True , if you want to plot Focus-prediction analysis plot
+       train_focus : True if training focus is training
+       train_classification : True if classification is training
     '''
     print("Training started...")
     for epoch in range(epochs):
-      epoch_loss = self.train_epoch(epoch,analyse,train_loss, epochs_or_loss_flag,mini)
+      epoch_loss = self.train_epoch(epoch,analyse,train_loss, epochs_or_loss_flag,mini,train_focus,train_classify)
       self.train_loss.append(np.mean(epoch_loss))
     print("Finished Training")
 

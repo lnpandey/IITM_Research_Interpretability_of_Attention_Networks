@@ -98,8 +98,8 @@ class train_network():
       print("percentage accuracy: ",train_acc/total) 
     return true,pred
 
-  def save_models(self):
+  def save_models(self,model):
     '''
        save models
     '''
-    torch.save(self.net.state_dict(),"net.pt")
+    torch.save(self.net.state_dict(),model+".pt")
