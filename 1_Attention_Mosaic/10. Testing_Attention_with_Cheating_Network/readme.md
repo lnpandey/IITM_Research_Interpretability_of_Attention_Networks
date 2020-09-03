@@ -42,18 +42,16 @@
 ### Tabel 5: Using Focus and Classify net of CNN - 3 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
 |Exp No.|Focus init |Classify init| Which module to be trained | analysis of FTPT, FFPT, FTPF, FFPF on Training Data | analysis of FTPT, FFPT, FTPF, FFPF on Testing Data |
 |----|-----------|-------------|----------------------------|-----------------------------------------------------|----------------------------------------------------|
-| 2  | Random | Random | Both | <img src= ./plots_and_images/3layer_cnn/row2_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row2_test.JPG width="800"> |
-| 3  | Random | Random | Focus | <img src= ./plots_and_images/3layer_cnn/row3_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row3_test.JPG width="800"> |
-| 4  | Random | Random | Classify | <img src= ./plots_and_images/3layer_cnn/row4_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row4_test.JPG width="800"> |
-| 6  | Pre-Trained | Random | Both | <img src= ./plots_and_images/3layer_cnn/row6_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row6_test.JPG width="800"> |
-| 7  | Pre-Trained | Random | Focus | <img src= ./plots_and_images/3layer_cnn/row7_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row7_test.JPG width="800"> |
-| 8  | Pre-Trained | Random | Classify | <img src= ./plots_and_images/3layer_cnn/row8_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row8_test.JPG width="800"> |
-| 10  | Random | Pre-Trained | Both | <img src= ./plots_and_images/3layer_cnn/row10_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row10_test.JPG width="800"> |
-| 11  | Random | Pre-Trained | Focus | <img src= ./plots_and_images/3layer_cnn/row11_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row11_test.JPG width="800"> |
-| 12  | Random | Pre-Trained | Classify | <img src= ./plots_and_images/3layer_cnn/row12_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row12_test.JPG width="800"> |
-| 14  | Pre-Trained | Pre-Trained | Both | <img src= ./plots_and_images/3layer_cnn/row14_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row14_test.JPG width="800"> |
-| 15  | Pre-Trained | Pre-Trained | Focus | <img src= ./plots_and_images/3layer_cnn/row15_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row15_test.JPG width="800"> |
-| 16  | Pre-Trained | Pre-Trained | Classify | <img src= ./plots_and_images/3layer_cnn/row16_train.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/row16_test.JPG width="800"> |
+| 2  | Random | Random | Both | <img src= ./plots_and_images/3layer_cnn/train2.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/test2.JPG width="800"> |
+| 3  | Random | Random | Focus | <img src= ./plots_and_images/3layer_cnn/train3.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/test3.JPG width="800"> |
+| 4  | Random | Random | Classify | <img src= ./plots_and_images/3layer_cnn/train4.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/test4.JPG width="800"> |
+| 6  | Pre-Trained | Random | Both | <img src= ./plots_and_images/3layer_cnn/train6.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/test6.JPG width="800"> |
+| 7  | Pre-Trained | Random | Focus | <img src= ./plots_and_images/3layer_cnn/train7.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/test7.JPG width="800"> |
+| 8  | Pre-Trained | Random | Classify | <img src= ./plots_and_images/3layer_cnn/train8.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/test8.JPG width="800"> |
+| 10  | Random | Pre-Trained | Both | <img src= ./plots_and_images/3layer_cnn/train10.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/test10.JPG width="800"> |
+| 11  | Random | Pre-Trained | Focus | <img src= ./plots_and_images/3layer_cnn/train11.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/test11.JPG width="800"> |
+| 12  | Random | Pre-Trained | Classify | <img src= ./plots_and_images/3layer_cnn/train12.JPG width="800">  |  <img src= ./plots_and_images/3layer_cnn/test12.JPG width="800"> |
+
 
 
 ### Tabel 6: Using Focus and Classify net of CNN - 6 Layer, following 16 experiments were performed
@@ -80,17 +78,37 @@
 ### Tabel 7: Using Focus and Classify net of CNN - 6 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
 |Exp No.|Focus init |Classify init| Which module to be trained | analysis of FTPT, FFPT, FTPF, FFPF on Training Data | analysis of FTPT, FFPT, FTPF, FFPF on Testing Data |
 |----|-----------|-------------|----------------------------|-----------------------------------------------------|----------------------------------------------------|
-| 2  | Random | Random | Both | <img src= ./plots_and_images/6layer_cnn/row2_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row2_test.JPG width="800"> |
-| 3  | Random | Random | Focus | <img src= ./plots_and_images/6layer_cnn/row3_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row3_test.JPG width="800"> |
-| 4  | Random | Random | Classify | <img src= ./plots_and_images/6layer_cnn/row4_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row4_test.JPG width="800"> |
-| 6  | Pre-Trained | Random | Both | <img src= ./plots_and_images/6layer_cnn/row6_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row6_test.JPG width="800"> |
-| 7  | Pre-Trained | Random | Focus | <img src= ./plots_and_images/6layer_cnn/row7_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row7_test.JPG width="800"> |
-| 8  | Pre-Trained | Random | Classify | <img src= ./plots_and_images/6layer_cnn/row8_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row8_test.JPG width="800"> |
-| 10  | Random | Pre-Trained | Both | <img src= ./plots_and_images/6layer_cnn/row10_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row10_test.JPG width="800"> |
-| 11  | Random | Pre-Trained | Focus | <img src= ./plots_and_images/6layer_cnn/row11_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row11_test.JPG width="800"> |
-| 12  | Random | Pre-Trained | Classify | <img src= ./plots_and_images/6layer_cnn/row12_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row12_test.JPG width="800"> |
-| 15  | Pre-Trained | Pre-Trained | Focus | <img src= ./plots_and_images/6layer_cnn/row15_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row15_test.JPG width="800"> |
-| 16  | Pre-Trained | Pre-Trained | Classify | <img src= ./plots_and_images/6layer_cnn/row16_train.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/row16_test.JPG width="800"> |
+| 2  | Random | Random | Both | <img src= ./plots_and_images/6layer_cnn/train2.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/test2.JPG width="800"> |
+| 3  | Random | Random | Focus | <img src= ./plots_and_images/6layer_cnn/train3.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/test3.JPG width="800"> |
+| 4  | Random | Random | Classify | <img src= ./plots_and_images/6layer_cnn/train4.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/test4.JPG width="800"> |
+| 6  | Pre-Trained | Random | Both | <img src= ./plots_and_images/6layer_cnn/train6.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/test6.JPG width="800"> |
+| 7  | Pre-Trained | Random | Focus | <img src= ./plots_and_images/6layer_cnn/train7.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/test7.JPG width="800"> |
+| 8  | Pre-Trained | Random | Classify | <img src= ./plots_and_images/6layer_cnn/train8.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/test8.JPG width="800"> |
+| 10  | Random | Pre-Trained | Both | <img src= ./plots_and_images/6layer_cnn/train10.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/test10.JPG width="800"> |
+| 11  | Random | Pre-Trained | Focus | <img src= ./plots_and_images/6layer_cnn/train11.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/test11.JPG width="800"> |
+| 12  | Random | Pre-Trained | Classify | <img src= ./plots_and_images/6layer_cnn/train12.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/test12.JPG width="800"> |
+| 16  | Pre-Trained | Pre-Trained | Classify | <img src= ./plots_and_images/6layer_cnn/train16.JPG width="800">  |  <img src= ./plots_and_images/6layer_cnn/test16.JPG width="800"> |
+
+### Tabel 8: Using Focus net of CNN - 3 layers and Classify net of CNN - 6 Layer, following 16 experiments were performed
+|Sno.|Focus init |Classify init| Which module to be trained | Epoch | Train Acc | Test Acc | Train FTPT | Train FFPT | Train FTPF | Train FFPF | Test FTPT | Test FFPT | Test FTPF | Test FFPF | 
+|----|-------------------------|---------------------------------|----------------------------|-------|----------------|---------------|------------|------------|------------|------------|-----------|-----------|-----------|-----------|
+| 1 | Random | Random | - | 0 | 33 | 32 | 3 | 30 | 12 | 54 | 3 | 29 | 11 | 55 |
+| 2 | Random | Random | Both | 72 | 99 | 90 | 80 | 18 | 0 | 0 | 75 | 14 | 3 | 6 |
+| 3 | Random | Random | Focus | 50 | 33 | 33 | 2 | 31 | 11 | 55 | 1 | 31 | 11 | 55 |
+| 4 | Random | Random | Classify | 50 | 99 | 44 | 12 | 87 | 0 | 0 | 5 | 39 | 7 | 48 |
+| 5 | Pre-Trained | Random | - | 0 | 33 | 33 | 33 | 0 | 66 | 0 | 33 | 0 | 66 | 0 |
+| 6 | Pre-Trained | Random | Both | 32 | 99 | 96 | 95 | 4 | 0 | 0 | 91 | 4 | 1 | 2 |
+| 7 | Pre-Trained | Random | Focus | 100 | 33 | 32 | 20 | 13| 39 | 27 | 19 | 13 | 14 | 26 |
+| 8 | Pre-Trained | Random | Classify | 12 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 | 
+| 9 | Random | Pre-Trained | - | 0 | 47 | 47 | 3 | 43 | 3 | 48 | 3 | 43 | 3 | 49 |
+| 10 | Random | Pre-Trained | Both | 47 | 99 | 91 | 80 | 10 | 0 | 0 | 75 | 15 | 1 | 6 |
+| 11 | Random | Pre-Trained | Focus | 158 | 99 | 93 | 87 | 11 | 0 | 0 | 83 | 10 | 1 | 4 |
+| 12 | Random | Pre-Trained | Classify | 59 | 99 | 44 | 12 | 86 | 0 | 0 | 5 | 38 | 6 | 49 |
+| 13 | Pre-Trained | Pre-Trained | - | 0 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+| 14 | Pre-Trained | Pre-Trained | Both | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+| 15 | Pre-Trained | Pre-Trained | Focus | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+| 16 | Pre-Trained | Pre-Trained | Classify | 15 | 100 | 99 | 100 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+
 
 ### CNN - 3 Layer Architecture for Focus Net
 ```python
