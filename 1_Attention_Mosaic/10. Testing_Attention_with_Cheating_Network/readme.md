@@ -123,7 +123,25 @@
 | 12  | Random | Pre-Trained | Classify | <img src= ./plots_and_images/3_6_layer_cnn/train12.JPG width="800">  |  <img src= ./plots_and_images/3_6_layer_cnn/test12.JPG width="800"> |
 | 16  | Pre-Trained | Pre-Trained | Classify | <img src= ./plots_and_images/3_6_layer_cnn/train16.JPG width="800">  |  <img src= ./plots_and_images/3_6_layer_cnn/test16.JPG width="800"> |
 
-
+### Tabel 10: Using Focus net of CNN - 6 layers and Classify net of CNN - 3 Layer, following 16 experiments were performed
+|Sno.|Focus init |Classify init| Which module to be trained | Epoch | Train Acc | Test Acc | Train FTPT | Train FFPT | Train FTPF | Train FFPF | Test FTPT | Test FFPT | Test FTPF | Test FFPF | 
+|----|-------------------------|---------------------------------|----------------------------|-------|----------------|---------------|------------|------------|------------|------------|-----------|-----------|-----------|-----------|
+| 1 | Random | Random | - | 0 | 33 | 33 | 2 | 30 | 9 | 56 | 2 | 31 | 9 | 56 |
+| 2 | Random | Random | Both | 79 | 99 | 93 | 78 | 21 | 0 | 0 | 74 | 19 | 2 | 4 |
+| 3 | Random | Random | Focus | 50 | 32 | 32 | 2 | 29 | 10 | 57 | 2 | 30 | 10 | 56 |
+| 4 | Random | Random | Classify | 79 | 99 | 42 | 13 | 85 | 0 | 0 | 5 | 36 | 7 | 50 |
+| 5 | Pre-Trained | Random | - | 0 | 33 | 32 | 33 | 0 | 66 | 0 | 32 | 0 | 67 | 0 |
+| 6 | Pre-Trained | Random | Both | 27 | 99 | 96 | 85 | 13 | 0 | 0 | 83 | 13 | 2 | 0 |
+| 7 | Pre-Trained | Random | Focus | 50 | 33 | 32 | 33 | 0 | 66 | 0 | 32 | 0 | 67 | 0 |
+| 8 | Pre-Trained | Random | Classify | 23 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 | 
+| 9 | Random | Pre-Trained | - | 0 | 34| 34 | 3 | 30 | 7 | 58 | 3 | 30 | 6 | 59 |
+| 10 | Random | Pre-Trained | Both | 50 | 99 | 95 | 82 | 17 | 0 | 0 | 78 | 16 | 1 | 2 |
+| 11 | Random | Pre-Trained | Focus | 85 | 99 | 95 | 87 | 11 | 0 | 0 | 85 | 9 | 0 | 4 |
+| 12 | Random | Pre-Trained | Classify | 72 | 98 | 41 | 14 | 84 | 0 | 1 | 6 | 35 | 8 | 50 |
+| 13 | Pre-Trained | Pre-Trained | - | 0 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+| 14 | Pre-Trained | Pre-Trained | Both | 5 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 |
+| 15 | Pre-Trained | Pre-Trained | Focus | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+| 16 | Pre-Trained | Pre-Trained | Classify | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
 ### CNN - 3 Layer Architecture for Focus Net
 ```python
 class Focus(nn.Module):
