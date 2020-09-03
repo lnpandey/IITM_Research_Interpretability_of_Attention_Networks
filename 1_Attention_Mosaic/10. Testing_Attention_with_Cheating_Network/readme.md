@@ -142,6 +142,19 @@
 | 14 | Pre-Trained | Pre-Trained | Both | 5 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 |
 | 15 | Pre-Trained | Pre-Trained | Focus | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
 | 16 | Pre-Trained | Pre-Trained | Classify | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+
+### Tabel 11 : Using Focus net of CNN - 6 layers and Classify net of CNN - 3 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
+|Exp No.|Focus init |Classify init| Which module to be trained | analysis of FTPT, FFPT, FTPF, FFPF on Training Data | analysis of FTPT, FFPT, FTPF, FFPF on Testing Data |
+|----|-----------|-------------|----------------------------|-----------------------------------------------------|----------------------------------------------------|
+| 2  | Random | Random | Both | <img src= ./plots_and_images/6_3_layer_cnn/train2.JPG width="800">  |  <img src= ./plots_and_images/6_3_layer_cnn/test2.JPG width="800"> |
+| 3  | Random | Random | Focus | <img src= ./plots_and_images/6_3_layer_cnn/train3.JPG width="800">  |  <img src= ./plots_and_images/6_3_layer_cnn/test3.JPG width="800"> |
+| 4  | Random | Random | Classify | <img src= ./plots_and_images/6_3_layer_cnn/train4.JPG width="800">  |  <img src= ./plots_and_images/6_3_layer_cnn/test4.JPG width="800"> |
+| 6  | Pre-Trained | Random | Both | <img src= ./plots_and_images/6_3_layer_cnn/train6.JPG width="800">  |  <img src= ./plots_and_images/6_3_layer_cnn/test6.JPG width="800"> |
+| 7  | Pre-Trained | Random | Focus | <img src= ./plots_and_images/6_3_layer_cnn/train7.JPG width="800">  |  <img src= ./plots_and_images/6_3_layer_cnn/test7.JPG width="800"> |
+| 8  | Pre-Trained | Random | Classify | <img src= ./plots_and_images/6_3_layer_cnn/train8.JPG width="800">  |  <img src= ./plots_and_images/6_3_layer_cnn/test8.JPG width="800"> |
+| 10  | Random | Pre-Trained | Both | <img src= ./plots_and_images/6_3_layer_cnn/train10.JPG width="800">  |  <img src= ./plots_and_images/6_3_layer_cnn/test10.JPG width="800"> |
+| 11  | Random | Pre-Trained | Focus | <img src= ./plots_and_images/6_3_layer_cnn/train11.JPG width="800">  |  <img src= ./plots_and_images/6_3_layer_cnn/test11.JPG width="800"> |
+| 12  | Random | Pre-Trained | Classify | <img src= ./plots_and_images/6_3_layer_cnn/train12.JPG width="800">  |  <img src= ./plots_and_images/6_3_layer_cnn/test12.JPG width="800"> |
 ### CNN - 3 Layer Architecture for Focus Net
 ```python
 class Focus(nn.Module):
