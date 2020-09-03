@@ -183,7 +183,7 @@ D_4 K_10 (Linear Model)
 | Pretrained      | Random                     |   Focus                  |    50.06      | <img src= ./plots/focus_randomc_trends_D_4_K_10.png width="150">     |
 | Pretrained      | Random                     |   classify               |  73.63        | <img src= ./plots/classify_randomc_trends_D_4_K_10.png width="150">   | 
 | Pretrained      | Pretrained                 |   -                      | 73.46         | NA                                                                  |
-| Pretrained      | Pretrained                 |   Both                   | 74.6          | <img src= ./plots/both_norandom_trends_D_4_K_10 width="150">         |               
+| Pretrained      | Pretrained                 |   Both                   | 74.6          | <img src= ./plots/both_norandom_trends_D_4_K_10.png width="150">     |               
 | Pretrained      | Pretrained                 |   Focus                  | 73.63         | <img src= ./plots/focus_norandom_trends_D_4_K_10.png width="150">    |
 | Pretrained      | Pretrained                 |   classify               |   73.3        | <img src= ./plots/classify_norandom_trends_D_4_K_10.png width="150">  | 
 
