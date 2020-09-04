@@ -210,7 +210,31 @@ D_4 K_10 (Deep Model)
 | Pretrained      | Pretrained                 |   -                      | 75.7          | NA                                                                  |
 | Pretrained      | Pretrained                 |   Both                   | 90.33         | <img src= ./plots/both_deep_norandom_trends_D_4_K_10.png width="150">  |            
 | Pretrained      | Pretrained                 |   Focus                  | 88.36        | <img src= ./plots/focus_deep_norandom_trends_D_4_K_10.png width="150">    |
-| Pretrained      | Pretrained                 |   classify               |  88.73       | <img src= ./plots/classify_deep_norandom_trends_D_4_K_10.png width="150">  |     
+| Pretrained      | Pretrained                 |   classify               |  88.73       | <img src= ./plots/classify_deep_norandom_trends_D_4_K_10.png width="150">  |   
+
+
+
+
+D_4 K_10 ( linear-deep Model)
+| Focus Init      | Classification Init        | Training Module          | Training Acuracy  | Analysis                                                        |
+| --------------- | -------------------------- | ------------------------ | --------- | -----------------------------------------------------------         |
+| Random          | Random                     |   -                      |   51.3    | NA                                                                  |
+| Random          | Random                     |   Both                   |   77.33   |<img src= ./plots/both_lineardeep_randomb_trends_D_4_K_10.png width="150">|               
+| Random          | Random                     |   Focus                  |   70.76   | <img src= ./plots/focus_lineardeep_randomb_trends_D_4_K_10.png width="150">|
+| Random          | Random                     |   classify               |   65      | <img src= ./plots/classify_lineardeep_randomb_trends_D_4_K_10.png width="150">  |
+| Random          | Pretrained                 |   -                      | 61.13     | NA                                                                  |
+| Random          | Pretrained                 |   Both                   | 77.16    | <img src= ./plots/both_lineardeep_randomf_trends_D_4_K_10.png width="150">|               
+| Random          | Pretrained                 |   Focus                  |  73.1    | <img src= ./plots/focus_lineardeep_randomf_trends_D_4_K_10.png width="150">     |
+| Random          | Pretrained                 |   classify               |   65.26  | <img src= ./plots/classify_lineardeep_randomf_trends_D_4_K_10.png width="150">  |    
+| Pretrained      | Random                     |   -                      |   52.86  | NA                                                                  |
+| Pretrained      | Random                     |   Both                   | 77.8   |<img src= ./plots/both_lineardeep_randomc_trends_D_4_K_10.png width="150">   |               
+| Pretrained      | Random                     |   Focus                  | 64.7    |<img src= ./plots/focus_lineardeep_randomc_trends_D_4_K_10.png width="150">     |
+| Pretrained      | Random                     |   classify               |    75.3 | <img src= ./plots/classify_lineardeep_randomc_trends_D_4_K_10.png width="150">   | 
+| Pretrained      | Pretrained                 |   -                      |   72.66   | NA                                                                  |
+| Pretrained      | Pretrained                 |   Both                   |   77.23  |<img src= ./plots/both_lineardeep_norandom_trends_D_4_K_10.png width="150">  |            
+| Pretrained      | Pretrained                 |   Focus                  |    72.8  |<img src= ./plots/focus_lineardeep_norandom_trends_D_4_K_10.png width="150">    |
+| Pretrained      | Pretrained                 |   classify               |   75.06      |<img src= ./plots/classify_lineardeep_norandom_trends_D_4_K_10.png width="150">  |     
+
 
 
 
