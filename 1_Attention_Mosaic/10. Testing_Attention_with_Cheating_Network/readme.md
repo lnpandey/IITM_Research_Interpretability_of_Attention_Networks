@@ -144,7 +144,7 @@
 | 3 | Random | Random | Focus | 50 | 32 | 32 | 2 | 29 | 10 | 57 | 2 | 30 | 10 | 56 |
 | 4 | Random | Random | Classify | 79 | 99 | 42 | 13 | 85 | 0 | 0 | 5 | 36 | 7 | 50 |
 | 5 | Pre-Trained | Random | - | 0 | 33 | 32 | 33 | 0 | 66 | 0 | 32 | 0 | 67 | 0 |
-| 6 | Pre-Trained | Random | Both | 27 | 99 | 96 | 85 | 13 | 0 | 0 | 83 | 13 | 2 | 0 |
+| 6 | Pre-Trained | Random | Both | 27 | 98 | 95 | 88 | 10 | 0 | 0 | 85 | 9 | 2 | 1 |
 | 7 | Pre-Trained | Random | Focus | 50 | 33 | 32 | 33 | 0 | 66 | 0 | 32 | 0 | 67 | 0 |
 | 8 | Pre-Trained | Random | Classify | 23 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 | 
 | 9 | Random | Pre-Trained | - | 0 | 34| 34 | 3 | 30 | 7 | 58 | 3 | 30 | 6 | 59 |
