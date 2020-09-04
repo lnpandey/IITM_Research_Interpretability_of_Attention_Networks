@@ -15,47 +15,34 @@ from matplotlib import pyplot as plt
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
 
+# Commented out IPython magic to ensure Python compatibility.
+import torch.nn as nn
+import torch.optim as optim
+import torch.nn.functional as F
+# %matplotlib inline
+from torch.utils.data import Dataset, DataLoader
+
 n_mosaic = 3000
 K = 10
 d = 4
 n_classes = 5
 
-x,y = make_classification(n_samples=500,n_features=d,n_informative=d,n_redundant=0,n_repeated= 0,n_classes=n_classes,n_clusters_per_class=1,flip_y=0.2,random_state=1234)   #D_4 random_state 1234
+x,y = make_classification(n_samples=500,n_features=d,n_informative=d,n_redundant=0,n_repeated= 0,n_classes=n_classes,n_clusters_per_class=1,flip_y=0.20,random_state=1234)   #D_4 random_state 1234 flipy 0.20    D_5 1236 flipy 0.15
 
 data = {'X':x,'Y':y}
 np.save("data_2.npy",data)
 
 # fg vs bg
 y1 = np.zeros(y.shape,dtype=np.long)
-indices = np.logical_or(y == 0,y==1) 
-y1[indices] = 0
-y1[np.logical_not(indices)] = 1
+indices = np.logical_or(y == 0,y==1)   #  0 and 1 indices are fg 
+y1[indices] = 0   #fg indices at index 0
+y1[np.logical_not(indices)] = 1  #bg index at index1
 
 # fg1 vs fg2
 index = np.logical_or(y==0,y==1)
 x2 = x[index,:]
 y2 = np.zeros(index.shape,dtype=np.long)
 y2 = y[index]
-
-# Commented out IPython magic to ensure Python compatibility.
-import torch.nn as nn
-import torch.optim as optim
-# %matplotlib inline
-from torch.utils.data import Dataset, DataLoader
-
-class Net(nn.Module):
-  def __init__(self):
-    super(Net,self).__init__()
-    self.linear1 = nn.Linear(d,2)
-    # self.linear2 = nn.Linear(50,50)
-    # self.linear3 = nn.Linear(50,50)
-    # self.linear4 = nn.Linear(50,2)
-  def forward(self,x):
-    x = self.linear1(x)
-    # x = F.relu(self.linear2(x))
-    # x = F.relu(self.linear3(x))
-    # x = F.relu(self.linear4(x))
-    return x
 
 class MosaicDataset(Dataset):
   """MosaicDataset dataset."""
@@ -82,9 +69,21 @@ batch = 250
 # dataset = MosaicDataset(x2,y2)
 # traindataloader = DataLoader( dataset,batch_size= batch ,shuffle=True)
 
+"""# linear Models (fgvsbg and fg1vsfg2)"""
+
+class Net_linear(nn.Module):
+  def __init__(self):
+    super(Net_linear,self).__init__()
+    self.linear1 = nn.Linear(d,2)
+    
+  def forward(self,x):
+    x = self.linear1(x)
+   
+    return x
+
 dataset = MosaicDataset(x,y1)
 traindataloader = DataLoader( dataset,batch_size= batch ,shuffle=True)
-net = Net().double()
+net = Net_linear().double()
 net =net.to(device)
 train_model =train_network(net,traindataloader)
 train_model.training(epochs=200,mini=1)
@@ -92,15 +91,68 @@ train_model.training(epochs=200,mini=1)
 _,_=train_model.predict(traindataloader,True)
 plt.plot(train_model.train_loss)
 
+"""***Saving Pretrained Focus Network fg vs bg***"""
+
+train_model.save_models("pretrained_focusl_net")
+
 dataset = MosaicDataset(x2,y2)
 traindataloader = DataLoader( dataset,batch_size= batch ,shuffle=True)
-net = Net().double()
+net = Net_linear().double()
 net =net.to(device)
 train_model =train_network(net,traindataloader)
 train_model.training(epochs=100,mini=1)
 
 _,_=train_model.predict(traindataloader,True)
 plt.plot(train_model.train_loss)
+
+"""***Saving Classification Network fg1 vs fg2***"""
+
+train_model.save_models("pretrained_classifyl_net")
+
+"""# train deep models (fgvsbg and fg1vsfg2)"""
+
+class Net_deep(nn.Module):
+  def __init__(self):
+    super(Net_deep,self).__init__()
+    self.linear1 = nn.Linear(d,50)
+    self.linear2 = nn.Linear(50,2)
+  def forward(self,x):
+    x = F.relu(self.linear1(x))
+    x = self.linear2(x)
+    
+    return x
+
+dataset = MosaicDataset(x,y1)
+traindataloader = DataLoader( dataset,batch_size= batch ,shuffle=True)
+net = Net_deep().double()
+net =net.to(device)
+train_model =train_network(net,traindataloader)
+train_model.training(epochs=200,mini=1)
+
+_,_=train_model.predict(traindataloader,True)
+plt.plot(train_model.train_loss)
+
+"""***Saving Pretrained Focus Network fg vs bg***"""
+
+train_model.save_models("pretrained_focusd_net")
+
+dataset = MosaicDataset(x2,y2)
+traindataloader = DataLoader( dataset,batch_size= batch ,shuffle=True)
+net = Net_deep().double()
+net =net.to(device)
+train_model =train_network(net,traindataloader)
+train_model.training(epochs=100,mini=1)
+
+_,_=train_model.predict(traindataloader,True)
+plt.plot(train_model.train_loss)
+
+"""***Saving Classification Network fg1 vs fg2***"""
+
+train_model.save_models("pretrained_classifyd_net")
+
+"""# Mosaic Data"""
+
+
 
 from plots import plot_analysis,focus_map,classification_map
 from Models_Elemental import Focus_linear,Classification_linear
@@ -148,10 +200,62 @@ np.unique(mosaic_label)
 mosaic_data = {"X":mosaic_list,"Y":mosaic_label,"foreground_indices":fore_idx}
 np.save("mosaic_data_4.npy",mosaic_data)
 
+"""# Linear Support Vector Classifier on Mosaic Data"""
+
 from sklearn.svm import SVC
 sv = SVC(C=100,kernel="linear")
 sv.fit(mosaic_list,mosaic_label)
 print(sv.score(mosaic_list,mosaic_label))
+
+"""# Deep Network For Mosaic Data"""
+
+class Net1(nn.Module):
+  def __init__(self):
+    super(Net1,self).__init__()
+    self.linear1 = nn.Linear(d*K,50)
+    self.linear2 = nn.Linear(50,50)
+    self.linear3 = nn.Linear(50,50)
+    self.linear4 = nn.Linear(50,2)
+  def forward(self,x):
+    x = F.relu(self.linear1(x))
+    x = F.relu(self.linear2(x))
+    x = F.relu(self.linear3(x))
+    x = self.linear4(x)
+    return x
+
+class MosaicData(Dataset):
+  """MosaicDataset dataset (without foreidx)."""
+
+  def __init__(self, mosaic_list, mosaic_label):
+    """
+      Args:
+        csv_file (string): Path to the csv file with annotations.
+        root_dir (string): Directory with all the images.
+        transform (callable, optional): Optional transform to be applied
+            on a sample.
+    """
+    self.mosaic = mosaic_list
+    self.label = mosaic_label
+
+  def __len__(self):
+    return len(self.label)
+
+  def __getitem__(self, idx):
+    return self.mosaic[idx] , self.label[idx]
+
+batch = 250
+
+dataset = MosaicData(mosaic_list,mosaic_label)
+mosaicdataloader = DataLoader( dataset,batch_size= batch ,shuffle=True)
+net1 = Net1().double()
+net1 =net1.to(device)
+train_mosaic =train_network(net1,mosaicdataloader)
+train_mosaic.training(epochs=200,mini=1)
+
+_,_=train_mosaic.predict(mosaicdataloader,True)
+plt.plot(train_mosaic.train_loss)
+
+"""# Attention Networks"""
 
 class MosaicDataset(Dataset):
   """MosaicDataset dataset."""
@@ -178,12 +282,33 @@ batch = 250
 msd = MosaicDataset(mosaic_list, mosaic_label , fore_idx)
 train_loader = DataLoader( msd,batch_size= batch ,shuffle=True)
 
-where = Focus_linear(d,1,K,d).double()
-what = Classification_linear(d,2).double()
+
+
+"""# linear Attention network"""
+
+pretrained_classify = True
+pretrained_focus = True
+if pretrained_classify == True:
+  where = Focus_linear(d,1,K,d).double()
+  what = Classification_linear(d,2).double()
+  what.load_state_dict( torch.load("pretrained_classifyl_net.pt"))
+
+if pretrained_focus == True:
+  where = Focus_linear(d,2,K,d,pretrained=True).double()
+  what = Classification_linear(d,2).double()
+  where.load_state_dict( torch.load("pretrained_focusl_net.pt"))
+if pretrained_focus == False and pretrained_classify == False:
+    where = Focus_linear(d,1,K,d).double()
+    what = Classification_linear(d,2).double()
+elif pretrained_focus ==True and pretrained_classify ==True:
+  where = Focus_linear(d,2,K,d,pretrained=True).double()
+  what = Classification_linear(d,2).double()
+  what.load_state_dict( torch.load("pretrained_classifyl_net.pt"))
+  where.load_state_dict( torch.load("pretrained_focusl_net.pt"))
 
 train_mosaic = train_mosaic_network(where,what,train_loader,elemental=False,lr=0.01)
 
-train_mosaic.training(epochs=200,mini=3)
+train_mosaic.training(epochs=200,mini=3,train_focus=True,train_classify=False)
 
 plot_analysis(np.array(train_mosaic.train_analysis))
 
@@ -191,15 +316,94 @@ plt.plot(train_mosaic.train_loss)
 
 _,_,_,_ = train_mosaic.predict(train_loader,True)
 
-where_deep = Focus_deep(d,1,K,d).double()
-what_deep = Classification_deep(d,2).double()
+"""#  deep Attention Networks"""
+
+pretrained_classify = True
+pretrained_focus = False
+if pretrained_classify == True:
+  where_deep = Focus_deep(d,1,K,d).double()
+  what_deep = Classification_deep(d,2).double()
+  what_deep.load_state_dict( torch.load("pretrained_classifyd_net.pt"))
+
+if pretrained_focus == True:
+  where_deep = Focus_deep(d,2,K,d,pretrained=True).double()
+  what_deep = Classification_deep(d,2).double()
+  where_deep.load_state_dict( torch.load("pretrained_focusd_net.pt"))
+if pretrained_focus == False and pretrained_classify == False:
+  where_deep = Focus_deep(d,1,K,d).double()
+  what_deep = Classification_deep(d,2).double()
+elif pretrained_focus ==True and pretrained_classify ==True:
+  where_deep = Focus_deep(d,2,K,d,pretrained=True).double()
+  what_deep = Classification_deep(d,2).double()
+  what_deep.load_state_dict( torch.load("pretrained_classifyd_net.pt"))
+  where_deep.load_state_dict( torch.load("pretrained_focusd_net.pt"))
 
 train_mosaic_deep = train_mosaic_network(where_deep,what_deep,train_loader,elemental=False,lr =0.01)
-train_mosaic_deep.training(epochs=700,mini=3)
+train_mosaic_deep.training(epochs=700,mini=3,train_focus=False,train_classify=True)
 
 plot_analysis(np.array(train_mosaic_deep.train_analysis))
 
 plt.plot(train_mosaic_deep.train_loss)
 
+_,_,_,_ = train_mosaic_deep.predict(train_loader,True)
+
+
+
+"""## linear deep attention network"""
+
+pretrained_classify = True
+pretrained_focus = True
+if pretrained_classify == True:
+  where_deep = Focus_linear(d,1,K,d).double()
+  what_deep = Classification_deep(d,2).double()
+  what_deep.load_state_dict( torch.load("pretrained_classifyd_net.pt"))
+
+if pretrained_focus == True:
+  where_deep = Focus_linear(d,2,K,d,pretrained=True).double()
+  what_deep = Classification_deep(d,2).double()
+  where_deep.load_state_dict( torch.load("pretrained_focusl_net.pt"))
+if pretrained_focus == False and pretrained_classify == False:
+  where_deep = Focus_linear(d,1,K,d).double()
+  what_deep = Classification_deep(d,2).double()
+elif pretrained_focus ==True and pretrained_classify ==True:
+  where_deep = Focus_linear(d,2,K,d,pretrained=True).double()
+  what_deep = Classification_deep(d,2).double()
+  what_deep.load_state_dict( torch.load("pretrained_classifyd_net.pt"))
+  where_deep.load_state_dict( torch.load("pretrained_focusl_net.pt"))
+
+train_mosaic_deep = train_mosaic_network(where_deep,what_deep,train_loader,elemental=False,lr =0.01)
+train_mosaic_deep.training(epochs=700,mini=3,train_focus=False,train_classify=True)
+plot_analysis(np.array(train_mosaic_deep.train_analysis))
+#plt.plot(train_mosaic_deep.train_loss)
+_,_,_,_ = train_mosaic_deep.predict(train_loader,True)
+
+
+
+"""# deep linear attention network"""
+
+pretrained_classify = True
+pretrained_focus = True
+if pretrained_classify == True:
+  where_deep = Focus_deep(d,1,K,d).double()
+  what_deep = Classification_linear(d,2).double()
+  what_deep.load_state_dict( torch.load("pretrained_classifyl_net.pt"))
+
+if pretrained_focus == True:
+  where_deep = Focus_deep(d,2,K,d,pretrained=True).double()
+  what_deep = Classification_linear(d,2).double()
+  where_deep.load_state_dict( torch.load("pretrained_focusd_net.pt"))
+if pretrained_focus == False and pretrained_classify == False:
+  where_deep = Focus_deep(d,1,K,d).double()
+  what_deep = Classification_linear(d,2).double()
+elif pretrained_focus ==True and pretrained_classify ==True:
+  where_deep = Focus_deep(d,2,K,d,pretrained=True).double()
+  what_deep = Classification_linear(d,2).double()
+  what_deep.load_state_dict( torch.load("pretrained_classifyl_net.pt"))
+  where_deep.load_state_dict( torch.load("pretrained_focusd_net.pt"))
+
+train_mosaic_deep = train_mosaic_network(where_deep,what_deep,train_loader,elemental=False,lr =0.01)
+train_mosaic_deep.training(epochs=700,mini=3,train_focus=False,train_classify=True)
+plot_analysis(np.array(train_mosaic_deep.train_analysis))
+#plt.plot(train_mosaic_deep.train_loss)
 _,_,_,_ = train_mosaic_deep.predict(train_loader,True)
 

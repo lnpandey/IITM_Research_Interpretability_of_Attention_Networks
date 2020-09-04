@@ -26,7 +26,7 @@
 | 3 | Random | Random | Focus | 50 | 33 | 33 | 3 | 30 | 5 | 61 | 3 | 30 | 5 | 61 |
 | 4 | Random | Random | Classify | 77 | 99 | 41 | 9 | 90 | 0 | 0 | 4 | 37 | 5 | 53 |
 | 5 | Pre-Trained | Random | - | 0 | 33 | 32 | 33 | 0 | 66 | 0 | 32 | 0 | 67 |  0 |
-| 6 | Pre-Trained | Random | Both | 32 | 99 | 95 | 92 | 6 | 0 | 0 | 89 | 6 | 1 | 2 |
+| 6 | Pre-Trained | Random | Both | 32 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 |
 | 7 | Pre-Trained | Random | Focus | 50 | 33 | 33 | 33 | 0 | 66 | 0 | 33 | 0 | 66 |  0 |
 | 8 | Pre-Trained | Random | Classify | 18 | 99 | 97 | 99 | 0 | 0 | 0 | 97 | 0 | 2 | 0 | 
 | 9 | Random | Pre-Trained | - | 0 | 33 | 34 | 5 | 28 | 6 | 59 | 5 | 28 | 6 | 58 |
@@ -38,6 +38,10 @@
 | 15 | Pre-Trained | Pre-Trained | Focus | 1 | 100 | 100 |100 | 0 | 0 | 0 | 100 | 0 | 0 | 0 |
 | 16 | Pre-Trained | Pre-Trained | Classify | 1 | 100 | 100 |100 | 0 | 0 | 0 | 100 | 0 | 0 | 0 |
 
+#### Some interesting observation :
+> For Test accuracy, FTPT Train, FTPT Test:  14 >= 6 >= 10 >= 2
+
+> For Test accuracy, FTPT Train, FTPT Test:  8 > 11
 
 ### Tabel 5: Using Focus and Classify net of CNN - 3 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
 |Exp No.|Focus init |Classify init| Which module to be trained | analysis of FTPT, FFPT, FTPF, FFPF on Training Data | analysis of FTPT, FFPT, FTPF, FFPF on Testing Data |
@@ -62,7 +66,7 @@
 | 3 | Random | Random | Focus | 50 | 33 | 33 | 3 | 30 | 9 | 56 | 2 | 31 | 10 | 55 |
 | 4 | Random | Random | Classify | 50 | 99 | 44 | 11 | 87 | 0 | 0 | 5 | 38 | 6 | 49 |
 | 5 | Pre-Trained | Random | - | 0 | 33 | 33 | 33 | 0 | 66 | 0 | 33 | 0 | 66 | 0 |
-| 6 | Pre-Trained | Random | Both | 25 | 99 | 97 | 97 | 2 | 0 | 0 | 94 | 2 | 1 | 1 |
+| 6 | Pre-Trained | Random | Both | 25 | 99 | 96 | 96 | 3 | 0 | 0 | 93 | 3 | 1 | 1 |
 | 7 | Pre-Trained | Random | Focus | 50 | 32 | 33 | 32 | 0| 66 | 0 | 33 | 0 | 66 | 0 |
 | 8 | Pre-Trained | Random | Classify | 28 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 | 
 | 9 | Random | Pre-Trained | - | 0 | 47 | 47 | 7 | 40 | 7 | 45 | 7 | 40 | 7 | 45 |
@@ -74,6 +78,10 @@
 | 15 | Pre-Trained | Pre-Trained | Focus | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
 | 16 | Pre-Trained | Pre-Trained | Classify | 23 | 99 | 97 | 96 | 3 | 0 | 0 | 95 | 2 | 0 | 1 |
 
+#### Some interesting observation :
+> For Test accuracy, FTPT Train, FTPT Test:  14 >= 6 >= 10 >= 2
+
+> For Test accuracy, FTPT Train, FTPT Test:  8 > 11
 
 ### Tabel 7: Using Focus and Classify net of CNN - 6 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
 |Exp No.|Focus init |Classify init| Which module to be trained | analysis of FTPT, FFPT, FTPF, FFPF on Training Data | analysis of FTPT, FFPT, FTPF, FFPF on Testing Data |
@@ -97,7 +105,7 @@
 | 3 | Random | Random | Focus | 50 | 33 | 33 | 2 | 31 | 11 | 55 | 1 | 31 | 11 | 55 |
 | 4 | Random | Random | Classify | 50 | 99 | 44 | 12 | 87 | 0 | 0 | 5 | 39 | 7 | 48 |
 | 5 | Pre-Trained | Random | - | 0 | 33 | 33 | 33 | 0 | 66 | 0 | 33 | 0 | 66 | 0 |
-| 6 | Pre-Trained | Random | Both | 32 | 99 | 96 | 95 | 4 | 0 | 0 | 91 | 4 | 1 | 2 |
+| 6 | Pre-Trained | Random | Both | 32 | 99 | 97 | 99 | 0 | 0 | 0 | 97 | 0 | 2 | 0 |
 | 7 | Pre-Trained | Random | Focus | 100 | 33 | 32 | 20 | 13| 39 | 27 | 19 | 13 | 14 | 26 |
 | 8 | Pre-Trained | Random | Classify | 12 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 | 
 | 9 | Random | Pre-Trained | - | 0 | 47 | 47 | 3 | 43 | 3 | 48 | 3 | 43 | 3 | 49 |
@@ -108,6 +116,11 @@
 | 14 | Pre-Trained | Pre-Trained | Both | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
 | 15 | Pre-Trained | Pre-Trained | Focus | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
 | 16 | Pre-Trained | Pre-Trained | Classify | 15 | 100 | 99 | 100 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+
+#### Some interesting observation :
+> For Test accuracy, FTPT Train, FTPT Test:  14 >= 6 >= 10 >= 2
+
+> For Test accuracy, FTPT Train, FTPT Test:  8 > 11
 
 ### Tabel 9: Using Focus net of CNN - 3 layers and Classify net of CNN - 6 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
 |Exp No.|Focus init |Classify init| Which module to be trained | analysis of FTPT, FFPT, FTPF, FFPF on Training Data | analysis of FTPT, FFPT, FTPF, FFPF on Testing Data |
@@ -131,7 +144,7 @@
 | 3 | Random | Random | Focus | 50 | 32 | 32 | 2 | 29 | 10 | 57 | 2 | 30 | 10 | 56 |
 | 4 | Random | Random | Classify | 79 | 99 | 42 | 13 | 85 | 0 | 0 | 5 | 36 | 7 | 50 |
 | 5 | Pre-Trained | Random | - | 0 | 33 | 32 | 33 | 0 | 66 | 0 | 32 | 0 | 67 | 0 |
-| 6 | Pre-Trained | Random | Both | 27 | 99 | 96 | 85 | 13 | 0 | 0 | 83 | 13 | 2 | 0 |
+| 6 | Pre-Trained | Random | Both | 27 | 98 | 95 | 88 | 10 | 0 | 0 | 85 | 9 | 2 | 1 |
 | 7 | Pre-Trained | Random | Focus | 50 | 33 | 32 | 33 | 0 | 66 | 0 | 32 | 0 | 67 | 0 |
 | 8 | Pre-Trained | Random | Classify | 23 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 | 
 | 9 | Random | Pre-Trained | - | 0 | 34| 34 | 3 | 30 | 7 | 58 | 3 | 30 | 6 | 59 |
@@ -142,6 +155,11 @@
 | 14 | Pre-Trained | Pre-Trained | Both | 5 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 |
 | 15 | Pre-Trained | Pre-Trained | Focus | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
 | 16 | Pre-Trained | Pre-Trained | Classify | 1 | 99 | 99 | 99 | 0 | 0 | 0 | 99 | 0 | 0 | 0 |
+
+#### Some interesting observation :
+> For Test accuracy, FTPT Train, FTPT Test:  14 >= 6 >= 10 >= 2
+
+> For Test accuracy, FTPT Train, FTPT Test:  8 > 11
 
 ### Tabel 11 : Using Focus net of CNN - 6 layers and Classify net of CNN - 3 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
 |Exp No.|Focus init |Classify init| Which module to be trained | analysis of FTPT, FFPT, FTPF, FFPF on Training Data | analysis of FTPT, FFPT, FTPF, FFPF on Testing Data |
