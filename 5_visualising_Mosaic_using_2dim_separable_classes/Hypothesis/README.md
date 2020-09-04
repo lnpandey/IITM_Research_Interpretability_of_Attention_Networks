@@ -97,7 +97,7 @@
 
 
 
-| Data    | Fg vs Bg Score(Linear) | fg1 vs fg2 score(Linear) | Linear SVM score(Mosaic) | Linear Attention Network Score | Deep Attention Network Score| Deep Network Score  |
+| Data    | Fg vs Bg Score(Linear) | fg1 vs fg2 score(Linear) | Linear SVM score(Mosaic) | Linear Attention Network Score | Deep Attention Network Score| Deep Network Score(Mosaic data)  |
 | --------| ---------------------- | ------------------------ | ------------------------ | ----------------------------- | ---------------------------- | ------------------  |   
 | D_3_K_5 |    91                  |       93.1               |     63.8                 |     91.6                      |    96.1                      |     98.2            |
 | D_3_K_5 |    80                  |       87.43              |     62                   |     76.73                     |    86.9                      |      95.86          |
