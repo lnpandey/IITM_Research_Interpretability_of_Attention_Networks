@@ -26,7 +26,7 @@
 | 3 | Random | Random | Focus | 50 | 33 | 33 | 3 | 30 | 5 | 61 | 3 | 30 | 5 | 61 |
 | 4 | Random | Random | Classify | 77 | 99 | 41 | 9 | 90 | 0 | 0 | 4 | 37 | 5 | 53 |
 | 5 | Pre-Trained | Random | - | 0 | 33 | 32 | 33 | 0 | 66 | 0 | 32 | 0 | 67 |  0 |
-| 6 | Pre-Trained | Random | Both | 32 | 99 | 95 | 92 | 6 | 0 | 0 | 89 | 6 | 1 | 2 |
+| 6 | Pre-Trained | Random | Both | 32 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 |
 | 7 | Pre-Trained | Random | Focus | 50 | 33 | 33 | 33 | 0 | 66 | 0 | 33 | 0 | 66 |  0 |
 | 8 | Pre-Trained | Random | Classify | 18 | 99 | 97 | 99 | 0 | 0 | 0 | 97 | 0 | 2 | 0 | 
 | 9 | Random | Pre-Trained | - | 0 | 33 | 34 | 5 | 28 | 6 | 59 | 5 | 28 | 6 | 58 |
@@ -105,7 +105,7 @@
 | 3 | Random | Random | Focus | 50 | 33 | 33 | 2 | 31 | 11 | 55 | 1 | 31 | 11 | 55 |
 | 4 | Random | Random | Classify | 50 | 99 | 44 | 12 | 87 | 0 | 0 | 5 | 39 | 7 | 48 |
 | 5 | Pre-Trained | Random | - | 0 | 33 | 33 | 33 | 0 | 66 | 0 | 33 | 0 | 66 | 0 |
-| 6 | Pre-Trained | Random | Both | 32 | 99 | 96 | 95 | 4 | 0 | 0 | 91 | 4 | 1 | 2 |
+| 6 | Pre-Trained | Random | Both | 32 | 99 | 97 | 99 | 0 | 0 | 0 | 97 | 0 | 2 | 0 |
 | 7 | Pre-Trained | Random | Focus | 100 | 33 | 32 | 20 | 13| 39 | 27 | 19 | 13 | 14 | 26 |
 | 8 | Pre-Trained | Random | Classify | 12 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 | 
 | 9 | Random | Pre-Trained | - | 0 | 47 | 47 | 3 | 43 | 3 | 48 | 3 | 43 | 3 | 49 |
