@@ -75,14 +75,10 @@ class Net_linear(nn.Module):
   def __init__(self):
     super(Net_linear,self).__init__()
     self.linear1 = nn.Linear(d,2)
-    # self.linear2 = nn.Linear(50,50)
-    # self.linear3 = nn.Linear(50,50)
-    # self.linear4 = nn.Linear(50,2)
+    
   def forward(self,x):
     x = self.linear1(x)
-    # x = F.relu(self.linear2(x))
-    # x = F.relu(self.linear3(x))
-    # x = F.relu(self.linear4(x))
+   
     return x
 
 dataset = MosaicDataset(x,y1)
@@ -321,8 +317,6 @@ plt.plot(train_mosaic.train_loss)
 _,_,_,_ = train_mosaic.predict(train_loader,True)
 
 """#  deep Attention Networks"""
-
-
 
 pretrained_classify = True
 pretrained_focus = False
