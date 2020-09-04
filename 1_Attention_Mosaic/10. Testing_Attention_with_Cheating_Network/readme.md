@@ -40,6 +40,7 @@
 
 #### Some interesting observation :
 > For Test accuracy, FTPT Train, FTPT Test:  14 >= 6 >= 10 >= 2
+
 > For Test accuracy, FTPT Train, FTPT Test:  8 > 11
 
 ### Tabel 5: Using Focus and Classify net of CNN - 3 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
@@ -79,6 +80,7 @@
 
 #### Some interesting observation :
 > For Test accuracy, FTPT Train, FTPT Test:  14 >= 6 >= 10 >= 2
+
 > For Test accuracy, FTPT Train, FTPT Test:  8 > 11
 
 ### Tabel 7: Using Focus and Classify net of CNN - 6 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
@@ -117,6 +119,7 @@
 
 #### Some interesting observation :
 > For Test accuracy, FTPT Train, FTPT Test:  14 >= 6 >= 10 >= 2
+
 > For Test accuracy, FTPT Train, FTPT Test:  8 > 11
 
 ### Tabel 9: Using Focus net of CNN - 3 layers and Classify net of CNN - 6 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
@@ -155,6 +158,7 @@
 
 #### Some interesting observation :
 > For Test accuracy, FTPT Train, FTPT Test:  14 >= 6 >= 10 >= 2
+
 > For Test accuracy, FTPT Train, FTPT Test:  8 > 11
 
 ### Tabel 11 : Using Focus net of CNN - 6 layers and Classify net of CNN - 3 Layer, analysis of FTPT, FFPT, FTPF, FFPF in above 16 experiments.
