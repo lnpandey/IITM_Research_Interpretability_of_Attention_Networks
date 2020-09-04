@@ -66,7 +66,7 @@
 | 3 | Random | Random | Focus | 50 | 33 | 33 | 3 | 30 | 9 | 56 | 2 | 31 | 10 | 55 |
 | 4 | Random | Random | Classify | 50 | 99 | 44 | 11 | 87 | 0 | 0 | 5 | 38 | 6 | 49 |
 | 5 | Pre-Trained | Random | - | 0 | 33 | 33 | 33 | 0 | 66 | 0 | 33 | 0 | 66 | 0 |
-| 6 | Pre-Trained | Random | Both | 25 | 99 | 97 | 97 | 2 | 0 | 0 | 94 | 2 | 1 | 1 |
+| 6 | Pre-Trained | Random | Both | 25 | 99 | 96 | 96 | 3 | 0 | 0 | 93 | 3 | 1 | 1 |
 | 7 | Pre-Trained | Random | Focus | 50 | 32 | 33 | 32 | 0| 66 | 0 | 33 | 0 | 66 | 0 |
 | 8 | Pre-Trained | Random | Classify | 28 | 99 | 98 | 99 | 0 | 0 | 0 | 98 | 0 | 1 | 0 | 
 | 9 | Random | Pre-Trained | - | 0 | 47 | 47 | 7 | 40 | 7 | 45 | 7 | 40 | 7 | 45 |
