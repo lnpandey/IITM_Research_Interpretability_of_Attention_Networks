@@ -97,14 +97,19 @@
 
 
 
-| Data    | Fg vs Bg Score(Linear) | fg1 vs fg2 score(Linear) | Linear SVM score(Mosaic) | Linear Attention Network Score | Deep Attention Network Score| Deep Network Score(Mosaic data)  |
-| --------| ---------------------- | ------------------------ | ------------------------ | ----------------------------- | ---------------------------- | ------------------  |   
-| D_3_K_5 |    91                  |       93.1               |     63.8                 |     91.6                      |    96.1                      |     98.2            |
-| D_3_K_5 |    80                  |       87.43              |     62                   |     76.73                     |    86.9                      |      95.86          |
-| D_4_K_5 |    80.4                |       89.89              |     68                   |     80                        |     88.93                    |     95.7            |
-| D_4_K_10|    80.4                |       89.39              |     62.56                |     73.86                     |     87.06                    |     98.8            |
-| D_5_K_5 |    86.2                |       83.33              |     62.9                 |     80.33                     |     96.36                    |    98.2             |
-| D_5_K_10|    86.4                |       83.83              |     60.1                 |     78.4                      |     95.93                    |   99.76             |
+| Data    | Fg vs Bg Score(Linear) | fg1 vs fg2 score(Linear) | Fg vs Bg Score(Deep)  | Fg vs Bg Score(Deep)    | Linear SVM score(Mosaic) | Linear Attention Network Score | Deep Attention Network Score| Deep Network Score(Mosaic data)  | 
+| --------| ---------------------- | ------------------------ | ------------------------ | ----------------------------- | ---------------------------- | ------------------  |   --------- | ------------------- |
+| D_3_K_5 |    91     |       93.1      |   |  |   63.8   |     91.6     |    96.1       |     98.2      | |
+| D_3_K_5 |    80     |       87.43     |  |  |   62     |     76.73    |    86.9       |      95.86    | |
+| D_4_K_5 |    80.4   |       89.89     |  | |    68    |     80       |     88.93     |     95.7      ||
+| D_4_K_10|    80.4   |       89.39     |  |  |   62.56  |     73.86    |     87.06     |     98.8      ||
+| D_5_K_5 |    86.2   |       83.33     |   |  |   62.9   |     80.33    |     96.36     |    98.2       ||
+| D_5_K_10|    86.4   |       83.83     |  |  |   60.1   |     78.4     |     95.93     |   99.76       ||
+| D_10_K_3|     81.8  |   85.22         |  90.2 | 92.11 |    73.76      |    83          |    99.56           |    100           |  
+| D_10_K_5|     81.6  |    86.2         | 89.8  |  93.1 |    70.26      |   80.56           |          99.73     | 100            |  
+| D_40_K_5|     81.8  |   94         | 100  |  100 |   - | 87.73    |   100           |          99.73     | 100            |
+| D_100_K_5|   86  |   100       |  100   |   100 | - | 92.46 |    100  |100 |
+
 
 
 | Data     |  Linear Attention Trends                    |    Deep Attention Trends                    |
@@ -115,6 +120,16 @@
 | D_4_K_10 | <img src= ./plots/trends_Linear_D_4_K_10.png width="150"> |  <img src= ./plots/trends_Deep_D_4_K_10.png width="150"> |
 | D_5_K_5  | <img src= ./plots/trends_Linear_D_5_K_5.png width="150">  |  <img src= ./plots/trends_Deep_D_5_K_5.png width="150"> |
 | D_5_K_10 | <img src= ./plots/trends_Linear_D_5_K_10.png width="150"> |  <img src= ./plots/trends_Deep_D_5_K_10.png width="150"> |
+| D_10_K_3 | <img src= ./plots/trends_linear_d10_k3.png width="150"> |  <img src= ./plots/trends_deep_d10_k3.png width="150">|
+| D_10_K_5 | <img src= ./plots/trends_linear_d10_k5.png width="150"> |  <img src= ./plots/trends_deep_d10_k5.png width="150">|
+| D_40_K_5 | <img src= ./plots/trends_linear_d40_k5.png width="150"> |  <img src= ./plots/trends_deep_d40_k5.png width="150">|
+| D_100_K_5 | <img src= ./plots/trends_linear_d100_k5.png width="150"> |  <img src= ./plots/trends_deep_d100_k5.png width="150">|
+
+| Data            | D_10_K_3 | D_10_K_5 | D_40_K_5 | D_100_K_5 |  
+| --------------  | -------- | -------- | -------- |   ------- |
+|Pretrained Score(No training) linear | 71.36 | 79.33 | 82.8 | 85.06 |
+|Pretrained Score(No training) deep | 88.73 | 88.03 | 100 | 100 |
+
 
 ### Deep Attention Model
 ```python
