@@ -10,7 +10,7 @@
 |CNN - 2 Layers (8,16) | 42 | 99| 63 |
 |CNN - 2 Layers (6,12) |  | |  |
 |CNN - 2 Layers (6,6) |  | |  |
-|CNN - 2 Layers (5,6) |  | |  |
+|CNN - 2 Layers (5,6) | 83 | 99 | 58 |
 
 ## Table 1.2: Performance of diff models as Focus net and classify net
 |Model Used| which network | Epochs | Train Accuracy | Test Accuracy |
