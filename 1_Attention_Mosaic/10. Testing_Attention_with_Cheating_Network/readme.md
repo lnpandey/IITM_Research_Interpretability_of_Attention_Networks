@@ -1,4 +1,4 @@
-## Table 1: 10 Class classification on CIFAR 10
+## Table 1.1: 10 Class classification on CIFAR 10
 |Model Used| Epochs | Train Accuracy | Test Accuracy |
 |----------|--------|----------------|---------------|
 |Mini-Inception | 23 | 100| 86 |
@@ -12,6 +12,7 @@
 |CNN - 2 Layers (6,6) |  | |  |
 |CNN - 2 Layers (5,6) |  | |  |
 
+## Table 1.2: Performance of diff models as Focus net and classify net
 |Model Used| which network | Epochs | Train Accuracy | Test Accuracy |
 |----------|--------|------|----------|---------------|
 |CNN - 6 Layers |Focus Net | 73 | 99| 86 |
