@@ -1,9 +1,39 @@
-## Table 1: 10 Class classification on CIFAR 10
+## Table 1.1: 10 Class classification on CIFAR 10
 |Model Used| Epochs | Train Accuracy | Test Accuracy |
 |----------|--------|----------------|---------------|
 |Mini-Inception | 23 | 100| 86 |
 |CNN - 6 Layers | 91 | 99| 81 |
-|CNN - 3 Layers | 47 | 99| 74 |
+|CNN - 3 Layers (32,64,64) | 47 | 99| 74 |
+|CNN - 3 Layers (16,32,32) | 80 | 99| 69 |
+|CNN - 3 Layers (6,12,20) |  | |  |
+|CNN - 2 Layers (16,32) | 26 | 99| 69 |
+|CNN - 2 Layers (8,16) | 42 | 99| 63 |
+|CNN - 2 Layers (6,12) |  | |  |
+|CNN - 2 Layers (6,6) |  | |  |
+|CNN - 2 Layers (5,6) |  | |  |
+
+## Table 1.2: Performance of diff models as Focus net and classify net
+|Model Used| which network | Epochs | Train Accuracy | Test Accuracy |
+|----------|--------|------|----------|---------------|
+|CNN - 6 Layers |Focus Net | 73 | 99| 86 |
+|               |Classify Net | 70 | 99| 86 |
+|CNN - 3 Layers (32,64,64) |Focus Net | 56 | 100| 86 |
+|                         |Classify Net | 48 | 100 | 90 |
+|CNN - 3 Layers (16,32,32) |Focus Net | 80 | 99| 85 |
+|                         |Classify Net | 67 | 99 | 89 |
+|CNN - 3 Layers (6,12,20) |Focus Net | 83 | 99| 81 |
+|                         |Classify Net | 73 | 100 | 85 |
+|CNN - 2 Layers (16,32) |Focus Net | 32 | 100| 85 |
+|                         |Classify Net | 32 | 99 | 89 |
+|CNN - 2 Layers (8,16) |Focus Net | 38 | 99| 83 |
+|                         |Classify Net | 35 | 99 | 86 |
+|CNN - 2 Layers (6,12) |Focus Net | 43 | 99| 83 |
+|                         |Classify Net | 33 | 99 | 87 |
+|CNN - 2 Layers (6,6) |Focus Net | 51 | 99| 80 |
+|                         |Classify Net | 49 | 99 | 86 |
+|CNN - 2 Layers (5,6) |Focus Net | 72 | 99| 80 |
+|                         |Classify Net | 60 | 99 | 85 |
+
 
 ### Table 2: Using this CNN - 6 Layer, Trained Focus and Classify net
 |Network| Epochs | Train Accuracy | Test Accuracy |
