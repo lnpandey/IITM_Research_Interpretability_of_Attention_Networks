@@ -34,6 +34,12 @@
 |CNN - 2 Layers (5,6) |Focus Net | 72 | 99| 80 |
 |                         |Classify Net | 60 | 99 | 85 |
 
+## Table 1.3: Number of training/testing points used for the focus/ classification net training
+|Net| Training Data points | Testing Data Points | 
+|------|--------|------|
+|Focus net| 50000 | 10000 |
+|Classification net | 15000 | 3000 |
+Here Data points are CIFAR 10 images
 
 ### Table 2: Using this CNN - 6 Layer, Trained Focus and Classify net
 |Network| Epochs | Train Accuracy | Test Accuracy |
