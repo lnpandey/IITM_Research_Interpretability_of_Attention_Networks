@@ -43,3 +43,108 @@ All datasets have 30k training mosaic images and 10k testing mosaic images.
 | train on dataset7      | 92 | 88 | 92 | 93 | 87 | 91 | 92 | 87 | 91 | 98 |
 | train on dataset8      | 82 | 96 | 84 | 83 | 96 | 85 | 83 | 96 | 84 | 99 |
 | train on dataset9      | 91 | 91 | 91 | 90 | 91 | 91 | 91 | 91 | 91 | 99 |
+
+#### Model used : Focus net as CNN-6layer & Classification net as CNN 6-layer: Random-random-both
+```python
+class Focus(nn.Module):
+  def __init__(self):
+    super(Focus, self).__init__()
+    self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=0)
+    self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, padding=0)
+    self.conv3 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=3, padding=0)
+    self.conv4 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
+    self.conv5 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
+    self.conv6 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=1)
+    self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+    self.batch_norm1 = nn.BatchNorm2d(32)
+    self.batch_norm2 = nn.BatchNorm2d(128)
+    self.dropout1 = nn.Dropout2d(p=0.05)
+    self.dropout2 = nn.Dropout2d(p=0.1)
+    self.fc1 = nn.Linear(128,64)
+    self.fc2 = nn.Linear(64, 32)
+    self.fc3 = nn.Linear(32, 10)
+    self.fc4 = nn.Linear(10, 1)
+
+  def forward(self, x):
+    x = self.conv1(x)
+    x = F.relu(self.batch_norm1(x))
+    x = (F.relu(self.conv2(x)))
+    x = self.pool(x)    
+    x = self.conv3(x)
+    x = F.relu(self.batch_norm2(x))
+    x = (F.relu(self.conv4(x)))
+    x = self.pool(x)
+    x = self.dropout1(x)
+    x = self.conv5(x)
+    x = F.relu(self.batch_norm2(x))
+    x = (F.relu(self.conv6(x)))
+    x = self.pool(x)
+    x = x.view(x.size(0), -1)
+    x = self.dropout2(x)
+    x = F.relu(self.fc1(x))
+    x = F.relu(self.fc2(x))
+    x = self.dropout2(x)
+    x = F.relu(self.fc3(x))
+    x = self.fc4(x)
+    return x
+    
+class Classification(nn.Module):
+  def __init__(self):
+    super(Classification, self).__init__()
+    self.module1 = Focus().double()
+    self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=0)
+    self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, padding=0)
+    self.conv3 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=3, padding=0)
+    self.conv4 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
+    self.conv5 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=0)
+    self.conv6 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=1)
+    self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+    self.batch_norm1 = nn.BatchNorm2d(32)
+    self.batch_norm2 = nn.BatchNorm2d(128)
+    self.dropout1 = nn.Dropout2d(p=0.05)
+    self.dropout2 = nn.Dropout2d(p=0.1)
+    self.fc1 = nn.Linear(128,64)
+    self.fc2 = nn.Linear(64, 32)
+    self.fc3 = nn.Linear(32, 10)
+    self.fc4 = nn.Linear(10, 3)
+
+  def forward(self,z):  #z batch of list of 9 images
+    y = torch.zeros([batch,3, 32,32], dtype=torch.float64)
+    x = torch.zeros([batch,9],dtype=torch.float64)
+    x = x.to("cuda")
+    y = y.to("cuda")
+    
+    for i in range(9):
+        x[:,i] = self.module1.forward(z[:,i])[:,0]
+        
+    x = F.softmax(x,dim=1)
+    x1 = x[:,0]
+    torch.mul(x1[:,None,None,None],z[:,0])
+
+    for i in range(9):            
+      x1 = x[:,i]          
+      y = y + torch.mul(x1[:,None,None,None],z[:,i])
+
+    y1 = self.conv1(y)
+    y1 = F.relu(self.batch_norm1(y1))
+    y1 = (F.relu(self.conv2(y1)))
+    y1 = self.pool(y1)    
+    y1 = self.conv3(y1)
+    y1 = F.relu(self.batch_norm2(y1))
+    y1 = (F.relu(self.conv4(y1)))
+    y1 = self.pool(y1)
+    y1 = self.dropout1(y1)
+    y1 = self.conv5(y1)
+    y1 = F.relu(self.batch_norm2(y1))
+    y1 = (F.relu(self.conv6(y1)))
+    y1 = self.pool(y1)
+    y1 = y1.view(y1.size(0), -1)
+    y1 = self.dropout2(y1)
+    y1 = F.relu(self.fc1(y1))
+    y1 = F.relu(self.fc2(y1))
+    y1 = self.dropout2(y1)
+    y1 = F.relu(self.fc3(y1))
+    y1 = self.fc4(y1)
+
+    return y1 , x, y
+```
