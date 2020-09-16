@@ -9,7 +9,28 @@ Train on 30k mosaic samples from each of the 9 distributions, and test by drawin
 
 We want to see how well the network generalises to completely unseen CIFAR images.
 
-### Analysis of Accuracy on Training & Testing Data
+### Table 1 : Data available in CIFAR10
+| CIFAR10 | FG datapoints | BG datapoints |
+|---------|--------------|--------------|
+| Trainset | 15k |  35k |
+| Testset | 3k |  7k |
+| Combined | 18k |  42k |
+
+### Table 2 : Datasets in Details
+All datasets have 30k training mosaic images and 10k testing mosaic images.
+| Dataset | FG used from | BG used from |
+|---------|--------------|--------------|
+| dataset 1 | Train 15k | Train 35k |
+| dataset 2 | Train 15k | Test 7k |
+| dataset 3 | Train 15k | Combined 42k |
+| dataset 4 | Test 3k | Train 35k |
+| dataset 5 | Test 3k | Test 7k |
+| dataset 6 | Test 3k | Combined 42k |
+| dataset 7 | Combined 18k | Train 35k |
+| dataset 8 | Combined 18k | Test 7k |
+| dataset 9 | Combined 18k | Combined 42k |
+
+### Table 3 : Analysis of Accuracy on Training & Testing Data
 
 |   | test on dataset1 | test on dataset2 | test on dataset3 | test on dataset4 | test on dataset5 | test on dataset6 | test on dataset7 | test on dataset8 | test on dataset9| Train Accuracy |
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|----|----|
