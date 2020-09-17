@@ -9,9 +9,6 @@ import torchvision
 import torchvision.transforms as transforms
 import numpy as np
 
-import os
-from matplotlib import pyplot as plt
-%matplotlib inline
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 

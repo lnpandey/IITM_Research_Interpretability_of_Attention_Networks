@@ -8,7 +8,7 @@ def fg_bg_data(labels,fg_labels):
   '''  
   labels = np.array(labels)
   fg_indices = np.logical_or(np.logical_or(labels==fg_labels[0],labels==fg_labels[1]),labels==fg_labels[2]) 
-  bg_indices = np.logical_not(train_indices_fg)
+  bg_indices = np.logical_not(fg_indices)
   labels[fg_indices] = 0 
   labels[bg_indices] = 1
   return list(labels)
@@ -22,5 +22,8 @@ def fg_data(data,labels,fg_labels):
   labels = np.array(labels)
   fg_indices = np.logical_or(np.logical_or(labels==fg_labels[0],labels==fg_labels[1]),labels==fg_labels[2]) 
   cls_max = np.max(fg_labels)
-  labels = labels[fg_indices] - cls_max
-  return data[fg_indices],labels
+  if cls_max >2:
+    labels = labels[fg_indices] - cls_max
+  else:
+    labels = labels[fg_indices]
+  return data[fg_indices],list(labels)
