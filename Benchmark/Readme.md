@@ -12,9 +12,9 @@
 #### Background vs Foreground Classification 
 | Models   | Train Accuracy   | Test Accuracy  | Training Metric        | 
 | -------- | ---------------  | ------------   | ---------------------  |
-| Resnet18 |       99.107     | 92.2         |      <img src= ./plots/loss_curve_fg_res18.png width="150">           |
-| Resnet34 |    97.860        |    92.076    |    <img src= ./plots/loss_curve_fg_res34.png width="150">             |
-| Mini Inception |     100           |     95.        |        <img src= ./plots/loss_curve_fg_mini_incept.png width="150">         |
+| Resnet18 |       99.107     | 92.2         |      <img src= ./plots/loss_curve_fg_resnet18.png width="150">  |
+| Resnet34 |    97.860        |    92.076    |    <img src= ./plots/loss_curve_fg_resnet34.png width="150">    |
+| Mini Inception |     100    |     95.   |        <img src= ./plots/loss_curve_fg_mini_incept.png width="150"> |
 | VGG16     |               |             |                 |
 
 Saved Models can be found here.
