@@ -53,9 +53,11 @@ class downsample_module(nn.Module):
         return x
 
 class inception_net(nn.Module):
-    def __init__(self):
+    def __init__(self,inputs,outputs):
         super(inception_net,self).__init__()
-        self.conv1 = Conv_module(3,96,1,3,0)
+        self.inputs  = inputs
+        self.outputs = outputs
+        self.conv1 = Conv_module(self.inputs,96,1,3,0)
         self.incept1 = inception_module(96,32,32)
         self.incept2 = inception_module(64,32,48)
         self.downsample1 = downsample_module(80,80)
@@ -67,7 +69,7 @@ class inception_net(nn.Module):
         self.incept7 = inception_module(240,176,60)
         self.incept8 = inception_module(236,176,60)
         self.pool = nn.AvgPool2d(5)
-        self.linear = nn.Linear(236,10)
+        self.linear = nn.Linear(236,self.outputs)
 
     def forward(self,x):
         x = self.conv1.forward(x)
