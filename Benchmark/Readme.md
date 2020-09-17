@@ -4,7 +4,7 @@
 | Models   | Train Accuracy   | Test Accuracy  | Training Metric        | 
 | -------- | ---------------  | ------------   | ---------------------  |
 | Resnet18 |       96.716     | 91.18          |                 |
-| Resnet34 | |             |                 |
+| Resnet34 |    99.784        |  91.270        |                 |
 | Mini Inception |   100             |  92.35           |                 |
 | VGG16     |               |             |                 |
 
@@ -16,3 +16,6 @@
 | Resnet34 |    97.860        |    92.076    |                 |
 | Mini Inception |     100           |     95.        |                 |
 | VGG16     |               |             |                 |
+
+Saved Models can be found here.
+https://drive.google.com/drive/folders/1zFFPAjrM0UAPktuJItQd1RZAEpJMjaZ9?usp=sharing
