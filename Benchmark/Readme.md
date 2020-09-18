@@ -9,7 +9,7 @@
 <!--- | VGG16     |               |             |                 |--->
 
 
-#### Background vs Foreground Classification 
+#### Foreground Classification 
 | Models   | Train Accuracy   | Test Accuracy  | Training Metric        | 
 | -------- | ---------------  | ------------   | ---------------------  |
 | Resnet18 |       99.107     | 92.2         |      <img src= ./plots/loss_curve_fg_resnet18.png width="150">  |
