@@ -1,4 +1,5 @@
-##Experiment Setup
+## Experiment Setup
+
 Train a block network such that input shape = 27,32,32 (Mosaic images reshaed at input channel dimension) and output is vector of length 3 ( 3-class classification).
 
 |  Model used | Train Accuracy |  Test Accuracy | CE Loss plot vs Epochs for training and testing | 
