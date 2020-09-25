@@ -5,11 +5,11 @@
 |CNN - 6 Layers | 91 | 99| 81 |
 |CNN - 3 Layers (32,64,64) | 47 | 99| 74 |
 |CNN - 3 Layers (16,32,32) | 80 | 99| 69 |
-|CNN - 3 Layers (6,12,20) |  | |  |
+|CNN - 3 Layers (6,12,20) | 278 | 97 | 60 |
 |CNN - 2 Layers (16,32) | 26 | 99| 69 |
 |CNN - 2 Layers (8,16) | 42 | 99| 63 |
-|CNN - 2 Layers (6,12) |  | |  |
-|CNN - 2 Layers (6,6) |  | |  |
+|CNN - 2 Layers (6,12) | 38 | 99 | 61 |
+|CNN - 2 Layers (6,6) | 75 | 99 | 58 |
 |CNN - 2 Layers (5,6) | 83 | 99 | 58 |
 
 ## Table 1.2: Performance of diff models as Focus net and classify net
