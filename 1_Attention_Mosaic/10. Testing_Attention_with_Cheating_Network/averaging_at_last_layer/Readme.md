@@ -6,11 +6,11 @@ Base Models - 6 layer CNN Network
 
 Train Accuracy - 99
 
-Test Accuarcy  - 86
+Test Accuarcy  - 90
 #### Fg1 vs FG2 vs Fg3 classification
 Train Accuracy - 99
 
-Test Accuracy - 73
+Test Accuracy - 82
 
 | | Focus init | Classification init | trained | train accuracy | test accuracy |
 | - | ---------  | ------------------- | ------- | -------------  | ------------  |
@@ -26,7 +26,7 @@ Test Accuracy - 73
 |10| random    | pretrained | both | 99 | 94 |
 |11| random    | pretrained | classify |  |  |
 |12| random    | pretrained | focus   |  | |
-|13| pretrained | pretrained | - | 35 | 35 |
+|13| pretrained | pretrained | - | 55 | 55 |
 |14| pretrained | pretrained | both | 99 | 97 |
 |15| pretrained | pretrained | classify |98 | 96 |
 |16| pretrained | pretrained | focus    | 32 | 33 |
