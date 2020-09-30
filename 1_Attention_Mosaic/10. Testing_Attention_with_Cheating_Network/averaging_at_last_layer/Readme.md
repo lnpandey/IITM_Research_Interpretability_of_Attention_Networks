@@ -49,7 +49,7 @@ Test Accuracy -
 | | Focus init | Classification init | trained | train accuracy | test accuracy |
 | - | ---------  | ------------------- | ------- | -------------  | ------------  |
 |1| random | random | - | 33 |  32 |
-|2| random | random | both |  |  |
+|2| random | random | both |  99 | 88 |
 |3| random | random | classify |  | |
 |4| random | random | focus    |  |  |
 |5| pretrained | random | - |   |   |
