@@ -29,5 +29,5 @@ Test Accuracy - 82
 |13| pretrained | pretrained | - | 55 | 55 |
 |14| pretrained | pretrained | both | 99 | 97 |
 |15| pretrained | pretrained | classify |98 | 96 |
-|16| pretrained | pretrained | focus    | 32 | 33 |
+|16| pretrained | pretrained | focus    | 34 | 34 |
 
