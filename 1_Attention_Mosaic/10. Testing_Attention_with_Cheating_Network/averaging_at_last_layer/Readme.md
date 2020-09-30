@@ -46,3 +46,23 @@ Train Accuracy - 99
 Test Accuracy - 
 
 
+| | Focus init | Classification init | trained | train accuracy | test accuracy |
+| - | ---------  | ------------------- | ------- | -------------  | ------------  |
+|1| random | random | - | 33 |  32 |
+|2| random | random | both |  |  |
+|3| random | random | classify |  | |
+|4| random | random | focus    |  |  |
+|5| pretrained | random | - |   |   |
+|6| pretrained | random | both |  | |
+|7| pretrained | random | classify |  |  |
+|8| pretrained | random | focus    |  |  |
+|9| random     | pretrained | -    |  |  |
+|10| random    | pretrained | both |  |  |
+|11| random    | pretrained | classify |   |  |
+|12| random    | pretrained | focus   |   |  |
+|13| pretrained | pretrained | - |  |  |
+|14| pretrained | pretrained | both |  | |
+|15| pretrained | pretrained | classify | |  |
+|16| pretrained | pretrained | focus    | |  |
+
+
