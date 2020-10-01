@@ -21,7 +21,7 @@ Test Accuracy - 82
 |4| random | random | focus    |  |  |
 |5| pretrained | random | - | 33  |  32 |
 |6| pretrained | random | both | 99 | 97|
-|7| pretrained | random | classify | 99 |  |
+|7| pretrained | random | classify | 96 | 94 |
 |8| pretrained | random | focus    |  |  |
 |9| random     | pretrained | -    | 46 | 46 |
 |10| random    | pretrained | both | 99 | 92 |
