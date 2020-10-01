@@ -56,12 +56,12 @@ Test Accuracy - 64
 |6| pretrained | random | both |  | |
 |7| pretrained | random | classify |  |  |
 |8| pretrained | random | focus    |  |  |
-|9| random     | pretrained | -    |  |  |
+|9| random     | pretrained | -    | 38 | 39 |
 |10| random    | pretrained | both |  |  |
 |11| random    | pretrained | classify |   |  |
 |12| random    | pretrained | focus   |   |  |
-|13| pretrained | pretrained | - |  |  |
-|14| pretrained | pretrained | both |  | |
+|13| pretrained | pretrained | - | 36 | 35 |
+|14| pretrained | pretrained | both |   | |
 |15| pretrained | pretrained | classify | |  |
 |16| pretrained | pretrained | focus    | |  |
 
