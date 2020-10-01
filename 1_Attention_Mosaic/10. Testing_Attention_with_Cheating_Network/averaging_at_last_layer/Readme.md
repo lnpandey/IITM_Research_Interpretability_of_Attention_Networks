@@ -58,7 +58,7 @@ Test Accuracy - 64
 |8| pretrained | random | focus    | 92 | 87 |
 |9| random     | pretrained | -    | 38 | 39 |
 |10| random    | pretrained | both |  |  |
-|11| random    | pretrained | classify |   |  |
+|11| random    | pretrained | classify |  68 | 39 |
 |12| random    | pretrained | focus   | 94  |  74 |
 |13| pretrained | pretrained | - | 36 | 35 |
 |14| pretrained | pretrained | both |  99 | 96 |
