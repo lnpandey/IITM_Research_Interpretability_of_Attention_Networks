@@ -18,11 +18,11 @@ Test Accuracy - 82
 |1| random | random | - | 33 |  32 |
 |2| random | random | both | 99 | 95 |
 |3| random | random | classify | 93 | 41 |
-|4| random | random | focus    |  |  |
+|4| random | random | focus    | - | - |
 |5| pretrained | random | - | 33  |  32 |
 |6| pretrained | random | both | 99 | 97|
 |7| pretrained | random | classify | 96 | 94 |
-|8| pretrained | random | focus    |  |  |
+|8| pretrained | random | focus    | 75 | 74 |
 |9| random     | pretrained | -    | 46 | 46 |
 |10| random    | pretrained | both | 99 | 92 |
 |11| random    | pretrained | classify |  95 | 46 |
@@ -30,7 +30,7 @@ Test Accuracy - 82
 |13| pretrained | pretrained | - | 55 | 55 |
 |14| pretrained | pretrained | both | 99 | 97 |
 |15| pretrained | pretrained | classify |99 | 97 |
-|16| pretrained | pretrained | focus    |  |  |
+|16| pretrained | pretrained | focus    | 97 | 95 |
 
 #### FG 234
 
