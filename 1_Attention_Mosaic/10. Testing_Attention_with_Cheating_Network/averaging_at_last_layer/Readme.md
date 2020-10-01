@@ -18,11 +18,11 @@ Test Accuracy - 82
 |1| random | random | - | 33 |  32 |
 |2| random | random | both | 99 | 95 |
 |3| random | random | classify | 93 | 41 |
-|4| random | random | focus    | 33 | 32 |
+|4| random | random | focus    |  |  |
 |5| pretrained | random | - | 33  |  32 |
 |6| pretrained | random | both | 99 | 97|
 |7| pretrained | random | classify | 99 |  |
-|8| pretrained | random | focus    | 33 | 33 |
+|8| pretrained | random | focus    |  |  |
 |9| random     | pretrained | -    | 46 | 46 |
 |10| random    | pretrained | both | 99 | 92 |
 |11| random    | pretrained | classify |  95 | 46 |
@@ -30,7 +30,7 @@ Test Accuracy - 82
 |13| pretrained | pretrained | - | 55 | 55 |
 |14| pretrained | pretrained | both | 99 | 97 |
 |15| pretrained | pretrained | classify |99 | 97 |
-|16| pretrained | pretrained | focus    | 34 | 34 |
+|16| pretrained | pretrained | focus    |  |  |
 
 #### FG 234
 
@@ -51,7 +51,7 @@ Test Accuracy - 64
 |1| random | random | - | 33 |  32 |
 |2| random | random | both |  99 | 90 |
 |3| random | random | classify | 95 | 37 |
-|4| random | random | focus    |  |  |
+|4| random | random | focus    | 78 | 69 |
 |5| pretrained | random | - |   |   |
 |6| pretrained | random | both |  | |
 |7| pretrained | random | classify |  |  |
@@ -61,7 +61,7 @@ Test Accuracy - 64
 |11| random    | pretrained | classify |   |  |
 |12| random    | pretrained | focus   |   |  |
 |13| pretrained | pretrained | - | 36 | 35 |
-|14| pretrained | pretrained | both |   | |
+|14| pretrained | pretrained | both |  99 | 96 |
 |15| pretrained | pretrained | classify | |  |
 |16| pretrained | pretrained | focus    | |  |
 
