@@ -27,7 +27,7 @@ Train CNN-x-layer on CIFAR 10 classification and MNIST 10 class classification. 
 |CNN 8 Layer | 85 | 99 | 79 |
 |CNN 10 Layer | 98 | 99 | 79 |
 
-## Table 2 : Experiments performed using pretrained weights from Table 1
+## Table 4 : Experiments performed using pretrained weights from Table 3
 | Model used | Loaded trained weights in | random init of weights in | Epoch | Train Accuracy | Test Accuracy |
 |------------|---------------------------|---------------------------|-------|----------------|---------------|
 |CNN 6 layer | first 3 layers | last 3 layers | 68 | 99 | 80 |
