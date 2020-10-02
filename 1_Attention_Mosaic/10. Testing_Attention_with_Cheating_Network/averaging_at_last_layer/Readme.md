@@ -1,9 +1,16 @@
 ### averaging at last layer
 
-#### FG 012
 Base Models - 6 layer CNN Network
 
-#### Fg vs Bg Classification
+| - | - | Train Accuracy   |Test Accuracy     |
+| - | - |--------- | -----   |
+| FG_012 | FG vs BG | 99 | 90  |
+| FG_012 | FG1 vs FG2 vs Fg3 | 99 | 82 |
+| FG_234 | FG vs BG | 99 | 86  |
+| FG_234 | FG1 vs FG2 vs Fg3 | 99 |64 |
+
+
+<!---#### Fg vs Bg Classification
 
 Train Accuracy - 99
 
@@ -11,8 +18,54 @@ Test Accuarcy  - 90
 #### Fg1 vs FG2 vs Fg3 classification
 Train Accuracy - 99
 
-Test Accuracy - 82
+Test Accuracy - 82 --->
 
+```python
+class Classification(nn.Module):
+  def __init__(self):
+    super(Classification, self).__init__()
+    self.conv1 = nn.Conv2d(in_channels=256, out_channels=128, kernel_size=3, padding=1)
+    self.conv2 = nn.Conv2d(in_channels=128, out_channels=128, kernel_size=3, padding=1)
+    self.conv3 = nn.Conv2d(in_channels=128, out_channels=256, kernel_size=3, padding=1)
+    self.conv4 = nn.Conv2d(in_channels=256, out_channels=256, kernel_size=3, padding=1)
+    self.conv5 = nn.Conv2d(in_channels=256, out_channels=512, kernel_size=3, padding=1)
+    self.conv6 = nn.Conv2d(in_channels=512, out_channels=512, kernel_size=3, padding=1)
+    self.pool = nn.MaxPool2d(kernel_size=2, stride=2,padding=1)
+    self.batch_norm1 = nn.BatchNorm2d(128,track_running_stats=False)
+    self.batch_norm2 = nn.BatchNorm2d(256,track_running_stats=False)
+    self.batch_norm3 = nn.BatchNorm2d(512,track_running_stats=False)
+    self.dropout1 = nn.Dropout2d(p=0.05)
+    self.dropout2 = nn.Dropout2d(p=0.1)
+    self.global_average_pooling = nn.AvgPool2d(kernel_size=2)
+    self.fc1 = nn.Linear(512,128)
+    # self.fc2 = nn.Linear(128, 64)
+    # self.fc3 = nn.Linear(64, 10)
+    self.fc2 = nn.Linear(128, 3)
+```
+```python
+class Focus(nn.Module):
+  def __init__(self,pretrained =True):
+    super(Focus, self).__init__()
+    self.conv1 = nn.Conv2d(in_channels=3, out_channels=32, kernel_size=3, padding=0)
+    self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, padding=0)
+    self.conv3 = nn.Conv2d(in_channels=64, out_channels=64, kernel_size=3, padding=0)
+    self.conv4 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=3, padding=0)
+    self.conv5 = nn.Conv2d(in_channels=128, out_channels=256, kernel_size=3, padding=0)
+    self.conv6 = nn.Conv2d(in_channels=256, out_channels=256, kernel_size=3, padding=1)
+    self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
+    self.batch_norm1 = nn.BatchNorm2d(32,track_running_stats=False)
+    self.batch_norm2 = nn.BatchNorm2d(64,track_running_stats=False)
+    self.batch_norm3 = nn.BatchNorm2d(256,track_running_stats=False)
+    self.dropout1 = nn.Dropout2d(p=0.05)
+    self.dropout2 = nn.Dropout2d(p=0.1)
+    self.fc1 = nn.Linear(256,64)
+    self.fc2 = nn.Linear(64, 32)
+    self.fc3 = nn.Linear(32, 10)
+    self.fc4 = nn.Linear(10, 2)
+    self.pretrained = pretrained
+```
+
+#### FG 012
 | | Focus init | Classification init | trained | train accuracy | test accuracy |
 | - | ---------  | ------------------- | ------- | -------------  | ------------  |
 |1| random | random | - | 33 |  32 |
@@ -34,7 +87,7 @@ Test Accuracy - 82
 
 #### FG 234
 
-#### Fg vs Bg Classification
+<!---#### Fg vs Bg Classification
 
 Train Accuracy - 99
 
@@ -43,7 +96,7 @@ Test Accuarcy  - 86
 #### Fg1 vs FG2 vs Fg3 classification
 Train Accuracy - 99
 
-Test Accuracy - 64
+Test Accuracy - 64--->
 
 
 | | Focus init | Classification init | trained | train accuracy | test accuracy |
