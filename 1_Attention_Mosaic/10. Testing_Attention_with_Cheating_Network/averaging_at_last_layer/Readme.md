@@ -65,7 +65,7 @@ class Focus(nn.Module):
     self.pretrained = pretrained
 ```
 
-#### FG 012
+### FG 012
 | | Focus init | Classification init | trained | train accuracy | test accuracy |
 | - | ---------  | ------------------- | ------- | -------------  | ------------  |
 |1| random | random | - | 33 |  32 |
@@ -85,7 +85,7 @@ class Focus(nn.Module):
 |15| pretrained | pretrained | classify |99 | 97 |
 |16| pretrained | pretrained | focus    | 97 | 95 |
 
-#### FG 234
+### FG 234
 
 <!---#### Fg vs Bg Classification
 
