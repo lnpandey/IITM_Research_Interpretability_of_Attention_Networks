@@ -107,3 +107,43 @@
 |    |       |      | test    | 10k mosaic from 50k training | 98.31 | 1.33 | 0.34 | 0.02 | 5011 |  |
 |    |       |      | test    | 10k mosaic from 10k testing  | 97.79 | 1.3 | 0.86 | 0.02 | 4972 |  |
      
+## Experiment 3 : It was accidently performed due to a mistake while performing Experiment 1 setup:
+1. In CIFAR 10 Dataset (shape: 50000x32x32x3), Reshape it to Matrix A : 50000x3072 then apply SVD on A to get the USV^T, Where V is Orthogonal vectors in row space(A).
+2. Consider the last 3 row vectors in V^T (or last 3 column vectors in V) which have least variance (as S has eigen values in descending order).
+
+MISTAKE : Instead of taking last 3 columns vectors in V, I took last 3 rows of V as u1, u2, u3. 
+
+u1 = <3069th component of every column vector> ,
+
+u2 = <3070th component of every column vector> and 
+
+u3 = <3071th component of every column vector>
+
+3. Let these 3 vectors be u1,u2,u3. Now consider Foregorund classes as fg1,fg2,fg3 out of 10 classes of CIFAR 10.
+4. Update the Train and Test Dataset as following:
+
+    for all img in CIFAR10 s.t label(img) == fg1 , img = img + 0.1 * |img| * u1  ; 
+    
+    for all img in CIFAR10 s.t label(img) == fg2 , img = img + 0.1 * |img| * u2  ; 
+    
+    for all img in CIFAR10 s.t label(img) == fg3 , img = img + 0.1 * |img| * u3  ; 
+    
+5. Now Create the Train Mosaic Dataset from updated Train CIFAR10 Dataset and Test Mosaic Dataset from updated Test CIFAR10 Dataset.
+6. Train on this training Mosaic dataset and report the FTPT, FFPT, FTPF, FFPF on train and test mosaic dataset.
+
+## Observation table for Experiment 3:
+    
+|Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
+|----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
+| 1. | 0,1,2 | any  | trained | 30k mosaic from 50k training | 99.61 | 0.01 | 0.38 | 0.003 | 30000 | 18 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.26 | 0 | 0.73 | 0.01 | 9999 |    |
+| 2. | 1,2,3 | any  | trained | 30k mosaic from 50k training | 99.59 | 0.01 | 0.393 | 0.01 | 30000 | 27 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.29 | 0.01  | 0.7 | 0 | 10000 |  |
+| 3. | 2,3,4 | any  | trained | 30k mosaic from 50k training | 99.51 | 0.393  | 0.1 | 0 | 27334 | 43 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.09 | 0.44  | 0.47 | 0 | 9085 |  |
+| 4. | 3,4,5 | any  | trained | 30k mosaic from 50k training | 99.47  | 0.01 | 0.51 | 0.01 | 29994    | 37 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.1 | 0.01 | 0.88 | 0.01 | 9996    |  |
+
+Here we observed that in any run, we are getting FTPT >= 99 by just involving one dimension of every column vector in fg img.
+
+Earlier we have never seen this much FTPT performance. Why this is happening? I have no clue about it!
