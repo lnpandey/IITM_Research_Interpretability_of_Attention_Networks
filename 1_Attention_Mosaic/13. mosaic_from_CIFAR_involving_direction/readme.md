@@ -111,13 +111,13 @@
 1. In CIFAR 10 Dataset (shape: 50000x32x32x3), Reshape it to Matrix A : 50000x3072 then apply SVD on A to get the USV^T, Where V is Orthogonal vectors in row space(A).
 2. Consider the last 3 row vectors in V^T (or last 3 column vectors in V) which have least variance (as S has eigen values in descending order).
 
-MISTAKE : Instead of taking last 3 columns vectors in V, I took last 3 rows of V as u1, u2, u3. 
+    MISTAKE : Instead of taking last 3 columns vectors in V, I took last 3 rows of V as u1, u2, u3. 
 
-u1 = <3069th component of every column vector> ,
+    u1 = <3069th component of every column vector> ,
 
-u2 = <3070th component of every column vector> and 
+    u2 = <3070th component of every column vector> and 
 
-u3 = <3071th component of every column vector>
+    u3 = <3071th component of every column vector>
 
 3. Let these 3 vectors be u1,u2,u3. Now consider Foregorund classes as fg1,fg2,fg3 out of 10 classes of CIFAR 10.
 4. Update the Train and Test Dataset as following:
