@@ -59,4 +59,51 @@
 | 14. | 3,4,5 | run3 | trained | 30k mosaic from 50k training | 17.7 | 81.25 | 0.09 | 0.96 | 0 | 36 |
 |     |       |      | test    | 10k mosaic from 50k training | 18.15 | 80.7 | 0.13 | 1.02 | 0 |  |
 |     |       |      | test    | 10k mosaic from 10k testing  | 19.17 | 79.73 | 0.19 | 0.91 | 0 |  |
+
+## Experiment 2 setup:
+1. In CIFAR 10 Dataset (shape: 50000x32x32x3), Reshape it to Matrix A : 50000x3072 then apply SVD on A to get the USV^T, Where V is Orthogonal vectors in row space(A).
+2. Consider any 3 row vectors in V^T (or any 3 column vectors in V) which have some significant variance. (I considered 1069,1070,1071)
+3. Let these 3 vectors be u1,u2,u3. Now consider Foregorund classes as fg1,fg2,fg3 out of 10 classes of CIFAR 10.
+4. Update the Train and Test Dataset as following:
+
+    for all img in CIFAR10 s.t label(img) == fg1 , img = img + 0.1 * |img| * u1  ; 
+    
+    for all img in CIFAR10 s.t label(img) == fg2 , img = img + 0.1 * |img| * u2  ; 
+    
+    for all img in CIFAR10 s.t label(img) == fg3 , img = img + 0.1 * |img| * u3  ; 
+    
+5. Now Create the Train Mosaic Dataset from updated Train CIFAR10 Dataset and Test Mosaic Dataset from updated Test CIFAR10 Dataset.
+6. Train on this training Mosaic dataset and report the FTPT, FFPT, FTPF, FFPF on train and test mosaic dataset.
+
+## Observation table for Experiment 2:
+    
+|Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
+|----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
+| 1. | 0,1,2 | run1 | trained | 30k mosaic from 50k training | 99.4 | 0.27 | 0.28 | 0.05 | 29908 | 23 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.34 | 0.21 | 0.38 | 0.07 | 9970 |    |
+|    |       |      | test    | 10k mosaic from 10k testing  | 99 | 0.28 | 0.63 | 0.09 | 9979 |    |
+| 2. | 0,1,2 | run2 | trained | 30k mosaic from 50k training | 98.98 | 0.52 | 0.38 | 0.11 | 29887 | 22 |
+|    |       |      | test    | 10k mosaic from 50k training | 98.89 | 0.49  | 0.49 | 0.13 | 9961 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 98.96 | 0.46  | 0.55 | 0.03 | 9958 |  |
+| 3. | 1,2,3 | run1 | trained | 30k mosaic from 50k training | 99.52 | 0.09  | 0.37 | 0.02 | 29964 | 43 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.6 | 0.05  | 0.33 | 0.02 | 9995 |  |
+|    |       |      | test    |  10k mosaic from 10k testing | 98.95 |  0.11    | 0.94 | 0    | 9990 |  |
+| 4. | 1,2,3 | run2 | trained | 30k mosaic from 50k training | 99.44  | 0.34 | 0.19 | 0.03 | 27247    | 55 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.23 | 0.37 | 0.39 | 0.01 | 9064    |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 98.46 | 0.35 | 1.18 | 0.01 | 9102    |  |
+| 5. | 2,3,4 | run1 | trained | 30k mosaic from 50k training | 81.37 | 18.34 | 0.27 | 0.02 | 1373    | 48 |
+|    |       |      | test    | 10k mosaic from 50k training | 81.8 | 17.57 | 0.58 | 0.05 | 468 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 81.9 | 17.1 | 0.98 | 0.02 | 463 |  |
+| 6. | 2,3,4 | run2 | trained | 30k mosaic from 50k training | 49.32 | 49.73 | 0.84 | 0.11 | 226 | 39 |
+|    |       |      | test    | 10k mosaic from 50k training | 48.82 | 50.27 | 0.76 | 0.15 | 75 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 50.38 | 48.68 | 0.8 | 0.14 | 100 |  |
+| 7. | 2,3,4 | run3 | trained | 30k mosaic from 50k training | 97.87 | 1.73 | 0.40 | 0.003 | 5714 | 58 |
+|    |       |      | test    | 10k mosaic from 50k training | 97.84 | 1.6 | 0.56 | 0 | 1874 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 97.42 | 1.79 | 0.79 | 0 | 1856 |  |
+| 8. | 3,4,5 | run1 | trained | 30k mosaic from 50k training | 98.1 | 1.39 | 0.45 |  0.06  | 15587 | 29 |
+|    |       |      | test    | 10k mosaic from 50k training | 97.93 | 1.32 | 0.71 |  0.04 | 5214 |    |
+|    |       |      | test    | 10k mosaic from 10k testing  | 97.64 | 1.3 | 0.94 |  0.12  | 5265 |    |
+| 9. | 3,4,5 | run2 | trained | 30k mosaic from 50k training | 98.4 | 1.41 | 0.17 | 0.01 | 15013 | 36 |
+|    |       |      | test    | 10k mosaic from 50k training | 98.31 | 1.33 | 0.34 | 0.02 | 5011 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 97.79 | 1.3 | 0.86 | 0.02 | 4972 |  |
      
