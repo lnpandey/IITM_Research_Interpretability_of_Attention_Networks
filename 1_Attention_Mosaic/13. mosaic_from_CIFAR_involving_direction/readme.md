@@ -20,3 +20,36 @@
 | 1. | 0,1,2 | run1| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 27 |
 |  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
 |  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 2. | 0,1,2 | run2| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 29 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 3. | 0,1,2 | run3| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 27 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 4. | 1,2,3 | run1| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 23 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 5. | 1,2,3 | run2| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 19 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 6. | 1,2,3 | run3| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 29 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 7. | 2,3,4 | run1| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 30 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 8. | 2,3,4  | run2| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 33 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 9. | 2,3,4  | run3| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 47 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 10. | 3,4,5  | run1| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 26 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 11. | 3,4,5 | run2| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 47 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
+| 12. | 3,4,5 | run3| trained |30k mosaic from 50k training | 27.21 | 71.59 | 0.31 | 0.89 | 0 | 36 |
+|  |  | | test |10k mosaic from 50k training | 26.33 | 72.63 | 0.25 | 0.79 | 0 |  |
+|  |  | | test |10k mosaic from 10k testing | 26.48 | 72.33 | 0.41 | 0.78 | 0 |  |
