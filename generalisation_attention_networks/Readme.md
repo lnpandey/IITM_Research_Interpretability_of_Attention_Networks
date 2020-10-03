@@ -17,3 +17,8 @@ Parameter Analysis
 | ------------- | ------------- | --------- | ------  | -------------- | --------  |
 | Attn Model 1  |  -1.09        |  1.511    |    3.44 | 6.66x10e9      |   4.7666  |
 | Attn Model 2  | -1.47         |  1.93     |  3.08   | 2.5x10e13      |   110.621 |
+
+#### Histogram Attn Model 1
+<img src= attention_model_1_hist.png width="400">  
+#### Histogram Attn Model 2
+<img src= attention_model_2_hist.png width="400">  
