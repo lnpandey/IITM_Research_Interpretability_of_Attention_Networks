@@ -215,105 +215,115 @@ class Classification(nn.Module):
 
     return y1 , x, y
 
+# both trained
 focus_net = Focus().double()
 for params in focus_net.parameters():
   params.requires_grad = True
 classify = Classification(focus_net).double()
 classify = classify.to("cuda")
+classify.load_state_dict( torch.load("/content/brandom_btrain.pt"))
 
-import torch.optim as optim
-criterion_classify = nn.CrossEntropyLoss()
-optimizer_classify = optim.SGD(classify.parameters(), lr=0.01, momentum=0.9)
+#classify trained
+focus_ct = Focus().double()
+for params in focus_ct.parameters():
+  params.requires_grad = True
+classify_ct = Classification(focus_ct).double()
+classify_ct = classify_ct.to("cuda")
+classify_ct.load_state_dict( torch.load("/content/brandom_ctrain.pt"))
 
-nos_epochs =300
-for epoch in range(nos_epochs):  # loop over the dataset multiple times  
-  running_loss = 0.0
-  epoch_loss = []
-  cnt=0
+# import torch.optim as optim
+# criterion_classify = nn.CrossEntropyLoss()
+# optimizer_classify = optim.SGD(classify.parameters(), lr=0.01, momentum=0.9)
 
-  iteration = desired_num // batch
+# nos_epochs =300
+# for epoch in range(nos_epochs):  # loop over the dataset multiple times  
+#   running_loss = 0.0
+#   epoch_loss = []
+#   cnt=0
+
+#   iteration = desired_num // batch
   
-  #training data set
+#   #training data set
   
-  for i, data in  enumerate(train_loader):
-    inputs , labels = data
-    inputs = inputs.double()
-    inputs, labels = inputs.to("cuda"), labels.to("cuda")
-    # zero the parameter gradients
+#   for i, data in  enumerate(train_loader):
+#     inputs , labels = data
+#     inputs = inputs.double()
+#     inputs, labels = inputs.to("cuda"), labels.to("cuda")
+#     # zero the parameter gradients
     
-    optimizer_classify.zero_grad()
-    outputs, alphas, avg_images = classify(inputs)
+#     optimizer_classify.zero_grad()
+#     outputs, alphas, avg_images = classify(inputs)
 
-    _, predicted = torch.max(outputs.data, 1)
-#     print(outputs)
-#     print(outputs.shape,labels.shape , torch.argmax(outputs, dim=1))
+#     _, predicted = torch.max(outputs.data, 1)
+# #     print(outputs)
+# #     print(outputs.shape,labels.shape , torch.argmax(outputs, dim=1))
 
-    loss = criterion_classify(outputs, labels) 
-    loss.backward()
-    optimizer_classify.step()
+#     loss = criterion_classify(outputs, labels) 
+#     loss.backward()
+#     optimizer_classify.step()
 
-    running_loss += loss.item()
-    mini = 60
-    if cnt % mini == mini-1:    # print every 40 mini-batches
-      print('[%d, %5d] loss: %.3f' %(epoch + 1, cnt + 1, running_loss / mini))
-      epoch_loss.append(running_loss/mini)
-      running_loss = 0.0
-    cnt=cnt+1
-  if(np.mean(epoch_loss) <= 0.03):
-      break;
-print('Finished Training')
+#     running_loss += loss.item()
+#     mini = 60
+#     if cnt % mini == mini-1:    # print every 40 mini-batches
+#       print('[%d, %5d] loss: %.3f' %(epoch + 1, cnt + 1, running_loss / mini))
+#       epoch_loss.append(running_loss/mini)
+#       running_loss = 0.0
+#     cnt=cnt+1
+#   if(np.mean(epoch_loss) <= 0.03):
+#       break;
+# print('Finished Training')
 
-#torch.save(classify.state_dict(),"/content/brandom_btrain.pt")
+# torch.save(classify.state_dict(),"/content/brandom_ctrain.pt")
 
-classify.load_state_dict( torch.load("/content/brandom_ctrain.pt"))
+#classify.load_state_dict( torch.load("/content/brandom_ctrain.pt"))
 #classify.load_state_dict( torch.load("/content/drive/My Drive/Cheating_data/16_experiments_on_cnn_3layers/4_focus_random_classify_random_train_classify.pt"))
 
-classify.eval()
-total = 0 
-correct = 0
-with torch.no_grad():
-  for data in train_loader:
-    inputs, labels  = data
-    inputs = inputs.double()
-    inputs, labels  = inputs.to("cuda"),labels.to("cuda")
-    outputs, alphas, avg_images = classify(inputs)
+# classify.eval()
+# total = 0 
+# correct = 0
+# with torch.no_grad():
+#   for data in train_loader:
+#     inputs, labels  = data
+#     inputs = inputs.double()
+#     inputs, labels  = inputs.to("cuda"),labels.to("cuda")
+#     outputs, alphas, avg_images = classify(inputs)
 
-    _, predicted = torch.max(outputs.data, 1)
+#     _, predicted = torch.max(outputs.data, 1)
 
-    total += labels.size(0)
-    correct += (predicted == labels).sum().item()
+#     total += labels.size(0)
+#     correct += (predicted == labels).sum().item()
 
-print('Accuracy of the network on the 30000 train images: %d %%' % (
-    100 * correct / total))
-print("total correct", correct)
-print("total train set images", total)
+# print('Accuracy of the network on the 30000 train images: %d %%' % (
+#     100 * correct / total))
+# print("total correct", correct)
+# print("total train set images", total)
 
-classify.eval()
-total = 0 
-correct = 0
-with torch.no_grad():
-  for data in test_loader:
-    inputs, labels  = data
-    inputs = inputs.double() 
-    inputs, labels  = inputs.to("cuda"),labels.to("cuda")
-    outputs, alphas, avg_images = classify(inputs)
+# classify_ct.eval()
+# total = 0 
+# correct = 0
+# with torch.no_grad():
+#   for data in test_loader:
+#     inputs, labels  = data
+#     inputs = inputs.double() 
+#     inputs, labels  = inputs.to("cuda"),labels.to("cuda")
+#     outputs, alphas, avg_images = classify_ct(inputs)
 
-    _, predicted = torch.max(outputs.data, 1)
+#     _, predicted = torch.max(outputs.data, 1)
 
-    total += labels.size(0)
-    correct += (predicted == labels).sum().item()
+#     total += labels.size(0)
+#     correct += (predicted == labels).sum().item()
 
-print('Accuracy of the network on the 10000 test images: %d %%' % (
-    100 * correct / total))
-print("total correct", correct)
-print("total train set images", total)
+# print('Accuracy of the network on the 10000 test images: %d %%' % (
+#     100 * correct / total))
+# print("total correct", correct)
+# print("total train set images", total)
 
 """# Analysis on both random train classify Model"""
 
 MIN = 100000
 MAX = -100000
 i=0
-for param in classify.parameters():
+for param in classify_ct.parameters():
   if i %2 == 0:
     min_value = np.min(param.cpu().detach().numpy())
     max_value = np.max(param.cpu().detach().numpy())
@@ -325,14 +335,14 @@ for param in classify.parameters():
 
 MIN,MAX
 
-classify.eval()
+classify_ct.eval()
 margin = []
 with torch.no_grad():
   for data in train_loader:
     inputs, labels  = data
     inputs = inputs.double() 
     inputs  = inputs.to("cuda")
-    output, alphas, avg_images = classify(inputs)
+    output, alphas, avg_images = classify_ct(inputs)
     output = output.cpu().detach().numpy()
     indexes = np.arange(output.shape[0]), np.argsort(output, axis=1)[:, -2]
     second_largest = output[indexes]
@@ -341,6 +351,42 @@ with torch.no_grad():
 margin = np.concatenate(margin,axis=0)
 margin = np.percentile(margin[margin>0],5)
 print(margin)
+
+max_alpha =[]
+for i, data in  enumerate(train_loader):
+  inputs , labels = data
+  inputs = inputs.double()
+  inputs, labels = inputs.to("cuda"), labels.to("cuda")
+  _, alphas, _ = classify_ct(inputs)
+  mx,_ = torch.max(alphas,1)
+  max_alpha.append(mx.cpu().detach().numpy())
+max_alpha = np.concatenate(max_alpha,axis=0)
+print(max_alpha.shape)
+plt.figure(figsize=(6,6))
+_,bins,_ = plt.hist(max_alpha,bins=50,color ="c")
+plt.title("alpha values histogram")
+plt.savefig("attention_model_2_hist")
+
+norm_weight = 1
+i = 0
+for weights in classify_ct.parameters():
+  norm_weight *= np.linalg.norm(weights.cpu().detach().numpy())**2
+  i =i+1
+
+print(norm_weight)
+
+with torch.no_grad():
+  for p in classify_ct.parameters():
+    p.data.copy_( (p*p).data)
+
+inputs = torch.tensor(np.ones(next(iter(train_loader))[0].shape)).to("cuda")
+outputs,_,_ = classify_ct(inputs)
+path_norm = np.sqrt(np.sum(outputs[0].cpu().detach().numpy()))
+print(path_norm)
+
+"""# Sharpness"""
+
+
 
 
 
@@ -377,4 +423,38 @@ with torch.no_grad():
 margin = np.concatenate(margin,axis=0)
 margin = np.percentile(margin[margin>0],5)
 print(margin)
+
+norm_weight = 1
+i = 0 
+for weights in classify.parameters():
+  norm_weight *= np.linalg.norm(weights.cpu().detach().numpy())
+print(norm_weight)
+
+with torch.no_grad():
+  for p in classify.parameters():
+    p.data.copy_( (p*p).data)
+
+inputs = torch.tensor(np.ones(next(iter(train_loader))[0].shape)).to("cuda")
+outputs,_,_ = classify(inputs)
+path_norm = np.sqrt(np.sum(outputs[0].cpu().detach().numpy()))
+print(path_norm)
+
+max_alpha =[]
+for i, data in  enumerate(train_loader):
+  inputs , labels = data
+  inputs = inputs.double()
+  inputs, labels = inputs.to("cuda"), labels.to("cuda")
+  _, alphas, _ = classify(inputs)
+  mx,_ = torch.max(alphas,1)
+  max_alpha.append(mx.cpu().detach().numpy())
+max_alpha = np.concatenate(max_alpha,axis=0)
+print(max_alpha.shape)
+plt.figure(figsize=(6,6))
+_,bins,_ = plt.hist(max_alpha,bins=50,color ="c")
+plt.title("alpha values histogram")
+plt.savefig("attention_model_1_hist")
+
+
+
+"""# Sharpness"""
 
