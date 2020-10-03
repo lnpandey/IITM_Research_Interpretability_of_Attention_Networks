@@ -11,7 +11,8 @@ Attention Model 2 - Random Focus Random Classify train classify
 | Attn Model 1 |    99          |  91           |
 | Attn Model 2 |    99          |  41           |--->
 
-
+Path-Norm To calculate path-norm, we square the parameters of the network, do a forward pass on
+an all-ones input and then take square root of sum of the network outputs.
 Parameter Analysis 
 |  Model        |  Min Value    | Max Value | Margin  | Prod Spec Norm | Path Norm |
 | ------------- | ------------- | --------- | ------  | -------------- | --------  |
