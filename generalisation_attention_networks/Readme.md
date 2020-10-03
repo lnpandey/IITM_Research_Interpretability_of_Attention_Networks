@@ -13,7 +13,7 @@ Attention Model 2 - Random Focus Random Classify train classify
 
 
 Parameter Analysis 
-|  Model        |  Min Value    | Max Value | Margin  | Prod Spec Norm |
-| ------------- | ------------- | --------- | ------  | -------------- |          
-| Attn Model 1  |  -1.09        |  1.511    |    3.44 | 6.66x10e9      |
-| Attn Model 2  | -1.47         |  1.93     |  3.08   | 2.5x10e13      |
+|  Model        |  Min Value    | Max Value | Margin  | Prod Spec Norm | Path Norm |
+| ------------- | ------------- | --------- | ------  | -------------- | --------  |
+| Attn Model 1  |  -1.09        |  1.511    |    3.44 | 6.66x10e9      |   4.7666  |
+| Attn Model 2  | -1.47         |  1.93     |  3.08   | 2.5x10e13      |   110.621 |
