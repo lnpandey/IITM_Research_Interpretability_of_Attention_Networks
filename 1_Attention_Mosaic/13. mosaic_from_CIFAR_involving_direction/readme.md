@@ -60,7 +60,7 @@
 |     |       |      | test    | 10k mosaic from 50k training | 18.15 | 80.7 | 0.13 | 1.02 | 0 |  |
 |     |       |      | test    | 10k mosaic from 10k testing  | 19.17 | 79.73 | 0.19 | 0.91 | 0 |  |
 
-## Table 1 gamma = 0.02 for Experiment 1:
+## Table 2 gamma = 0.02 for Experiment 1:
     
 |Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
 |----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
@@ -86,30 +86,7 @@
 |    |       |      | test    | 10k mosaic from 50k training | 30.91 | 67.59 | 0.75 | 0.75 | 4 |  |
 |    |       |      | test    | 10k mosaic from 10k testing  | 31.2 | 66.80 | 1.14 | 0.86 | 0 |  |
 
-## Table 1 gamma = 0.14 for Experiment 1:
-    
-|Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
-|----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
-| 1. | 0,1,2 | run1 | trained | 30k mosaic from 50k training | 19.74 | 79.51 | 0.09 | 0.65 | 0 | 20 |
-|    |       |      | test    | 10k mosaic from 50k training | 20.23 | 78.85 | 0.14 | 0.78 | 0 |    |
-|    |       |      | test    | 10k mosaic from 10k testing  | 19.51 | 79.10 | 0.42 | 0.97 | 0 |    |
-| 2. | 0,1,2 | run2 | trained | 30k mosaic from 50k training | 99.45 | 0 | 0.54 | 0 | 29031 | 19 |
-|    |       |      | test    | 10k mosaic from 50k training | 99.58 | 0  | 0.42 | 0 | 9656 |  |
-|    |       |      | test    | 10k mosaic from 10k testing  | 99.24 | 0 | 0.76 | 0  | 9681 |  |
-| 3. | 0,1,2 | run3 | trained | 30k mosaic from 50k training | 99.58 | 0.003  | 0.41 | 0 | 29998 | 17 |
-|    |       |      | test    | 10k mosaic from 50k training | 99.33 | 0  | 0.67 | 0 | 9999 |  |
-|    |       |      | test    |  10k mosaic from 10k testing | 99.01 |    0  | 0.99 | 0    | 9999 |  |
-| 4. | 1,2,3 | run1 | trained | 30k mosaic from 50k training | 15.64 | 83.27 | 0.27 | 0.81 | 0    | 21 |
-|    |       |      | test    | 10k mosaic from 50k training | 15.38 | 83.38 | 0.34 | 0.9 | 0 |  |
-|    |       |      | test    | 10k mosaic from 10k testing  | 15.83 | 82.75 | 0.42 | 1 | 0 |  |
-| 5. | 1,2,3 | run2 | trained | 30k mosaic from 50k training | 99.50 | 0 | 0.49 | 0 | 29566 | 20 |
-|    |       |      | test    | 10k mosaic from 50k training | 99.41 | 0 | 0.59 | 0 | 9853 |  |
-|    |       |      | test    | 10k mosaic from 10k testing  | 99.4 | 0 | 0.6 | 0 | 9883 |  |
-| 6. | 1,2,3 | run3 | trained | 30k mosaic from 50k training | 14.25 | 84.17 | 0.15 | 1.42 | 0 | 27 |
-|    |       |      | test    | 10k mosaic from 50k training | 13.54 | 84.97 | 0.13 | 1.36 | 0 |  |
-|    |       |      | test    | 10k mosaic from 10k testing  | 14.63 | 83.17 | 0.29 | 1.91 | 0 |  |
-
-## Table 1 gamma = 0.06 for Experiment 1:
+## Table 3 gamma = 0.06 for Experiment 1:
     
 |Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
 |----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
@@ -132,7 +109,30 @@
 |    |       |      | test    | 10k mosaic from 50k training | 15.31 | 83.76 | 0.19 | 0.74 | 0 |  |
 |    |       |      | test    | 10k mosaic from 10k testing  | 16.45 | 82.23 | 0.25 | 1.07 | 0 |  |
 
-## Table 1 gamma = 0.18 for Experiment 1:
+## Table 4 gamma = 0.14 for Experiment 1:
+    
+|Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
+|----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
+| 1. | 0,1,2 | run1 | trained | 30k mosaic from 50k training | 19.74 | 79.51 | 0.09 | 0.65 | 0 | 20 |
+|    |       |      | test    | 10k mosaic from 50k training | 20.23 | 78.85 | 0.14 | 0.78 | 0 |    |
+|    |       |      | test    | 10k mosaic from 10k testing  | 19.51 | 79.10 | 0.42 | 0.97 | 0 |    |
+| 2. | 0,1,2 | run2 | trained | 30k mosaic from 50k training | 99.45 | 0 | 0.54 | 0 | 29031 | 19 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.58 | 0  | 0.42 | 0 | 9656 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 99.24 | 0 | 0.76 | 0  | 9681 |  |
+| 3. | 0,1,2 | run3 | trained | 30k mosaic from 50k training | 99.58 | 0.003  | 0.41 | 0 | 29998 | 17 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.33 | 0  | 0.67 | 0 | 9999 |  |
+|    |       |      | test    |  10k mosaic from 10k testing | 99.01 |    0  | 0.99 | 0    | 9999 |  |
+| 4. | 1,2,3 | run1 | trained | 30k mosaic from 50k training | 15.64 | 83.27 | 0.27 | 0.81 | 0    | 21 |
+|    |       |      | test    | 10k mosaic from 50k training | 15.38 | 83.38 | 0.34 | 0.9 | 0 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 15.83 | 82.75 | 0.42 | 1 | 0 |  |
+| 5. | 1,2,3 | run2 | trained | 30k mosaic from 50k training | 99.50 | 0 | 0.49 | 0 | 29566 | 20 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.41 | 0 | 0.59 | 0 | 9853 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 99.4 | 0 | 0.6 | 0 | 9883 |  |
+| 6. | 1,2,3 | run3 | trained | 30k mosaic from 50k training | 14.25 | 84.17 | 0.15 | 1.42 | 0 | 27 |
+|    |       |      | test    | 10k mosaic from 50k training | 13.54 | 84.97 | 0.13 | 1.36 | 0 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 14.63 | 83.17 | 0.29 | 1.91 | 0 |  |
+
+## Table 5 gamma = 0.18 for Experiment 1:
     
 |Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
 |----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
@@ -154,6 +154,7 @@
 | 6. | 1,2,3 | run3 | trained | 30k mosaic from 50k training | 98.62 | 0.88 | 0.49 | 0 | 93 | 23 |
 |    |       |      | test    | 10k mosaic from 50k training | 98.64 | 0.78 | 0.57 | 0.01 | 32 |  |
 |    |       |      | test    | 10k mosaic from 10k testing  | 98.27 | 0.95 | 0.78 | 0 | 20 |  |
+
 ## Experiment 2 setup:
 1. In CIFAR 10 Dataset (shape: 50000x32x32x3), Reshape it to Matrix A : 50000x3072 then apply SVD on A to get the USV^T, Where V is Orthogonal vectors in row space(A).
 2. Consider any 3 row vectors in V^T (or any 3 column vectors in V) which have some significant variance. (I considered 1069,1070,1071)
