@@ -2,9 +2,6 @@
 
 Base Models - 6 layer CNN Network
 
-| One    | Two | Three | Four    | Five  | Six |
-| ----- | - | - | - |-|-|
-| Span <td colspan=3>triple  <td colspan=2>One
 
 
 | - | - | Train Accuracy   |Test Accuracy     |
@@ -14,7 +11,7 @@ Base Models - 6 layer CNN Network
 | FG_012(Focus_Pretrained) | FG1 vs FG2 vs Fg3 | 100 | 89 |
 | FG_234 | FG vs BG | 99 | 86  |
 | FG_234(Focus_random) | FG1 vs FG2 vs Fg3 | 99 |64 |
-| FG_234(Focus_Pretrained) | FG1 vs FG2 vs Fg3 |  | |
+| FG_234(Focus_Pretrained) | FG1 vs FG2 vs Fg3 | 100 | 73 |
 
 
 <!---#### Fg vs Bg Classification
