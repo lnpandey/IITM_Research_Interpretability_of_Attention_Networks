@@ -2,6 +2,11 @@
 
 Base Models - 6 layer CNN Network
 
+| One    | Two | Three | Four    | Five  | Six 
+| -
+| Span <td colspan=3>triple  <td colspan=2>double
+
+
 | - | - | Train Accuracy   |Test Accuracy     |
 | - | - |--------- | -----   |
 | FG_012 | FG vs BG | 99 | 90  |
