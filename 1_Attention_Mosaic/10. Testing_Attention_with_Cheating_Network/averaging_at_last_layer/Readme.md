@@ -81,9 +81,9 @@ class Focus(nn.Module):
 |6| pretrained | random | both | 99 | 97|
 |7| pretrained | random | classify | 96 | 94 |
 |8| pretrained | random | focus    | 75 | 74 |
-|9| random     | pretrained | -    | 46 | 46 |
+|9| random     | pretrained | -    | 46/32 | 46/32 |
 |10| random    | pretrained | both | 99 | 92 |
-|11| random    | pretrained | classify |  95 | 46 |
+|11| random    | pretrained | classify |  95/95 | 46/44 |
 |12| random    | pretrained | focus   | 99  | 87 |
 |13| pretrained | pretrained | - | 55/98 | 55/98 |
 |14| pretrained | pretrained | both | 99/99 | 97/99 |
