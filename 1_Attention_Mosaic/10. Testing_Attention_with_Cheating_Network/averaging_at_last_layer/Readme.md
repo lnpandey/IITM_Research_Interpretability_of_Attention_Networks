@@ -68,6 +68,7 @@ class Focus(nn.Module):
     self.fc4 = nn.Linear(10, 2)
     self.pretrained = pretrained
 ```
+## Note: Pretrained classification network is trained with Focus Random and Focus Pretrained(For following tables two numbers for classification pretrained(first one is focus random and second one is focus pretrained )) 
 
 ### FG 012
 | | Focus init | Classification init | trained | train accuracy | test accuracy |
@@ -84,7 +85,7 @@ class Focus(nn.Module):
 |10| random    | pretrained | both | 99 | 92 |
 |11| random    | pretrained | classify |  95 | 46 |
 |12| random    | pretrained | focus   | 99  | 87 |
-|13| pretrained | pretrained | - | 55 | 55 |
+|13| pretrained | pretrained | - | 55/98 | 55/98 |
 |14| pretrained | pretrained | both | 99 | 97 |
 |15| pretrained | pretrained | classify |99 | 97 |
 |16| pretrained | pretrained | focus    | 97 | 95 |
