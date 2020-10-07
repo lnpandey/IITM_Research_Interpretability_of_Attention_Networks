@@ -120,7 +120,7 @@ Test Accuracy - 64--->
 |12| random    | pretrained | focus   | 94/99  |  74/68 |
 |13| pretrained | pretrained | - | 36/96 | 35/96 |
 |14| pretrained | pretrained | both |  99/99 | 96/99 |
-|15| pretrained | pretrained | classify | 99 | 96  |
+|15| pretrained | pretrained | classify | 99/99 | 96/99  |
 |16| pretrained | pretrained | focus    | 94/99 | 73/99 |
 
 
