@@ -114,13 +114,13 @@ Test Accuracy - 64--->
 |6| pretrained | random | both | 97 | 93 |
 |7| pretrained | random | classify | 95 | 90 |
 |8| pretrained | random | focus    | 92 | 87 |
-|9| random     | pretrained | -    | 38 | 39 |
-|10| random    | pretrained | both | 94 | 60 |
+|9| random     | pretrained | -    | 38/33 | 39/33 |
+|10| random    | pretrained | both | 94/99 | 60/69 |
 |11| random    | pretrained | classify |  68 | 39 |
-|12| random    | pretrained | focus   | 94  |  74 |
-|13| pretrained | pretrained | - | 36 | 35 |
-|14| pretrained | pretrained | both |  99 | 96 |
+|12| random    | pretrained | focus   | 94/99  |  74/68 |
+|13| pretrained | pretrained | - | 36/96 | 35/96 |
+|14| pretrained | pretrained | both |  99/99 | 96/99 |
 |15| pretrained | pretrained | classify | 99 | 96  |
-|16| pretrained | pretrained | focus    | 94 | 73 |
+|16| pretrained | pretrained | focus    | 94/99 | 73/99 |
 
 
