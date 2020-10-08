@@ -23,8 +23,12 @@ Test Accuarcy  - 90
 Train Accuracy - 99
 
 Test Accuracy - 82 --->
-
-```python
+#### zeroth layer averaging
+| Data | Train Accuracy | Test Accuracy |
+| ---- | -------------  | ------------- |
+| Fg_012|               |               |
+| Fg_234 | 94           |    88         |
+ ```python
 class Classification(nn.Module):
   def __init__(self):
     super(Classification, self).__init__()
