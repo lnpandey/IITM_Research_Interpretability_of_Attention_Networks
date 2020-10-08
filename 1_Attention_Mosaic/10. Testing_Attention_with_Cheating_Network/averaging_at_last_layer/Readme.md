@@ -26,7 +26,7 @@ Test Accuracy - 82 --->
 #### zeroth layer averaging
 | Data | Train Accuracy | Test Accuracy |
 | ---- | -------------  | ------------- |
-| Fg_012|               |               |
+| Fg_012|    97           |     94          |
 | Fg_234 | 94           |    88         |
  ```python
 class Classification(nn.Module):
