@@ -63,3 +63,18 @@
 
 ### Table 8 : Observation Table for Testing Dataset 4
 ![](./plots_and_images/test_table4.JPG)
+
+### Plots:
+Plot for Training Accuracy
+
+<img src= ./plots_and_images/train_acc.JPG width="300">
+
+<img src= ./plots_and_images/test_all_1.JPG width="300">
+<img src= ./plots_and_images/test_all_2.JPG width="300">
+<img src= ./plots_and_images/test_all_3.JPG width="300">
+<img src= ./plots_and_images/test_all_4.JPG width="300">
+
+<img src= ./plots_and_images/train_vs_all_ftpt.JPG width="300">
+<img src= ./plots_and_images/train_vs_all_ffpt.JPG width="300">
+<img src= ./plots_and_images/train_vs_all_ftpf.JPG width="300">
+<img src= ./plots_and_images/train_vs_all_ffpf.JPG width="300">
