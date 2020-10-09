@@ -4,16 +4,16 @@
 3. Let these 3 vectors be u1,u2,u3. Now consider Foregorund classes as fg1,fg2,fg3 out of 10 classes of CIFAR 10.
 4. Update the Train and Test Dataset as following:
 
-    for all img in CIFAR10 s.t label(img) == fg1 , img = img + 0.1 * |img| * u1  ; 
+    for all img in CIFAR10 s.t label(img) == fg1 , img = img + gamma * |img| * u1  ; 
     
-    for all img in CIFAR10 s.t label(img) == fg2 , img = img + 0.1 * |img| * u2  ; 
+    for all img in CIFAR10 s.t label(img) == fg2 , img = img + gamma * |img| * u2  ; 
     
-    for all img in CIFAR10 s.t label(img) == fg3 , img = img + 0.1 * |img| * u3  ; 
+    for all img in CIFAR10 s.t label(img) == fg3 , img = img + gamma * |img| * u3  ; 
     
 5. Now Create the Train Mosaic Dataset from updated Train CIFAR10 Dataset and Test Mosaic Dataset from updated Test CIFAR10 Dataset.
 6. Train on this training Mosaic dataset and report the FTPT, FFPT, FTPF, FFPF on train and test mosaic dataset.
 
-## Observation table for Experiment 1:
+## Table 1 gamma = 0.1 for Experiment 1:
     
 |Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
 |----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
@@ -38,7 +38,7 @@
 | 7. | 1,2,3 | run3 | trained | 30k mosaic from 50k training | 98.94 | 0.3 | 0.75 | 0.01 | 3440 | 29 |
 |    |       |      | test    | 10k mosaic from 50k training | 98.88 | 0.24 | 0.87 | 0.01 | 1112 |  |
 |    |       |      | test    | 10k mosaic from 10k testing  | 98.7 | 0.17 | 1.12 | 0.01 | 1047 |  |
-| 8. | 0,1,2 | run4 | trained | 30k mosaic from 50k training | 90.11 | 9.30 | 0.58 |  0  | 653 | 26 |
+| 8. | 1,2,3 | run4 | trained | 30k mosaic from 50k training | 90.11 | 9.30 | 0.58 |  0  | 653 | 26 |
 |    |       |      | test    | 10k mosaic from 50k training | 89.47 | 9.92 | 0.61 |   0 | 236 |    |
 |    |       |      | test    | 10k mosaic from 10k testing  | 90.64 | 8.42 | 0.94 |  0  | 233 |    |
 | 9. | 2,3,4 | run1 | trained | 30k mosaic from 50k training | 48.01 | 50.89 | 0.87 | 0.24 | 0 | 30 |
@@ -59,6 +59,101 @@
 | 14. | 3,4,5 | run3 | trained | 30k mosaic from 50k training | 17.7 | 81.25 | 0.09 | 0.96 | 0 | 36 |
 |     |       |      | test    | 10k mosaic from 50k training | 18.15 | 80.7 | 0.13 | 1.02 | 0 |  |
 |     |       |      | test    | 10k mosaic from 10k testing  | 19.17 | 79.73 | 0.19 | 0.91 | 0 |  |
+
+## Table 2 gamma = 0.02 for Experiment 1:
+    
+|Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
+|----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
+| 1. | 0,1,2 | run1 | trained | 30k mosaic from 50k training | 29.44 | 69.19 | 0.30 | 1.06 | 0 | 34 |
+|    |       |      | test    | 10k mosaic from 50k training | 29.63 | 68.93 | 0.34 | 1.10 | 0 |    |
+|    |       |      | test    | 10k mosaic from 10k testing  | 29.09 | 69.54 | 0.30 | 1.07 | 0 |    |
+| 2. | 0,1,2 | run2 | trained | 30k mosaic from 50k training | 76.32 | 22.86 | 0.81 | 0.006 | 20331 | 33 |
+|    |       |      | test    | 10k mosaic from 50k training | 76.24 | 22.13 | 1.63 | 0     | 6851 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 76.64 | 22.97 | 4.39 | 0     | 6745 |  |
+| 3. | 0,1,2 | run3 | trained | 30k mosaic from 50k training | 81.66 | 17.70  | 0.63 | 0 | 20360 | 22 |
+|    |       |      | test    | 10k mosaic from 50k training | 81.45 | 17.52  | 1.03 | 0 | 6840 |  |
+|    |       |      | test    |  10k mosaic from 10k testing | 80.35 | 17.52  | 2.13 | 0 | 6815 |  |
+| 4. | 0,1,2 | run4 | trained | 30k mosaic from 50k training | 28.33  | 70.43 | 0.31 | 0.91 | 0    | 44 |
+|    |       |      | test    | 10k mosaic from 50k training | 28.76 | 69.89 | 0.34 | 1.01 | 0    |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 27.48 | 70.80 | 0.39 | 1.33 | 0    |  |
+| 5. | 1,2,3 | run1 | trained | 30k mosaic from 50k training | 99.39 | 0 | 0.6 | 0 | 30000    | 32 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.47 | 0 | 0.53 | 0 | 10000 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 99.6 | 0 | 1.4 | 0 | 10000 |  |
+| 6. | 1,2,3 | run2 | trained | 30k mosaic from 50k training | 28.73 | 69.93 | 0.53 | 0.8 | 39 | 62 |
+|    |       |      | test    | 10k mosaic from 50k training | 28.58 | 70.69 | 0.62 | 1.11 | 8 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 27.97 | 69.89 | 0.97 | 1.17 | 9 |  |
+| 7. | 1,2,3 | run3 | trained | 30k mosaic from 50k training | 30.67 | 67.85 | 0.72 | 0.75 | 17 | 51 |
+|    |       |      | test    | 10k mosaic from 50k training | 30.91 | 67.59 | 0.75 | 0.75 | 4 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 31.2 | 66.80 | 1.14 | 0.86 | 0 |  |
+
+## Table 3 gamma = 0.06 for Experiment 1:
+    
+|Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
+|----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
+| 1. | 0,1,2 | run1 | trained | 30k mosaic from 50k training | 85.44 | 14.3 | 0.25 | 0.01 | 23172 | 26 |
+|    |       |      | test    | 10k mosaic from 50k training | 85.63 | 14.02 | 0.34 | 0.01 | 7784 |    |
+|    |       |      | test    | 10k mosaic from 10k testing  | 85.33 | 13.88 | 0.79 | 0 |7730 |    |
+| 2. | 0,1,2 | run2 | trained | 30k mosaic from 50k training | 91.28 | 7.82 | 0.9 | 0 | 21680 | 24 |
+|    |       |      | test    | 10k mosaic from 50k training | 91.38 | 7.56  | 1.06 | 0 | 7215 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 90.46 | 8.21  | 1.33 | 0    | 7269 |  |
+| 3. | 0,1,2 | run3 | trained | 30k mosaic from 50k training | 71.84 | 27.21  | 0.89 | 0.05 | 20 | 28 |
+|    |       |      | test    | 10k mosaic from 50k training | 72.87 | 26.14  | 0.93 | 0.06 | 7 |  |
+|    |       |      | test    |  10k mosaic from 10k testing | 71.52 |  27.7    | 0.75 | 0.73    | 7 |  |
+| 4. | 1,2,3 | run1 | trained | 30k mosaic from 50k training | 14.52 | 84.52 | 0.20 | 0.75 | 0    | 29 |
+|    |       |      | test    | 10k mosaic from 50k training | 14.83 | 84.08 | 0.24 | 0.85 | 0 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 15.14 | 83.22 | 0.33 | 1.31 | 0 |  |
+| 5. | 1,2,3 | run2 | trained | 30k mosaic from 50k training | 13.18 | 85.74 | 0.16 | 0.90 | 0 | 33 |
+|    |       |      | test    | 10k mosaic from 50k training | 13.13 | 85.47 | 0.25 | 1.15 | 0 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 13 | 85.45 | 0.27 | 1.28 | 0 |  |
+| 6. | 1,2,3 | run3 | trained | 30k mosaic from 50k training | 15.93 | 83.47 | 0.13 | 0.47 | 0 | 33 |
+|    |       |      | test    | 10k mosaic from 50k training | 15.31 | 83.76 | 0.19 | 0.74 | 0 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 16.45 | 82.23 | 0.25 | 1.07 | 0 |  |
+
+## Table 4 gamma = 0.14 for Experiment 1:
+    
+|Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
+|----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
+| 1. | 0,1,2 | run1 | trained | 30k mosaic from 50k training | 19.74 | 79.51 | 0.09 | 0.65 | 0 | 20 |
+|    |       |      | test    | 10k mosaic from 50k training | 20.23 | 78.85 | 0.14 | 0.78 | 0 |    |
+|    |       |      | test    | 10k mosaic from 10k testing  | 19.51 | 79.10 | 0.42 | 0.97 | 0 |    |
+| 2. | 0,1,2 | run2 | trained | 30k mosaic from 50k training | 99.45 | 0 | 0.54 | 0 | 29031 | 19 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.58 | 0  | 0.42 | 0 | 9656 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 99.24 | 0 | 0.76 | 0  | 9681 |  |
+| 3. | 0,1,2 | run3 | trained | 30k mosaic from 50k training | 99.58 | 0.003  | 0.41 | 0 | 29998 | 17 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.33 | 0  | 0.67 | 0 | 9999 |  |
+|    |       |      | test    |  10k mosaic from 10k testing | 99.01 |    0  | 0.99 | 0    | 9999 |  |
+| 4. | 1,2,3 | run1 | trained | 30k mosaic from 50k training | 15.64 | 83.27 | 0.27 | 0.81 | 0    | 21 |
+|    |       |      | test    | 10k mosaic from 50k training | 15.38 | 83.38 | 0.34 | 0.9 | 0 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 15.83 | 82.75 | 0.42 | 1 | 0 |  |
+| 5. | 1,2,3 | run2 | trained | 30k mosaic from 50k training | 99.50 | 0 | 0.49 | 0 | 29566 | 20 |
+|    |       |      | test    | 10k mosaic from 50k training | 99.41 | 0 | 0.59 | 0 | 9853 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 99.4 | 0 | 0.6 | 0 | 9883 |  |
+| 6. | 1,2,3 | run3 | trained | 30k mosaic from 50k training | 14.25 | 84.17 | 0.15 | 1.42 | 0 | 27 |
+|    |       |      | test    | 10k mosaic from 50k training | 13.54 | 84.97 | 0.13 | 1.36 | 0 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 14.63 | 83.17 | 0.29 | 1.91 | 0 |  |
+
+## Table 5 gamma = 0.18 for Experiment 1:
+    
+|Sno.|FG classes| #run | train/ test | on Dataset | FTPT | FFPT | FTPF | FFPF | alpha>0.5 | Epochs req for training|
+|----|----------|------|----|------|------|-----|------|--------------|--------------|---------|
+| 1. | 0,1,2 | run1 | trained | 30k mosaic from 50k training | 89.36 | 9.91 | 0.70 | 0.01 | 0 | 18 |
+|    |       |      | test    | 10k mosaic from 50k training | 89.19 | 10.15 | 0.65 | 0.01 | 0 |    |
+|    |       |      | test    | 10k mosaic from 10k testing  | 88.95 | 10.31 | 0.69 | 0.05 | 0 |    |
+| 2. | 0,1,2 | run2 | trained | 30k mosaic from 50k training | 44.04 | 54.79 | 0.54 | 0.62 | 0 | 23 |
+|    |       |      | test    | 10k mosaic from 50k training | 43.97 | 54.8  | 0.7 | 0.53 | 0 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 43.63 | 55.26  | 0.49 | 0.62  | 0 |  |
+| 3. | 0,1,2 | run3 | trained | 30k mosaic from 50k training | 95.73 | 3.14  | 0.98 | 0.14 | 6398 | 18 |
+|    |       |      | test    | 10k mosaic from 50k training | 95.81 | 2.84  | 1.14 | 0.21 | 2157 |  |
+|    |       |      | test    |  10k mosaic from 10k testing | 95.64 |  3.25   | 1.02 | 0.09    | 2109 |  |
+| 4. | 1,2,3 | run1 | trained | 30k mosaic from 50k training | 97.67 | 1.77 | 0.55 | 0 | 18405    | 18 |
+|    |       |      | test    | 10k mosaic from 50k training | 97.99 | 1.51 | 0.5 | 0 | 6105 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 97.54 | 1.57 | 0.88 | 0.01 | 6001 |  |
+| 5. | 1,2,3 | run2 | trained | 30k mosaic from 50k training | 97.83 | 1.47 | 0.63 | 0.063 | 0 | 29 |
+|    |       |      | test    | 10k mosaic from 50k training | 97.58 | 1.65 | 0.65 | 0.12 | 0 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 97.86 | 1.24 | 0.75 | 0.15 | 0 |  |
+| 6. | 1,2,3 | run3 | trained | 30k mosaic from 50k training | 98.62 | 0.88 | 0.49 | 0 | 93 | 23 |
+|    |       |      | test    | 10k mosaic from 50k training | 98.64 | 0.78 | 0.57 | 0.01 | 32 |  |
+|    |       |      | test    | 10k mosaic from 10k testing  | 98.27 | 0.95 | 0.78 | 0 | 20 |  |
 
 ## Experiment 2 setup:
 1. In CIFAR 10 Dataset (shape: 50000x32x32x3), Reshape it to Matrix A : 50000x3072 then apply SVD on A to get the USV^T, Where V is Orthogonal vectors in row space(A).

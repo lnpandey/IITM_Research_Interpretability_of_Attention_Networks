@@ -2,12 +2,37 @@
 
 Base Models - 6 layer CNN Network
 
+
+
 | - | - | Train Accuracy   |Test Accuracy     |
 | - | - |--------- | -----   |
 | FG_012 | FG vs BG | 99 | 90  |
-| FG_012 | FG1 vs FG2 vs Fg3 | 99 | 82 |
+| FG_012(Focus_random ) | FG1 vs FG2 vs Fg3 | 99 | 82 |
+| FG_012(Focus_Pretrained) | FG1 vs FG2 vs Fg3 | 100 | 89 |
 | FG_234 | FG vs BG | 99 | 86  |
-| FG_234 | FG1 vs FG2 vs Fg3 | 99 |64 |
+| FG_234(Focus_random) | FG1 vs FG2 vs Fg3 | 99 |64 |
+| FG_234(Focus_Pretrained) | FG1 vs FG2 vs Fg3 | 100 | 73 |
+
+
+#### FG_012 Test Accuracy
+Focus Random Classify train
+class 0 (Plane) - 79.1%
+class 1 (Car)  - 86.8%
+class 2 (Bird) - 84.1%
+Focus Pretrained Classify train
+class 0 (Plane) - 86.3%
+class 1 (Car)   - 94.4%
+class 2 (Bird)  - 87.1%
+
+#### FG_234 Test Accuracy
+Focus Random Classify train
+class 0 (Bird) - 60.6%
+class 1 (Cat)  - 66.6%
+class 2 (Deer) -  64%
+Focus Pretrained Classify train
+class 0 (Bird)  - 72.7%
+class 1 (Cat)  -  71%
+class 2 (Deer)  - 75%
 
 
 <!---#### Fg vs Bg Classification
@@ -19,8 +44,12 @@ Test Accuarcy  - 90
 Train Accuracy - 99
 
 Test Accuracy - 82 --->
-
-```python
+#### zeroth layer averaging
+| Data | Train Accuracy | Test Accuracy |
+| ---- | -------------  | ------------- |
+| Fg_012|    97           |     94          |
+| Fg_234 | 94           |    88         |
+ ```python
 class Classification(nn.Module):
   def __init__(self):
     super(Classification, self).__init__()
@@ -64,6 +93,7 @@ class Focus(nn.Module):
     self.fc4 = nn.Linear(10, 2)
     self.pretrained = pretrained
 ```
+## Note: Pretrained classification network is trained with Focus Random and Focus Pretrained(For following tables two numbers for classification pretrained(first one is focus random and second one is focus pretrained )) 
 
 ### FG 012
 | | Focus init | Classification init | trained | train accuracy | test accuracy |
@@ -76,14 +106,14 @@ class Focus(nn.Module):
 |6| pretrained | random | both | 99 | 97|
 |7| pretrained | random | classify | 96 | 94 |
 |8| pretrained | random | focus    | 75 | 74 |
-|9| random     | pretrained | -    | 46 | 46 |
-|10| random    | pretrained | both | 99 | 92 |
-|11| random    | pretrained | classify |  95 | 46 |
-|12| random    | pretrained | focus   | 99  | 87 |
-|13| pretrained | pretrained | - | 55 | 55 |
-|14| pretrained | pretrained | both | 99 | 97 |
-|15| pretrained | pretrained | classify |99 | 97 |
-|16| pretrained | pretrained | focus    | 97 | 95 |
+|9| random     | pretrained | -    | 46/32 | 46/32 |
+|10| random    | pretrained | both | 99/99 | 92/86 |
+|11| random    | pretrained | classify |  95/94 | 46/45 |
+|12| random    | pretrained | focus   | 99/99  | 87/90 |
+|13| pretrained | pretrained | - | 55/98 | 55/98 |
+|14| pretrained | pretrained | both | 99/99 | 97/99 |
+|15| pretrained | pretrained | classify |99/99 | 97/99 |
+|16| pretrained | pretrained | focus    | 97/99 | 95/99 |
 
 ### FG 234
 
@@ -102,20 +132,20 @@ Test Accuracy - 64--->
 | | Focus init | Classification init | trained | train accuracy | test accuracy |
 | - | ---------  | ------------------- | ------- | -------------  | ------------  |
 |1| random | random | - | 33 |  32 |
-|2| random | random | both |  99 | 90 |
+|2| random | random | both |  99 | 91 |
 |3| random | random | classify | 95 | 37 |
 |4| random | random | focus    | 78 | 69 |
 |5| pretrained | random | - |  33 | 33  |
 |6| pretrained | random | both | 97 | 93 |
 |7| pretrained | random | classify | 95 | 90 |
 |8| pretrained | random | focus    | 92 | 87 |
-|9| random     | pretrained | -    | 38 | 39 |
-|10| random    | pretrained | both | 94 | 60 |
+|9| random     | pretrained | -    | 38/33 | 39/33 |
+|10| random    | pretrained | both | 94/99 | 60/69 |
 |11| random    | pretrained | classify |  68 | 39 |
-|12| random    | pretrained | focus   | 94  |  74 |
-|13| pretrained | pretrained | - | 36 | 35 |
-|14| pretrained | pretrained | both |  99 | 96 |
-|15| pretrained | pretrained | classify | 99 | 96  |
-|16| pretrained | pretrained | focus    | 94 | 73 |
+|12| random    | pretrained | focus   | 94/99  |  74/68 |
+|13| pretrained | pretrained | - | 36/96 | 35/96 |
+|14| pretrained | pretrained | both |  99/99 | 96/99 |
+|15| pretrained | pretrained | classify | 99/99 | 96/99  |
+|16| pretrained | pretrained | focus    | 94/99 | 73/99 |
 
 
