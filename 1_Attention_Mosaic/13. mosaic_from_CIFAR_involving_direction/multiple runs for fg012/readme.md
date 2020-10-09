@@ -23,13 +23,13 @@
 ### Table 2 : Comparison of True vs corrupted images with different gamma
 | gamma | true vs corrupted images |
 |---------|----------------------------------------|
-|0.001 |  <img src= ./plots_and_images/img_001.JPG width="300"> |
-|0.002 |  <img src= ./plots_and_images/img_002.JPG width="300"> |
-|0.004 |  <img src= ./plots_and_images/img_004.JPG width="300"> |
-|0.008 |  <img src= ./plots_and_images/img_008.JPG width="300"> |
-|0.016 |  <img src= ./plots_and_images/img_016.JPG width="300"> |
-|0.032 |  <img src= ./plots_and_images/img_032.JPG width="300"> |
-|0.064 |  <img src= ./plots_and_images/img_064.JPG width="300"> |
-|0.128 |  <img src= ./plots_and_images/img_128.JPG width="300"> |
-|0.256 |  <img src= ./plots_and_images/img_256.JPG width="300"> |
-|0.512 |  <img src= ./plots_and_images/img_512.JPG width="300"> |
+|0.001 |  <img src= ./plots_and_images/img_001.JPG width="200"> |
+|0.002 |  <img src= ./plots_and_images/img_002.JPG width="200"> |
+|0.004 |  <img src= ./plots_and_images/img_004.JPG width="200"> |
+|0.008 |  <img src= ./plots_and_images/img_008.JPG width="200"> |
+|0.016 |  <img src= ./plots_and_images/img_016.JPG width="200"> |
+|0.032 |  <img src= ./plots_and_images/img_032.JPG width="200"> |
+|0.064 |  <img src= ./plots_and_images/img_064.JPG width="200"> |
+|0.128 |  <img src= ./plots_and_images/img_128.JPG width="200"> |
+|0.256 |  <img src= ./plots_and_images/img_256.JPG width="200"> |
+|0.512 |  <img src= ./plots_and_images/img_512.JPG width="200"> |
