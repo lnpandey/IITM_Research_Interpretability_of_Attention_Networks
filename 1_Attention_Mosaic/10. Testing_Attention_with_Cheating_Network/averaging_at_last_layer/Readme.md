@@ -14,6 +14,27 @@ Base Models - 6 layer CNN Network
 | FG_234(Focus_Pretrained) | FG1 vs FG2 vs Fg3 | 100 | 73 |
 
 
+#### FG_012 Test Accuracy
+Focus Random Classify train
+class 0 (Plane) - 79.1%
+class 1 (Car)  - 86.8%
+class 2 (Bird) - 84.1%
+Focus Pretrained Classify train
+class 0 (Plane) - 86.3%
+class 1 (Car)   - 94.4%
+class 2 (Bird)  - 87.1%
+
+#### FG_234 Test Accuracy
+Focus Random Classify train
+class 0 (Bird) - 60.6%
+class 1 (Cat)  - 66.6%
+class 2 (Deer) -  64%
+Focus Pretrained Classify train
+class 0 (Bird)  - 72.7%
+class 1 (Cat)  -  71%
+class 2 (Deer)  - 75%
+
+
 <!---#### Fg vs Bg Classification
 
 Train Accuracy - 99
