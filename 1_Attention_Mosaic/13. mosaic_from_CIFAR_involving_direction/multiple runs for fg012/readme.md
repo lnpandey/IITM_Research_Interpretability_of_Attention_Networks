@@ -50,7 +50,7 @@
 5. Test Dataset 4 : 10k mosaic images from 10k True CIFAR Test
 
 ### Table 4 : Observation Table for Training Dataset
-![](./plots_and_images/table_train.JPG)
+![](./plots_and_images/train_table.JPG)
 
 ### Table 5 : Observation Table for Testing Dataset 1
 ![](./plots_and_images/test_table1.JPG)
