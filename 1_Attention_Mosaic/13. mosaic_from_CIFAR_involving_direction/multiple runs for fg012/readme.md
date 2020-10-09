@@ -18,6 +18,10 @@
 |0.256 |  <img src= ./plots_and_images/hist_256_train.JPG width="200"> |  <img src= ./plots_and_images/hist_256_test.JPG width="200"> |
 |0.512 |  <img src= ./plots_and_images/hist_512_train.JPG width="200"> |  <img src= ./plots_and_images/hist_512_test.JPG width="200"> |
 
+### Table 3 : Display of u1, u2, u3 vectors as images
+| u1 | u2 | u3 |
+|----|-----|-----------|
+|<img src= ./plots_and_images/u1.JPG width="300"> | <img src= ./plots_and_images/u2.JPG width="300"> | <img src= ./plots_and_images/u3.JPG width="300"> |
 
 
 ### Table 2 : Comparison of True vs corrupted images with different gamma
