@@ -222,14 +222,14 @@
 ### Plots:
 Plot for Training Accuracy
 
-<img src= ./plots_and_images/train_acc.JPG width="400">
-
+<!--- <img src= ./plots_and_images/train_acc.JPG width="400">
 <img src= ./plots_and_images/test_all_1.JPG width="400">
 <img src= ./plots_and_images/test_all_2.JPG width="400">
 <img src= ./plots_and_images/test_all_3.JPG width="400">
 <img src= ./plots_and_images/test_all_4.JPG width="400">
-
 <img src= ./plots_and_images/train_vs_all_ftpt.JPG width="400">
 <img src= ./plots_and_images/train_vs_all_ffpt.JPG width="400">
 <img src= ./plots_and_images/train_vs_all_ftpf.JPG width="400">
-<img src= ./plots_and_images/train_vs_all_ffpf.JPG width="400">
+<img src= ./plots_and_images/train_vs_all_ffpf.JPG width="400"> -->
+
+
