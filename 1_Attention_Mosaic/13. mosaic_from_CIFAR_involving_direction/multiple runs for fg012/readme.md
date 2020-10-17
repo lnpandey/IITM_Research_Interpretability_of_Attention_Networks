@@ -134,7 +134,9 @@
 | 0.055 |  32.99  |  3.147  | 29.843  |  13.11  |  53.9   |         
 | 0.06  |  33.639 |   3.275 |  30.364 |  12.971 |   53.39 |  
 
-
+<img src= ./plots_and_images/zoom_train.JPG width="400">
+<img src= ./plots_and_images/zoom_test1.JPG width="400">
+<img src= ./plots_and_images/zoom_test2.JPG width="400">
 
 
 
@@ -220,7 +222,11 @@
 | 0.512 | 34.162 |  5.553 |  28.609 |  10.333 |  55.505 |       
  
 ### Plots:
-Plot for Training Accuracy
+
+<img src= ./plots_and_images/quad_train.JPG width="400">
+<img src= ./plots_and_images/quad_test1.JPG width="400">
+<img src= ./plots_and_images/quad_test2.JPG width="400">
+
 
 <!--- <img src= ./plots_and_images/train_acc.JPG width="400">
 <img src= ./plots_and_images/test_all_1.JPG width="400">
