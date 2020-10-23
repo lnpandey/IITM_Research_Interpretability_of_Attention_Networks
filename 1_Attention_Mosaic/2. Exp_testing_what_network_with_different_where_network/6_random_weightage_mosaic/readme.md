@@ -45,7 +45,7 @@ the averaging are done as  [1152 1072 1110 1165 1104 1086 1115 1069 1127]
 
 
 ### Plot of Training loss for all the Datasets :
- ![](training_loss_10k_mini_inception.png)
+ ![](train_loss.JPG)
 
 
 
