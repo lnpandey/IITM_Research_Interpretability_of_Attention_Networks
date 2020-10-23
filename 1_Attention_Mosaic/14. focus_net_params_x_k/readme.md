@@ -6,7 +6,11 @@ On Training Dataset
 ![](./plots_and_images/train_k_05.JPG)
 On Testing Dataset
 ![](./plots_and_images/test_k_05.JPG)
+
 Training Accuracy
+
 ![](./plots_and_images/train_acc_k_05.JPG)
+
 Testing Accuracy
+
 ![](./plots_and_images/test_acc_k_05.JPG)
