@@ -20,3 +20,15 @@ Here we have considered gamma value as 1.
 Results for the above experiment is as follow:
 
 <img src= counter_example.png width="800">
+
+gamma value = 0.5 
+
+<img src= plot_low_var_512.png width="800">
+
+for high variance eigen vectors with gamma value 0.5
+<img src= plot_high_var.png width="800">
+
+### MNIST Data
+
+gamma value = 0.5
+<img src= plot_mnist.png width="800">
