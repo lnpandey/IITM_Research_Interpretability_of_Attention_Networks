@@ -1,4 +1,24 @@
-### Table 1 : Observation Table for Training Dataset
+### Table 1 : Display of u1, u2, u3 (Top 3) vectors as images
+| u1 | u2 | u3 |
+|----|-----|-----------|
+|<img src= ./plots_and_images/high_u1.JPG width="300"> | <img src= ./plots_and_images/high_u2.JPG width="300"> | <img src= ./plots_and_images/high_u3.JPG width="300"> |
+
+### Table 2 : Comparison of True vs corrupted images with different gamma (TOP 3 u1,u2,u3 VS BOTTOM 3 u1,u2,u3)
+| gamma | TOP 3 u1,u2,u3 (true vs corrupted images)  |  BOTTOM 3 u1,u2,u3 (true vs corrupted images) |
+|---------|----------------------------------------|-------------------------------------------|
+| 0     |  <img src= ./plots_and_images/low_0.JPG width="200"> | <img src= ./plots_and_images/low_0.JPG width="200"> |
+| 0.005 |  <img src= ./plots_and_images/high_005.JPG width="200"> | <img src= ./plots_and_images/low_005.JPG width="200"> |
+| 0.01  |  <img src= ./plots_and_images/high_01.JPG width="200"> | <img src= ./plots_and_images/low_01.JPG width="200"> |
+| 0.015 |  <img src= ./plots_and_images/high_015.JPG width="200"> | <img src= ./plots_and_images/low_015.JPG width="200"> |
+| 0.02  |  <img src= ./plots_and_images/high_02.JPG width="200"> | <img src= ./plots_and_images/low_02.JPG width="200"> |
+| 0.025 |  <img src= ./plots_and_images/high_025.JPG width="200"> | <img src= ./plots_and_images/low_025.JPG width="200"> |
+| 0.03  |  <img src= ./plots_and_images/high_03.JPG width="200"> | <img src= ./plots_and_images/low_03.JPG width="200"> |
+| 0.035 |  <img src= ./plots_and_images/high_035.JPG width="200"> | <img src= ./plots_and_images/low_035.JPG width="200"> |
+| 0.04  |  <img src= ./plots_and_images/high_04.JPG width="200"> | <img src= ./plots_and_images/low_04.JPG width="200"> |
+| 0.045 |  <img src= ./plots_and_images/high_045.JPG width="200"> | <img src= ./plots_and_images/low_045.JPG width="200"> |
+| 0.05  |  <img src= ./plots_and_images/high_05.JPG width="200"> | <img src= ./plots_and_images/low_05.JPG width="200"> |
+
+### Table 3 : Observation Table for Training Dataset
 | gamma | Avg Accuracy | Avg FTPT | Avg FFPT | Avg FTPF | Avg FFPF |
 |-------|--------------|----------|----------|----------|--------------|
 | 0     | 98.756   | 76.7397  | 22.0163 | 0.319667   | 0.924333 |
@@ -13,7 +33,7 @@
 | 0.045 | 98.7427  | 83.5353 |  15.2073  | 0.287667 |  0.969667 |        
 | 0.05  | 98.6667  | 85.0023 |  13.6643  | 0.347667 |  0.985667 | 
 
-### Table 2 : Observation Table for Testing Dataset 1
+### Table 4 : Observation Table for Testing Dataset 1
 | gamma | Avg Accuracy | Avg FTPT | Avg FFPT | Avg FTPF | Avg FFPF |
 |-------|--------------|----------|----------|----------|--------------|
 | 0     | 85.773 |  69.683 |   16.09 |    3.85  | 10.377 | 
@@ -28,7 +48,7 @@
 | 0.045 | 88.451 |  76.804 |  11.647  |  3.532 |   8.017|         
 | 0.05  | 88.205 |  78.287 |   9.918  |  4.021 |   7.774|
 
-### Table 3 : Observation Table for Testing Dataset 2
+### Table 5 : Observation Table for Testing Dataset 2
 | gamma | Avg Accuracy | Avg FTPT | Avg FFPT | Avg FTPF | Avg FFPF |
 |-------|--------------|----------|----------|----------|--------------|
 | 0     | 65.97  | 46.855  |19.115  | 9.633   | 24.397   | 
@@ -43,7 +63,7 @@
 | 0.045 | 69.759 |  55.676 |  14.083 |  12.477 |  17.764 |         
 | 0.05  | 72.328 |  60.069 |  12.259 |  12.296 |  15.376 |
 
-### Table 4 : Observation Table for Testing Dataset 3
+### Table 6 : Observation Table for Testing Dataset 3
 | gamma | Avg Accuracy | Avg FTPT | Avg FFPT | Avg FTPF | Avg FFPF |
 |-------|--------------|----------|----------|----------|--------------|
 | 0     | 86.124  | 70.164 |   15.96 |   3.664 |  10.212 |  
@@ -58,7 +78,7 @@
 | 0.045 | 79.224 |  61.821 |  17.403  |  5.432 |  15.344 |          
 | 0.05  | 75.727 |  58.134 |  17.593  |  6.231 |  18.042 |
 
-### Table 5 : Observation Table for Testing Dataset 4
+### Table 7 : Observation Table for Testing Dataset 4
 | gamma | Avg Accuracy | Avg FTPT | Avg FFPT | Avg FTPF | Avg FFPF |
 |-------|--------------|----------|----------|----------|--------------|
 | 0     |  65.97  | 46.855  | 19.115  |  9.633  | 24.397 | 
