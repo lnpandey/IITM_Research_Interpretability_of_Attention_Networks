@@ -30,5 +30,15 @@ for high variance eigen vectors with gamma value 0.5
 
 ### MNIST Data
 
-gamma value = 0.5
+for gamma value 0.3
+
+
+<img src= plot_gamma_3.png width="800">
+
+
+
+
+for gamma value  0.5
+
+
 <img src= plot_mnist.png width="800">
