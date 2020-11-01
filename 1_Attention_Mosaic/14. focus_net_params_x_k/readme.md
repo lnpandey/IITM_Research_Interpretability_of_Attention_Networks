@@ -36,3 +36,39 @@ Training Accuracy
 Testing Accuracy
 
 ![](./plots_and_images/test_acc_k_1.JPG)
+
+### For K = 2
+
+On Training Dataset
+
+![](./plots_and_images/train_k_2.JPG)
+
+On Testing Dataset
+
+![](./plots_and_images/test_k_2.JPG)
+
+Training Accuracy
+
+![](./plots_and_images/train_acc_k_2.JPG)
+
+Testing Accuracy
+
+![](./plots_and_images/test_acc_k_2.JPG)
+
+### For K = 4
+
+On Training Dataset
+
+![](./plots_and_images/train_k_4.JPG)
+
+On Testing Dataset
+
+![](./plots_and_images/test_k_4.JPG)
+
+Training Accuracy
+
+![](./plots_and_images/train_acc_k_4.JPG)
+
+Testing Accuracy
+
+![](./plots_and_images/test_acc_k_4.JPG)
