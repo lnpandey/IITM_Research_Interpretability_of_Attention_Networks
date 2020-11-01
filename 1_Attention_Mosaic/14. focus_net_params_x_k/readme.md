@@ -4,6 +4,7 @@ In "Focus random Classify Random Train Both", Initialise the focus net with some
 ### For K = 0.5
 
 On Training Dataset
+
 <img src= ./plots_and_images/train_k_05.JPG width="300">
 
 On Testing Dataset
@@ -11,6 +12,7 @@ On Testing Dataset
 <img src= ./plots_and_images/test_k_05.JPG width="300">
 
 Training Accuracy
+
 <img src= ./plots_and_images/train_acc_k_05.JPG width="300">
 
 Testing Accuracy
