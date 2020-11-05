@@ -19,26 +19,16 @@ Here we have considered gamma value as 1.
 
 Results for the above experiment is as follow:
 
-<img src= counter_example.png width="800">
+### CIFAR10 Data
 
-gamma value = 0.5 
 
-<img src= plot_low_var_512.png width="800">
-
-for high variance eigen vectors with gamma value 0.5
-<img src= plot_high_var.png width="800">
 
 ### MNIST Data
 
-for gamma value 0.3
+| - gamma value | 0 | 0.02 | 0.03 | 0.04 | 0.05 |
+| --            |-- | --   | ---- | ---- | ---- |
+|               | <img src= plot_5.png width="800"> | <img src= plot_1.png width="800"> | <img src= plot_2.png width="800">  | <img src= plot_3.png width="800">  | <img src= plot_4.png width="800"> | 
+
 
 
 <img src= plot_gamma_3.png width="800">
-
-
-
-
-for gamma value  0.5
-
-
-<img src= plot_mnist.png width="800">
