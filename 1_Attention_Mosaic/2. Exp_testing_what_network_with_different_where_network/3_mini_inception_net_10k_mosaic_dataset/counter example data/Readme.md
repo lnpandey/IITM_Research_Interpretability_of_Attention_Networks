@@ -30,4 +30,4 @@ Results for the above experiment is as follow:
 
 
 
-<img src= plot_gamma_3.png width="800">
+
