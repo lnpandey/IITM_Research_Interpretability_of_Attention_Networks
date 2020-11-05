@@ -15,7 +15,6 @@
 5. Now Create the Train Mosaic Dataset from updated Train CIFAR10 Dataset and Test Mosaic Dataset from updated Test CIFAR10 Dataset.
 6. Train on this training Mosaic dataset and report the FTPT, FFPT, FTPF, FFPF on train and test mosaic dataset
 
-Here we have considered gamma value as 1.
 
 Results for the above experiment is as follow:
 
