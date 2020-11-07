@@ -24,7 +24,49 @@
 - "Where Network" tries to Focus on Foreground image and returns weighted average of all 9 images.
 - This image is now input to "What Network" which finally predicts the Class label of foreground Image.
 
-### Architecture of the Model
+
+### Visualising Different types of Generation of Classes through Scatter Plot :
+##### Type 1 : Any 2 Classes are linearly separable
+![](./plots_and_images/exp1_plot1.png)
+##### Type 2 : Any 2 Foreground Classes are linearly separable, No Background Classes can be separable.
+![](./plots_and_images/exp2_plot1.png)
+##### Type 3 : Set of all Foreground Classes and set of all Background Classes are linearly separable. No 2 Background Classes or Foreground Classes can be separable.
+![](./plots_and_images/exp3_plot1.png)
+
+
+
+### Table 1: Analysis of Model on different Parameters
+| Experiment No. | Total Epochs | "What" Learning Rate | "Where" Learning Rate | Training Accuracy  | Testing Accuracy |
+|----------------|--------------|--------------------|---------------------|--------------------|------------------|
+| Type 1 (architecture 1)       | 80          |  0.01               | 0.01                | 1               |1             |
+| Type 2 (architecture 1)        | 10          |  0.01               | 0.01                | 1               |1             |
+| Type 3 (architecture 1)        | 120         |  0.01               | 0.01                | 0.88            |0.89          |
+| Type 4 (architecture 2)         | 164         |  0.01               | 0.01                | 0.99            | 0.99         |
+
+
+### Weights and CSV (containing focus_vs_pred values every 5 epoch) of above experiments can be found at following Gdrive link :
+> https://drive.google.com/open?id=1ysJmEfdmLTnqRaYz6Z6NfXLTrw_QcLLl
+
+### PLOTS For Experiments are as below:
+
+#### Experiment on TYPE 1: Total Epochs: 80, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
+  <!-- ![](./plots_and_images/exp1_plot2.png) -->
+  ![](./plots_and_images/exp1_plot3.png)
+  <!-- ![](./plots_and_images/exp1_plot4.png) -->
+  ![](./plots_and_images/exp1_plot5.png)
+#### Experiment on TYPE 2: Total Epochs: 10, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
+  <!-- ![](./plots_and_images/exp2_plot2.png) -->
+  ![](./plots_and_images/exp2_plot3.png)
+  <!-- ![](./plots_and_images/exp2_plot4.png) -->
+  ![](./plots_and_images/exp2_plot5.png)
+#### Experiment on TYPE 3: Total Epochs: 120, What lr: 0.01, Where lr: 0.01, train acc: 0.88, test acc: 0.89
+  <!-- ![](./plots_and_images/exp3_plot2.png) -->
+  ![](./plots_and_images/exp3_plot3.png)
+  <!-- ![](./plots_and_images/exp3_plot4.png) -->
+  ![](./plots_and_images/exp3_plot5.png)
+
+
+### Architecture1 used for Type 1,2,3
 ```python
 class Wherenet(nn.Module):
     def __init__(self):
@@ -63,44 +105,42 @@ class Whatnet(nn.Module):
 where = Wherenet().double()
 what = Whatnet().double()
 ```
-### Visualising Different types of Generation of Classes through Scatter Plot :
-##### Type 1 : Any 2 Classes are linearly separable
-![](./plots_and_images/exp1_plot1.png)
-##### Type 2 : Any 2 Foreground Classes are linearly separable, No Background Classes can be separable.
-![](./plots_and_images/exp2_plot1.png)
-##### Type 3 : Set of all Foreground Classes and set of all Background Classes are linearly separable. No 2 Background Classes or Foreground Classes can be separable.
-![](./plots_and_images/exp3_plot1.png)
+### Architecture2 used for Type 4
+```python
+class Wherenet(nn.Module):
+    def __init__(self):
+        super(Wherenet,self).__init__()
+        self.linear1 = nn.Linear(2,50)
+        self.linear2 = nn.Linear(50,50)
+        self.linear3 = nn.Linear(50,1)
+    def forward(self,z):
+        x = torch.zeros([batch,9],dtype=torch.float64)
+        y = torch.zeros([batch,2], dtype=torch.float64)
+        for i in range(9):
+            x[:,i] = self.helper(z[:,2*i:2*i+2])[:,0]
+        x = F.softmax(x,dim=1)   # alphas
+        x1 = x[:,0]
+        for i in range(9):
+            x1 = x[:,i]          
+            #print()
+            y = y+torch.mul(x1[:,None],z[:,2*i:2*i+2])
+        return y , x 
+    
+    def helper(self,x):
+        x = F.relu(self.linear1(x))
+        x = F.relu(self.linear2(x))
+        x = self.linear3(x)
+        return x
 
-
-
-### Table 1: Analysis of Model on different Parameters
-| Experiment No. | Total Epochs | "What" Learning Rate | "Where" Learning Rate | Training Accuracy  | Testing Accuracy |
-|----------------|--------------|--------------------|---------------------|--------------------|------------------|
-| Type 1              | 80          |  0.01               | 0.01                | 1               |1             |
-| Type 2              | 10          |  0.01               | 0.01                | 1               |1             |
-| Type 3              | 120         |  0.01               | 0.01                | 0.88            |0.89          |
-| Type 4              | 164         |  0.01               | 0.01                | 0.99            | 0.99         |
-
-
-### Weights and CSV (containing focus_vs_pred values every 5 epoch) of above experiments can be found at following Gdrive link :
-> https://drive.google.com/open?id=1ysJmEfdmLTnqRaYz6Z6NfXLTrw_QcLLl
-
-### PLOTS For Experiments are as below:
-
-#### Experiment on TYPE 1: Total Epochs: 80, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
-  <!-- ![](./plots_and_images/exp1_plot2.png) -->
-  ![](./plots_and_images/exp1_plot3.png)
-  <!-- ![](./plots_and_images/exp1_plot4.png) -->
-  ![](./plots_and_images/exp1_plot5.png)
-#### Experiment on TYPE 2: Total Epochs: 10, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
-  <!-- ![](./plots_and_images/exp2_plot2.png) -->
-  ![](./plots_and_images/exp2_plot3.png)
-  <!-- ![](./plots_and_images/exp2_plot4.png) -->
-  ![](./plots_and_images/exp2_plot5.png)
-#### Experiment on TYPE 3: Total Epochs: 120, What lr: 0.01, Where lr: 0.01, train acc: 0.88, test acc: 0.89
-  <!-- ![](./plots_and_images/exp3_plot2.png) -->
-  ![](./plots_and_images/exp3_plot3.png)
-  <!-- ![](./plots_and_images/exp3_plot4.png) -->
-  ![](./plots_and_images/exp3_plot5.png)
-
-
+class Whatnet(nn.Module):
+    def __init__(self):
+        super(Whatnet,self).__init__()
+        self.linear1 = nn.Linear(2,50)
+        self.linear2 = nn.Linear(50,3)
+    def forward(self,x):
+        x = F.relu(self.linear1(x))
+        x = self.linear2(x)
+        return x
+where = Wherenet().double()
+what = Whatnet().double()
+```
