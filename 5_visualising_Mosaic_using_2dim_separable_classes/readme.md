@@ -32,7 +32,7 @@
 ![](./plots_and_images/exp2_plot1.png)
 ##### Type 3 : Set of all Foreground Classes and set of all Background Classes are linearly separable. No 2 Background Classes or Foreground Classes can be separable.
 ![](./plots_and_images/exp3_plot1.png)
-##### Type 4 : Any 2 Foreground Classes are linearly separable, all Foreground Classes are surrounded by Background Classes.
+##### Type 4 : Foreground Classes are in Convex Hull of Background Classes. Any 2 Foreground Classes are linearly separable.
 <img src= ./plots_and_images/exp4_plot1.JPG width="450"> 
 
 
