@@ -26,7 +26,14 @@ Results for the above experiment is as follow:
 
 | - gamma value | 0 | 0.02 | 0.03 | 0.04 | 0.05 | 0.06 | 
 | --            |-- | --   | ---- | ---- | ---- | ---- |
-|               | <img src= plot_5.png width="800"> | <img src= plot_1.png width="800"> | <img src= plot_2.png width="800">  | <img src= plot_3.png width="800">  | <img src= plot_4.png width="800"> | <img src= plot_6.png width="800">  | 
+|               | <img src= plot_5.png width="800"> | <img src= plot_1.png width="800"> | <img src= plot_2.png width="800">  | <img src= plot_3.png width="800">  | <img src= plot_4.png width="800"> | <img src= plot_6.png width="800">  |
+
+### Synthetic Data
+
+K=5 NF=3 NB=7
+<img src= plot_syn.png width="800">
+
+
 
 
 
