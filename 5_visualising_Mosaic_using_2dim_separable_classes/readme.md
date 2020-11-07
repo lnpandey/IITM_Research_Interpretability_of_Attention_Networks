@@ -64,8 +64,8 @@
   <!-- ![](./plots_and_images/exp3_plot4.png) -->
   ![](./plots_and_images/exp3_plot5.png)
 #### Experiment on TYPE 4: Total Epochs: 164, What lr: 0.01, Where lr: 0.01, train acc: 0.99, test acc: 0.99
-  <img src= ./plots_and_images/exp4_plot2.JPG width="450"> 
-  <img src= ./plots_and_images/exp4_plot3.JPG width="450"> 
+  <img src= ./plots_and_images/exp4_plot2.JPG width="550"> 
+  <img src= ./plots_and_images/exp4_plot3.JPG width="550"> 
 
 
 ### Architecture1 used for Type 1,2,3
