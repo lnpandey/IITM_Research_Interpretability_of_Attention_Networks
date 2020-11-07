@@ -46,9 +46,6 @@
 | Type 4 (architecture 2)         | 164         |  0.01               | 0.01                | 0.99            | 0.99         |
 
 
-### Weights and CSV (containing focus_vs_pred values every 5 epoch) of above experiments can be found at following Gdrive link :
-> https://drive.google.com/open?id=1ysJmEfdmLTnqRaYz6Z6NfXLTrw_QcLLl
-
 ### PLOTS For Experiments are as below:
 
 #### Experiment on TYPE 1: Total Epochs: 80, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
@@ -149,3 +146,6 @@ class Whatnet(nn.Module):
 where = Wherenet().double()
 what = Whatnet().double()
 ```
+
+### Weights and CSV (containing focus_vs_pred values every 5 epoch) of above experiments can be found at following Gdrive link :
+> https://drive.google.com/open?id=1ysJmEfdmLTnqRaYz6Z6NfXLTrw_QcLLl
