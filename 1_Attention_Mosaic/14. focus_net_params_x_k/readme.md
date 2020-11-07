@@ -2,14 +2,21 @@
 In "Focus random Classify Random Train Both", Initialise the focus net with some standard initialisation (here Xavier uniform) x K (where K = 0.5, 1, 2, 4, 8)
 
 
-### Observation table for K
-|           | K = 0.05  |  K = 1  | K = 2  | K = 4 |
+### Observation table 1 for K
+|           | K = 0.5 (SGD)  |  K = 1(SGD)  | K = 2 (adam) | K = 4(adam) |
 |-----------|-----------|---------|--------|-------|
 | On Train  | <img src= ./plots_and_images/train_k_05.JPG width="600">    |<img src= ./plots_and_images/train_k_1.JPG width="600">      |<img src= ./plots_and_images/train_k_2.JPG width="600">      | <img src= ./plots_and_images/train_k_4.JPG width="600">     |
 | Train Acc | <img src= ./plots_and_images/train_acc_k_05.JPG width="600">|<img src= ./plots_and_images/train_acc_k_1.JPG width="600">  |<img src= ./plots_and_images/train_acc_k_2.JPG width="600">  | <img src= ./plots_and_images/train_acc_k_4.JPG width="600"> |
 | On Test   | <img src= ./plots_and_images/test_k_05.JPG width="600">     |<img src= ./plots_and_images/test_k_1.JPG width="600">       |<img src= ./plots_and_images/test_k_2.JPG width="600">       | <img src= ./plots_and_images/test_k_4.JPG width="600">      |
 | Test Acc  | <img src= ./plots_and_images/test_acc_k_05.JPG width="600"> |<img src= ./plots_and_images/test_acc_k_1.JPG width="600">   |<img src= ./plots_and_images/test_acc_k_2.JPG width="600">   | <img src= ./plots_and_images/test_acc_k_4.JPG width="600">  |
 
+### Observation table 2 for K
+|           | K = 0.5 (adam)  |  K = 1(adam)  | K = 2 (adam) | K = 4(adam) |
+|-----------|-----------|---------|--------|-------|
+| On Train  | <img src= ./plots_and_images/train_k_05_adam.JPG width="600">    |<img src= ./plots_and_images/train_k_1_adam.JPG width="600">      |<img src= ./plots_and_images/train_k_2.JPG width="600">      | <img src= ./plots_and_images/train_k_4.JPG width="600">     |
+| Train Acc | <img src= ./plots_and_images/train_acc_k_05_adam.JPG width="600">|<img src= ./plots_and_images/train_acc_k_1_adam.JPG width="600">  |<img src= ./plots_and_images/train_acc_k_2.JPG width="600">  | <img src= ./plots_and_images/train_acc_k_4.JPG width="600"> |
+| On Test   | <img src= ./plots_and_images/test_k_05_adam.JPG width="600">     |<img src= ./plots_and_images/test_k_1_adam.JPG width="600">       |<img src= ./plots_and_images/test_k_2.JPG width="600">       | <img src= ./plots_and_images/test_k_4.JPG width="600">      |
+| Test Acc  | <img src= ./plots_and_images/test_acc_k_05_adam.JPG width="600"> |<img src= ./plots_and_images/test_acc_k_1_adam.JPG width="600">   |<img src= ./plots_and_images/test_acc_k_2.JPG width="600">   | <img src= ./plots_and_images/test_acc_k_4.JPG width="600">  |
 
 <!--- ### For K = 0.5
 On Training Dataset
