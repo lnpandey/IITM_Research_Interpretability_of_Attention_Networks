@@ -31,7 +31,7 @@ Results for the above experiment is as follow:
 ### Synthetic Data
 
 K=5 NF=3 NB=7
-<img src= plot_syn.png width="800">
+<img src= plots_syn.png width="800">
 
 
 
