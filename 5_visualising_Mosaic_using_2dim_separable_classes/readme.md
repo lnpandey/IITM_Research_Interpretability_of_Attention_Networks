@@ -33,7 +33,7 @@
 ##### Type 3 : Set of all Foreground Classes and set of all Background Classes are linearly separable. No 2 Background Classes or Foreground Classes can be separable.
 ![](./plots_and_images/exp3_plot1.png)
 ##### Type 4 : Any 2 Foreground Classes are linearly separable, all Foreground Classes are surrounded by Background Classes.
-![](./plots_and_images/exp4_plot1.JPG)
+<img src= ./plots_and_images/exp4_plot1.JPG width="450"> 
 
 
 
@@ -67,10 +67,8 @@
   <!-- ![](./plots_and_images/exp3_plot4.png) -->
   ![](./plots_and_images/exp3_plot5.png)
 #### Experiment on TYPE 4: Total Epochs: 164, What lr: 0.01, Where lr: 0.01, train acc: 0.99, test acc: 0.99
-  <!-- ![](./plots_and_images/exp3_plot2.png) -->
-  ![](./plots_and_images/exp4_plot2.JPG)
-  <!-- ![](./plots_and_images/exp3_plot4.png) -->
-  ![](./plots_and_images/exp3_plot3.JPG)
+  <img src= ./plots_and_images/exp4_plot2.JPG width="450"> 
+  <img src= ./plots_and_images/exp4_plot3.JPG width="450"> 
 
 
 ### Architecture1 used for Type 1,2,3
