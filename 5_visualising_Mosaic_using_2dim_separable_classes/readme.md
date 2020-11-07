@@ -79,7 +79,7 @@ what = Whatnet().double()
 | Type 1              | 80          |  0.01               | 0.01                | 1               |1             |
 | Type 2              | 10          |  0.01               | 0.01                | 1               |1             |
 | Type 3              | 120         |  0.01               | 0.01                | 0.88            |0.89          |
-
+| Type 4              | 164         |  0.01               | 0.01                | 0.99            | 0.99         |
 
 
 ### Weights and CSV (containing focus_vs_pred values every 5 epoch) of above experiments can be found at following Gdrive link :
@@ -88,19 +88,19 @@ what = Whatnet().double()
 ### PLOTS For Experiments are as below:
 
 #### Experiment on TYPE 1: Total Epochs: 80, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
-  ![](./plots_and_images/exp1_plot2.png)
+  <!-- ![](./plots_and_images/exp1_plot2.png) -->
   ![](./plots_and_images/exp1_plot3.png)
-  ![](./plots_and_images/exp1_plot4.png)
+  <!-- ![](./plots_and_images/exp1_plot4.png) -->
   ![](./plots_and_images/exp1_plot5.png)
 #### Experiment on TYPE 2: Total Epochs: 10, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
-  ![](./plots_and_images/exp2_plot2.png)
+  <!-- ![](./plots_and_images/exp2_plot2.png) -->
   ![](./plots_and_images/exp2_plot3.png)
-  ![](./plots_and_images/exp2_plot4.png)
+  <!-- ![](./plots_and_images/exp2_plot4.png) -->
   ![](./plots_and_images/exp2_plot5.png)
 #### Experiment on TYPE 3: Total Epochs: 120, What lr: 0.01, Where lr: 0.01, train acc: 0.88, test acc: 0.89
-  ![](./plots_and_images/exp3_plot2.png)
+  <!-- ![](./plots_and_images/exp3_plot2.png) -->
   ![](./plots_and_images/exp3_plot3.png)
-  ![](./plots_and_images/exp3_plot4.png)
+  <!-- ![](./plots_and_images/exp3_plot4.png) -->
   ![](./plots_and_images/exp3_plot5.png)
 
 
