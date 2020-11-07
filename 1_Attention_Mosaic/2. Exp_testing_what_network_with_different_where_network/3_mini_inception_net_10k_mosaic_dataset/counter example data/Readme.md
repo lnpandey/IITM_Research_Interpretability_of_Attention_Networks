@@ -31,7 +31,7 @@ Results for the above experiment is as follow:
 D=5 K=10 NF=3 NB=7
 
 
-<img src= plots_syn.png width="400">
+<img src= ./plots_and_images/plots_syn.png width="400">
 
 | train\ test  | test on dataset 1 | test on dataset 2 | test on dataset 3 | test on dataset 4 | test on dataset 5 | test on dataset 6 | test on dataset 7 | test on dataset 8 | test on dataset 9|
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|----|
