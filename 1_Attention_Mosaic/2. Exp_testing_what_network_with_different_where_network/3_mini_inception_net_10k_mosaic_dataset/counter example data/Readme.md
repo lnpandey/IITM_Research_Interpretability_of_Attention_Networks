@@ -23,12 +23,12 @@ Results for the above experiment is as follow:
 #### low variance
 | - gamma value | 0 | 0.02 | 0.03 | 0.04 | 0.05 | 
 | --            |-- | --   | ---- | ---- | ---- |
-|               | <img src= ./plots_images/low_0.JPG width="800"> | <img src= ./plots_images/low_02.JPG width="800"> | <img src= ./plots_images/low_03.JPG width="800">  | <img src= ./plots_images/low_04.JPG width="800">  | ./plots_images/low_05.JPG width="800"> | 
+|               | <img src= ./plots_and_images/low_0.JPG width="800"> | <img src= ./plots_and_images/low_02.JPG width="800"> | <img src= ./plots_and_images/low_03.JPG width="800">  | <img src= ./plots_and_images/low_04.JPG width="800">  | ./plots_and_images/low_05.JPG width="800"> | 
 
 #### high variance
 | - gamma value | 0 | 0.02 | 0.03 | 0.04 | 0.05 | 
 | --            |-- | --   | ---- | ---- | ---- |
-|               | <img src= ./plots_images/high_0.JPG width="800"> | <img src= ./plots_images/high_02.JPG width="800"> | <img src= ./plots_images/high_03.JPG width="800">  | <img src= ./plots_images/high_04.JPG width="800">  | ./plots_images/high_05.JPG width="800"> | 
+|               | <img src= ./plots_and_images/high_0.JPG width="800"> | <img src= ./plots_and_images/high_02.JPG width="800"> | <img src= ./plots_and_images/high_03.JPG width="800">  | <img src= ./plots_and_images/high_04.JPG width="800">  | ./plots_and_images/high_05.JPG width="800"> | 
 
 ### MNIST Data
 #### low variance
