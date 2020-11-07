@@ -19,7 +19,9 @@
 Results for the above experiment is as follow:
 
 ### CIFAR10 Data
-
+| - gamma value | 0 | 0.02 | 0.03 | 0.04 | 0.05 | 0.06 | 
+| --            |-- | --   | ---- | ---- | ---- | ---- |
+|               | <img src= plot_5.png width="800"> | <img src= plot_1.png width="800"> | <img src= plot_2.png width="800">  | <img src= plot_3.png width="800">  | <img src= plot_4.png width="800"> | <img src= plot_6.png width="800">  |
 
 
 ### MNIST Data
@@ -35,6 +37,17 @@ K=5 NF=3 NB=7
 
 <img src= plots_syn.png width="800">
 
+| train\ test  | test on dataset 1 | test on dataset 2 | test on dataset 3 | test on dataset 4 | test on dataset 5 | test on dataset 6 | test on dataset 7 | test on dataset 8 | test on dataset 9|
+|----------|-----|-----|-----|-----|-----|-----|-----|-----|----|
+| train on dataset 1      | 41| 40 | 40 | 41 | 43 | 43 | 43 | 43 | 42 |
+| train on dataset 2      | 39 | 43 | 44 | 44 | 44 | 45 | 45 | 45 | 44 |
+| train on dataset 3      | 36 | 40 | 46 | 47 | 48 | 52 | 53 | 53 | 52 |     
+| train on dataset 4      | 34 | 37 | 43 | 51 | 55 | 58 | 60 | 58 | 55 |
+| train on dataset 5      | 34 | 36 | 40 | 48 | 56 | 63 | 66 | 67 | 65 |
+| train on dataset 6      | 33 | 36 | 39 | 45 | 54 | 66 | 73 | 75 | 74 |
+| train on dataset 7      | 33 | 35 | 37 | 41 | 49 | 62 | 78 | 86 | 84 |
+| train on dataset 8      | 33 | 34 | 36 | 39 | 46 | 58 | 74 | 91 | 92 |
+| train on dataset 9      | 32 | 35 | 38 | 41 | 47 | 59 | 71 | 85 | 99 |
 
 
 
