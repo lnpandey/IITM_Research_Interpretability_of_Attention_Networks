@@ -23,18 +23,18 @@ Results for the above experiment is as follow:
 #### low variance
 | - gamma value | 0 | 0.02 | 0.03 | 0.04 | 0.05 | 
 | --            |-- | --   | ---- | ---- | ---- |
-|CIFAR 10 low var dir | <img src= ./plots_and_images/low_0.JPG width="800"> | <img src= ./plots_and_images/low_02.JPG width="800"> | <img src= ./plots_and_images/low_03.JPG width="800">  | <img src= ./plots_and_images/low_04.JPG width="800">  | <img src= ./plots_and_images/low_05.JPG width="800"> | 
+|CIFAR 10 low var direction | <img src= ./plots_and_images/low_0.JPG width="800"> | <img src= ./plots_and_images/low_02.JPG width="800"> | <img src= ./plots_and_images/low_03.JPG width="800">  | <img src= ./plots_and_images/low_04.JPG width="800">  | <img src= ./plots_and_images/low_05.JPG width="800"> | 
 
 #### high variance
 | - gamma value | 0 | 0.02 | 0.03 | 0.04 | 0.05 | 
 | --            |-- | --   | ---- | ---- | ---- |
-| CIFAR 10 high var dir | <img src= ./plots_and_images/low_0.JPG width="800"> | <img src= ./plots_and_images/high_02.JPG width="800"> | <img src= ./plots_and_images/high_03.JPG width="800">  | <img src= ./plots_and_images/high_04.JPG width="800">  | <img src= ./plots_and_images/high_05.JPG width="800"> | 
+| CIFAR 10 high var direction | <img src= ./plots_and_images/low_0.JPG width="800"> | <img src= ./plots_and_images/high_02.JPG width="800"> | <img src= ./plots_and_images/high_03.JPG width="800">  | <img src= ./plots_and_images/high_04.JPG width="800">  | <img src= ./plots_and_images/high_05.JPG width="800"> | 
 
 ### MNIST Data
 #### low variance
 | - gamma value | 0 | 0.02 | 0.03 | 0.04 | 0.05 | 0.06 | 
 | --            |-- | --   | ---- | ---- | ---- | ---- |
-|               | <img src= plot_5.png width="800"> | <img src= plot_1.png width="800"> | <img src= plot_2.png width="800">  | <img src= plot_3.png width="800">  | <img src= plot_4.png width="800"> | <img src= plot_6.png width="800">  |
+| MNIST low var direction | <img src= plot_5.png width="800"> | <img src= plot_1.png width="800"> | <img src= plot_2.png width="800">  | <img src= plot_3.png width="800">  | <img src= plot_4.png width="800"> | <img src= plot_6.png width="800">  |
 
 ### Synthetic Data
 
