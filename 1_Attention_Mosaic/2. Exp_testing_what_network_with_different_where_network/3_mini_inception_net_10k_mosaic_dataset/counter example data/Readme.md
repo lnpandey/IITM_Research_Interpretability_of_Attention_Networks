@@ -26,6 +26,16 @@ Results for the above experiment is as follow:
 | CIFAR 10 high var direction | <img src= ./plots_and_images/low_0.JPG width="800"> | <img src= ./plots_and_images/high_02.JPG width="800"> | <img src= ./plots_and_images/high_03.JPG width="800">  | <img src= ./plots_and_images/high_04.JPG width="800">  | <img src= ./plots_and_images/high_05.JPG width="800"> | Not done |
 | MNIST low var direction | <img src= ./plots_and_images/plot_5.png width="1000"> | <img src= ./plots_and_images/plot_1.png width="1000"> | <img src= ./plots_and_images/plot_2.png width="1000">  | <img src= ./plots_and_images/plot_3.png width="1000">  | <img src= ./plots_and_images/plot_4.png width="1000"> | <img src= ./plots_and_images/plot_6.png width="1000">  |
 
+#### for gamma value = 0.03 on CIFAR 10 high var direction
+
+<img src= ./plots_and_images/testing_focus_net_high_var_a.JPG width="500">
+
+<img src= ./plots_and_images/testing_focus_net_high_var_b.JPG width="500">
+
+#### for gamma value = 0.03 on CIFAR 10 low var direction
+
+<img src= ./plots_and_images/testing_focus_net_low_var.JPG width="500">
+
 ### Synthetic Data
 
 D=5 K=10 NF=3 NB=7
