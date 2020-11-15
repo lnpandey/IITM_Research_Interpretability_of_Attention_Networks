@@ -51,7 +51,7 @@
 
 ### training Performance for different gamma values
 
-#### Here we consider the vectors with order of 10^2
+#### Here we consider the vectors with variance of order of 10^2
 
 | gamma | Accuracy | FTPT | FFPT |
 | -     |  -       | -    | -    |
