@@ -13,9 +13,12 @@
 5. Now Create the Train Mosaic Dataset from updated Train MNSIT Dataset and Test Mosaic Dataset from updated Test MNIST Dataset.
 6. Train on this training Mosaic dataset and report the FTPT, FFPT, FTPF, FFPF on train and test mosaic dataset.
 
-Here we have used least variance which is of order of 10^-11
 
 ### training Performance for different gamma values
+
+
+#### Here we have used least variance which is of order of 10^-11
+
 | gamma | Accuracy | FTPT | FFPT |
 | -     |  -       | -    | -    |
 | 0.0002 | 98.822 | 96.85 | 1.971 |
@@ -44,9 +47,12 @@ Here we have used least variance which is of order of 10^-11
 | 0.04 | 98.835  96.879   1.956 |
 | 0.05  | 98.96 | 98.04 | 0.92 |
 
-Here we consider the vectors with order of 10^2
+
 
 ### training Performance for different gamma values
+
+#### Here we consider the vectors with order of 10^2
+
 | gamma | Accuracy | FTPT | FFPT |
 | -     |  -       | -    | -    |
 | 0.001 | 98.907 | 93.264 | 5.64 |
