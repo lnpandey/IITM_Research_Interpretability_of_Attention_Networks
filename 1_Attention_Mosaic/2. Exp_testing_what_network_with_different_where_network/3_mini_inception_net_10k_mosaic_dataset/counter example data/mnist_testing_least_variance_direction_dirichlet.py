@@ -49,7 +49,7 @@ all_classes = {'zero','one','two','three','four','five','six','seven','eight','n
 background_classes = all_classes - foreground_classes
 background_classes
 
-gamma = 0
+gamma = 5*1e-3
 train = trainset.data
 label = trainset.targets
 
@@ -58,7 +58,7 @@ train.shape
 
 u, s, vh = LA.svd(train, full_matrices= False)
 
-dir = vh[774:784,:] #vh[0:9,:] 
+dir = vh[600:610,:]  #vh[774:784,:] #vh[0:9,:] 
 u1 = dir[7,:]
 u2 = dir[8,:]
 u3 = dir[9,:]
@@ -176,6 +176,7 @@ mosaic_label=[]                # label of mosaic image = foreground class presen
 list_set_labels = [] 
 for i in range(desired_num):
   set_idx = set()
+  np.random.seed(i)
   bg_idx = np.random.randint(0,35000,8)
   set_idx = set(background_label[bg_idx].tolist())
   fg_idx = np.random.randint(0,15000)
@@ -191,6 +192,7 @@ test_images =[]        #list of mosaic images, each mosaic image is saved as lai
 fore_idx_test =[]                   #list of indexes at which foreground image is present in a mosaic image                
 test_label=[]                # label of mosaic image = foreground class present in that mosaic
 for i in range(10000):
+  np.random.seed(i+30000)
   bg_idx = np.random.randint(0,35000,8)
   fg_idx = np.random.randint(0,15000)
   fg = np.random.randint(0,9)
@@ -221,7 +223,56 @@ def create_avg_image_from_mosaic_dataset(mosaic_dataset,labels,foreground_index,
     
   return avg_image_dataset , labels , foreground_index
 
+def create_avg_image_from_mosaic_dataset_fraction(mosaic_dataset,labels,foreground_index,dataset_number, fraction):
+  """
+  mosaic_dataset : mosaic_dataset contains 9 images 32 x 32 each as 1 data point
+  labels : mosaic_dataset labels
+  foreground_index : contains list of indexes where foreground image is present so that using this we can take weighted average
+  dataset_number : will help us to tell what ratio of foreground image to be taken. for eg: if it is "j" then fg_image_ratio = j/9 , bg_image_ratio = (9-j)/8*9
+  """
+  avg_image_dataset = []
+  cnt = 0
+  counter = np.array([0,0,0,0,0,0,0,0,0])
+  for i in range(len(mosaic_dataset)):
+    img = torch.zeros([ 28,28], dtype=torch.float64)
+    np.random.seed(dataset_number*10000 + i)
+    give_pref = foreground_index[i] #np.random.randint(0,9)
+    # print("outside", give_pref,foreground_index[i])
+    for j in range(9):
+      if j == give_pref:
+        img = img + mosaic_dataset[i][j]*fraction/9
+      else :
+        img = img + mosaic_dataset[i][j]*(9-fraction)/(8*9)
+
+    if give_pref == foreground_index[i] :
+      # print("equal are", give_pref,foreground_index[i])
+      cnt += 1
+      counter[give_pref] += 1
+    else :
+      counter[give_pref] += 1
+
+    avg_image_dataset.append(img)
+
+  print("number of correct averaging happened for dataset "+str(dataset_number)+" is "+str(cnt)) 
+  print("the averaging are done as ", counter) 
+  return avg_image_dataset , labels , foreground_index
+
 avg_image_dataset_1 , labels_1,  fg_index_1 = create_avg_image_from_mosaic_dataset(mosaic_list_of_images, mosaic_label, fore_idx, 1)
+
+avg_image_dataset_1_01 , labels_1_01,  fg_index_2 = create_avg_image_from_mosaic_dataset_fraction(mosaic_list_of_images, mosaic_label, fore_idx, 2,1.01)
+avg_image_dataset_1_02, labels_1_02,  fg_index_3 = create_avg_image_from_mosaic_dataset_fraction(mosaic_list_of_images, mosaic_label, fore_idx , 3, 1.02)
+avg_image_dataset_1_1 , labels_1_1,  fg_index_4 = create_avg_image_from_mosaic_dataset_fraction(mosaic_list_of_images, mosaic_label, fore_idx , 4, 1.1)
+avg_image_dataset_1_2 , labels_1_2,  fg_index_4 = create_avg_image_from_mosaic_dataset_fraction(mosaic_list_of_images, mosaic_label, fore_idx , 5, 1.2)
+avg_image_dataset_1_5 , labels_1_5,  fg_index_4 = create_avg_image_from_mosaic_dataset_fraction(mosaic_list_of_images, mosaic_label, fore_idx , 6, 1.5)
+
+
+avg_test_1 , labels_test_1,  fg_index_test_1 = create_avg_image_from_mosaic_dataset(test_images, test_label, fore_idx_test , 1)
+avg_test_1_01 , labels_test_1_01,  fg_index_test_2 = create_avg_image_from_mosaic_dataset_fraction(test_images, test_label, fore_idx_test , 2,1.01)
+avg_test_1_02, labels_test_1_02,  fg_index_test_3 = create_avg_image_from_mosaic_dataset_fraction(test_images, test_label, fore_idx_test , 3,1.02)
+avg_test_1_1 , labels_test_1_1,  fg_index_test_4 = create_avg_image_from_mosaic_dataset_fraction(test_images, test_label, fore_idx_test , 4,1.1)
+avg_test_1_2 , labels_test_1_2,  fg_index_test_5 = create_avg_image_from_mosaic_dataset_fraction(test_images, test_label, fore_idx_test , 5,1.2)
+avg_test_1_5 , labels_test_1_5,  fg_index_test_6 = create_avg_image_from_mosaic_dataset_fraction(test_images, test_label, fore_idx_test , 6,1.5)
+
 avg_image_dataset_2 , labels_2,  fg_index_2 = create_avg_image_from_mosaic_dataset(mosaic_list_of_images, mosaic_label, fore_idx, 2)
 avg_image_dataset_3 , labels_3,  fg_index_3 = create_avg_image_from_mosaic_dataset(mosaic_list_of_images, mosaic_label, fore_idx, 3)
 avg_image_dataset_4 , labels_4,  fg_index_4 = create_avg_image_from_mosaic_dataset(mosaic_list_of_images, mosaic_label, fore_idx, 4)
@@ -231,7 +282,7 @@ avg_image_dataset_7 , labels_7,  fg_index_7 = create_avg_image_from_mosaic_datas
 avg_image_dataset_8 , labels_8,  fg_index_8 = create_avg_image_from_mosaic_dataset(mosaic_list_of_images, mosaic_label, fore_idx, 8)
 avg_image_dataset_9 , labels_9,  fg_index_9 = create_avg_image_from_mosaic_dataset(mosaic_list_of_images, mosaic_label, fore_idx, 9)
 
-avg_test_1 , labels_test_1,  fg_index_test_1 = create_avg_image_from_mosaic_dataset(test_images, test_label, fore_idx_test , 1)
+
 avg_test_2 , labels_test_2,  fg_index_test_2 = create_avg_image_from_mosaic_dataset(test_images, test_label, fore_idx_test , 2)
 avg_test_3 , labels_test_3,  fg_index_test_3 = create_avg_image_from_mosaic_dataset(test_images, test_label, fore_idx_test , 3)
 avg_test_4 , labels_test_4,  fg_index_test_4 = create_avg_image_from_mosaic_dataset(test_images, test_label, fore_idx_test , 4)
@@ -271,6 +322,43 @@ epochs = 65
 traindata_1 = MosaicDataset(avg_image_dataset_1, labels_1 )
 trainloader_1 = DataLoader( traindata_1 , batch_size= batch ,shuffle=True)
 
+traindata_1_01 = MosaicDataset(avg_image_dataset_1_01, labels_1_01 )
+trainloader_1_01 = DataLoader( traindata_1_01 , batch_size= batch ,shuffle=True)
+
+
+traindata_1_02 = MosaicDataset(avg_image_dataset_1_02, labels_1_02 )
+trainloader_1_02 = DataLoader( traindata_1_02 , batch_size= batch ,shuffle=True)
+
+traindata_1_1 = MosaicDataset(avg_image_dataset_1_1, labels_1_1 )
+trainloader_1_1 = DataLoader( traindata_1_1 , batch_size= batch ,shuffle=True)
+
+traindata_1_2 = MosaicDataset(avg_image_dataset_1_2, labels_1_2 )
+trainloader_1_2 = DataLoader( traindata_1_2 , batch_size= batch ,shuffle=True)
+
+traindata_1_5 = MosaicDataset(avg_image_dataset_1_5, labels_1_5 )
+trainloader_1_5 = DataLoader( traindata_1_5 , batch_size= batch ,shuffle=True)
+
+testdata_1 = MosaicDataset(avg_test_1, labels_test_1 )
+testloader_1 = DataLoader( testdata_1 , batch_size= batch ,shuffle=False)
+
+testdata_1_01 = MosaicDataset(avg_test_1_01, labels_test_1_01 )
+testloader_1_01 = DataLoader( testdata_1_01 , batch_size= batch ,shuffle=False)
+
+testdata_1_02 = MosaicDataset(avg_test_1_02, labels_test_1_02 )
+testloader_1_02 = DataLoader( testdata_1_02 , batch_size= batch ,shuffle=False)
+
+testdata_1_1 = MosaicDataset(avg_test_1_1, labels_test_1_1 )
+testloader_1_1 = DataLoader( testdata_1_1 , batch_size= batch ,shuffle=False)
+
+testdata_1_2 = MosaicDataset(avg_test_1_2, labels_test_1_2 )
+testloader_1_2 = DataLoader( testdata_1_2 , batch_size= batch ,shuffle=False)
+
+testdata_1_5 = MosaicDataset(avg_test_1_5, labels_test_1_5 )
+testloader_1_5 = DataLoader( testdata_1_5 , batch_size= batch ,shuffle=False)
+
+# traindata_1 = MosaicDataset(avg_image_dataset_1, labels_1 )
+# trainloader_1 = DataLoader( traindata_1 , batch_size= batch ,shuffle=True)
+
 traindata_2 = MosaicDataset(avg_image_dataset_2, labels_2 )
 trainloader_2 = DataLoader( traindata_2 , batch_size= batch ,shuffle=True)
 
@@ -295,8 +383,8 @@ trainloader_8 = DataLoader( traindata_8 , batch_size= batch ,shuffle=True)
 traindata_9 = MosaicDataset(avg_image_dataset_9, labels_9 )
 trainloader_9 = DataLoader( traindata_9 , batch_size= batch ,shuffle=True)
 
-testdata_1 = MosaicDataset(avg_test_1, labels_test_1 )
-testloader_1 = DataLoader( testdata_1 , batch_size= batch ,shuffle=False)
+# testdata_1 = MosaicDataset(avg_test_1, labels_test_1 )
+# testloader_1 = DataLoader( testdata_1 , batch_size= batch ,shuffle=False)
 
 testdata_2 = MosaicDataset(avg_test_2, labels_test_2 )
 testloader_2 = DataLoader( testdata_2 , batch_size= batch ,shuffle=False)
@@ -522,7 +610,7 @@ def train_all(trainloader, ds_number, testloader_list):
 
 
     print('Finished Training')
-    torch.save(inc.state_dict(),"train_dataset_"+str(ds_number)+"_"+str(epochs)+".pt")
+    #torch.save(inc.state_dict(),"train_dataset_"+str(ds_number)+"_"+str(epochs)+".pt")
     
     correct = 0
     total = 0
@@ -546,10 +634,18 @@ def train_all(trainloader, ds_number, testloader_list):
 
 train_loss_all=[]
 
-testloader_list= [ testloader_1, testloader_2, testloader_3, testloader_4, testloader_5, testloader_6,
-                  testloader_7, testloader_8, testloader_9]
+testloader_list= [ testloader_1,testloader_1_01,testloader_1_02,testloader_1_1, testloader_1_2, testloader_1_5,
+                  testloader_2,testloader_3,testloader_4,testloader_5,testloader_6,testloader_7,testloader_8,testloader_9]
 
 train_loss_all.append(train_all(trainloader_1, 1, testloader_list))
+train_loss_all.append(train_all(trainloader_1_01, 101, testloader_list))
+train_loss_all.append(train_all(trainloader_1_02, 102, testloader_list))
+train_loss_all.append(train_all(trainloader_1_1, 11, testloader_list))
+train_loss_all.append(train_all(trainloader_1_2, 12, testloader_list))
+train_loss_all.append(train_all(trainloader_1_5, 15, testloader_list))
+
+
+
 train_loss_all.append(train_all(trainloader_2, 2, testloader_list))
 train_loss_all.append(train_all(trainloader_3, 3, testloader_list))
 train_loss_all.append(train_all(trainloader_4, 4, testloader_list))
@@ -559,46 +655,15 @@ train_loss_all.append(train_all(trainloader_7, 7, testloader_list))
 train_loss_all.append(train_all(trainloader_8, 8, testloader_list))
 train_loss_all.append(train_all(trainloader_9, 9, testloader_list))
 
-# Commented out IPython magic to ensure Python compatibility.
-# %matplotlib inline
-
+curve_lbl = ["1","1.01","1.02","1.1","1.2","1.5","2","3","4","5","6","7","8","9"]
 for i,j in enumerate(train_loss_all):
-    plt.plot(j,label ="dataset "+str(i+1))
+    plt.plot(j,label ="dataset "+curve_lbl[i])
     
 
 plt.xlabel("Epochs")
 plt.ylabel("Training_loss")
 
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+plt.savefig("mnist_direction_2.pdf")
+plt.savefig("mnist_direction_2.png")
 
-# np.save("train_loss11.npy",train_loss_all,)
-
-# train_loss_all = []
-# one = np.load("train_loss11.npy",allow_pickle=True)
-
-# train_loss_all.append(list(one[0][:]))
-# train_loss_all.append(list(one[ 1][:]))
-# train_loss_all.append(list(one[2][:]))
-# train_loss_all.append(list(one[3][:]))
-# train_loss_all.append(list(one[ 4][:]))
-
-# one = np.load("train_loss12.npy",allow_pickle=True)
-
-# train_loss_all.append(list(one[0][:]))
-# train_loss_all.append(list(one[1][:]))
-# train_loss_all.append(list(one[2][:]))
-# train_loss_all.append(list(one[3][:]))
-
-# one = np.load("train_loss_6_9.npy",allow_pickle=True)
-
-# train_loss_all.append(list(one[0][:]))
-# train_loss_all.append(list(one[1][:]))
-# train_loss_all.append(list(one[2][:]))
-
-# np.shape(train_loss_all)
-
-# one
-
-
-
-1.160,1.127,1.127
