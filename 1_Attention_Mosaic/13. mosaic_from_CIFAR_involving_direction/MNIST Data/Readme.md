@@ -13,6 +13,8 @@
 5. Now Create the Train Mosaic Dataset from updated Train MNSIT Dataset and Test Mosaic Dataset from updated Test MNIST Dataset.
 6. Train on this training Mosaic dataset and report the FTPT, FFPT, FTPF, FFPF on train and test mosaic dataset.
 
+Here we have used least variance which is of order of 10^-11
+
 ### training Performance for different gamma values
 | gamma | Accuracy | FTPT | FFPT |
 | -     |  -       | -    | -    |
@@ -40,4 +42,35 @@
 |0.02 | 98.777 | 97.625 | 1.152 |
 | 0.03 | 98.859 | 97.718  | 1.141 |
 | 0.04 | 98.835  96.879   1.956 |
-| 0.05  | 98.96 | 98.04 | 0.92
+| 0.05  | 98.96 | 98.04 | 0.92 |
+
+Here we consider the vectors with order of 10^2
+
+### training Performance for different gamma values
+| gamma | Accuracy | FTPT | FFPT |
+| -     |  -       | -    | -    |
+| 0.001 | 98.907 | 93.264 | 5.64 |
+| 0.002 | 99.263 |85.8233  | 13.44 |
+| 0.003 | 98.56 | 76.245 | 23.31 | 
+| 0.004 | 98.724 | 77.287 | 22.4367  |
+| 0.005 | 99.716 | 77.4537  | 22.26 |
+| 0.006 | 99.6727 | 73.725 | 25.9477  |
+|0.007  |  99.73 | 73.79 | 25.93 |
+| 0.008 | 99.7367 | 72.75 | 26.979  |
+| 0.009 | 99.744 | 74.5517 | 25.1923 |
+| 0.05  | 99.86 | 92.983 | 6.88 |
+
+
+### test Performance for different gamma values
+| gamma | Accuracy | FTPT | FFPT |
+| -     |  -       | -    | -    |
+| 0.001 | 98.808  | 92.931  | 5.87  |
+| 0.002 | 99.088 | 85.76 | 13.328 |
+| 0.003 | 99.437 | 76.891 | 22.546  | 
+| 0.004 | 99.789  | 77.149  | 22.64  |
+| 0.005 | 99.729 | 77.055 | 22.674 |
+| 0.006 | 99.642 | 73.258  | 26.384  |
+| 0.007 | 99.755 | 73.743 | 26.012  |
+| 0.008 |  99.68 | 92.942 | 26.738  |
+| 0.009 | 99.677 | 74.618  | 25.059  |
+| 0.05  | 99.82 | 92.73  | 7.09  |
