@@ -36,7 +36,7 @@ Results for the above experiment is as follow:
 
 <img src= ./plots_and_images/testing_focus_net_low_var.JPG width="500">
 
-#### for gamma value 0.005 on Mnist data with direction having variance of order of 10^2
+#### for different gamma values on Mnist data with direction having variance of order of 10^2
 
 | - gamma value | 0 | 0.002 | 0.003 |0.005 | 0.008 | 
 | --            |-- | --   | ---- | ---- | ---- |
