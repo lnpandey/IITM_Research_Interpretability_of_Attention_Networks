@@ -40,10 +40,7 @@ Results for the above experiment is as follow:
 
 | - gamma value | 0 | 0.002 | 0.003 |0.005 | 0.008 | 
 | --            |-- | --   | ---- | ---- | ---- |
-|               | <img src= ./plots_and_images/mnist_direction_1.png width="500"> | 
-<img src= ./plots_and_images/mnist_direction_4.png width="500"> |
-<img src= ./plots_and_images/mnist_direction_5.png width="500"> |
-<img src= ./plots_and_images/mnist_direction_2.png width="500"> | <img src= ./plots_and_images/mnist_direction_3.png width="500"> |
+|   | <img src= ./plots_and_images/mnist_direction_1.png width="500"> | <img src= ./plots_and_images/mnist_direction_4.png width="500"> |<img src= ./plots_and_images/mnist_direction_5.png width="500"> | <img src= ./plots_and_images/mnist_direction_2.png width="500"> | <img src= ./plots_and_images/mnist_direction_3.png width="500"> |
 
 
 
