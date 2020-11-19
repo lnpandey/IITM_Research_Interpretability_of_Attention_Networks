@@ -20,4 +20,4 @@ Plot the results without training, i.e before 0th epoch.
 
 | Plot Name | On Training Dataset | On Testing Dataset |
 |-----------|---------------------|--------------------|
-| Argmax trend   | <img src= ./plots_and_images/tr_argmax_focus.pdf width="400"> | <img src= ./plots_and_images/te_argmax_focus.pdf width="400"> |
+| Argmax trend   | <img src= ./plots_and_images/tr_argmax_focus.JPG width="400"> | <img src= ./plots_and_images/tr_argmax_focus.JPG width="400"> |
