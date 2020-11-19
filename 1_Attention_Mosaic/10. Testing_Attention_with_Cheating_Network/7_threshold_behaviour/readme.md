@@ -39,6 +39,6 @@ Plot the results without training, i.e before 0th epoch.
 |-----------|---------------------|--------------------|
 | Argmax trend   | <img src= ./plots_and_images/tr_argmax_classify.JPG width="400"> | <img src= ./plots_and_images/te_argmax_classify.JPG width="400"> |
 | ftpt trend   | <img src= ./plots_and_images/tr_ftpt_classify.JPG width="400"> | <img src= ./plots_and_images/te_ftpt_classify.JPG width="400"> |
-| Accuracy trend   | <img src= ./plots_and_images/acc_classify.JPG width="400"> | <img src= ./plots_and_images/acc_classify.JPG width="400"> |
+| Accuracy trend   | <img src= ./plots_and_images/acc_classify.JPG width="300"> | <img src= ./plots_and_images/acc_classify.JPG width="300"> |
 
 
