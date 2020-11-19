@@ -16,7 +16,7 @@ We can create a multiple Attention networks with Focus and classify net as:
 
 Plot the results without training, i.e before 0th epoch.
 
-#### Table 1: Observations for Experiment 1 as beta increases from 0 to 1
+### Table 1: Observations for Experiment 1 as beta increases from 0 to 1
 
 | Plot Name | On Training Dataset | On Testing Dataset |
 |-----------|---------------------|--------------------|
@@ -33,7 +33,7 @@ We can create a multiple Attention networks with Focus and classify net as:
 
 Plot the results without training, i.e before 0th epoch.
 
-#### Table 2: Observations for Experiment 2 as beta increases from 0 to 1
+### Table 2: Observations for Experiment 2 as beta increases from 0 to 1
 
 | Plot Name | On Training Dataset | On Testing Dataset |
 |-----------|---------------------|--------------------|
