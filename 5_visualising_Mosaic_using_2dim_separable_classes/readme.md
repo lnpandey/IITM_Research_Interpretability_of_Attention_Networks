@@ -34,6 +34,8 @@
 ![](./plots_and_images/exp3_plot1.png)
 ##### Type 4 : Foreground Classes are in Convex Hull of Background Classes. Any 2 Foreground Classes are linearly separable.
 <img src= ./plots_and_images/exp4_plot1.JPG width="450"> 
+##### Type 5 : For any classes, we have 2 Gaussian mixtures
+<img src= ./plots_and_images/exp5_plot1.JPG width="450"> 
 
 
 
@@ -44,6 +46,7 @@
 | Type 2 (architecture 1)        | 10          |  0.01               | 0.01                | 1               |1             |
 | Type 3 (architecture 1)        | 120         |  0.01               | 0.01                | 0.88            |0.89          |
 | Type 4 (architecture 2)         | 164         |  0.01               | 0.01                | 0.99            | 0.99         |
+| Type 5 (architecture 1)         | 150        |  0.01               | 0.01                | 0.99            | 0.99         |
 
 
 ### PLOTS For Experiments are as below:
@@ -60,14 +63,18 @@
   ![](./plots_and_images/exp2_plot5.png)
 #### Experiment on TYPE 3: Total Epochs: 120, What lr: 0.01, Where lr: 0.01, train acc: 0.88, test acc: 0.89
   <!-- ![](./plots_and_images/exp3_plot2.png) -->
-  ![](./plots_and_images/exp3_plot3.png)
+  <img src= ./plots_and_images/exp3_plot6.JPG width="550"> 
   <!-- ![](./plots_and_images/exp3_plot4.png) -->
-  ![](./plots_and_images/exp3_plot5.png)
+  <img src= ./plots_and_images/exp3_plot7.JPG width="550">
 #### Experiment on TYPE 4: Total Epochs: 164, What lr: 0.01, Where lr: 0.01, train acc: 0.99, test acc: 0.99
   <img src= ./plots_and_images/exp4_plot2.JPG width="550"> 
   <img src= ./plots_and_images/exp4_plot3.JPG width="550"> 
   <img src= ./plots_and_images/testing_focus_net_100.JPG width="500">
   <img src= ./plots_and_images/testing_focus_net_500.JPG width="500">
+#### Experiment on TYPE 5: Total Epochs: 154, What lr: 0.01, Where lr: 0.01, train acc: 0.99, test acc: 0.99
+  <img src= ./plots_and_images/exp5_plot2.JPG width="550"> 
+  <img src= ./plots_and_images/exp5_plot3.JPG width="550"> 
+
 
 
 ### Architecture1 used for Type 1,2,3
