@@ -34,6 +34,7 @@
 ![](./plots_and_images/exp3_plot1.png)
 ##### Type 4 : Foreground Classes are in Convex Hull of Background Classes. Any 2 Foreground Classes are linearly separable.
 <img src= ./plots_and_images/exp4_plot1.JPG width="450"> 
+
 ##### Type 5 : For any classes, we have 2 Gaussian mixtures
 <img src= ./plots_and_images/exp5_plot1.JPG width="450"> 
 
