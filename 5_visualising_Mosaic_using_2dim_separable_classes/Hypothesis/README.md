@@ -116,6 +116,8 @@
 
 | Data     |  Linear Attention Trends                    |    Deep Attention Trends                    |
 | ------   |  ---------------------------------------    |    --------------------------------------   |
+| D_1_K_2  | <img src= ./plots/non_linearly_separable_d_1_k_2 width="150">  |  <img src= ./plots/deep_non_linearly_separable_d_1_k_2 width="150"> |
+| D_1_K_2  | <img src= ./plots/linearly_separable_d_1_k_2.png width="150">  |  <img src= ./plots/deep_linearly_separable_d_1_k_2.png width="150"> |
 | D_3_K_5  | <img src= ./plots/trends_Linear_D_3.png width="150">  |  <img src= ./plots/trends_Deep_D_3.png width="150"> |
 | D_3_K_5  | <img src= ./plots/trends_Linear_D_3_K_5.png width="150">  |  <img src= ./plots/trends_Deep_D_3_K_5.png width="150"> |
 | D_4_K_5  | <img src= ./plots/trends_Linear_D_4_K_5.png width="150">  |  <img src= ./plots/trends_Deep_D_4_K_5.png width="150"> |
