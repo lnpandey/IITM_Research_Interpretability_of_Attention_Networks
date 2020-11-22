@@ -93,15 +93,28 @@
 #### Table 1: for Type 1 Data
 |   | test on dataset1 | test on dataset2 | test on dataset3 | test on dataset4 | test on dataset5 | test on dataset6 | test on dataset7 | test on dataset8 | test on dataset9| Train Accuracy |
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|----|----|
-| train on dataset1      | 50 | 55 | 59 | 65 | 69 | 68 | 67 | 69 | 68 | 50 |
-| train on dataset2      | 48 | 58 | 62 | 68 | 70 | 68 | 68 | 70 | 63 | 58 |
-| train on dataset3      | 45 | 54 | 65 | 68 | 70 | 70 | 66 | 69 | 65 | 65 |     
-| train on dataset4      | 46 | 55 | 63 | 71 | 71 | 70 | 68 | 69 | 66 | 71 |
-| train on dataset5      | 46 | 54 | 63 | 70 | 71 | 70 | 69 | 70 | 64 | 71 |
-| train on dataset6      | 45 | 56 | 63 | 68 | 70 | 70 | 71 | 69 | 66 | 70 |
-| train on dataset7      | 45 | 52 | 56 | 60 | 64 | 68 | 70 | 70 | 69 | 70 |
-| train on dataset8      | 43 | 51 | 57 | 62 | 65 | 67 | 69 | 69 | 69 | 69 |
-| train on dataset9      | 43 | 51 | 58 | 64 | 66 | 68 | 69 | 69 | 69 | 69 |
+| train on dataset1      | - | 55 | 59 | 65 | 69 | 68 | 67 | 69 | 68 | 50 |
+| train on dataset2      | 48 | - | 62 | 68 | 70 | 68 | 68 | 70 | 63 | 58 |
+| train on dataset3      | 45 | 54 | - | 68 | 70 | 70 | 66 | 69 | 65 | 65 |     
+| train on dataset4      | 46 | 55 | 63 | - | 71 | 70 | 68 | 69 | 66 | 71 |
+| train on dataset5      | 46 | 54 | 63 | 70 | - | 70 | 69 | 70 | 64 | 71 |
+| train on dataset6      | 45 | 56 | 63 | 68 | 70 | - | 71 | 69 | 66 | 70 |
+| train on dataset7      | 45 | 52 | 56 | 60 | 64 | 68 | - | 70 | 69 | 70 |
+| train on dataset8      | 43 | 51 | 57 | 62 | 65 | 67 | 69 | - | 69 | 69 |
+| train on dataset9      | 43 | 51 | 58 | 64 | 66 | 68 | 69 | 69 | - | 69 |
+
+#### Table 2: for Type 2 Data
+|   | test on dataset1 | test on dataset2 | test on dataset3 | test on dataset4 | test on dataset5 | test on dataset6 | test on dataset7 | test on dataset8 | test on dataset9| Train Accuracy |
+|----------|-----|-----|-----|-----|-----|-----|-----|-----|----|----|
+| train on dataset1      | - | 70 | 63 | 63 | 63 | 63 | 63 | 63 | 63 | 98 |
+| train on dataset2      | 68 | - | 65 | 63 | 63 | 63 | 63 | 63 | 63 | 98 |
+| train on dataset3      | 56 | 73 | - | 63 | 63 | 63 | 63 | 63 | 63 | 94 |     
+| train on dataset4      | 33 | 66 | 70 | - | 63 | 63 | 63 | 63 | 63 | 83 |
+| train on dataset5      | 35 | 57 | 59 | 60 | - | 54 | 62 | 63 | 63 | 69 |
+| train on dataset6      | 57 | 62 | 63 | 63 | 63 | - | 70 | 69 | 69 | 78 |
+| train on dataset7      | 36 | 57 | 63 | 63 | 63 | 63 | - | 73 | 69 | 89 |
+| train on dataset8      | 30 | 33 | 53 | 62 | 63 | 63 | 68 | - | 75 | 94 |
+| train on dataset9      | 30 | 30 | 40 | 62 | 63 | 63 | 63 | 73 | - | 97 |
   
   
 ### Architecture1 used for Type 1,2,3
