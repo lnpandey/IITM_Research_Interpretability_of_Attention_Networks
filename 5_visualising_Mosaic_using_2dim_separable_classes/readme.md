@@ -52,40 +52,43 @@
 
 ### PLOTS For Experiments are as below:
 
-#### Experiment on TYPE 1: Total Epochs: 80, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
-  <!-- ![](./plots_and_images/exp1_plot2.png) -->
+| Dataset Type | Data visualisation | on training | on testing | testing Focus net |
+|---------------|-------------------|-------------|------------|------------------|
+| Type 1 |  <img src= ./plots_and_images/exp1_plot1.png width="400"> | <img src= ./plots_and_images/exp1_plot3.png width="400"> | <img src= ./plots_and_images/exp1_plot5.png width="400"> | <img src= ./plots_and_images/exp1_plot8.JPG width="400"> |
+| Type 2 |  <img src= ./plots_and_images/exp2_plot1.png width="400"> | <img src= ./plots_and_images/exp2_plot3.png width="400"> | <img src= ./plots_and_images/exp2_plot5.png width="400"> | <img src= ./plots_and_images/exp2_plot8.JPG width="400"> |
+| Type 3 |  <img src= ./plots_and_images/exp3_plot1.png width="400"> | <img src= ./plots_and_images/exp3_plot6.JPG width="400"> | <img src= ./plots_and_images/exp3_plot7.JPG width="400"> | <img src= ./plots_and_images/exp3_plot8.JPG width="400"> |
+| Type 4 |  <img src= ./plots_and_images/exp4_plot1.JPG width="400"> | <img src= ./plots_and_images/exp4_plot2.JPG width="400"> | <img src= ./plots_and_images/exp4_plot3.JPG width="400"> | <img src= ./plots_and_images/testing_focus_net_500.JPG width="400"> |
+| Type 5 |  <img src= ./plots_and_images/exp5_plot1.JPG width="400"> | <img src= ./plots_and_images/exp5_plot2.JPG width="400"> | <img src= ./plots_and_images/exp5_plot3.JPG width="400"> | <img src= ./plots_and_images/exp5_plot4.JPG width="400"> |
+
+<!-- #### Experiment on TYPE 1: Total Epochs: 80, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
+  <!-- ![](./plots_and_images/exp1_plot2.png) 
   ![](./plots_and_images/exp1_plot3.png)
-  <!-- ![](./plots_and_images/exp1_plot4.png) -->
+  <!-- ![](./plots_and_images/exp1_plot4.png) 
   ![](./plots_and_images/exp1_plot5.png)
-  <img src= ./plots_and_images/exp1_plot8.JPG width="500">
-  
+  <img src= ./plots_and_images/exp1_plot8.JPG width="500">  
 #### Experiment on TYPE 2: Total Epochs: 10, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
-  <!-- ![](./plots_and_images/exp2_plot2.png) -->
+  <!-- ![](./plots_and_images/exp2_plot2.png) 
   ![](./plots_and_images/exp2_plot3.png)
-  <!-- ![](./plots_and_images/exp2_plot4.png) -->
+  <!-- ![](./plots_and_images/exp2_plot4.png) 
   ![](./plots_and_images/exp2_plot5.png)
-  <img src= ./plots_and_images/exp2_plot8.JPG width="500">
-  
+  <img src= ./plots_and_images/exp2_plot8.JPG width="500">  
 #### Experiment on TYPE 3: Total Epochs: 120, What lr: 0.01, Where lr: 0.01, train acc: 0.88, test acc: 0.89
-  <!-- ![](./plots_and_images/exp3_plot2.png) -->
+  <!-- ![](./plots_and_images/exp3_plot2.png) 
   <img src= ./plots_and_images/exp3_plot6.JPG width="550"> 
-  <!-- ![](./plots_and_images/exp3_plot4.png) -->
+  <!-- ![](./plots_and_images/exp3_plot4.png) 
   <img src= ./plots_and_images/exp3_plot7.JPG width="550">
-  <img src= ./plots_and_images/exp3_plot8.JPG width="500">
-  
+  <img src= ./plots_and_images/exp3_plot8.JPG width="500">  
 #### Experiment on TYPE 4: Total Epochs: 164, What lr: 0.01, Where lr: 0.01, train acc: 0.99, test acc: 0.99
   <img src= ./plots_and_images/exp4_plot2.JPG width="550"> 
   <img src= ./plots_and_images/exp4_plot3.JPG width="550"> 
   <img src= ./plots_and_images/testing_focus_net_100.JPG width="500">
-  <img src= ./plots_and_images/testing_focus_net_500.JPG width="500">
-  
+  <img src= ./plots_and_images/testing_focus_net_500.JPG width="500">  
 #### Experiment on TYPE 5: Total Epochs: 154, What lr: 0.01, Where lr: 0.01, train acc: 0.99, test acc: 0.99
   <img src= ./plots_and_images/exp5_plot2.JPG width="550"> 
   <img src= ./plots_and_images/exp5_plot3.JPG width="550"> 
-  <img src= ./plots_and_images/exp5_plot4.JPG width="500">
-
-
-
+  <img src= ./plots_and_images/exp5_plot4.JPG width="500"> -->
+  
+  
 ### Architecture1 used for Type 1,2,3
 ```python
 class Wherenet(nn.Module):
