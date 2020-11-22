@@ -142,6 +142,19 @@
 | train on dataset8      | 37 | 41 | 47 | 55 | 64 | 75 | 86 | - | 96 | 96 |
 | train on dataset9      | 37 | 41 | 46 | 53 | 62 | 69 | 79 | 93 | - | 99 |
 
+#### Table 5: for Type 5 Data
+|   | test on dataset1 | test on dataset2 | test on dataset3 | test on dataset4 | test on dataset5 | test on dataset6 | test on dataset7 | test on dataset8 | test on dataset9| Train Accuracy |
+|----------|-----|-----|-----|-----|-----|-----|-----|-----|----|----|
+| train on dataset1      | - | 37 | 41 | 44 | 46 | 48 | 48 | 49 | 44 | 40 |
+| train on dataset2      | 35 | - | 46 | 46 | 52 | 54 | 55 | 54 | 52 | 46 |
+| train on dataset3      | 35 | 42 | - | 51 | 53 | 57 | 61 | 61 | 58 | 49 |     
+| train on dataset4      | 34 | 39 | 46 | - | 55 | 57 | 59 | 56 | 62 | 53 |
+| train on dataset5      | 35 | 38 | 42 | 48 | - | 70 | 69 | 65 | 62 | 63 |
+| train on dataset6      | 35 | 37 | 41 | 46 | 58 | - | 86 | 86 | 67 | 76 |
+| train on dataset7      | 36 | 38 | 42 | 46 | 54 | 72 | - | 95 | 83 | 90 |
+| train on dataset8      | 35 | 38 | 42 | 45 | 49 | 62 | 87 | - | 100 | 98 |
+| train on dataset9      | 35 | 38 | 43 | 45 | 46 | 51 | 66 | 97 | - | 100 |
+
   
   
 ### Architecture1 used for Type 1,2,3
