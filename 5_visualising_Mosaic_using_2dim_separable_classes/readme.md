@@ -129,6 +129,18 @@
 | train on dataset8      | 32 | 32 | 32 | 32 | 32 | 32 | 37 | - | 47 | 70 |
 | train on dataset9      | 32 | 32 | 32 | 32 | 32 | 32 | 32 | 43 | - | 72 |
 
+#### Table 4: for Type 4 Data
+|   | test on dataset1 | test on dataset2 | test on dataset3 | test on dataset4 | test on dataset5 | test on dataset6 | test on dataset7 | test on dataset8 | test on dataset9| Train Accuracy |
+|----------|-----|-----|-----|-----|-----|-----|-----|-----|----|----|
+| train on dataset1      | - | 42 | 48 | 55 | 62 | 66 | 67 | 66 | 62 | 39 |
+| train on dataset2      | 38 | - | 45 | 50 | 52 | 55 | 61 | 65 | 66 | 41 |
+| train on dataset3      | 38 | 43 | - | 56 | 64 | 67 | 67 | 67 | 67 | 49 |     
+| train on dataset4      | 38 | 44 | 49 | - | 66 | 71 | 70 | 67 | 67 | 57 |
+| train on dataset5      | 38 | 43 | 50 | 58 | - | 78 | 80 | 73 | 69 | 68 |
+| train on dataset6      | 38 | 42 | 49 | 58 | 67 | - | 83 | 78 | 71 | 79 |
+| train on dataset7      | 37 | 41 | 47 | 55 | 66 | 76 | - | 94 | 91 | 89 |
+| train on dataset8      | 37 | 41 | 47 | 55 | 64 | 75 | 86 | - | 96 | 96 |
+| train on dataset9      | 37 | 41 | 46 | 53 | 62 | 69 | 79 | 93 | - | 99 |
 
   
   
