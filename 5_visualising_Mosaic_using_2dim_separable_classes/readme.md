@@ -57,18 +57,21 @@
   ![](./plots_and_images/exp1_plot3.png)
   <!-- ![](./plots_and_images/exp1_plot4.png) -->
   ![](./plots_and_images/exp1_plot5.png)
+  <img src= ./plots_and_images/exp1_plot8.JPG width="500">
   
 #### Experiment on TYPE 2: Total Epochs: 10, What lr: 0.01, Where lr: 0.01, train acc: 1, test acc: 1
   <!-- ![](./plots_and_images/exp2_plot2.png) -->
   ![](./plots_and_images/exp2_plot3.png)
   <!-- ![](./plots_and_images/exp2_plot4.png) -->
   ![](./plots_and_images/exp2_plot5.png)
+  <img src= ./plots_and_images/exp2_plot8.JPG width="500">
   
 #### Experiment on TYPE 3: Total Epochs: 120, What lr: 0.01, Where lr: 0.01, train acc: 0.88, test acc: 0.89
   <!-- ![](./plots_and_images/exp3_plot2.png) -->
   <img src= ./plots_and_images/exp3_plot6.JPG width="550"> 
   <!-- ![](./plots_and_images/exp3_plot4.png) -->
   <img src= ./plots_and_images/exp3_plot7.JPG width="550">
+  <img src= ./plots_and_images/exp3_plot8.JPG width="500">
   
 #### Experiment on TYPE 4: Total Epochs: 164, What lr: 0.01, Where lr: 0.01, train acc: 0.99, test acc: 0.99
   <img src= ./plots_and_images/exp4_plot2.JPG width="550"> 
@@ -79,6 +82,7 @@
 #### Experiment on TYPE 5: Total Epochs: 154, What lr: 0.01, Where lr: 0.01, train acc: 0.99, test acc: 0.99
   <img src= ./plots_and_images/exp5_plot2.JPG width="550"> 
   <img src= ./plots_and_images/exp5_plot3.JPG width="550"> 
+  <img src= ./plots_and_images/exp5_plot4.JPG width="500">
 
 
 
