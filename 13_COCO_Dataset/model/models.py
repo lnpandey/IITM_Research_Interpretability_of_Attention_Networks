@@ -1,5 +1,15 @@
 import torch.nn as nn 
 from torchvision import models
+import torch.optim as optim
+import torch
+from dictionary import Vocabulary,EOS_token,PAD_token,SOS_token,UNK_token 
+from torch.nn import functional as F
+
+
+if torch.cuda.is_available():
+    device = torch.device('cuda')
+else:
+    device = torch.device('cpu')
 
 # Encoder VGG19 as base model
 class Encoder(nn.Module):
@@ -149,7 +159,7 @@ class Decoder(nn.Module):
 # Show Attend and Tell model
 class ShowAttendTell(nn.Module):
     
-    def __init__(self,encoder,decoder,vocabulary,teacher_forcing_ratio, batch_size=batch_size,):
+    def __init__(self,encoder,decoder,vocabulary,teacher_forcing_ratio, batch_size):#=batch_size,):
         super(ShowAttendTell,self).__init__()
         self.encoder = encoder
         self.decoder = decoder
