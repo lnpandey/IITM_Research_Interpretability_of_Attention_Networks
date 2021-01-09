@@ -1,4 +1,7 @@
 ### Show attend and tell implementation
+
+#### hyperparameters
+
 vocabulary size = 22905
 
 feature length = 196
