@@ -12,7 +12,7 @@ attention size = 256
 
 batch size = 64
 
-During training  we have used scheduled sampling (select the previous predicted output instead of the ground truth output with probability p)
+During training  we have used scheduled sampling (select the previous predicted output instead of the ground truth output with probability 1-p)
 ##### BLEU Score
 The Bilingual Evaluation Understudy Score, or BLEU, is a metric for evaluating a generated sentence to a reference sentence. The approach works by counting matching n-grams in the candidate sentence to n-grams in the reference text, where 1-gram or unigram would be each token and a bigram comparison would be each word pair. The comparison is made regardless of word order.
 ##### METEOR Score
