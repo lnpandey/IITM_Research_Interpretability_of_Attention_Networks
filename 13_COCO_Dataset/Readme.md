@@ -35,6 +35,22 @@ Metric for Evaluation for Translation with Explicit Ordering, or METEOR, compute
 
 ### Quantitative Analysis of attention
 
+#### Average attention score 
+| Data  |  random10  | top10  |   random20 | top20 |
+|  ---  | ---------- | ------ | ---------- | ----- |
+| training |  0.181   |    0.369 |     |   0.429 |
+| validation | 0.181 |  0.367 |            | 0.429 |
+ 
+ |attention score | boundingbox  |  attention heatmap |
+:-------------------------:|:-------------------------:|:-------------------------:
+|0.371 | ![](./images/motorcycle_bbox.png) |   ![](./images/motorcycle_1.png)|
+|0.79 | ![](./images/dog_bbox.png) |   ![](./images/dog_1.png)|
+|0 | ![](./images/baseball_bat_bbox.png) |   ![](./images/bat_1.png)|
+|0.427 | ![](./images/man_bbox.png) |   ![](./images/man_snowboard_1.png) |
+|0.065 | ![](./images/frisbee_bbox.png) |  ![](./images/frisbee_1.png)  |
+
+
+
 
 ### References
 [BLEU Score](https://machinelearningmastery.com/calculate-bleu-score-for-text-python/#:~:text=The%20Bilingual%20Evaluation%20Understudy%20Score,in%20a%20score%20of%200.0.)
