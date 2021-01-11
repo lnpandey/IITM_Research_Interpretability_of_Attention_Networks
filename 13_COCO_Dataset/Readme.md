@@ -34,6 +34,9 @@ Metric for Evaluation for Translation with Explicit Ordering, or METEOR, compute
 | VGG19   |  COCO2014 | 66.8 | 48.8  |  34.3 | 23.9  | 22.0    |
 
 ### Quantitative Analysis of attention
+To calculate the attention score for a particular object in caption, we take inner product between the bitmask of bounding box in the image and the bitmask of learned attention for the same object(if generated in the caption).
+Consider u as bitmask of bounding box in the image and v as bitmask of learned attention of the object, attention score \beta  for the object is 
+(u^Tv)/||u|| * ||\v||
 
 #### Average attention score 
 | Data  |  random10  | top10  |   random20 | top20 |
