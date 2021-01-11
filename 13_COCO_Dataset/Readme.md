@@ -42,7 +42,7 @@ Consider u as bitmask of bounding box in the image and v as bitmask of learned a
 | Data  |  random10  | top10  |   random20 | top20 |
 |  ---  | ---------- | ------ | ---------- | ----- |
 | training |  0.181   |    0.369 |     |   0.429 |
-| validation | 0.181 |  0.367 |            | 0.429 |
+| validation | 0.181 |  0.367 |     0.24       | 0.429 |
  
  |attention score | boundingbox  |  attention heatmap |
 :-------------------------:|:-------------------------:|:-------------------------:
