@@ -1,10 +1,10 @@
 ### linear models
 | DATA | DATA visualisation |
 |------|--------------------|
-| Type 2 | ./plots/type_2.png  |
-| Type 3_1 | ./plots/type_3_1.png |
-| Type 3_2 | ./plots/type_3_2.png |
-| Type 4 | ./plots/type_4.JPG |
+| Type 2 | <img src= ./plots/type_2.png width="400">    |
+| Type 3_1 | <img src= ./plots/type_3_1.png  width="400">  |
+| Type 3_2 | <img src= ./plots/type_3_2.png  width="400">  |
+| Type 4 | <img src= ./plots/type_4.JPG  width="400">  |
 
 
 | DATA | run | FTPT | FFPT | FTPF | FFPF |
