@@ -18,3 +18,5 @@
 | 100     |  <img src=./plots_images/trends_mnist_100_100.png width="800">   |    <img src=./plots_images/trends_mnist_100_200.png width="800"> |  <img src=./plots_images/trends_mnist_100_300.png width="800">   |   
 | 200     |  <img src=./plots_images/trends_mnist_200_100.png width="800">   |  <img src=./plots_images/trends_mnist_200_200.png width="800">   |  <img src=./plots_images/trends_mnist_200_300.png width="800">   |  
 | 300     |  <img src=./plots_images/trends_mnist_300_100.png width="800">   |  <img src=./plots_images/trends_mnist_300_200.png width="800">   |  <img src=./plots_images/trends_mnist_300_300.png width="800">   | --->
+
+[Sheet Link](https://docs.google.com/spreadsheets/d/1tKNCt3RkObySddCjx20FONrXO065BFwxu5SmSxtP5w0/edit#gid=0)
