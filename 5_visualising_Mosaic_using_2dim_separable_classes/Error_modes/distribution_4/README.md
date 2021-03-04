@@ -47,7 +47,7 @@
 | epochs | 0   |  10 | 20  | 50  | 150 |  
 | -- | -- | -- | -- | -- | -- |
 | focus illustration | ![](./plots/d2_2_fc_0.JPG)| ![](./plots/d2_2_fc_10.JPG)| ![](./plots/d2_2_fc_20.JPG) | ![](./plots/d2_2_fc_50.JPG) | ![](./plots/d2_2_fc_150.JPG) |
-| classification illustration | ![](./plots/d2_2_cl_0.JPG) | ![](./plots/d2_2_cl_10.JPG) | ![](./plots/d2_2_cl_20.JPG) | ![](./plots/d2_2_cl_50.JPG) | ![](./plots/d2_2_cl_150.JPG) | 
+| classification illustration | ![](./plots/d2_2_cl_0.jpg) | ![](./plots/d2_2_cl_10.jpg) | ![](./plots/d2_2_cl_20.jpg) | ![](./plots/d2_2_cl_50.jpg) | ![](./plots/d2_2_cl_150.jpg) | 
 
 
 #### non-linear focus and non-linear classification
