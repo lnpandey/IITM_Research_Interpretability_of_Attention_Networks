@@ -13,10 +13,10 @@
 
 #### linear focus and non-linear classification
 
-| epochs | 0   |  10 | 20  | 50  |  final |
+| epochs | 0   |  10 | 20  | 50  | 150 |  
 | -- | -- | -- | -- | -- | -- |
-| focus illustration | | | | | |
-| classification illustration | | | | | |
+| focus illustration | ![](./plots/d1_2_fc_0.JPG)| ![](./plots/d1_2_fc_10.JPG)| ![](./plots/d1_2_fc_20.JPG) | ![](./plots/d1_2_fc_50.JPG) | ![](./plots/d1_2_fc_150.JPG) |
+| classification illustration |![](./plots/d1_2_cl_0.JPG) | ![](./plots/d1_2_cl_10.JPG) | ![](./plots/d1_2_cl_20.JPG) | ![](./plots/d1_2_cl_50.JPG) | ![](./plots/d1_2_cl_150.JPG) | 
 
 
 
