@@ -74,4 +74,8 @@ DATA: Synthetic elliptical blobs data
 | Run 8  | <img src=./plots_images/100_300/k0/run8_100_300_10runs.png width="200"> |  <img src=./plots_images/100_300/k01/run8_100_300_10runs_entropy.png width="200"> | <img src=./plots_images/100_300/k03/run8_100_300_10runs_entropy.png width="200"> |  <img src=./plots_images/100_300/k05/run8_100_300_10runs_entropy.png width="200"> | 
 | Run 9  | <img src=./plots_images/100_300/k0/run9_100_300_10runs.png width="200"> |  <img src=./plots_images/100_300/k01/run9_100_300_10runs_entropy.png width="200"> | <img src=./plots_images/100_300/k03/run9_100_300_10runs_entropy.png width="200"> |  <img src=./plots_images/100_300/k05/run9_100_300_10runs_entropy.png width="200"> | 
 | Run 10 | <img src=./plots_images/100_300/k0/run10_100_300_10runs.png width="200">|  <img src=./plots_images/100_300/k01/run10_100_300_10runs_entropy.png width="200">| <img src=./plots_images/100_300/k03/run10_100_300_10runs_entropy.png width="200">|  <img src=./plots_images/100_300/k05/run10_100_300_10runs_entropy.png width="200">| 
+| Avg_FTPT  | 87.67 | 88.52 | 90.12 | 89.92 |
+| Avg_FFPT  | 12.32 | 11.4  | 9.87  | 10.08 |
+| Avg_FTPF  | 0     | 0.013 | 0.003 | 0     |
+| Avg_FFPF  | 0     | 0     | 0     | 0     |
 
