@@ -35,6 +35,10 @@ DATA: Synthetic elliptical blobs data
 | Run 8  | <img src=./plots_images/200_100/k0/run8_200_100_10runs.png width="200"> |  <img src=./plots_images/200_100/k01/run8_200_100_10runs_entropy.png width="200"> | <img src=./plots_images/200_100/k03/run8_200_100_10runs_entropy.png width="200"> |  <img src=./plots_images/200_100/k05/run8_200_100_10runs_entropy.png width="200"> | 
 | Run 9  | <img src=./plots_images/200_100/k0/run9_200_100_10runs.png width="200"> |  <img src=./plots_images/200_100/k01/run9_200_100_10runs_entropy.png width="200"> | <img src=./plots_images/200_100/k03/run9_200_100_10runs_entropy.png width="200"> |  <img src=./plots_images/200_100/k05/run9_200_100_10runs_entropy.png width="200"> | 
 | Run 10 | <img src=./plots_images/200_100/k0/run10_200_100_10runs.png width="200">|  <img src=./plots_images/200_100/k01/run10_200_100_10runs_entropy.png width="200">| <img src=./plots_images/200_100/k03/run10_200_100_10runs_entropy.png width="200">|  <img src=./plots_images/200_100/k05/run10_200_100_10runs_entropy.png width="200">| 
+| Avg_FTPT  | 86.45 | 95.17 | 93.37 | 93.36 |
+| Avg_FFPT  | 7.3   | 4.73  | 6.48  | 5.966 |
+| Avg_FTPF  | 0.033 | 0.076 | 0.146 | 0.65  |
+| Avg_FFPF  | 6.2   | 0.016 | 0     | 0.013 |
 
 
 ### Table 3 : focus 200 Classification 200
