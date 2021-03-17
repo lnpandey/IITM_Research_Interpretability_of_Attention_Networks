@@ -132,6 +132,47 @@ DATA: Synthetic elliptical blobs data
 | Run 4  | <img src=./plots_images/200_300/k0/run4_200_300_10runs.png width="150"> |  <img src=./plots_images/200_300/k01/run4_200_300_10runs_entropy.png width="150"> | Run 9  | <img src=./plots_images/200_300/k0/run9_200_300_10runs.png width="150"> |  <img src=./plots_images/200_300/k01/run9_200_300_10runs_entropy.png width="150"> |  
 | Run 5  | <img src=./plots_images/200_300/k0/run5_200_300_10runs.png width="150"> |  <img src=./plots_images/200_300/k01/run5_200_300_10runs_entropy.png width="150"> | Run 10 | <img src=./plots_images/200_300/k0/run10_200_300_10runs.png width="150">|  <img src=./plots_images/200_300/k01/run10_200_300_10runs_entropy.png width="150">|  
   
+
+### Table 13 : focus 300 Classification 50
+
+| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| -       | -  | - | -       | -  | - |
+| Run 1  | <img src=./plots_images/300_50/k0/run1_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run1_300_50_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/300_50/k0/run6_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run6_300_50_10runs_entropy.png width="150"> |   
+| Run 2  | <img src=./plots_images/300_50/k0/run2_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run2_300_50_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/300_50/k0/run7_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run7_300_50_10runs_entropy.png width="150"> |   
+| Run 3  | <img src=./plots_images/300_50/k0/run3_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run3_300_50_10runs_entropy.png width="150"> | Run 8  | <img src=./plots_images/300_50/k0/run8_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run8_300_50_10runs_entropy.png width="150"> |   
+| Run 4  | <img src=./plots_images/300_50/k0/run4_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run4_300_50_10runs_entropy.png width="150"> | Run 9  | <img src=./plots_images/300_50/k0/run9_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run9_300_50_10runs_entropy.png width="150"> |   
+| Run 5  | <img src=./plots_images/300_50/k0/run5_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run5_300_50_10runs_entropy.png width="150"> | Run 10 | <img src=./plots_images/300_50/k0/run10_300_50_10runs.png width="150">|  <img src=./plots_images/300_50/k01/run10_300_50_10runs_entropy.png width="150">|   
+ 
+ 
+### Table 14 : focus 300 Classification 100
+
+| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| -       | -  | - | -       | -  | - |
+| Run 1  | <img src=./plots_images/300_100/k0/run1_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run1_300_100_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/300_100/k0/run6_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run6_300_100_10runs_entropy.png width="150"> |  
+| Run 2  | <img src=./plots_images/300_100/k0/run2_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run2_300_100_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/300_100/k0/run7_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run7_300_100_10runs_entropy.png width="150"> |  
+| Run 3  | <img src=./plots_images/300_100/k0/run3_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run3_300_100_10runs_entropy.png width="150"> | Run 8  | <img src=./plots_images/300_100/k0/run8_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run8_300_100_10runs_entropy.png width="150"> |  
+| Run 4  | <img src=./plots_images/300_100/k0/run4_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run4_300_100_10runs_entropy.png width="150"> | Run 9  | <img src=./plots_images/300_100/k0/run9_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run9_300_100_10runs_entropy.png width="150"> |  
+| Run 5  | <img src=./plots_images/300_100/k0/run5_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run5_300_100_10runs_entropy.png width="150"> | Run 10 | <img src=./plots_images/300_100/k0/run10_300_100_10runs.png width="150">|  <img src=./plots_images/300_100/k01/run10_300_100_10runs_entropy.png width="150">|  
   
+ 
+### Table 15 : focus 300 Classification 200
+
+| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| -       | -  | - | -       | -  | - |
+| Run 1  | <img src=./plots_images/300_200/k0/run1_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run1_300_200_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/300_200/k0/run6_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run6_300_200_10runs_entropy.png width="150"> |  
+| Run 2  | <img src=./plots_images/300_200/k0/run2_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run2_300_200_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/300_200/k0/run7_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run7_300_200_10runs_entropy.png width="150"> |  
+| Run 3  | <img src=./plots_images/300_200/k0/run3_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run3_300_200_10runs_entropy.png width="150"> | Run 8  | <img src=./plots_images/300_200/k0/run8_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run8_300_200_10runs_entropy.png width="150"> |  
+| Run 4  | <img src=./plots_images/300_200/k0/run4_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run4_300_200_10runs_entropy.png width="150"> | Run 9  | <img src=./plots_images/300_200/k0/run9_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run9_300_200_10runs_entropy.png width="150"> |  
+| Run 5  | <img src=./plots_images/300_200/k0/run5_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run5_300_200_10runs_entropy.png width="150"> | Run 10 | <img src=./plots_images/300_200/k0/run10_300_200_10runs.png width="150">|  <img src=./plots_images/300_200/k01/run10_300_200_10runs_entropy.png width="150">|  
   
+
+### Table 16 : focus 300 Classification 300
+
+| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| -       | -  | - | -       | -  | - |
+| Run 1  | <img src=./plots_images/300_300/k0/run1_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run1_300_300_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/300_300/k0/run6_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run6_300_300_10runs_entropy.png width="150"> |  
+| Run 2  | <img src=./plots_images/300_300/k0/run2_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run2_300_300_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/300_300/k0/run7_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run7_300_300_10runs_entropy.png width="150"> |  
+| Run 3  | <img src=./plots_images/300_300/k0/run3_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run3_300_300_10runs_entropy.png width="150"> | Run 8  | <img src=./plots_images/300_300/k0/run8_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run8_300_300_10runs_entropy.png width="150"> |  
+| Run 4  | <img src=./plots_images/300_300/k0/run4_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run4_300_300_10runs_entropy.png width="150"> | Run 9  | <img src=./plots_images/300_300/k0/run9_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run9_300_300_10runs_entropy.png width="150"> |  
+| Run 5  | <img src=./plots_images/300_300/k0/run5_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run5_300_300_10runs_entropy.png width="150"> | Run 10 | <img src=./plots_images/300_300/k0/run10_300_300_10runs.png width="150">|  <img src=./plots_images/300_300/k01/run10_300_300_10runs_entropy.png width="150">|  
 
