@@ -19,4 +19,27 @@
 | 200     |  <img src=./plots_images/trends_mnist_200_100.png width="800">   |  <img src=./plots_images/trends_mnist_200_200.png width="800">   |  <img src=./plots_images/trends_mnist_200_300.png width="800">   |  
 | 300     |  <img src=./plots_images/trends_mnist_300_100.png width="800">   |  <img src=./plots_images/trends_mnist_300_200.png width="800">   |  <img src=./plots_images/trends_mnist_300_300.png width="800">   | --->
 
+#### type 4 data
+
+##### FTPT values averaged over 20 runs
+| fcs\cls | 10  | 20  | 50 | 100 | 200 | 300 |
+| -----   | --  |  -- | -- | --  | --  | --  | 
+| 10      | 47.04   |  55.24   |    |     |     |  |
+| 20      |     |     |    |     |     |  | 
+| 50      |     |     |    |     |     |  | 
+| 100      |     |     |    |     |     |  | 
+| 200      |     |     |    |     |     |  |
+| 300      |     |     |    |     |     |  |
+
+##### FFPT values averaged over 20 runs
+| fcs\cls | 10  | 20  | 50 | 100 | 200 | 300 |
+| -----   | --  |  -- | -- | --  | --  | --  | 
+| 10      |  30.74   |  28.375   |    |     |     |  |
+| 20      |     |     |    |     |     |  | 
+| 50      |     |     |    |     |     |  | 
+| 100      |     |     |    |     |     |  | 
+| 200      |     |     |    |     |     |  |
+| 300      |     |     |    |     |     |  |
+
+
 [Sheet Link](https://docs.google.com/spreadsheets/d/1tKNCt3RkObySddCjx20FONrXO065BFwxu5SmSxtP5w0/edit#gid=0)
