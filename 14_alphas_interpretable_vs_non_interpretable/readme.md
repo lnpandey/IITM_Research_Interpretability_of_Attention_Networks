@@ -3,7 +3,7 @@
 DATA: Synthetic elliptical blobs data 
 
 ### Table A: trend of complexity with CE Loss
-Entries are of the form FTPT / FFPT
+Entries are of the form FTPT / FFPT and are average over 10 runs
 |focus/ Classify | 50 | 100 | 200 | 300 |
 |----------------|----|-----|-----|-----|
 | 50  | 74.71 / 25.26 | 82.15 / 17.85 | 80.88 / 19.11 | 86.25 / 13.74 |
