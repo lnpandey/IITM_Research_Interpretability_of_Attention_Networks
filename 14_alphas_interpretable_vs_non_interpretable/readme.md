@@ -2,6 +2,15 @@
 
 DATA: Synthetic elliptical blobs data 
 
+### Table A: trend of complexity with CE Loss
+Entries are of the form FTPT / FFPT
+|focus/ Classify | 50 | 100 | 200 | 300 |
+|----------------|----|-----|-----|-----|
+| 50  | 74.71 / 25.26 | 82.15 / 17.85 | 80.88 / 19.11 | 86.25 / 13.74 |
+| 100 | 76.92 / 16.93 | 90.16 / 9.83  | 99.1 / 0.9    | 87.67 / 12.32 |
+| 200 | 86.78 / 7.00  | 86.45 / 7.32  | 97.56 / 2.44  | 99.97 / 0.026 |
+| 300 | 99.76 / 0.226 | 90.14 / 3.87  | 99.96 / 0.04  | 99.98 / 0.013 |
+
 ### Table 1 : focus 50 Classification 50
 
 | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
