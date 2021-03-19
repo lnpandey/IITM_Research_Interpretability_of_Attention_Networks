@@ -20,7 +20,7 @@
 | 300     |  <img src=./plots_images/trends_mnist_300_100.png width="800">   |  <img src=./plots_images/trends_mnist_300_200.png width="800">   |  <img src=./plots_images/trends_mnist_300_300.png width="800">   | --->
 
 #### type 4 data
-<img src=./plots_images/type4_distr.JPG width="100">   
+<img src=./plots_images/type4_distr.JPG width="250">   
 
 Hypothesis - Increasing the classification network complexity, while keeping the focus network fixed decreases interpretability (As shown below for zeroth layer averaging). In the case of feature extracted from some other layer for averaging say first layer we are observing similar results but still needs to discuss some things (like as we change the complexity of focus network input to classification network changes in that case how to interpret the results ). One hidden layer model is used with specified hidden units.
 #### zeroth layer averaging
