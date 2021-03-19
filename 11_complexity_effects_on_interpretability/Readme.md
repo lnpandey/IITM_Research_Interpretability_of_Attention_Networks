@@ -1,6 +1,6 @@
 ### effects of complexity on interpretability
 
-#### Synthetic elliptical blobs data 
+#### Table 1: Synthetic elliptical blobs data (Single run)
 
 | fcs\cls | 100 | 200 | 300 |
 | -       | -   | -   |  -  |  
@@ -24,7 +24,7 @@
 
 Hypothesis - Increasing the classification network complexity, while keeping the focus network fixed decreases interpretability (As shown below for zeroth layer averaging). In the case of feature extracted from some other layer for averaging say first layer we are observing similar results but still needs to discuss some things (like as we change the complexity of focus network input to classification network changes in that case how to interpret the results ). One hidden layer model is used with specified hidden units.
 #### zeroth layer averaging
-###### FTPT values averaged over 20 runs
+###### Table 2: FTPT values averaged over 20 runs
 | fcs\cls | 10  | 20  | 50 | 100 | 200 | 300 |
 | -----   | --  |  -- | -- | --  | --  | --  | 
 | 10      |   57.1 |  63.02   |  58.17  | 58.035    |  59.31   | 58.27 |
@@ -34,7 +34,7 @@ Hypothesis - Increasing the classification network complexity, while keeping the
 | 200      | 69.35    | 77.734   | 76.7   |  71.24   |  69.01   | 69.59 |
 | 300      |  51.08   | 66.126    |   66.19 |  71.30   |  72.57   | 71.39 |
 
-###### FFPT values averaged over 20 runs
+###### Table 3: FFPT values averaged over 20 runs
 | fcs\cls | 10  | 20  | 50 | 100 | 200 | 300 |
 | -----   | --  |  -- | -- | --  | --  | --  | 
 | 10      |   28.13  |  27.12   |  29.51  |   31.53  |   30.77  | 33.28 |
@@ -47,7 +47,7 @@ Hypothesis - Increasing the classification network complexity, while keeping the
 #### first layer averaging
 For the first layer averaging we take features from output of first layer and use tanh activation function.
 
-###### FTPT values averaged over 20 runs
+###### Table 4: FTPT values averaged over 20 runs
 | fcs\cls | 10  | 20  | 50 | 100 | 200 | 300 |
 | -----   | --  |  -- | -- | --  | --  | --  | 
 | 10      |  81.26  |  79.74   | 80.81  |  75.69   |  78.97   | 79.16 |
@@ -57,7 +57,7 @@ For the first layer averaging we take features from output of first layer and us
 | 200      |  32.415(FFPF 40.61)  | 55.34  |  47.88  | 67.26    | 77.415    | 71.50 |
 | 300      |  -  |  - |  - | -    | 62.47 | 66.435 |
 
-###### FFPT values averaged over 20 runs
+###### Table 5: FFPT values averaged over 20 runs
 | fcs\cls | 10  | 20  | 50 | 100 | 200 | 300 |
 | -----   | --  |  -- | -- | --  | --  | --  | 
 | 10      |  18.5   | 20.12    | 19.003  |  24.11   |  20.85  | 20.64 |
