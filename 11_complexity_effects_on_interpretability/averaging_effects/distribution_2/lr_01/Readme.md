@@ -17,7 +17,7 @@ classification -> 2-50-3  input changes on the basis of layer averaging
 #### averaged over 20 runs
 |layer averaged at| FTPT | FFPT | FTPF|  FFPF |
 | - | - | - | - | - |
-| zeroth |   |   |   |
+| zeroth | 45.375  | 25.385   |  0.078  |  29.16 | 
 | first | 82.541  | 7.97   |  0.0066 | 9.4783  |
 | second | 78.84 | 14.935 | 0.161 | 6.055 |
 
