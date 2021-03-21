@@ -11,3 +11,14 @@ classification -> 2-50-3  input changes on the basis of layer averaging
 | zeroth | 75.81  | 21.96  | 0.01 | 2.21 |
 | first | 90.54  | 9.40   |  0.0466 | 0.00166  |
 | second | 80.46 | 19.45 | 0.066 | 0.002 |
+
+#### 1-k*cross_entropy_loss + k*entropy
+
+#### averaged over 20 runs
+|layer averaged at| FTPT | FFPT | FTPF|  FFPF |
+| - | - | - | - | - |
+| zeroth |   |   |   |
+| first | 82.541  | 7.97   |  0.0066 | 9.4783  |
+| second | 78.84 | 14.935 | 0.161 | 6.055 |
+
+
