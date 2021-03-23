@@ -11,17 +11,17 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
 | 200 | 86.78 / 7.00  | 86.45 / 7.32  | 97.56 / 2.44  | 99.97 / 0.026 |
 | 300 | 99.76 / 0.226 | 90.14 / 3.87  | 99.96 / 0.04  | 99.98 / 0.013 |
 
-### Table B: Trend of complexity with 0.9\*CE Loss + 0.1\*Entropy
+### Table B: Trend of complexity with 0.995\*CE Loss + 0.005\*Entropy
 Entries are of the form FTPT / FFPT and are average over 10 runs
 |focus/ Classify | 50 | 100 | 200 | 300 |
 |----------------|----|-----|-----|-----|
-| 50  | 87.85 / 5.92 | 80.23 / 7.59 | 99.91 / 0.086 | 99.99 / 0.006 |
-| 100 | 92.23 / 2.76 | 85.45 / 8.48 | 99.99 / 0.01  | 97.73 / 2.27  |
-| 200 | 90.10 / 3.46 | 89.99 / 3.94 | 97.71 / 2.286 | 99.97 / 0.03  |
-| 300 | 90.02 / 3.67 | 90.11 / 3.81 | 99.97 / 0.023 | 99.8 / 0.13   |
+| 50  | 85.63 / 14.36| 88.91 / 11.08| 91.32 / 8.67 | 96.55 / 3.45 |
+| 100 | 92.16 / 7.83 | 90.52 / 9.47 | 99.97 / 0.03  | 92.27 / 7.73  |
+| 200 | 90.66 / 3.17 | 94.58 / 5.42 | 94.65 / 5.34 | 99.85 / 0.14  |
+| 300 | 99.97 / 0.02 | 97.73 / 2.27 | 96.68 / 3.32 | 99.98 / 0.02  |
 ### Table 1 : focus 50 Classification 50
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/50_50/k0/run1_50_50_10runs.png width="150"> |  <img src=./plots_images/50_50/k01/run1_50_50_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/50_50/k0/run6_50_50_10runs.png width="150"> |  <img src=./plots_images/50_50/k01/run6_50_50_10runs_entropy.png width="150"> |   
 | Run 2  | <img src=./plots_images/50_50/k0/run2_50_50_10runs.png width="150"> |  <img src=./plots_images/50_50/k01/run2_50_50_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/50_50/k0/run7_50_50_10runs.png width="150"> |  <img src=./plots_images/50_50/k01/run7_50_50_10runs_entropy.png width="150"> |   
@@ -32,7 +32,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
  
 ### Table 2 : focus 50 Classification 100
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/50_100/k0/run1_50_100_10runs.png width="150"> |  <img src=./plots_images/50_100/k01/run1_50_100_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/50_100/k0/run6_50_100_10runs.png width="150"> |  <img src=./plots_images/50_100/k01/run6_50_100_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/50_100/k0/run2_50_100_10runs.png width="150"> |  <img src=./plots_images/50_100/k01/run2_50_100_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/50_100/k0/run7_50_100_10runs.png width="150"> |  <img src=./plots_images/50_100/k01/run7_50_100_10runs_entropy.png width="150"> |  
@@ -43,7 +43,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
  
 ### Table 3 : focus 50 Classification 200
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/50_200/k0/run1_50_200_10runs.png width="150"> |  <img src=./plots_images/50_200/k01/run1_50_200_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/50_200/k0/run6_50_200_10runs.png width="150"> |  <img src=./plots_images/50_200/k01/run6_50_200_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/50_200/k0/run2_50_200_10runs.png width="150"> |  <img src=./plots_images/50_200/k01/run2_50_200_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/50_200/k0/run7_50_200_10runs.png width="150"> |  <img src=./plots_images/50_200/k01/run7_50_200_10runs_entropy.png width="150"> |  
@@ -54,7 +54,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
 
 ### Table 4 : focus 50 Classification 300
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/50_300/k0/run1_50_300_10runs.png width="150"> |  <img src=./plots_images/50_300/k01/run1_50_300_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/50_300/k0/run6_50_300_10runs.png width="150"> |  <img src=./plots_images/50_300/k01/run6_50_300_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/50_300/k0/run2_50_300_10runs.png width="150"> |  <img src=./plots_images/50_300/k01/run2_50_300_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/50_300/k0/run7_50_300_10runs.png width="150"> |  <img src=./plots_images/50_300/k01/run7_50_300_10runs_entropy.png width="150"> |  
@@ -64,7 +64,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
 
 ### Table 5 : focus 100 Classification 50
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/100_50/k0/run1_100_50_10runs.png width="150"> |  <img src=./plots_images/100_50/k01/run1_100_50_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/100_50/k0/run6_100_50_10runs.png width="150"> |  <img src=./plots_images/100_50/k01/run6_100_50_10runs_entropy.png width="150"> |   
 | Run 2  | <img src=./plots_images/100_50/k0/run2_100_50_10runs.png width="150"> |  <img src=./plots_images/100_50/k01/run2_100_50_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/100_50/k0/run7_100_50_10runs.png width="150"> |  <img src=./plots_images/100_50/k01/run7_100_50_10runs_entropy.png width="150"> |   
@@ -75,7 +75,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
  
 ### Table 6 : focus 100 Classification 100
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/100_100/k0/run1_100_100_10runs.png width="150"> |  <img src=./plots_images/100_100/k01/run1_100_100_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/100_100/k0/run6_100_100_10runs.png width="150"> |  <img src=./plots_images/100_100/k01/run6_100_100_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/100_100/k0/run2_100_100_10runs.png width="150"> |  <img src=./plots_images/100_100/k01/run2_100_100_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/100_100/k0/run7_100_100_10runs.png width="150"> |  <img src=./plots_images/100_100/k01/run7_100_100_10runs_entropy.png width="150"> |  
@@ -86,7 +86,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
  
 ### Table 7 : focus 100 Classification 200
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/100_200/k0/run1_100_200_10runs.png width="150"> |  <img src=./plots_images/100_200/k01/run1_100_200_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/100_200/k0/run6_100_200_10runs.png width="150"> |  <img src=./plots_images/100_200/k01/run6_100_200_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/100_200/k0/run2_100_200_10runs.png width="150"> |  <img src=./plots_images/100_200/k01/run2_100_200_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/100_200/k0/run7_100_200_10runs.png width="150"> |  <img src=./plots_images/100_200/k01/run7_100_200_10runs_entropy.png width="150"> |  
@@ -97,7 +97,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
 
 ### Table 8 : focus 100 Classification 300
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/100_300/k0/run1_100_300_10runs.png width="150"> |  <img src=./plots_images/100_300/k01/run1_100_300_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/100_300/k0/run6_100_300_10runs.png width="150"> |  <img src=./plots_images/100_300/k01/run6_100_300_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/100_300/k0/run2_100_300_10runs.png width="150"> |  <img src=./plots_images/100_300/k01/run2_100_300_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/100_300/k0/run7_100_300_10runs.png width="150"> |  <img src=./plots_images/100_300/k01/run7_100_300_10runs_entropy.png width="150"> |  
@@ -108,7 +108,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
 
 ### Table 9 : focus 200 Classification 50
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/200_50/k0/run1_200_50_10runs.png width="150"> |  <img src=./plots_images/200_50/k01/run1_200_50_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/200_50/k0/run6_200_50_10runs.png width="150"> |  <img src=./plots_images/200_50/k01/run6_200_50_10runs_entropy.png width="150"> |   
 | Run 2  | <img src=./plots_images/200_50/k0/run2_200_50_10runs.png width="150"> |  <img src=./plots_images/200_50/k01/run2_200_50_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/200_50/k0/run7_200_50_10runs.png width="150"> |  <img src=./plots_images/200_50/k01/run7_200_50_10runs_entropy.png width="150"> |   
@@ -119,7 +119,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
  
 ### Table 10 : focus 200 Classification 100
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/200_100/k0/run1_200_100_10runs.png width="150"> |  <img src=./plots_images/200_100/k01/run1_200_100_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/200_100/k0/run6_200_100_10runs.png width="150"> |  <img src=./plots_images/200_100/k01/run6_200_100_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/200_100/k0/run2_200_100_10runs.png width="150"> |  <img src=./plots_images/200_100/k01/run2_200_100_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/200_100/k0/run7_200_100_10runs.png width="150"> |  <img src=./plots_images/200_100/k01/run7_200_100_10runs_entropy.png width="150"> |  
@@ -130,7 +130,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
  
 ### Table 11 : focus 200 Classification 200
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/200_200/k0/run1_200_200_10runs.png width="150"> |  <img src=./plots_images/200_200/k01/run1_200_200_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/200_200/k0/run6_200_200_10runs.png width="150"> |  <img src=./plots_images/200_200/k01/run6_200_200_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/200_200/k0/run2_200_200_10runs.png width="150"> |  <img src=./plots_images/200_200/k01/run2_200_200_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/200_200/k0/run7_200_200_10runs.png width="150"> |  <img src=./plots_images/200_200/k01/run7_200_200_10runs_entropy.png width="150"> |  
@@ -141,7 +141,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
 
 ### Table 12 : focus 200 Classification 300
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/200_300/k0/run1_200_300_10runs.png width="150"> |  <img src=./plots_images/200_300/k01/run1_200_300_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/200_300/k0/run6_200_300_10runs.png width="150"> |  <img src=./plots_images/200_300/k01/run6_200_300_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/200_300/k0/run2_200_300_10runs.png width="150"> |  <img src=./plots_images/200_300/k01/run2_200_300_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/200_300/k0/run7_200_300_10runs.png width="150"> |  <img src=./plots_images/200_300/k01/run7_200_300_10runs_entropy.png width="150"> |  
@@ -152,7 +152,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
 
 ### Table 13 : focus 300 Classification 50
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/300_50/k0/run1_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run1_300_50_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/300_50/k0/run6_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run6_300_50_10runs_entropy.png width="150"> |   
 | Run 2  | <img src=./plots_images/300_50/k0/run2_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run2_300_50_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/300_50/k0/run7_300_50_10runs.png width="150"> |  <img src=./plots_images/300_50/k01/run7_300_50_10runs_entropy.png width="150"> |   
@@ -163,7 +163,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
  
 ### Table 14 : focus 300 Classification 100
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/300_100/k0/run1_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run1_300_100_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/300_100/k0/run6_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run6_300_100_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/300_100/k0/run2_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run2_300_100_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/300_100/k0/run7_300_100_10runs.png width="150"> |  <img src=./plots_images/300_100/k01/run7_300_100_10runs_entropy.png width="150"> |  
@@ -174,7 +174,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
  
 ### Table 15 : focus 300 Classification 200
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/300_200/k0/run1_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run1_300_200_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/300_200/k0/run6_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run6_300_200_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/300_200/k0/run2_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run2_300_200_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/300_200/k0/run7_300_200_10runs.png width="150"> |  <img src=./plots_images/300_200/k01/run7_300_200_10runs_entropy.png width="150"> |  
@@ -185,7 +185,7 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
 
 ### Table 16 : focus 300 Classification 300
 
-| #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy | #Runs | loss = CE loss  |  loss = 0.9*CE + 0.1*entropy |
+| #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy | #Runs | loss = CE loss  |  loss = 0.995\*CE Loss + 0.005\*Entropy |
 | -       | -  | - | -       | -  | - |
 | Run 1  | <img src=./plots_images/300_300/k0/run1_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run1_300_300_10runs_entropy.png width="150"> | Run 6  | <img src=./plots_images/300_300/k0/run6_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run6_300_300_10runs_entropy.png width="150"> |  
 | Run 2  | <img src=./plots_images/300_300/k0/run2_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run2_300_300_10runs_entropy.png width="150"> | Run 7  | <img src=./plots_images/300_300/k0/run7_300_300_10runs.png width="150"> |  <img src=./plots_images/300_300/k01/run7_300_300_10runs_entropy.png width="150"> |  
