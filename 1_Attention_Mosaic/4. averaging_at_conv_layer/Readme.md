@@ -16,7 +16,8 @@ Table 1: CIFAR data with Loss = CE
 | Averaging type | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
 |-----------------| --------|------------|----------|----------------|
 | Zeroth Layer | 99 | 80 / 19 | 95 | 78 / 17 | 
-| Last Layer | 98 | 88 / 10 | 94 | 84 / 10 |
+| third layer  | 99 |  88/10 |  95 | 84 /10 |
+| sixth Layer | 98 | 88 / 10 | 94 | 84 / 10 |
 
 Table 2: CIFAR data with Zeroth Layer Averaging and Loss = (1-k)\*CE + k\*Entropy
 | K value | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
