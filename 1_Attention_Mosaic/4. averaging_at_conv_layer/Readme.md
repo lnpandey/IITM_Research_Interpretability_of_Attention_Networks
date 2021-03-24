@@ -10,3 +10,10 @@ training directory contains script to train the models.
 | training loss | <img src= ./layer_zero/plots/training_loss_at_zero.png width="400">  | <img src= ./layer_one/plots/training_loss_at_one.png width="400">  | <img src= ./layer_two/plots/training_loss_at_two.png width="400">  | <img src= ./layer_three/plots/training_loss_at_three.png width="400">  |
 | training accuracy | 96.68   |  99.55  | 99.41 | 99.83 |
 | test accuracy     | 85.98   |  81.22  | 88.25 | 90.01 |
+
+
+Table 1: CIFAR data Without Entropy
+| Averaging type | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
+|-----------------| --------|------------|----------|----------------|
+| Zeroth Layer | 99 | 88 / 19 | 95 | 78 / 17 | 
+| Last Layer | 98 | 88 / 10 | 94 | 84 / 10 |
