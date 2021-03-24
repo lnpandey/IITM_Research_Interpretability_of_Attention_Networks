@@ -15,5 +15,18 @@ training directory contains script to train the models.
 Table 1: CIFAR data Without Entropy
 | Averaging type | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
 |-----------------| --------|------------|----------|----------------|
-| Zeroth Layer | 99 | 88 / 19 | 95 | 78 / 17 | 
+| Zeroth Layer | 99 | 80 / 19 | 95 | 78 / 17 | 
 | Last Layer | 98 | 88 / 10 | 94 | 84 / 10 |
+
+Table 2: CIFAR data With Entropy on Zeroth Layer Averaging
+| K value | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
+|-----------------| --------|------------|----------|----------------|
+| 0.005 | 99 | 84 / 15 | 95 | 81 / 14 | 
+| 0.01  | 98| 86 / 12 | 96 | 84 / 12 |
+
+Table 3: CIFAR data With Entropy on Last Layer Averaging
+| K value | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
+|-----------------| --------|------------|----------|----------------|
+| 0.005 | 99 | 88 / 11 | 94 | 84 / 10 | 
+| 0.01  | 99 | 89 / 10 | 95 | 85 / 10 | 
+| 0.05  | 98 | 88 / 10 | 95 | 85 / 10 |
