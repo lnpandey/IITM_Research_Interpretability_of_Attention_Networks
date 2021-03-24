@@ -29,7 +29,9 @@ Table 3: CIFAR data with third Layer Averaging and Loss = (1-k)\*CE + k\*Entropy
 | K value | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
 |-----------------| --------|------------|----------|----------------|
 |  |  |  |  |  | 
-| 0.01  | 99| 89 / 10 | 96 | 86 / 9 |
+| 0.005 | 99 | 90 / 9 | 96 | 86 / 9 |
+| 0.01  | 99 | 89 / 10 | 96 | 86 / 9 |
+
 
 Table 4: CIFAR data with Last Layer Averaging and Loss = (1-k)\*CE + k\*Entropy
 | K value | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
