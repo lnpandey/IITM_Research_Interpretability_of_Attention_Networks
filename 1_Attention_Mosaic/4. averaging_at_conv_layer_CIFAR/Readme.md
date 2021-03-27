@@ -13,11 +13,17 @@ training directory contains script to train the models.
 
 
 Table 1: CIFAR data with Loss = CE
-| Averaging type | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
-|-----------------| --------|------------|----------|----------------|
-| Zeroth Layer | 99 | 80 / 19 | 95 | 78 / 17 | 
-| third layer  | 99 |  88/10 |  95 | 84 /10 |
-| sixth Layer | 98 | 88 / 10 | 94 | 84 / 10 |
+| Averaging type | #runs | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
+|-----------------| -----|---|------------|----------|----------------|
+| Zeroth Layer | run1 (1234) | 99 | 80 / 19 | 95 | 78 / 17 | 
+| Zeroth Layer | run2 (1235) | 99.73 | 83.75 / 15.98 | 95.22 | 79.74 / 15.48 |
+| Zeroth Layer | run3 (1236) |  |  |  |   |
+| third layer  | run1 (1234) | 99 |  88/10 |  95 | 84 /10 |
+| third layer  | run2 (1235) |  |   |   |  |
+| third layer  | run3 (1236) |  |   |   |  |
+| sixth Layer  | run1 (1234) | 98 | 88 / 10 | 94 | 84 / 10 |
+| sixth layer  | run2 (1235) |  |   |   |  |
+| sixth layer  | run3 (1236) |  |   |   |  |
 
 Table 2: CIFAR data with Zeroth Layer Averaging and Loss = (1-k)\*CE + k\*Entropy
 | K value | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
