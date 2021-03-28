@@ -38,7 +38,7 @@ Table 3: CIFAR data with third Layer Averaging and Loss = (1-k)\*CE + k\*Entropy
 |---------|--------| --------|------------|----------|----------------|
 | 0.005 | run1 (1234) | 99 | 90 / 9 | 96 | 86 / 9 |
 | 0.01  | run1 (1234) | 99 | 89 / 10 | 96 | 86 / 9 |
-| 0.01  | run2 (1235) |    |    |     |    |
+| 0.01  | run2 (1235) | 99.73 | 88.62 / 11.11 | 95.6 | 84.9 / 10.7 |
 |       | run3 (1236) |  |  |  |  |
 
 Table 4: CIFAR data with Last Layer Averaging and Loss = (1-k)\*CE + k\*Entropy
