@@ -18,8 +18,8 @@ Table 1: CIFAR data with Loss = CE
 | Zeroth Layer | run1 (1234) | 99 | 80 / 19 | 95 | 78 / 17 | 
 | Zeroth Layer | run2 (1235) | 99.73 | 83.75 / 15.98 | 95.22 | 79.74 / 15.48 |
 | Zeroth Layer | run3 (1236) |  |  |  |   |
-| third layer  | run1 (1234) | 99 |  88/10 |  95 | 84 /10 |
-| third layer  | run2 (1235) |  |   |   |  |
+| third layer  | run1 (1234) | 99 |  88 / 10 |  95 | 84 /10 |
+| third layer  | run2 (1235) | 99.79 | 87.26 / 12.53 | 95.23 | 83.09 / 12.14 |
 | third layer  | run3 (1236) |  |   |   |  |
 | sixth Layer  | run1 (1234) | 98 | 88 / 10 | 94 | 84 / 10 |
 | sixth layer  | run2 (1235) |  |   |   |  |
