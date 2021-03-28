@@ -22,7 +22,7 @@ Table 1: CIFAR data with Loss = CE
 | third layer  | run2 (1235) | 99.79 | 87.26 / 12.53 | 95.23 | 83.09 / 12.14 |
 | third layer  | run3 (1236) |  |   |   |  |
 | sixth Layer  | run1 (1234) | 98 | 88 / 10 | 94 | 84 / 10 |
-| sixth layer  | run2 (1235) |  |   |   |  |
+| sixth layer  | run2 (1235) | 99.803 | 88.633 / 11.17  | 95.43  | 84.65 / 10.78 |
 | sixth layer  | run3 (1236) |  |   |   |  |
 
 Table 2: CIFAR data with Zeroth Layer Averaging and Loss = (1-k)\*CE + k\*Entropy
