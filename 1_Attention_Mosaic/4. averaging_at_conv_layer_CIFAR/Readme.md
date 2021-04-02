@@ -17,18 +17,18 @@ Table 1.1: CIFAR data with  with Zeroth Layer and Loss = CE
 |-----------------| -----|---|------------|----------|----------------|
 | Zeroth Layer | run1 (1234) | 99 | 80 / 19 | 95 | 78 / 17 | 
 | Zeroth Layer | run2 (1235) | 99.73 | 83.75 / 15.98 | 95.22 | 79.74 / 15.48 |
-| Zeroth Layer | run3 (1236) |  |  |  |   |
-| Zeroth Layer | run4 (1237) |  |  |  |   |
-| Zeroth Layer | run5 (1238) |  |  |  |   |
+| Zeroth Layer | run3 (1236) | 99.82 | 79.91 / 19.93 | 95.98  | 77.90 /18.08   |
+| Zeroth Layer | run4 (1237) | 99.44  | 84.40 / 15.06  | 95.45  | 81 / 14.45   |
+| Zeroth Layer | run5 (1238) | 99.64 | 78.25 / 21.39 | 95.87 | 76.30 / 19.57   |
 
 Table 1.2: CIFAR data with  with Third Layer and Loss = CE
 | Averaging type | #runs | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
 |-----------------| -----|---|------------|----------|----------------|
 | third layer  | run1 (1234) | 99 |  88 / 10 |  95 | 84 /10 |
 | third layer  | run2 (1235) | 99.79 | 87.26 / 12.53 | 95.23 | 83.09 / 12.14 |
-| third layer  | run3 (1236) |  |   |   |  |
-| third Layer | run4 (1237) |  |  |  |   |
-| third Layer | run5 (1238) |  |  |  |   |
+| third layer  | run3 (1236) | 99.84  | 88.59 / 11.24  | 95.57  | 84.84 / 10.73  |
+| third Layer | run4 (1237) | 99.81 | 88.93 / 10.87 | 96.15 | 86.55 / 9.60   |
+| third Layer | run5 (1238) | 99.71  | 88 / 11.71 | 95.24 | 83.63 / 11.61  |
 
 Table 1.3: CIFAR data with  with Sixth Layer and Loss = CE
 | Averaging type | #runs | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
