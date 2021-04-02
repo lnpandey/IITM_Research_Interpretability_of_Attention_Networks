@@ -55,9 +55,9 @@ Table 3: CIFAR data with third Layer Averaging and Loss = (1-k)\*CE + k\*Entropy
 | 0.005 | run1 (1234) | 99 | 90 / 9 | 96 | 86 / 9 |
 | 0.01  | run1 (1234) | 99 | 89 / 10 | 96 | 86 / 9 |
 | 0.01  | run2 (1235) | 99.73 | 88.62 / 11.11 | 95.6 | 84.9 / 10.7 |
-|  0.01     | run3 (1236) |  |  |  |  |
-|   0.01    | run4 (1237) |  |  |  |  |
-|   0.01    | run5 (1238) |  |  |  |  |
+|  0.01     | run3 (1236) | 99.81 | 89.36 / 10.44 | 95.72 | 85.68 / 10.04 |
+|   0.01    | run4 (1237) | 99.76  | 90.19 / 9.56 | 95.80  | 86.24 / 9.56 |
+|   0.01    | run5 (1238) | 99.83  | 90.83/ 9  | 96.43  | 86.94 / 9.49  |
 
 Table 4: CIFAR data with Last Layer Averaging and Loss = (1-k)\*CE + k\*Entropy
 | K value | #runs | Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
