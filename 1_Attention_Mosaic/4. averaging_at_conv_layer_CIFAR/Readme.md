@@ -35,9 +35,9 @@ Table 1.3: CIFAR data with  with Sixth Layer and Loss = CE
 |-----------------| -----|---|------------|----------|----------------|
 | sixth Layer  | run1 (1234) | 98 | 88 / 10 | 94 | 84 / 10 |
 | sixth layer  | run2 (1235) | 99.803 | 88.633 / 11.17  | 95.43  | 84.65 / 10.78 |
-| sixth layer  | run3 (1236) |  |   |   |  |
-| sixth Layer | run4 (1237) |  |  |  |   |
-| sixth Layer | run5 (1238) |  |  |  |   |
+| sixth layer  | run3 (1236) | 99.76  | 89.61 / 10.14   |  95.83 | 86.04 / 9.79  |
+| sixth Layer | run4 (1237) | 99.67 | 85.7 / 13.97 | 95.53 | 82.48 / 13.05  |
+| sixth Layer | run5 (1238) | 99.39 | 85.24 / 14.15 | 94.24 | 80.80 / 13.44  |
 
 Table 2: CIFAR data with Zeroth Layer Averaging and Loss = (1-k)\*CE + k\*Entropy
 | K value | #runs |Train Acc | Train FTPT/ FFPT | Test Acc | Test FTPT/ FFPT |
