@@ -1,0 +1,1 @@
+#### Alternate minimization with Adam Optimizer and LR- Scheduling
