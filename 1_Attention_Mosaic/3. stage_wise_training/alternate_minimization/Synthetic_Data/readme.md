@@ -1,5 +1,8 @@
 #### Alternate minimization
 
+Data distribution : Foreground Classes are in Convex Hull of Background Classes. Any 2 Foreground Classes are linearly separable.
+<img src= type4_data.JPG width="450"> 
+
 ##### training loss curve every 'm' epoch we alternate between what net and where net
  | every 'm' epoch   |   1 (classify-focus)  | 1 (focus-classify)  |  20 (classify-focus) | 20 (focus-classify) |
  | ---   |   ------- | --- |---|----|
