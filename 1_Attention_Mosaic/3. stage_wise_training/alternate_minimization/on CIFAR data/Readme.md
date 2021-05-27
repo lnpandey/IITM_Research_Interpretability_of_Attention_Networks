@@ -1,5 +1,16 @@
 #### Alternate minimization
 
+Performance Analysis
+| every 'm' epoch | 1(classify-focus)  | 1(focus-classify ) | 20 (classify-focus) | 20(focus-classify) | Simultaneous  | 
+|  ----           |  ---------         | --------           |  ------------       |  -----------       | -------       |
+| training        |                    |                    |    93.1             |                    |           | 
+| test            |                    |                    |     75.1            |                    |           |
+
+
+#### Performance on CIFAR Data Foreground Classes After First 20 epochs of 20(classify-focus)
+Training Accuracy - 57.31% 
+
+
 ##### training loss curve every 'm' epoch we alternate between what net and where net
  | every 'm' epoch   |   1 (classify-focus)  | 1 (focus-classify)  |  20 (classify-focus) | 20 (focus-classify) |
  | ---   |   ------- | --- |---|----|
