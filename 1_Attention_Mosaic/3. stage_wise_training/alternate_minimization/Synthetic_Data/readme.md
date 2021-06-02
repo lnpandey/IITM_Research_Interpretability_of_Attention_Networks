@@ -3,6 +3,12 @@
 Data distribution : Foreground Classes are in Convex Hull of Background Classes. Any 2 Foreground Classes are linearly separable.
 <img src= type4_data.JPG width="450"> 
 
+Performance Analysis
+| every 'm' epoch | 1(classify-focus)  | 1(focus-classify ) | 20 (classify-focus) | 20(focus-classify) | Simultaneous  | 
+|  ----           |  ---------         | --------           |  ------------       |  -----------       | -------       |
+| training        |  99.6                |   99.2             |   99.2            |  98.7               |     99.5(245 epchs)       | 
+| test            |  99.1              |   98.7             |    98.9            |  98.6               |    98.9     |
+
 ##### training loss curve every 'm' epoch we alternate between what net and where net
  | every 'm' epoch   |   1 (classify-focus)  | 1 (focus-classify)  |  20 (classify-focus) | 20 (focus-classify) |
  | ---   |   ------- | --- |---|----|
@@ -13,6 +19,13 @@ Data distribution : Foreground Classes are in Convex Hull of Background Classes.
  
  
  Data distribution: Elliptical blobs 
+ 
+ 
+ Performance Analysis
+| every 'm' epoch | 1(classify-focus)  | 1(focus-classify ) | 20 (classify-focus) | 20(focus-classify) | Simultaneous  | 
+|  ----           |  ---------         | --------           |  ------------       |  -----------       | -------       |
+| training        |  99.9                |   100            |    100            |  99.9               | 100 (45 epchs)     | 
+| test            |  99.9             |   100           |    100            |  100               |     99.9   |
  
  ##### training loss curve every 'm' epoch we alternate between what net and where net
  | every 'm' epoch   |   1 (classify-focus)  | 1 (focus-classify)  |  20 (classify-focus) | 20 (focus-classify) |
