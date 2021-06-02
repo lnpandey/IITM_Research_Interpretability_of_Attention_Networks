@@ -12,11 +12,12 @@ Training Accuracy - 57.31%
 
 
 ##### training loss curve every 'm' epoch we alternate between what net and where net
- | every 'm' epoch   |   1 (classify-focus)  | 1 (focus-classify)  |  20 (classify-focus) | 20 (focus-classify) |
+ | every 'm' epoch   |  train_loss_plot |  train_FTPT_Curve | test_FTPT_Curve | 3 class classification on cifar |
  | ---   |   ------- | --- |---|----|
- | train_loss_plot  |  <img src= ./plots/train_loss_every_1_plot.png width="400">   | <img src= ./where_what_1/train_loss_every_1_plot.png width="400"> |  <img src= ./plots/train_loss_every_20_plot.png width="400"> | <img src= ./where_what_20/train_loss_every_20_plot.png width="400"> |
- |  train_FTPT_Curve  |  <img src= ./plots/train_analysis_every_1.png width="400">  | <img src= ./where_what_1/train_analysis_every_1.png width="400">  | <img src= ./plots/train_analysis_every_20.png width="400">  | <img src= ./where_what_20/train_analysis_every_20.png width="400">  |
- |  test_FTPT_Curve   | <img src= ./plots/test_analysis_every_1.png width="400">    | <img src= ./where_what_1/test_analysis_every_1.png width="400">   |<img src= ./plots/test_analysis_every_20.png width="400">   | <img src= ./where_what_20/test_analysis_every_20.png width="400">   |
-
-
+ | 1 (classify-focus)  | <img src= ./what_where_1/train_loss_every_1_plot.png width="400"> | <img src= ./what_where_1/train_analysis_every_1.png width="400"> | <img src= ./what_where_1/test_analysis_every_1.png width="400"> | <img src= ./what_where_1/cifar_classify_acc_every_1_plot.png width="400"> | 
+ | 1 (focus-classify)  | <img src= ./where_what_1/train_loss_every_1_plot.png width="400"> | <img src= ./where_what_1/train_analysis_every_1.png width="400"> | <img src= ./where_what_1/test_analysis_every_1.png width="400"> | <img src= ./where_what_1/cifar_classify_acc_every_1_plot.png width="400"> |  
+ | 20 (classify-focus) | <img src= ./what_where_20/train_loss_every_20_plot.png width="400"> | <img src= ./what_where_20/train_analysis_every_20.png width="400"> | <img src= ./what_where_20/test_analysis_every_20.png width="400"> | <img src= ./what_where_20/cifar_classify_acc_every_20_plot.png width="400"> | 
+ | 20 (focus-classify) | <img src= ./where_what_20/train_loss_every_20_plot.png width="400"> | <img src= ./where_what_20/train_analysis_every_20.png width="400"> | <img src= ./where_what_20/test_analysis_every_20.png width="400"> | <img src= ./where_what_20/cifar_classify_acc_every_20_plot.png width="400"> |  
+ | Simultaneous train  | <img src= ./where_what_simultaneous/train_loss_sim_plot.png width="400"> | <img src= ./where_what_simultaneous/train_analysis_sim.png width="400"> | <img src= ./where_what_simultaneous/test_analysis_sim.png width="400"> | <img src= ./where_what_simultaneous/cifar_classify_acc_sim_plot.png width="400"> |  
+ 
 
