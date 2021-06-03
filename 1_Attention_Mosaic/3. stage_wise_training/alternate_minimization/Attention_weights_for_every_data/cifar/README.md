@@ -26,7 +26,7 @@ As we are changing the LR for attention wts attention weights do improve (as arg
 | Train | 21279	 | 8721 |	73.690000 |	24.933333 |	0.300000 |	1.076667 | 
 | Test | 6748	 |  3252 |	66.16 |	17.39 |	4.10 |	12.35 |
 
-#### Table C:
+#### Table C: Fixed what net learning only attention weights for each data point
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   |
 | 0.01         | 650 | 	29350 |	2224 |	10747 |	1689 |	15340|
