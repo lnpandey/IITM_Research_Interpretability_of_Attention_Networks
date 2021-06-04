@@ -4,17 +4,17 @@ DATA: Synthetic elliptical blobs data
 
 ### Table 1: Average performance of alternate minimisation with 'every_what_epoch' over 10 runs
 
-|experiment | FTPT | FFPT | FTPF | FFPF | Avg Accuracy |
+|experiment | avg FTPT | avg FFPT | avg FTPF | avg FFPF | avg Accuracy |
 |----------------|----|-----|-----|-----|--------------|
-| simultaneous |  |  |  |  | |
-| every 1 (focus-classify) | | | | | | 
-| every 1 (classify-focus) | | | | | |
-| every 5 (focus-classify) | | | | | |
-| every 5 (classify-focus) | | | | | |
-| every 10 (focus-classify)| | | | | |
-| every 10 (classify-focus)| | | | | |
-| every 20 (focus-classify)| | | | | |
-| every 20 (classify-focus)| | | | | |
+| simultaneous             | 74.71 | 25.26 | 0.023 | 0     | 99.97 | 
+| every 1 (focus-classify) | 91.42 | 8.55  | 0.016 | 0     | 99.97 | 
+| every 1 (classify-focus) | 90.74 | 9.25  | 0     | 0     | 99.99 |   
+| every 5 (focus-classify) | 82.92 | 17.07 | 0.003 | 0.003 | 99.99 | 
+| every 5 (classify-focus) | 89.85 | 5.49  | 0     | 4.65  | 95.34 | 
+| every 10 (focus-classify)| 74.55 | 25.41 | 0.02  | 0.006 | 99.96 | 
+| every 10 (classify-focus)| 76.01 | 14.73 | 0.003 | 9.25  | 90.74 | 
+| every 20 (focus-classify)| 74.83 | 25.12 | 0.043 | 0     | 99.95 |
+| every 20 (classify-focus)| 82.10 | 13.27 | 0.013 | 4.61  | 95.37 |  
 
 <!---| 100 | 76.92 / 16.93 | 90.16 / 9.83  | 99.1 / 0.9    | 87.67 / 12.32 |
 | 200 | 86.78 / 7.00  | 86.45 / 7.32  | 97.56 / 2.44  | 99.97 / 0.026 |
