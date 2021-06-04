@@ -7,15 +7,15 @@ Entries are of the form FTPT / FFPT and are average over 10 runs
 
 |experiment | FTPT | FFPT | FTPF | FFPF | Avg Accuracy |
 |----------------|----|-----|-----|-----|
-| simultaneous |  |  |  |  | 
-| every 1 (focus-classify) | | | | |
-| every 1 (classify-focus) | | | | |
-| every 5 (focus-classify) | | | | |
-| every 5 (classify-focus) | | | | |
-| every 10 (focus-classify)| | | | |
-| every 10 (classify-focus)| | | | |
-| every 20 (focus-classify)| | | | |
-| every 20 (classify-focus)| | | | |
+| simultaneous |  |  |  |  | |
+| every 1 (focus-classify) | | | | | | 
+| every 1 (classify-focus) | | | | | |
+| every 5 (focus-classify) | | | | | |
+| every 5 (classify-focus) | | | | | |
+| every 10 (focus-classify)| | | | | |
+| every 10 (classify-focus)| | | | | |
+| every 20 (focus-classify)| | | | | |
+| every 20 (classify-focus)| | | | | |
 
 <!---| 100 | 76.92 / 16.93 | 90.16 / 9.83  | 99.1 / 0.9    | 87.67 / 12.32 |
 | 200 | 86.78 / 7.00  | 86.45 / 7.32  | 97.56 / 2.44  | 99.97 / 0.026 |
