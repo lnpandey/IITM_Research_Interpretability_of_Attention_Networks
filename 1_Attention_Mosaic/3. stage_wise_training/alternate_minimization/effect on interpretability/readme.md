@@ -1,6 +1,6 @@
-### effects of alternate minimisation on interpretability
+# effects of alternate minimisation on interpretability
 
-DATA: Synthetic elliptical blobs data 
+## DATA: Synthetic elliptical blobs data 
 
 ### Table 1: Average performance of alternate minimisation with 'every_what_epoch' over 10 runs
 
