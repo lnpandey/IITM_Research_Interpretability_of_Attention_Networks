@@ -6,7 +6,7 @@ DATA: Synthetic elliptical blobs data
 Entries are of the form FTPT / FFPT and are average over 10 runs
 
 |experiment | FTPT | FFPT | FTPF | FFPF | Avg Accuracy |
-|----------------|----|-----|-----|-----|
+|----------------|----|-----|-----|-----|--------------|
 | simultaneous |  |  |  |  | |
 | every 1 (focus-classify) | | | | | | 
 | every 1 (classify-focus) | | | | | |
