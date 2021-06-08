@@ -90,3 +90,49 @@ LR for learning what net parameters is fixed 0.001
 
 
 
+### Learning attention weights for every data point blob data
+
+
+#### Table C1: Simultaneous Model Performance (in percentage)
+| \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   |
+| Train | -	 | -  |	99.9 |	0.1 |	0 |	0 | 
+
+
+
+
+#### Table A2 : learning attention weights as well as what net(random)
+LR for learning what net parameters is fixed 0.001
+
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   |
+| 0.01 | 518	| 2482 |	157	| 2798 |	13 |	32 |
+| 0.1 | 2275 |	725 |	204 |	2755 |	20 |	21 |
+| 1 | 2999 |	1	 | 389	 | 1799 |	57 |	755 |
+| 10 | 3000 |	0	 | 365	| 1581 |	71 |	983| 
+
+
+
+#### Now we are fixing the what net with final weights of simultaneous trained what net
+
+#### Table A3: Fixed what net learning only attention weights for each data point
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   |
+| 0.01 | 462 |	2538	|630	 |2287 |	11 |	72 |
+| 0.1 | 855 |	2145 |	722 |	2240 |	9	| 29 |
+| 1 | 1714	| 1286 |	702 |	2249 |	0 |	49 |
+| 10  | 2011 |	989	 | 597 |	2250 |	0	 |153 |
+
+#### Table A4: Fixed what net learning both attention weights and what net 
+
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   |
+| 0.01 | 	479	|2521|	409	|2541 |	8	| 42|
+| 0.1 | 988	|2012	|632	|2315	|6	| 47 |
+| 1 | 2696	|304	|877	 |1915	|6	 | 202 |
+| 10 | 2975	|25	|745	|1705	|15	 |535 |
+
+
+
+
+
