@@ -62,10 +62,10 @@ LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | --- |
-| 0.01 | 671 |	2329 |	495 |	2455 |	18 |	32 | <img src= /type4_data/both_random_what/lr_0.01/decision_boundary.png width="450">   |
-| 0.1  |  2250 |	750 |	616 |	2364 |	20	 |0 | <img src= /type4_data/both_random_what/lr_0.1/decision_boundary.png width="450"> |
-| 1 | 2997 |	3	 | 146	| 2668 |	21 |	165 | <img src= /type4_data/both_random_what/lr_1/decision_boundary.png width="450"> |
-| 10 | 3000 |	0	 | 125 |	2546 |	23 |	306 | <img src= /type4_data/both_random_what/lr_10/decision_boundary.png width="450"> |
+| 0.01 | 671 |	2329 |	495 |	2455 |	18 |	32 | <img src= ./type4_data/both_random_what/lr_0_01/decision_boundary.png width="450">   |
+| 0.1  |  2250 |	750 |	616 |	2364 |	20	 |0 | <img src= ./type4_data/both_random_what/lr_0.1/decision_boundary.png width="450"> |
+| 1 | 2997 |	3	 | 146	| 2668 |	21 |	165 | <img src= ./type4_data/both_random_what/lr_1/decision_boundary.png width="450"> |
+| 10 | 3000 |	0	 | 125 |	2546 |	23 |	306 | <img src= ./type4_data/both_random_what/lr_10/decision_boundary.png width="450"> |
 
 
 
