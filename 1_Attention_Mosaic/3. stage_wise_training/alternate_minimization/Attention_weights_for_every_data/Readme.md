@@ -72,8 +72,8 @@ LR for learning what net parameters is fixed 0.001
 #### Now we are fixing the what net with final weights of simultaneous trained what net
 
 #### Table B3: Fixed what net learning only attention weights for each data point
-| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
-|  ----         | -------      |  --------    |  --   |  --  | --   | --   |
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
 | 0.01 | 370 |	2630 |	538 |	2421 |	10 |	31 | <img src= ./type4_data/only_attn_wts_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
 | 0.1 | 	809	| 2191	| 694 |	2283 |	7 |	16 | <img src= ./type4_data/only_attn_wts_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
 | 1 | 1785 |	1215 |	634 |	2237 |	66 |	63 | <img src= ./type4_data/only_attn_wts_pretrained_what/lr_1/decision_boundary.png width="450">   |
@@ -81,8 +81,8 @@ LR for learning what net parameters is fixed 0.001
 
 #### Table B4: Fixed what net learning both attention weights and what net 
 
-| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
-|  ----         | -------      |  --------    |  --   |  --  | --   | --   |
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
 | 0.01 | 	858 |	2142 |	415 |	2562 |	17 |	6 | <img src= ./type4_data/both_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
 | 0.1 | 	892	 | 2108 |	843 |	2117 |	3 |	37 | <img src= ./type4_data/both_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
 | 1 | 2060 |	940 |	785 |	2179 |	9 |	27 | <img src= ./type4_data/both_pretrained_what/lr_1/decision_boundary.png width="450">   |
