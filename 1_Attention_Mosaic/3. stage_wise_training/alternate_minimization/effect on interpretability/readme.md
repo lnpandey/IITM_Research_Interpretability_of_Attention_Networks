@@ -49,7 +49,7 @@
 | every 20 (classify-focus) with k = 0.005 (Sparsity Regulariser) | 93.99 |  6.01 |  0 |  0 | 100 |
 
 
-### Table 2.2: Trend of alternate minimization with 'every_what_epoch'
+### Table 2.2: Trend of alternate minimization with 'every_what_epoch' with k = 0.005 (Sparsity Regulariser)
 
 | #runs | simultaneous | every 1 (focus-classify) | every 1 (classify-focus) | every 20 (focus-classify) | every 20 (classify-focus)|
 |-------|--------------|--------------------------|--------------------------|---------------------------|------------------|
