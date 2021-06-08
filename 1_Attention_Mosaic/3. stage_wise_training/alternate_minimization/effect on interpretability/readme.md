@@ -38,15 +38,15 @@
 
 |experiment | avg FTPT | avg FFPT | avg FTPF | avg FFPF | avg Accuracy |
 |----------------|----|-----|-----|-----|--------------|
-| simultaneous             | 85.63 | 14.36 |  0 | 0 | 99.99 |
-| every 1 (focus-classify) | 94.35 | 5.65  |  0 | 0 |  99.9 |
-| every 1 (classify-focus) | 91.34 | 8.66  |  0 | 0 |  99 |
-| every 5 (focus-classify) | 95.19 | 4.80  |  0 | 0 | 99.99 |
-| every 5 (classify-focus) | 85.18 | 10.19 |  0 | 4.62 | 95.37 |
-| every 10 (focus-classify)| 89.07 | 10.93 |  0 |  0 | 100 |
-| every 10 (classify-focus)| 87.75 |  7.58 | 0  | 4.66 | 95.33 |
-| every 20 (focus-classify)| 81.80 | 18.19 |  0 |  0 | 99.99 |
-| every 20 (classify-focus)| 93.99 |  6.01 |  0 |  0 | 100 |
+| simultaneous with k = 0.005 (Sparsity Regulariser)             | 85.63 | 14.36 |  0 | 0 | 99.99 |
+| every 1 (focus-classify) with k = 0.005 (Sparsity Regulariser) | 94.35 | 5.65  |  0 | 0 |  99.9 |
+| every 1 (classify-focus) with k = 0.005 (Sparsity Regulariser) | 91.34 | 8.66  |  0 | 0 |  99 |
+| every 5 (focus-classify) with k = 0.005 (Sparsity Regulariser) | 95.19 | 4.80  |  0 | 0 | 99.99 |
+| every 5 (classify-focus) with k = 0.005 (Sparsity Regulariser) | 85.18 | 10.19 |  0 | 4.62 | 95.37 |
+| every 10 (focus-classify) with k = 0.005 (Sparsity Regulariser) | 89.07 | 10.93 |  0 |  0 | 100 |
+| every 10 (classify-focus) with k = 0.005 (Sparsity Regulariser) | 87.75 |  7.58 | 0  | 4.66 | 95.33 |
+| every 20 (focus-classify) with k = 0.005 (Sparsity Regulariser) | 81.80 | 18.19 |  0 |  0 | 99.99 |
+| every 20 (classify-focus) with k = 0.005 (Sparsity Regulariser) | 93.99 |  6.01 |  0 |  0 | 100 |
 
 
 ### Table 2.2: Trend of alternate minimization with 'every_what_epoch'
