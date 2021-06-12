@@ -1,0 +1,8 @@
+length of bg 1
+0
+/tools/anaconda3/envs/torch37/lib/python3.7/site-packages/torch/storage.py:34: FutureWarning: pickle support for Storage will be removed in 1.5. Use `torch.save` instead
+  warnings.warn("pickle support for Storage will be removed in 1.5. Use `torch.save` instead", FutureWarning)
+value tensor([0.0000, 0.0000, 0.0000,  ..., 0.0034, 0.0034, 0.0034])
+**40
+indices tensor([ 74846772, 640012206, 434730224,  ..., 280650211, 180429167,
+        507357022])
