@@ -101,7 +101,7 @@ LR for learning what net parameters is fixed 0.001
 
 
 
-#### Table A2 : learning attention weights as well as what net(random)
+#### Table C2 : learning attention weights as well as what net(random)
 LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
@@ -115,7 +115,7 @@ LR for learning what net parameters is fixed 0.001
 
 #### Now we are fixing the what net with final weights of simultaneous trained what net
 
-#### Table A3: Fixed what net learning only attention weights for each data point
+#### Table C3: Fixed what net learning only attention weights for each data point
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   |
 | 0.01 | 15.4 |	84.6	| 21	 | 76.23 |	0.36 |	2.4 |
@@ -123,7 +123,7 @@ LR for learning what net parameters is fixed 0.001
 | 1 | 57.13	| 42.86 |	23.4 |	74.96 |	0 |	1.63 |
 | 10  | 67.03 |	32.96	 | 19.9 |	75 |	0	 |5.1 |
 
-#### Table A4: Fixed what net learning both attention weights and what net 
+#### Table C4: Fixed what net learning both attention weights and what net 
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   |
@@ -133,6 +133,40 @@ LR for learning what net parameters is fixed 0.001
 | 10 | 99.16	| 0.83	| 24.83	| 56.83	| 0.5	 | 17.83 |
 
 
+
+### transformed gradient with Exponential Kernel type4 data 
+
+
+#### Table D1 : learning attention weights as well as what net (random)
+LR for learning what net parameters is fixed 0.001
+
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   | --- |
+| 0.01 | 24.16 |	75.83 |	25.53 |	21.50  |	17.066667 |	35.900000 | <img src= ./type4_data/exp_kernel/both_random_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.1  |  100.0 |	0	|99.86 |	0	| 0.13 |	0 | <img src= ./type4_data/exp_kernel/both_random_what/lr_0.1/decision_boundary.png width="450"> |
+| 1 | 99.26 |	0.73 |	66.83 |	32.40 |	0.067	| 0.70 | <img src= ./type4_data/exp_kernel/both_random_what/lr_1/decision_boundary.png width="450"> |
+| 10 | 99.80 |	0.20  |	30.16 |	30.90| 	0.10	| 38.83 | <img src= ./type4_data/exp_kernel/both_random_what/lr_10/decision_boundary.png width="450"> |
+
+
+
+#### Now we are fixing the what net with final weights of simultaneous trained what net
+
+#### Table D2: Fixed what net learning only attention weights for each data point
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
+| 0.01 | 12.33 |	87.66 |	17.93 |	80.7 |	0.33 |	1.033 | <img src= ./type4_data/exp_kernel/lr_0.01/decision_boundary.png width="450">   |
+| 0.1 | 	26.96	| 2191	| 694 |	76.1 | 0.23|	0.53 | <img src= ./type4_data/exp_kernel/lr_0.1/decision_boundary.png width="450">   |
+| 1 | 59.5 |	40.5 |	21.13 |	74.56 |	2.2 |	2.1 | <img src= ./type4_data/exp_kernel/lr_1/decision_boundary.png width="450">   |
+| 10  | 68.3 |	31.7 |	21.06 |	69.3 |	4.6 |	5.03 | <img src= ./type4_data/exp_kernel/lr_10/decision_boundary.png width="450">   |
+
+#### Table D3: Fixed what net learning both attention weights and what net 
+
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
+| 0.01 | 	 | <img src= ./type4_data/both_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.1 | 	 | <img src= ./type4_data/both_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
+| 1 |  | <img src= ./type4_data/both_pretrained_what/lr_1/decision_boundary.png width="450">   |
+| 10 |  | <img src= ./type4_data/both_pretrained_what/lr_10/decision_boundary.png width="450">   |
 
 
 
