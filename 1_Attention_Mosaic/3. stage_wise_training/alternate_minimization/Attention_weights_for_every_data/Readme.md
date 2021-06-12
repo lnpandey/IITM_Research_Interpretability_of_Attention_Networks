@@ -185,3 +185,14 @@ LR for learning what net parameters is fixed 0.001
 
 
 
+#### Table E3: Fixed what net learning both attention weights and what net 
+
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
+| 0.01 | 71.20 | 28.80 | 	74.70 |	9.40 |	9.76 |	6.13  | <img src= ./type4_data/distance_kernel/both_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.1 | 93.96 |	6.03 |	93.63 |	4.53 |	1.40	 | 0.43	 | <img src= ./type4_data/distance_kernel/both_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
+| 1 | 99.43 |	0.56 |	96.23 |	2.96 |	0.60 |	0.20 | <img src= ./type4_data/distance_kernel/both_pretrained_what/lr_1/decision_boundary.png width="450">   |
+| 10 | 99.90 |	0.10 |	87.83 |	11.33 |	0.20 |	0.63 | <img src= ./type4_data/distance_kernel/both_pretrained_what/lr_10/decision_boundary.png width="450">   |
+
+
+
