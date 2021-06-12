@@ -170,3 +170,18 @@ LR for learning what net parameters is fixed 0.001
 
 
 
+### transformed gradient with distance Kernel type4 data 
+
+
+#### Table E1 : learning attention weights as well as what net (random)
+LR for learning what net parameters is fixed 0.001
+
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   | --- |
+| 0.01 | 99.50 |	0.50 |	98.46 |	0.20 |	1.30 |	0.033333 | <img src= ./type4_data/distance_kernel/both_random_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.1  |99.63 |	0.36 |	66.93 |	29.20 |	0.30 |	3.56  | <img src= ./type4_data/distance_kernel/both_random_what/lr_0.1/decision_boundary.png width="450"> |
+| 1 | 100 |	0 |	66.90 |	27.13 |	0.26 |	5.70 | <img src= ./type4_data/distance_kernel/both_random_what/lr_1/decision_boundary.png width="450"> |
+| 10 | 100 |	0 |	66.10 |	29.63 |	0.20 |	4.066667  | <img src= ./type4_data/distance_kernel/both_random_what/lr_10/decision_boundary.png width="450"> |
+
+
+
