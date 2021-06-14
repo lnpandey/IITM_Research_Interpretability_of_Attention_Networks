@@ -71,15 +71,15 @@
 
 |experiment | avg FTPT | avg FFPT | avg FTPF | avg FFPF | avg Accuracy |
 |----------------|----|-----|-----|-----|--------------|
-| simultaneous             | 74.71 | 25.26 | 0.023 | 0     | 99.97 | 
-| every 1 (focus-classify) | 91.42 | 8.55  | 0.016 | 0     | 99.97 | 
-| every 1 (classify-focus) | 90.74 | 9.25  | 0     | 0     | 99.99 |   
-| every 5 (focus-classify) | 82.92 | 17.07 | 0.003 | 0.003 | 99.99 | 
-| every 5 (classify-focus) | 89.85 | 5.49  | 0     | 4.65  | 95.34 | 
-| every 10 (focus-classify)| 74.55 | 25.41 | 0.02  | 0.006 | 99.96 | 
-| every 10 (classify-focus)| 76.01 | 14.73 | 0.003 | 9.25  | 90.74 | 
-| every 20 (focus-classify)| 74.83 | 25.12 | 0.043 | 0     | 99.95 |
-| every 20 (classify-focus)| 82.10 | 13.27 | 0.013 | 4.61  | 95.37 |  
+| simultaneous             | 84.35 | 15.59 | 0.003 | 0.02  | 99.95 |  
+| every 1 (focus-classify) | 84.47 | 15.46 | 0.003 | 0.03  | 99.93 |  
+| every 1 (classify-focus) | 83.39 | 16.54 | 0.026 | 0.036 | 99.95 |  
+| every 5 (focus-classify) | 71.17 | 28.72 | 0.046 | 0.056 | 99.89 | 
+| every 5 (classify-focus) | 84.80 | 15.16 | 0.016 | 0.02  | 99.96 |  
+| every 10 (focus-classify)| 72.13 | 22.83 | 0.24  | 4.79  | 94.96 |  
+| every 10 (classify-focus)| 86.13 | 13.85 | 0.016 | 0     | 99.98 | 
+| every 20 (focus-classify)| 52.49 | 32.84 | 0.73  | 13.93 | 85.33 | 
+| every 20 (classify-focus)| 83.88 | 16.08 | 0.03  | 0.003 | 99.96 |  
 
 
 ### Table 1.2: Trend of alternate minimization with 'every_what_epoch'
