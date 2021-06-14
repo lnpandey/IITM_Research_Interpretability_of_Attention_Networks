@@ -2,8 +2,8 @@
 
 ## DATA 1 : Synthetic elliptical blobs data 
 
-## Method 1: alternate minimization Without Sparsity Regulariser
-### Table 1.1: Average performance of alternate minimization with 'every_what_epoch' over 10 runs
+## Method 1.1: alternate minimization Without Sparsity Regulariser
+### Table 1.1.1: Average performance of alternate minimization with 'every_what_epoch' over 10 runs
 
 |experiment | avg FTPT | avg FFPT | avg FTPF | avg FFPF | avg Accuracy |
 |----------------|----|-----|-----|-----|--------------|
@@ -18,7 +18,7 @@
 | every 20 (classify-focus)| 82.10 | 13.27 | 0.013 | 4.61  | 95.37 |  
 
 
-### Table 1.2: Trend of alternate minimization with 'every_what_epoch'
+### Table 1.1.2: Trend of alternate minimization with 'every_what_epoch'
 
 | #runs | simultaneous | every 1 (focus-classify) | every 1 (classify-focus) | every 20 (focus-classify) | every 20 (classify-focus)|
 |-------|--------------|--------------------------|--------------------------|---------------------------|------------------|
@@ -33,8 +33,8 @@
 | run9 | <img src=./plots/without_entropy/simultaneous/run9.png width="150">  | <img src=./plots/without_entropy/where_what/every1/run9.png width="150">  |<img src=./plots/without_entropy/what_where/every1/run9.png width="150">  |<img src=./plots/without_entropy/where_what/every20/run9.png width="150">  |<img src=./plots/without_entropy/what_where/every20/run9.png width="150">  |
 | run10| <img src=./plots/without_entropy/simultaneous/run10.png width="150"> | <img src=./plots/without_entropy/where_what/every1/run10.png width="150"> |<img src=./plots/without_entropy/what_where/every1/run10.png width="150"> |<img src=./plots/without_entropy/where_what/every20/run10.png width="150"> |<img src=./plots/without_entropy/what_where/every20/run10.png width="150"> |
 
-## Method 2: alternate minimization with Sparsity Regulariser
-### Table 2.1: Average performance of alternate minimization with 'every_what_epoch' over 10 runs with k = 0.005 (Sparsity Regulariser)
+## Method 1.2: alternate minimization with Sparsity Regulariser
+### Table 1.2.1: Average performance of alternate minimization with 'every_what_epoch' over 10 runs with k = 0.005 (Sparsity Regulariser)
 
 |experiment | avg FTPT | avg FFPT | avg FTPF | avg FFPF | avg Accuracy |
 |----------------|----|-----|-----|-----|--------------|
@@ -49,7 +49,7 @@
 | every 20 (classify-focus) with k = 0.005 (Sparsity Regulariser) | 93.99 |  6.01 |  0 |  0 | 100 |
 
 
-### Table 2.2: Trend of alternate minimization with 'every_what_epoch' with k = 0.005 (Sparsity Regulariser)
+### Table 1.2.2: Trend of alternate minimization with 'every_what_epoch' with k = 0.005 (Sparsity Regulariser)
 
 | #runs | simultaneous | every 1 (focus-classify) | every 1 (classify-focus) | every 20 (focus-classify) | every 20 (classify-focus)|
 |-------|--------------|--------------------------|--------------------------|---------------------------|------------------|
@@ -64,10 +64,10 @@
 | run9 | <img src=./plots/with_entropy/simultaneous/run9.png width="150">  | <img src=./plots/with_entropy/where_what/every1/run9.png width="150">  |<img src=./plots/with_entropy/what_where/every1/run9.png width="150">  |<img src=./plots/with_entropy/where_what/every20/run9.png width="150">  |<img src=./plots/with_entropy/what_where/every20/run9.png width="150">  |
 | run10| <img src=./plots/with_entropy/simultaneous/run10.png width="150"> | <img src=./plots/with_entropy/where_what/every1/run10.png width="150"> |<img src=./plots/with_entropy/what_where/every1/run10.png width="150"> |<img src=./plots/with_entropy/where_what/every20/run10.png width="150"> |<img src=./plots/with_entropy/what_where/every20/run10.png width="150"> |
 
-## DATA 1 : Type4 data: FG classes in convex hull of BG classes 
+## DATA 2 : Type4 data: FG classes in convex hull of BG classes 
 
-## Method 1: alternate minimization Without Sparsity Regulariser
-### Table 1.1: Average performance of alternate minimization with 'every_what_epoch' over 10 runs
+## Method 2.1: alternate minimization Without Sparsity Regulariser
+### Table 2.1.1: Average performance of alternate minimization with 'every_what_epoch' over 10 runs
 
 |experiment | avg FTPT | avg FFPT | avg FTPF | avg FFPF | avg Accuracy |
 |----------------|----|-----|-----|-----|--------------|
@@ -82,7 +82,7 @@
 | every 20 (classify-focus)| 83.88 | 16.08 | 0.03  | 0.003 | 99.96 |  
 
 
-### Table 1.2: Trend of alternate minimization with 'every_what_epoch'
+### Table 2.1.2: Trend of alternate minimization with 'every_what_epoch'
 
 | #runs | simultaneous | every 1 (focus-classify) | every 1 (classify-focus) | every 20 (focus-classify) | every 20 (classify-focus)|
 |-------|--------------|--------------------------|--------------------------|---------------------------|------------------|
