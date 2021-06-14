@@ -79,8 +79,9 @@
 | every 10 (focus-classify)| 72.13 | 22.83 | 0.24  | 4.79  | 94.96 |  
 | every 10 (classify-focus)| 86.13 | 13.85 | 0.016 | 0     | 99.98 | 
 | every 20 (focus-classify)| 52.49 | 32.84 | 0.73  | 13.93 | 85.33 | 
-| every 20 (classify-focus)| 83.88 | 16.08 | 0.03  | 0.003 | 99.96 |  
-
+| every 20 (classify-focus)| 83.88 | 16.08 | 0.03  | 0.003 | 99.96 |  9.20900000e+01, 7.88666667e+00, 2.00000000e-02, 3.33333333e-03
+| every 100 (focus-classify)| - | - | -  | - | - | 
+| every 100 (classify-focus)| 92.09 | 7.88 | 0.02  | 0.003 | 99.96 |
 
 ### Table 2.1.2: Trend of alternate minimization with 'every_what_epoch'
 
