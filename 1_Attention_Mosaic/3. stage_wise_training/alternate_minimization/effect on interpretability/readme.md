@@ -1,6 +1,6 @@
 # effects of alternate minimization on interpretability
 
-## DATA: Synthetic elliptical blobs data 
+## DATA 1 : Synthetic elliptical blobs data 
 
 ## Method 1: alternate minimization Without Sparsity Regulariser
 ### Table 1.1: Average performance of alternate minimization with 'every_what_epoch' over 10 runs
@@ -63,6 +63,39 @@
 | run8 | <img src=./plots/with_entropy/simultaneous/run8.png width="150">  | <img src=./plots/with_entropy/where_what/every1/run8.png width="150">  |<img src=./plots/with_entropy/what_where/every1/run8.png width="150">  |<img src=./plots/with_entropy/where_what/every20/run8.png width="150">  |<img src=./plots/with_entropy/what_where/every20/run8.png width="150">  |
 | run9 | <img src=./plots/with_entropy/simultaneous/run9.png width="150">  | <img src=./plots/with_entropy/where_what/every1/run9.png width="150">  |<img src=./plots/with_entropy/what_where/every1/run9.png width="150">  |<img src=./plots/with_entropy/where_what/every20/run9.png width="150">  |<img src=./plots/with_entropy/what_where/every20/run9.png width="150">  |
 | run10| <img src=./plots/with_entropy/simultaneous/run10.png width="150"> | <img src=./plots/with_entropy/where_what/every1/run10.png width="150"> |<img src=./plots/with_entropy/what_where/every1/run10.png width="150"> |<img src=./plots/with_entropy/where_what/every20/run10.png width="150"> |<img src=./plots/with_entropy/what_where/every20/run10.png width="150"> |
+
+## DATA 1 : Type4 data: FG classes in convex hull of BG classes 
+
+## Method 1: alternate minimization Without Sparsity Regulariser
+### Table 1.1: Average performance of alternate minimization with 'every_what_epoch' over 10 runs
+
+|experiment | avg FTPT | avg FFPT | avg FTPF | avg FFPF | avg Accuracy |
+|----------------|----|-----|-----|-----|--------------|
+| simultaneous             | 74.71 | 25.26 | 0.023 | 0     | 99.97 | 
+| every 1 (focus-classify) | 91.42 | 8.55  | 0.016 | 0     | 99.97 | 
+| every 1 (classify-focus) | 90.74 | 9.25  | 0     | 0     | 99.99 |   
+| every 5 (focus-classify) | 82.92 | 17.07 | 0.003 | 0.003 | 99.99 | 
+| every 5 (classify-focus) | 89.85 | 5.49  | 0     | 4.65  | 95.34 | 
+| every 10 (focus-classify)| 74.55 | 25.41 | 0.02  | 0.006 | 99.96 | 
+| every 10 (classify-focus)| 76.01 | 14.73 | 0.003 | 9.25  | 90.74 | 
+| every 20 (focus-classify)| 74.83 | 25.12 | 0.043 | 0     | 99.95 |
+| every 20 (classify-focus)| 82.10 | 13.27 | 0.013 | 4.61  | 95.37 |  
+
+
+### Table 1.2: Trend of alternate minimization with 'every_what_epoch'
+
+| #runs | simultaneous | every 1 (focus-classify) | every 1 (classify-focus) | every 20 (focus-classify) | every 20 (classify-focus)|
+|-------|--------------|--------------------------|--------------------------|---------------------------|------------------|
+| run1 | <img src=./type4_plots/without_entropy/simultaneous/run1.png width="150">  | <img src=./type4_plots/without_entropy/where_what/every1/run1.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every1/run1.png width="150">  |<img src=./type4_plots/without_entropy/where_what/every20/run1.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every20/run1.png width="150">  |
+| run2 | <img src=./type4_plots/without_entropy/simultaneous/run2.png width="150">  | <img src=./type4_plots/without_entropy/where_what/every1/run2.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every1/run2.png width="150">  |<img src=./type4_plots/without_entropy/where_what/every20/run2.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every20/run2.png width="150">  | 
+| run3 | <img src=./type4_plots/without_entropy/simultaneous/run3.png width="150">  | <img src=./type4_plots/without_entropy/where_what/every1/run3.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every1/run3.png width="150">  |<img src=./type4_plots/without_entropy/where_what/every20/run3.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every20/run3.png width="150">  | 
+| run4 | <img src=./type4_plots/without_entropy/simultaneous/run4.png width="150">  | <img src=./type4_plots/without_entropy/where_what/every1/run4.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every1/run4.png width="150">  |<img src=./type4_plots/without_entropy/where_what/every20/run4.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every20/run4.png width="150">  | 
+| run5 | <img src=./type4_plots/without_entropy/simultaneous/run5.png width="150">  | <img src=./type4_plots/without_entropy/where_what/every1/run5.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every1/run5.png width="150">  |<img src=./type4_plots/without_entropy/where_what/every20/run5.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every20/run5.png width="150">  |
+| run6 | <img src=./type4_plots/without_entropy/simultaneous/run6.png width="150">  | <img src=./type4_plots/without_entropy/where_what/every1/run6.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every1/run6.png width="150">  |<img src=./type4_plots/without_entropy/where_what/every20/run6.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every20/run6.png width="150">  |
+| run7 | <img src=./type4_plots/without_entropy/simultaneous/run7.png width="150">  | <img src=./type4_plots/without_entropy/where_what/every1/run7.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every1/run7.png width="150">  |<img src=./type4_plots/without_entropy/where_what/every20/run7.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every20/run7.png width="150">  |
+| run8 | <img src=./type4_plots/without_entropy/simultaneous/run8.png width="150">  | <img src=./type4_plots/without_entropy/where_what/every1/run8.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every1/run8.png width="150">  |<img src=./type4_plots/without_entropy/where_what/every20/run8.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every20/run8.png width="150">  |
+| run9 | <img src=./type4_plots/without_entropy/simultaneous/run9.png width="150">  | <img src=./type4_plots/without_entropy/where_what/every1/run9.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every1/run9.png width="150">  |<img src=./type4_plots/without_entropy/where_what/every20/run9.png width="150">  |<img src=./type4_plots/without_entropy/what_where/every20/run9.png width="150">  |
+| run10| <img src=./type4_plots/without_entropy/simultaneous/run10.png width="150"> | <img src=./type4_plots/without_entropy/where_what/every1/run10.png width="150"> |<img src=./type4_plots/without_entropy/what_where/every1/run10.png width="150"> |<img src=./type4_plots/without_entropy/where_what/every20/run10.png width="150"> |<img src=./type4_plots/without_entropy/what_where/every20/run10.png width="150"> |
 
 ### Architecures of Focus and Classification Net
 ```python
