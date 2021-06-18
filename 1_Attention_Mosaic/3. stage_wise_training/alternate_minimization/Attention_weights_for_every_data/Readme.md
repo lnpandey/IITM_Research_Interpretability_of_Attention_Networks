@@ -137,7 +137,7 @@ LR for learning what net parameters is fixed 0.001
 ### transformed gradient with Exponential Kernel type4 data 
 
 
-#### Table D1 : learning attention weights as well as what net (random)
+#### Table D2: learning attention weights as well as what net (random)
 LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
@@ -151,7 +151,7 @@ LR for learning what net parameters is fixed 0.001
 
 #### Now we are fixing the what net with final weights of simultaneous trained what net
 
-#### Table D2: Fixed what net learning only attention weights for each data point
+#### Table D3: Fixed what net learning only attention weights for each data point
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
 | 0.01 | 15.80 |	84.20 |	14.76 |	29.33 |	12.73 |	43.166667 | <img src= ./type4_data/exp_kernel/only_attn_wts_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
@@ -159,7 +159,7 @@ LR for learning what net parameters is fixed 0.001
 | 1 | 99.10 |	0.90 |	86.0 |	3.1 |	10.56 |	0.33 | <img src= ./type4_data/exp_kernel/only_attn_wts_pretrained_what/lr_1/decision_boundary.png width="450">   |
 | 10  | 99.80 |	0.20 |	37.20 |	9.23 |	10.03 |	43.53 | <img src= ./type4_data/exp_kernel/only_attn_wts_pretrained_what/lr_10/decision_boundary.png width="450">   |
 
-#### Table D3: Fixed what net learning both attention weights and what net 
+#### Table D4: Fixed what net learning both attention weights and what net 
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
@@ -173,7 +173,7 @@ LR for learning what net parameters is fixed 0.001
 ### transformed gradient with distance Kernel type4 data 
 
 
-#### Table E1 : learning attention weights as well as what net (random)
+#### Table E2 : learning attention weights as well as what net (random)
 LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
@@ -186,7 +186,7 @@ LR for learning what net parameters is fixed 0.001
 
 #### Now we are fixing the what net with final weights of simultaneous trained what net
 
-#### Table E2: Fixed what net learning only attention weights for each data point
+#### Table E3: Fixed what net learning only attention weights for each data point
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
 | 0.01 | 81.60 |	18.40 |	75.40 |	10.53 |	10.0 |	4.06 | <img src= ./type4_data/distance_kernel/only_attn_wts_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
@@ -195,7 +195,7 @@ LR for learning what net parameters is fixed 0.001
 | 10 | 100 | 0 |	69.53 |	14.86 |	13.30 |	2.30  |  <img src= ./type4_data/distance_kernel/only_attn_wts_pretrained_what/lr_10/decision_boundary.png width="450">   |
 
 
-#### Table E3: Fixed what net learning both attention weights and what net 
+#### Table E4: Fixed what net learning both attention weights and what net 
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
@@ -205,4 +205,17 @@ LR for learning what net parameters is fixed 0.001
 | 10 | 99.90 |	0.10 |	87.83 |	11.33 |	0.20 |	0.63 | <img src= ./type4_data/distance_kernel/both_pretrained_what/lr_10/decision_boundary.png width="450">   |
 
 
+
+### transformed gradient with Neural Tangent Kernel type4 data 
+
+
+#### Table E2 : learning attention weights as well as what net (random)
+LR for learning what net parameters is fixed 0.0001
+
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   | --- |
+| 0.01 |  | <img src= ./type4_data/ntk/both_random_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.1  | 89.13 |	10.86 |	71.66 |	17.83 |	2.90 |	7.60   | <img src= ./type4_data/ntk/both_random_what/lr_0.1/decision_boundary.png width="450"> |
+| 1 | 98.06 |	1.93 |	84.83 |	8.70 |	0.93 |	5.53 | <img src= ./type4_data/ntk/both_random_what/lr_1/decision_boundary.png width="450"> |
+| 10 |   | <img src= ./type4_data/ntk/both_random_what/lr_10/decision_boundary.png width="450"> |
 
