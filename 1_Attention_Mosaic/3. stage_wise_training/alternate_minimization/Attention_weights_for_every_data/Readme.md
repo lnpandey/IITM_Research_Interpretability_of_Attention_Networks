@@ -209,7 +209,7 @@ LR for learning what net parameters is fixed 0.001
 ### transformed gradient with Neural Tangent Kernel type4 data 
 
 
-#### Table E2 : learning attention weights as well as what net (random)
+#### Table F2 : learning attention weights as well as what net (random)
 LR for learning what net parameters is fixed 0.0001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
@@ -217,5 +217,5 @@ LR for learning what net parameters is fixed 0.0001
 | 0.01 |  | <img src= ./type4_data/ntk/both_random_what/lr_0.01/decision_boundary.png width="450">   |
 | 0.1  | 89.13 |	10.86 |	71.66 |	17.83 |	2.90 |	7.60   | <img src= ./type4_data/ntk/both_random_what/lr_0.1/decision_boundary.png width="450"> |
 | 1 | 98.06 |	1.93 |	84.83 |	8.70 |	0.93 |	5.53 | <img src= ./type4_data/ntk/both_random_what/lr_1/decision_boundary.png width="450"> |
-| 10 |   | <img src= ./type4_data/ntk/both_random_what/lr_10/decision_boundary.png width="450"> |
+| 10 | - | -| -|  -|- |-  | <img src= ./type4_data/ntk/both_random_what/lr_10/decision_boundary.png width="450"> |
 
