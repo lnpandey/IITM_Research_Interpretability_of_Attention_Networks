@@ -10,7 +10,7 @@
 
 
 
-#### Table A2 : learning attention weights as well as what net(random)
+#### Table A2.1 : learning attention weights as well as what net(random)
 LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
@@ -22,7 +22,7 @@ LR for learning what net parameters is fixed 0.001
 
 
 
-#### Table \bar{A2} : learning attention weights as well as what net(random)
+#### Table A2.2 : learning attention weights as well as what net(random)
 LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
@@ -70,7 +70,7 @@ LR for learning what net parameters is fixed 0.001
 
 
 
-#### Table B2 : learning attention weights as well as what net (random)
+#### Table B2.1 : learning attention weights as well as what net (random)
 LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
@@ -114,7 +114,7 @@ LR for learning what net parameters is fixed 0.001
 
 
 
-#### Table C2 : learning attention weights as well as what net(random)
+#### Table C2.1 : learning attention weights as well as what net(random)
 LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
@@ -150,7 +150,7 @@ LR for learning what net parameters is fixed 0.001
 ### transformed gradient with Exponential Kernel type4 data 
 
 
-#### Table D2: learning attention weights as well as what net (random)
+#### Table D2.1: learning attention weights as well as what net (random)
 LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
@@ -186,7 +186,7 @@ LR for learning what net parameters is fixed 0.001
 ### transformed gradient with distance Kernel type4 data 
 
 
-#### Table E2 : learning attention weights as well as what net (random)
+#### Table E2.1 : learning attention weights as well as what net (random)
 LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
@@ -222,7 +222,7 @@ LR for learning what net parameters is fixed 0.001
 ### transformed gradient with Neural Tangent Kernel type4 data 
 
 
-#### Table F2 : learning attention weights as well as what net (random)
+#### Table F2.1 : learning attention weights as well as what net (random)
 LR for learning what net parameters is fixed 0.0001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
