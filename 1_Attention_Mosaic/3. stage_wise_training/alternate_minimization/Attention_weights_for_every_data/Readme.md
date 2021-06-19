@@ -227,7 +227,7 @@ LR for learning what net parameters is fixed 0.0001
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
 | 0.01 | 20.06 |	79.93 |	11.40	31.50 |	8.36 |	48.73 | <img src= ./type4_data/ntk/only_attn_wts_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
 | 0.1 | 	 | <img src= ./type4_data/ntk/only_attn_wts_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
-| 1 |  | <img src= ./type4_data/ntk/only_attn_wts_pretrained_what/lr_1/decision_boundary.png width="450">   |
+| 1 | 65.23 |	34.76 |	14.46 |	18.16 |	0.10 |	67.26 | <img src= ./type4_data/ntk/only_attn_wts_pretrained_what/lr_1/decision_boundary.png width="450">   |
 | 10 |   |  <img src= ./type4_data/ntk/only_attn_wts_pretrained_what/lr_10/decision_boundary.png width="450">   |
 
 
