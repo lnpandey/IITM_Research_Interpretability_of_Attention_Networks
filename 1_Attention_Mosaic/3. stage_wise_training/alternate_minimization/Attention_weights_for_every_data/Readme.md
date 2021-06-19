@@ -37,7 +37,7 @@ LR for learning what net parameters is fixed 0.001
 
 #### Now we are fixing the what net with final weights of simultaneous trained what net
 
-#### Table A3: Fixed what net learning only attention weights for each data point
+#### Table A3.1: Fixed what net learning only attention weights for each data point
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   |
 | 0.01 | 12.95 | 	87.04 |	16.25 |	77.56 |	0.16 |	6.01 |
@@ -45,7 +45,7 @@ LR for learning what net parameters is fixed 0.001
 | 1 | 87.77	| 12.22 |	28.2 |	55.65 |	0.436 |	15.71 |
 | 10  | 94.73 |	5.26	 | 26.52	| 47.42	 | 0.84	| 25.20 |
 
-#### Table A4: Fixed what net learning both attention weights and what net 
+#### Table A4.1: Fixed what net learning both attention weights and what net 
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   |
@@ -53,6 +53,17 @@ LR for learning what net parameters is fixed 0.001
 | 0.1 | 52.44	| 47.55 |	26.90 |	71.32| 0.116 |	1.65 |
 | 1 | 99.76	| 0.24 |	29.42 |	55.67 |1.16 |	13.73 |
 | 10 | 100 |	0	| 24.94 |	52.7 |	1.58 |	20.77 |
+
+
+
+#### Table A4.2: Fixed what net learning both attention weights and what net 
+
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   |
+| 0.01 | 
+| 0.1 | 
+| 1 | 
+| 10 | 99.98 |	0.013 |	31.35 |	54.59 |	0.80  |	13.25 |
 
 
 
