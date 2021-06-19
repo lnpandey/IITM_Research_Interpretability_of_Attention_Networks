@@ -225,7 +225,7 @@ LR for learning what net parameters is fixed 0.0001
 #### Table F3: Fixed what net learning only attention weights for each data point
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
-| 0.01 | 20.06 |	79.93 |	11.40	31.50 |	8.36 |	48.73 | <img src= ./type4_data/ntk/only_attn_wts_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.01 | 20.06 |	79.93 |	11.40 |	31.50 |	8.36 |	48.73 | <img src= ./type4_data/ntk/only_attn_wts_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
 | 0.1 | 92.50 |	7.50 |	25.30 |	19.33 |	1.60 |	53.76	 | <img src= ./type4_data/ntk/only_attn_wts_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
 | 1 | 65.23 |	34.76 |	14.46 |	18.16 |	0.10 |	67.26 | <img src= ./type4_data/ntk/only_attn_wts_pretrained_what/lr_1/decision_boundary.png width="450">   |
 | 10 | - | -| -|  -|- |-  |  <img src= ./type4_data/ntk/only_attn_wts_pretrained_what/lr_10/decision_boundary.png width="450">   |
