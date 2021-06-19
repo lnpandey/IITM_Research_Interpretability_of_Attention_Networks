@@ -227,6 +227,6 @@ LR for learning what net parameters is fixed 0.0001
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
 | 0.01 |  17.73 |	82.26 |	5.96 |	31.50 |	7.70 |	54.83 | <img src= ./type4_data/ntk/both_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
-| 0.1 | 	 84.16 |	15.83 |	36.03 |	40.63 |	1.93 |	21.40 | <img src= ./type4_data/ntk/both_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
-| 1 | - | -| -|  -|- |- | <img src= ./type4_data/ntk/both_pretrained_what/lr_1/decision_boundary.png width="450">   |
+| 0.1 | 84.16 |	15.83 |	36.03 |	40.63 |	1.93 |	21.40 | <img src= ./type4_data/ntk/both_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
+| 1 | 98.66 |	1.33 |	0.06 |	33.20 |	1.76 |	64.96 | <img src= ./type4_data/ntk/both_pretrained_what/lr_1/decision_boundary.png width="450">   |
 | 10 | - | -| -|  -|- |- | <img src= ./type4_data/ntk/both_pretrained_what/lr_10/decision_boundary.png width="450">   |
