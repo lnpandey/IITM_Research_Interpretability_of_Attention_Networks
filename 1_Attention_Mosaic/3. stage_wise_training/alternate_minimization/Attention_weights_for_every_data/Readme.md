@@ -22,7 +22,7 @@ LR for learning what net parameters is fixed 0.001
 
 
 
-#### Table A2' : learning attention weights as well as what net(random)
+#### Table \bar{A2} : learning attention weights as well as what net(random)
 LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
