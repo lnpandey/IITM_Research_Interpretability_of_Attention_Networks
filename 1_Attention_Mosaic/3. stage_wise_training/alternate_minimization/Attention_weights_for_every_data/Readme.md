@@ -115,7 +115,7 @@ LR for learning what net parameters is fixed 0.001
 
 #### Now we are fixing the what net with final weights of simultaneous trained what net
 
-#### Table B3.1: Fixed what net learning only attention weights for each data point
+#### Table B3.1: Fixed what net learning only attention weights for each data point (init 1)
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
 | 0.01 | 12.33 |	87.66 |	17.93 |	80.7 |	0.33 |	1.033 | <img src= ./type4_data/init_1/only_attn_wts_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
@@ -137,10 +137,10 @@ LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
-| 0.01 | 	 | <img src= ./type4_data/init_1/both_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
-| 0.1 | 	 | <img src= ./type4_data/init_1/both_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
-| 1 |  | <img src= ./type4_data/init_1/both_pretrained_what/lr_1/decision_boundary.png width="450">   |
-| 10 |  | <img src= ./type4_data/init_1/both_pretrained_what/lr_10/decision_boundary.png width="450">   |
+| 0.01 | 0.23 |	99.76 |	11.66 |	86.46 |	1.66 |	0.20	 | <img src= ./type4_data/init_2/both_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.1 | 1.76 |	98.23 |	20.50 |	78.50 |	0.76 |	0.23	 | <img src= ./type4_data/init_2/both_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
+| 1 | 44.26 |	55.73 |	21.0 |	78.06 |	0.30 |	0.63 | <img src= ./type4_data/init_2/both_pretrained_what/lr_1/decision_boundary.png width="450">   |
+| 10 | 65.23 |	34.76 |	21.03 |	77.80 |	0.30 |	0.86  | <img src= ./type4_data/init_2/both_pretrained_what/lr_10/decision_boundary.png width="450">   |
 
 
 ### Learning attention weights for every data point blob data
