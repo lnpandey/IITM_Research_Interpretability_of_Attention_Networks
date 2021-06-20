@@ -94,10 +94,10 @@ LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | --- |
-| 0.01 | 22.36 |	77.63 |	16.5 |	81.83 |	0.6 |	1.06 | <img src= ./type4_data/init_1/both_random_what/lr_0.01/decision_boundary.png width="450">   |
-| 0.1  |  75 |	25 |	20.53 |	78.8 |	0.66	 |0 | <img src= ./type4_data/init_1/both_random_what/lr_0.1/decision_boundary.png width="450"> |
-| 1 | 99.9 |	0.1	 | 4.86	| 88.93 |0.7 |	5.5 | <img src= ./type4_data/init_1/both_random_what/lr_1/decision_boundary.png width="450"> |
-| 10 | 100 |	0	 | 4.16 |	84.86 | 0.76 |	10.2 | <img src= ./type4_data/init_1/both_random_what/lr_10/decision_boundary.png width="450"> |
+| 0.01 | 22.26 |	77.73 |	16.26 |	81.83 |	0.70 |	1.200000 | <img src= ./type4_data/init_1/both_random_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.1  |  75.36 |	24.63 |	19.20 |	80.10 |	0.66 |	0.03 | <img src= ./type4_data/init_1/both_random_what/lr_0.1/decision_boundary.png width="450"> |
+| 1 | 99.93 |	0.06 |	4.93 |	88.83 |	0.70 |	5.53 | <img src= ./type4_data/init_1/both_random_what/lr_1/decision_boundary.png width="450"> |
+| 10 | 100 |	0 |	4.16 |	84.86 |	0.76 |	10.20 | <img src= ./type4_data/init_1/both_random_what/lr_10/decision_boundary.png width="450"> |
 
 
 
