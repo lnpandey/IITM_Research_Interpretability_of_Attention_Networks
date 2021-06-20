@@ -23,7 +23,6 @@ LR for learning what net parameters is fixed 0.001
 
 
 #### Table A2.2 : learning attention weights as well as what net (init 2)
-LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   |
@@ -102,7 +101,6 @@ LR for learning what net parameters is fixed 0.001
 
 
 #### Table B2.2 : learning attention weights as well as what net (random)
-LR for learning what net parameters is fixed 0.001
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF | decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | --- |
@@ -122,6 +120,16 @@ LR for learning what net parameters is fixed 0.001
 | 0.1 | 	26.96 |	73.03 |	23.13 |	76.10 |	0.23 |	0.53 | <img src= ./type4_data/init_1/only_attn_wts_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
 | 1 | 59.50 |	40.50 |	21.13 |	74.60 |	2.16 |	2.10 | <img src= ./type4_data/init_1/only_attn_wts_pretrained_what/lr_1/decision_boundary.png width="450">   |
 | 10  | 68.3 |	31.70 |	21.06 |	69.30 |	4.60 |	5.03 | <img src= ./type4_data/init_1/only_attn_wts_pretrained_what/lr_10/decision_boundary.png width="450">   |
+
+
+
+#### Table B3.2: Fixed what net learning only attention weights for each data point (init 2)
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
+| 0.01 | 0.16 |	99.83 |	2.46 |	95.66 |	1.60 |	0.26 | <img src= ./type4_data/init_2/only_attn_wts_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.1 | 1.16 |	98.83 |	16.76 |	82.33 |	0.50 |	0.40	 | <img src= ./type4_data/init_2/only_attn_wts_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
+| 1 | 32.33 |	67.66 |	9.50 |	85.30 |	2.13 |	3.06 | <img src= ./type4_data/init_2/only_attn_wts_pretrained_what/lr_1/decision_boundary.png width="450">   |
+| 10  | 40.96 |	59.03 |	11.73 |	78.16 |	4.86 |	5.23 | <img src= ./type4_data/init_2/only_attn_wts_pretrained_what/lr_10/decision_boundary.png width="450">   |
 
 #### Table B4.1: Fixed what net learning both attention weights and what net (init 1)
 
