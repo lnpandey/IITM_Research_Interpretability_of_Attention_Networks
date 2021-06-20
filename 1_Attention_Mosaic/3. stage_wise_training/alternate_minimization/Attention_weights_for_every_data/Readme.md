@@ -123,15 +123,24 @@ LR for learning what net parameters is fixed 0.001
 | 1 | 59.5 |	40.5 |	21.13 |	74.56 |	2.2 |	2.1 | <img src= ./type4_data/init_1/only_attn_wts_pretrained_what/lr_1/decision_boundary.png width="450">   |
 | 10  | 68.3 |	31.7 |	21.06 |	69.3 |	4.6 |	5.03 | <img src= ./type4_data/init_1/only_attn_wts_pretrained_what/lr_10/decision_boundary.png width="450">   |
 
-#### Table B4.1: Fixed what net learning both attention weights and what net 
+#### Table B4.1: Fixed what net learning both attention weights and what net (init 1)
 
 | LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
 |  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
-| 0.01 | 	28.6 |	71.4 |	13.83 |	85.4 | 17.30 |	0.2 | <img src= ./type4_data/init_1/both_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
-| 0.1 | 	29.73	 | 70.26 |	28.1 |	70.56 |	0.1 |	1.23 | <img src= ./type4_data/init_1/both_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
-| 1 | 68.66 |	31.33 |	26.16 |	72.63 |	0.3 |	0.9 | <img src= ./type4_data/init_1/both_pretrained_what/lr_1/decision_boundary.png width="450">   |
-| 10 | 92.56 | 7.43 |	21.73 |	76.33 |0.13 | 	1.8 | <img src= ./type4_data/init_1/both_pretrained_what/lr_10/decision_boundary.png width="450">   |
+| 0.01 | 	28.36 |	71.63 |	13.80 |	85.23 |	0.70 |	0.26 | <img src= ./type4_data/init_1/both_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.1 | 	29.73 |	70.26 |	28.10 |	70.56 |	0.10 |	1.23 | <img src= ./type4_data/init_1/both_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
+| 1 | 68.66 |	31.33 |	26.16 |	72.63 |	0.30 |	0.90 | <img src= ./type4_data/init_1/both_pretrained_what/lr_1/decision_boundary.png width="450">   |
+| 10 | 90.90  | 9.10 |	21.56 |	76.30 |	0.26 |	1.86 | <img src= ./type4_data/init_1/both_pretrained_what/lr_10/decision_boundary.png width="450">   |
 
+
+#### Table B4.2: Fixed what net learning both attention weights and what net (init 2)
+
+| LR (for only attention wts) \ Analysis | argmax > 0.5 | argmax < 0.5 |  FTPT | FFPT | FTPF | FFPF |  decision boundary |
+|  ----         | -------      |  --------    |  --   |  --  | --   | --   | ---- |
+| 0.01 | 	 | <img src= ./type4_data/init_1/both_pretrained_what/lr_0.01/decision_boundary.png width="450">   |
+| 0.1 | 	 | <img src= ./type4_data/init_1/both_pretrained_what/lr_0.1/decision_boundary.png width="450">   |
+| 1 |  | <img src= ./type4_data/init_1/both_pretrained_what/lr_1/decision_boundary.png width="450">   |
+| 10 |  | <img src= ./type4_data/init_1/both_pretrained_what/lr_10/decision_boundary.png width="450">   |
 
 
 ### Learning attention weights for every data point blob data
