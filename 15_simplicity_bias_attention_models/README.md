@@ -27,3 +27,23 @@
 
 <img src= ./plots/linear_models/classification_illustration.png width="800">
 
+
+#### one-hidden Relu Model
+
+##### FTPT Analysis
+- train data
+
+<img src= ./plots/1-hidden_models/train_analysis.png width="450">
+
+- test data
+<img src= ./plots/1-hidden_models/test_analysis.png width="450">
+
+#####  Focus Illustration
+
+<img src= ./plots/1-hidden_models/focus_illustration.png width="800">
+
+#####  Classification Illustration
+
+<img src= ./plots/1-hidden_models/classification_illustration.png width="800">
+
+
