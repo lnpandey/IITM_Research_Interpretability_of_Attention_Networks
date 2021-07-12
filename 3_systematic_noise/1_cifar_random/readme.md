@@ -9,6 +9,8 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 
 |true training data  | true 0 | true 1 | true 2 | Corrupted Training Data (ctd) | ctd 0 | ctd 1 | ctd 2| 
 |--------------------|--------|--------|--------|-------------------------------|-------|-------|------|
+| 100                | 40     |30      | 30      | 35000                        | 11683 | 11720 | 11517|
+| 500                | 171    |159     | 170     | 35000                        | 11648 | 11617 | 11735|
 | 1000               | 341    |325     | 334     | 35000                        | 11659 | 11732 | 11609|
 | 2000               | 653    | 691    | 656     | 35000                        | 11669 | 11615 | 11716|
 | 4000               | 1388   | 1300   | 1312    | 35000                        | 11620 | 11723 | 11657| 
@@ -22,10 +24,29 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 - ctd 1 means number of data points (belonging from any class other than 0,1,2) which are labeled as one.
 - ctd 2 means number of data points (belonging from any class other than 0,1,2) which are labeled as two.
 
-#### TABLE 2 : Analysis on Training Data and Test Data On Complex Model
+
+#### TABLE 2 : Analysis on Training Data and Test Data On Simple Model
+
 
 |true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
 |--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
+| 100                | 35000                   | 35100               | 100               | 9             | 32                  | 
+| 500                | 35000                   | 35500               | 100               | 11            | 37                  | 
+| 1000               | 35000                   | 36000               | 97                | 11            | 38                  | 
+| 2000               | 35000                   | 37000               | 98                | 12            | 40                  | 
+| 4000               | 35000                   | 39000               | 99                | 14            | 47                  | 
+| 6000               | 35000                   | 41000               | 99                | 16            | 55                  | 
+| 8000               | 35000                   | 43000               | 99                | 17            | 57                  |
+| 10000              | 35000                   | 45000               | 99                | 17            | 58                  |
+| 12000              | 35000                   | 47000               | 100               | 19            | 64                  | 
+| 15000              | 35000                   | 50000               | 99                | 19            | 66                  |
+
+#### TABLE 3 : Analysis on Training Data and Test Data On Complex Model
+
+|true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
+|--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
+| 100                | 35000                   | 35100               | 100               | 10            | 35                  | 
+| 500                | 35000                   | 35500               | 100               | 11            | 36                  | 
 | 1000               | 35000                   | 36000               | 100               | 11            | 38                  | 
 | 2000               | 35000                   | 37000               | 100               | 14            | 49                  | 
 | 4000               | 35000                   | 39000               | 100               | 16            | 56                  | 
@@ -34,20 +55,6 @@ Train a network on this x_i, z_i data and predict labels on all test images. Che
 | 10000              | 35000                   | 45000               | 100               | 21            | 71                  |
 | 12000              | 35000                   | 47000               | 100               | 22            | 73                  | 
 | 15000              | 35000                   | 50000               | 100               | 23            | 78                  |
-
-#### TABLE 3 : Analysis on Training Data and Test Data On Simple Model
-
-
-|true training data  | Corrupted Training Data | Total Training Data | Training Accuracy | Test Accuracy | Test Accuracy 0-1-2 | 
-|--------------------| ----------------------- | ------------------- | ----------------- |---------------|---------------------|
-| 1000               | 35000                   | 36000               | 97              | 11            | 38                  | 
-| 2000               | 35000                   | 37000               | 98               | 12            | 40                  | 
-| 4000               | 35000                   | 39000               | 99               | 14            | 47                  | 
-| 6000               | 35000                   | 41000               | 99               | 16            | 55                  | 
-| 8000               | 35000                   | 43000               | 99               | 17            | 57                  |
-| 10000              | 35000                   | 45000               | 99               | 17            | 58                  |
-| 12000              | 35000                   | 47000               | 100               | 19            | 64                  | 
-| 15000              | 35000                   | 50000               | 99               | 19            | 66                  |
 
 #### TABLE 4 : Analysis on True Training Data and Test Data On Complex Model with ZERO Corruption
 
