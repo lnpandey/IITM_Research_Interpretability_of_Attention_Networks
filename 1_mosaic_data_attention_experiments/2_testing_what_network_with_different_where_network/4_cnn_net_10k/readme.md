@@ -57,15 +57,15 @@ class Module2(nn.Module):
 
 | train\ test  | test on dataset 1 | test on dataset 2 | test on dataset 3 | test on dataset 4 | test on dataset 5 | test on dataset 6 | test on dataset 7 | test on dataset 8 | test on dataset 9| test on dataset 10 |
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|----|----|
-| train on dataset 1      | 52 | 64 | 68 | 68 | 67 | 65 | 63 | 61 | 60 | 60 |
-| train on dataset 2      | 65 | 100 | 92 | 83 | 76 | 73 | 69 | 67 | 65 | 63 |
-| train on dataset 3      | 47 | 78 | 100 | 97 | 91 | 86 | 82 | 79 | 77 | 73 |     
-| train on dataset 4      | 41 | 63 | 90 | 100 | 99 | 96 | 92 | 89 | 87 | 82 |
-| train on dataset 5      | 39 | 55 | 78 | 96 | 100 | 99 | 97 | 94 | 91 | 85 |
-| train on dataset 6      | 37 | 49 | 71 | 90 | 99 | 99 | 99 | 97 | 94 | 87 |
-| train on dataset 7      | 35 | 41 | 57 | 77 | 91 | 99 | 100 | 99 | 98 | 91 |
-| train on dataset 8      | 34 | 37 | 48 | 67 | 83 | 94 | 99 | 100 | 99 | 92 |
-| train on dataset 9      | 35 | 37 | 46 | 61 | 76 | 89 | 97 | 99 | 100 | 92 |
+| train on dataset 1      | 100 | 85 | 75 | 63 | 60 | 59 | 58 | 57 | 56 | 55 |
+| train on dataset 2      | 65 | 100 | 94 | 86 | 81 | 77 | 74 | 72 | 70 | 68 |
+| train on dataset 3      | 46 | 79 | 100 | 97 | 92 | 87 | 84 | 81 | 78 | 74 |     
+| train on dataset 4      | 42 | 64 | 91 | 100 | 99 | 95 | 92 | 89 | 86 | 80 |
+| train on dataset 5      | 38 | 52 | 76 | 95 | 100 | 99 | 97 | 94 | 90 | 84 |
+| train on dataset 6      | 37 | 49 | 69 | 87 | 98 | 100 | 99 | 98 | 96 | 87 |
+| train on dataset 7      | 36 | 43 | 58 | 77 | 91 | 99 | 100 | 99 | 98 | 91 |
+| train on dataset 8      | 34 | 39 | 51 | 69 | 84 | 95 | 99 | 100 | 99 | 92 |
+| train on dataset 9      | 34 | 38 | 47 | 63 | 78 | 90 | 98 | 99 | 100 | 91 |
 
 
 ### Plot of Training loss for all the Datasets :
