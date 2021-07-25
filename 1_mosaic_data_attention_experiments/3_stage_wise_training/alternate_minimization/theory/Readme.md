@@ -30,8 +30,8 @@
 
 - loss landscape
 
-| b \ c| 0  |  10  |  -10 |
-| -  |  -   | -    | -    |
+| b   c| 0  |  10  |  -10 |
+| ---  |  -   | -    | -    |
 | 0  | <img src= ./plots/loss_landscape_b_0_c_0.png width="450"> |  <img src= ./plots/loss_landscape_b_0_c_10.png width="450"> | <img src= ./plots/loss_landscape_b_0_c_n10.png width="450"> |
 | 10 | <img src= ./plots/loss_landscape_b_10_c_0.png width="450"> |  <img src= ./plots/loss_landscape_b_10_c_10.png width="450"> | <img src= ./plots/loss_landscape_b_10_c_n10.png width="450"> |
 | -10 | <img src= ./plots/loss_landscape_b_n10_c_0.png width="450"> |  <img src= ./plots/loss_landscape_b_n10_c_10.png width="450"> | <img src= ./plots/loss_landscape_b_n10_c_n10.png width="450"> |
