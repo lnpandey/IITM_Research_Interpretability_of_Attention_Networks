@@ -36,3 +36,22 @@
 | 10 | <img src= ./plots/loss_landscape_b_10_c_0.png width="450"> |  <img src= ./plots/loss_landscape_b_10_c_10.png width="450"> | <img src= ./plots/loss_landscape_b_10_c_n10.png width="450"> |
 | -10 | <img src= ./plots/loss_landscape_b_n10_c_0.png width="450"> |  <img src= ./plots/loss_landscape_b_n10_c_10.png width="450"> | <img src= ./plots/loss_landscape_b_n10_c_n10.png width="450"> |
 
+#### Table A loss values and minimized a,b and c
+
+
+| | a fixed | b c fixed | a  | b  | c | loss | 
+| - | -     | ----      | -  | -- | - | -    |
+| 1 | True | True    | 0  | 0  | 0 | 0.6931 |
+| 2 | True  | False  | 0  | 13.33 | -19.75  | 0.0013 | 
+| 3 | False |  True  |  0  |  0    |   0     |  0.6931 |
+| 4 | False  |  True  | -0.028 | 13.33 | -19.75 | 0.00090 |
+| 5 | True  |   True |  0 | 100 | 0 |  17.269 |
+| 6 | True |   False | 0 |  45 | -54 | 5.05e-5 |
+| 7 | False | True |  -20 | 100 | 0 | 9.99e-16 |
+| 8 | True |  True | -20 | -100 | 0 |    34.53   |
+| 9 | True |  False | -20 | 9.199 | 1.57e-15 | 0.00010       |
+| 10 | Fale |  True | -20 | -100 | 0 |    34.53      |
+
+
+
+
