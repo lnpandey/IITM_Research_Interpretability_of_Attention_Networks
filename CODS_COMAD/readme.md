@@ -33,3 +33,12 @@ MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 | -------------------------- |  ---------------------------  |----------------------- |
 | MNIST  | <img src= ./plots/convex_instance_noise/mnist.png width="350"> | <img src= ./plots/substitution_instance_noise/mnist.png width="350"> |
 | CIFAR  | <img src= ./plots/convex_instance_noise/cifar.png width="350"> | <img src= ./plots/substitution_instance_noise/cifar.png width="350"> |
+
+### Table 5: CIN on Synthetic Data
+
+| Dataset | convex_instance_noise  | 
+| -------------------------- |  ---------------------------  |
+| <img src= ./plots/convex_instance_noise/ds1_data.png width="300">  | <img src= ./plots/convex_instance_noise/ds1_cin.png width="300"> | 
+| <img src= ./plots/convex_instance_noise/ds2_data.png width="300">  | <img src= ./plots/convex_instance_noise/ds2_cin.png width="300"> | 
+| <img src= ./plots/convex_instance_noise/ds3_data.png width="300">  | <img src= ./plots/convex_instance_noise/ds3_cin.png width="300"> | 
+| <img src= ./plots/convex_instance_noise/ds4_data.png width="300">  | <img src= ./plots/convex_instance_noise/ds4_cin.png width="300"> | 
