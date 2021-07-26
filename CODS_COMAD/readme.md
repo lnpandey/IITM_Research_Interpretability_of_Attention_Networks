@@ -12,4 +12,4 @@
 
 | Dataset | focus linear classify linear  | focus linear classify mlp2  | focus mlp2 classify linear  | focus mlp2 classify mlp2 |
 | - |     ------      |   --------------------------- |  ---------------------------  |----------------------- |
-| <img src= ./plots/substitution_instance_noise/grid_data.JPG width="450">  | <img src= ./plots/SDC/grid_data_lin_lin.JPG width="450"> | <img src= ./plots/SDC/grid_data_lin_mlp2.JPG width="450"> |  <img src= ./plots/SDC/grid_data_mlp2_lin.JPG width="450"> | <img src= ./plots/SDC/grid_data_mlp2_mlp2.JPG width="450"> |
+| <img src= ./plots/substitution_instance_noise/grid_data.JPG width="450">  | <img src= ./plots/SDC/gd_lin_lin.JPG width="450"> | <img src= ./plots/SDC/gd_lin_mlp2.JPG width="450"> |  <img src= ./plots/SDC/gd_mlp2_lin.JPG width="450"> | <img src= ./plots/SDC/gd_mlp2_mlp2.JPG width="450"> |
