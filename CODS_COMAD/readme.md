@@ -1,5 +1,5 @@
 
-### Table1: SDC task on Datasets
+### Table1: SDC task on Synthetic Datasets
 
 | Dataset | focus linear classify linear  | focus linear classify mlp2  | focus mlp2 classify linear  | focus mlp2 classify mlp2 |
 | - |     ------      |   --------------------------- |  ---------------------------  |----------------------- |
