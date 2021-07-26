@@ -13,3 +13,9 @@
 | Dataset | focus linear classify linear  | focus linear classify mlp1  | focus mlp1 classify linear  | focus mlp1 classify mlp1 |
 | - |     ------      |   --------------------------- |  ---------------------------  |----------------------- |
 | <img src= ./plots/substitution_instance_noise/grid_data.JPG width="450">  | <img src= ./plots/SDC/gd_lin_lin.JPG width="450"> | <img src= ./plots/SDC/gd_lin_mlp1.JPG width="450"> |  <img src= ./plots/SDC/gd_mlp1_lin.JPG width="450"> | <img src= ./plots/SDC/gd_mlp1_mlp1.JPG width="450"> |
+
+### Table2: SDC task on MNIST Data
+
+| Dataset | focus mlp1 classify linear  | focus mlp1 classify mlp1 |
+| -------------------------- |  ---------------------------  |----------------------- |
+| MNIST  | <img src= ./plots/SDC/mnist_mlp1_lin.JPG width="450"> | <img src= ./plots/SDC/mnist_mlp1_mlp1.JPG width="450"> |
