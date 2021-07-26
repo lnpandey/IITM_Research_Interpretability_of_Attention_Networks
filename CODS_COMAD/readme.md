@@ -1,6 +1,8 @@
 
 ### Table 1: SDC task on Synthetic Datasets
 
+MLP2 is 2 hidden layer with 50 and 10 neurons with ReLU activation.
+
 | Dataset | focus linear classify linear  | focus linear classify mlp2  | focus mlp2 classify linear  | focus mlp2 classify mlp2 |
 | - |     ------      |   --------------------------- |  ---------------------------  |----------------------- |
 | <img src= ./plots/convex_instance_noise/ds1_data.png width="300">  | <img src= ./plots/SDC/t0_lin_lin.JPG width="650"> | <img src= ./plots/SDC/t0_lin_mlp2.JPG width="650"> |  <img src= ./plots/SDC/t0_mlp2_lin.JPG width="650"> | <img src= ./plots/SDC/t0_mlp2_mlp2.JPG width="650"> |
@@ -10,11 +12,15 @@
 
 ### Table 2: SDC task on Grid Data
 
+MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
+
 | Dataset | focus linear classify linear  | focus linear classify mlp1  | focus mlp1 classify linear  | focus mlp1 classify mlp1 |
 | - |     ------      |   --------------------------- |  ---------------------------  |----------------------- |
 | <img src= ./plots/substitution_instance_noise/grid_data.JPG width="650">  | <img src= ./plots/SDC/gd_lin_lin.JPG width="650"> | <img src= ./plots/SDC/gd_lin_mlp1.JPG width="650"> |  <img src= ./plots/SDC/gd_mlp1_lin.JPG width="650"> | <img src= ./plots/SDC/gd_mlp1_mlp1.JPG width="650"> |
 
 ### Table 3: SDC task on MNIST Data
+
+MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 
 | Dataset | focus mlp1 classify linear  | focus mlp1 classify mlp1 |
 | -------------------------- |  ---------------------------  |----------------------- |
