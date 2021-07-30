@@ -7,36 +7,36 @@
 
 #### Minimize b and c while a is fixed
 
-- Contour plots
+-Table A1: Contour plots
 
 | a | 0 | -10 | 10 | 
 | - | - | -   | -  |  
-|plots | <img src= ./plots/contour_b_c_a_0.png width="450"> | <img src= ./plots/contour_b_c_a_n10.png width="450"> | <img src= ./plots/contour_b_c_a_10.png width="450"> |
+|plots | <img src= ./plots/data_1/contour_b_c_a_0.png width="450"> | <img src= ./plots/data_1/contour_b_c_a_n10.png width="450"> | <img src= ./plots/data_1/contour_b_c_a_10.png width="450"> |
 | initial loss | 0.6931 | 0.6931 | 0.6931 |
 | final loss   |  0.0013 | 0.0001 |    0.6931   |
 
 
-- Plots
+- Table A2: Plots
 
 
 | | loss plot fixed a | minimized b value for fixed a | minimized c value for fixed a |
 | - |     ------      |   --------------------------- |  ---------------------------  |
-|   | <img src= ./plots/loss_fixed_a.png width="450"> |  <img src= ./plots/minimized_b_fixed_a.png width="450"> |  <img src= ./plots/minimized_c_fixed_a.png width="450"> |
+|   | <img src= ./plots/data_1/loss_fixed_a.png width="450"> |  <img src= ./plots/data_1/minimized_b_fixed_a.png width="450"> |  <img src= ./plots/data_1/minimized_c_fixed_a.png width="450"> |
 
 
  
 
 #### Minimize a while b and c are fixed
 
-- loss landscape
+- Table A3: loss landscape
 
 | b   c| 0  |  10  |  -10 |
 | ---  |  -   | -    | -    |
-| 0  | <img src= ./plots/loss_landscape_b_0_c_0.png width="450"> |  <img src= ./plots/loss_landscape_b_0_c_10.png width="450"> | <img src= ./plots/loss_landscape_b_0_c_n10.png width="450"> |
-| 10 | <img src= ./plots/loss_landscape_b_10_c_0.png width="450"> |  <img src= ./plots/loss_landscape_b_10_c_10.png width="450"> | <img src= ./plots/loss_landscape_b_10_c_n10.png width="450"> |
-| -10 | <img src= ./plots/loss_landscape_b_n10_c_0.png width="450"> |  <img src= ./plots/loss_landscape_b_n10_c_10.png width="450"> | <img src= ./plots/loss_landscape_b_n10_c_n10.png width="450"> |
+| 0  | <img src= ./plots/data_1/loss_landscape_b_0_c_0.png width="450"> |  <img src= ./plots/data_1/loss_landscape_b_0_c_10.png width="450"> | <img src= ./plots/data_1/loss_landscape_b_0_c_n10.png width="450"> |
+| 10 | <img src= ./plots/data_1/loss_landscape_b_10_c_0.png width="450"> |  <img src= ./plots/data_1/loss_landscape_b_10_c_10.png width="450"> | <img src= ./plots/data_1/loss_landscape_b_10_c_n10.png width="450"> |
+| -10 | <img src= ./plots/data_1/loss_landscape_b_n10_c_0.png width="450"> |  <img src= ./plots/data_1/loss_landscape_b_n10_c_10.png width="450"> | <img src= ./plots/data_1/loss_landscape_b_n10_c_n10.png width="450"> |
 
-#### Table A loss values and minimized a,b and c
+<!---#### Table A4:  loss values and minimized a,b and c
 
 
 | | a fixed | b c fixed | a  | b  | c | loss | 
@@ -50,7 +50,9 @@
 | 7 | False | True |  -20 | 100 | 0 | 9.99e-16 |
 | 8 | True |  True | -20 | -100 | 0 |    34.53   |
 | 9 | True |  False | -20 | 9.199 | 1.57e-15 | 0.00010       |
-| 10 | Fale |  True | -20 | -100 | 0 |    34.53      |
+| 10 | Fale |  True | -20 | -100 | 0 |    34.53      | --->
+
+
 
 
 
