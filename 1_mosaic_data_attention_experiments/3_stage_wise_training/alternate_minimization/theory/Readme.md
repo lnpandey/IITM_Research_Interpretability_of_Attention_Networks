@@ -7,7 +7,7 @@
 
 #### Minimize b and c while a is fixed
 
--Table A1: Contour plots
+- Table A1: Contour plots
 
 | a | 0 | -10 | 10 | 
 | - | - | -   | -  |  
