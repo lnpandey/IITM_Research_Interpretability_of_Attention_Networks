@@ -1,9 +1,10 @@
-### Alternate minimization theory
+## Alternate minimization theory
 
-
+### Data 1
 - m = 2
 - f(x) = ax
 - g(x) = bx + c
+- Data_1  D_0 = 3 , D_1 = +1, D_-1 = -1
 
 #### Minimize b and c while a is fixed
 
@@ -52,7 +53,41 @@
 | 9 | True |  False | -20 | 9.199 | 1.57e-15 | 0.00010       |
 | 10 | Fale |  True | -20 | -100 | 0 |    34.53      | --->
 
+### Data 2
+- m = 2 
+- f(x) = ax
+- g(x) = bx + c
+- Data_2, D_0 = -3, D_1 = +1, D_-1 = -1
 
+
+#### Minimize b and c while a is fixed
+
+- Table B1: Contour plots
+
+| a | 0 | -10 | 10 | 
+| - | - | -   | -  |  
+|plots | <img src= ./plots/data_2/contour_b_c_a_0.png width="450"> | <img src= ./plots/data_2/contour_b_c_a_n10.png width="450"> | <img src= ./plots/data_2/contour_b_c_a_10.png width="450"> |
+| initial loss | 0.6931 | 0.6931 | 0.6931 |
+| final loss   |  0.0013 | 0.6931 |    0.0001   |
+
+
+- Table B2: Plots
+
+
+| | loss plot fixed a | minimized b value for fixed a | minimized c value for fixed a |
+| - |     ------      |   --------------------------- |  ---------------------------  |
+|   | <img src= ./plots/data_2/loss_fixed_a.png width="450"> |  <img src= ./plots/data_2/minimized_b_fixed_a.png width="450"> |  <img src= ./plots/data_2/minimized_c_fixed_a.png width="450"> |
+
+
+#### Minimize a while b and c are fixed
+
+- Table B3: loss landscape
+
+| b   c| 0  |  10  |  -10 |
+| ---  |  -   | -    | -    |
+| 0  | <img src= ./plots/data_2/loss_landscape_b_0_c_0.png width="450"> |  <img src= ./plots/data_2/loss_landscape_b_0_c_10.png width="450"> | <img src= ./plots/data_2/loss_landscape_b_0_c_n10.png width="450"> |
+| 10 | <img src= ./plots/data_2/loss_landscape_b_10_c_0.png width="450"> |  <img src= ./plots/data_2/loss_landscape_b_10_c_10.png width="450"> | <img src= ./plots/data_2/loss_landscape_b_10_c_n10.png width="450"> |
+| -10 | <img src= ./plots/data_2/loss_landscape_b_n10_c_0.png width="450"> |  <img src= ./plots/data_2/loss_landscape_b_n10_c_10.png width="450"> | <img src= ./plots/data_2/loss_landscape_b_n10_c_n10.png width="450"> |
 
 
 
