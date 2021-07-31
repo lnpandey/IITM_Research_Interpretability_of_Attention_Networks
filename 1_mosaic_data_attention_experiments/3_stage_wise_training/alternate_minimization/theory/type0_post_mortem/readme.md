@@ -4,7 +4,7 @@
 
 #### Table 1 : analysis with different weights and biases
 Model used is linear focus + linear classifaication
-| init weights focus | init weight classify | optimizer | type of training | final weight focus | final weight classify | tr acc | test acc |
+| init weights focus | init weight classify | optimizer | type of training | final weight focus | final weight classify | train acc | test acc |
 |--------------------|----------------------|-----------|------------------|---------------------|----------------------|--------|---------|
 |[0, 0] | [0, 0] | Adam  |simultaneous  | [-0.2738, 0] | [2.194, 10.332] | 99 | 99 |
 |[0, 0] | [0, 0] | Adam  |alternate minmization  | [-0.288, 0] | [1.6446, 7.93] | 99 | 99 |
