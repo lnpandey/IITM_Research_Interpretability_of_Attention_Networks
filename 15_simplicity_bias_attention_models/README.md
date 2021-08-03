@@ -5,9 +5,9 @@
 - Synthetic data 3d with following distribution 
 
    - X|BG = -1 x Unif[-1,1] x Unif[-1,1]
-   - X|FG1 = 1 x [Unif[3,4] U Unif[-3,-4]] x Unif[-1,]
-   - X|FG2 = 1 x [Unif[3,4] U Unif[-3,-4]] x Unif[]
-   - X|FG3 = 1 x [Unif[3,4] U Unif[-3,-4]] x Unif[]
+   - X|FG1 = 1 x [Unif[3,4] U Unif[-3,-4]] x Unif[-1,-0.5]
+   - X|FG2 = 1 x [Unif[3,4] U Unif[-3,-4]] x Unif[-0.25,0.25]
+   - X|FG3 = 1 x [Unif[3,4] U Unif[-3,-4]] x Unif[0.5,1]
 - first two dimensions
 
 
