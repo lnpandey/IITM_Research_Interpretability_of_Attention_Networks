@@ -18,14 +18,24 @@ MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 | - |     ------      |   --------------------------- |  ---------------------------  |----------------------- |
 | <img src= ./plots/substitution_instance_noise/grid_data.JPG width="650">  | <img src= ./plots/SDC/gd_lin_lin.JPG width="650"> | <img src= ./plots/SDC/gd_lin_mlp1.JPG width="650"> |  <img src= ./plots/SDC/gd_mlp1_lin.JPG width="650"> | <img src= ./plots/SDC/gd_mlp1_mlp1.JPG width="650"> |
 
-### Table 3: SDC task on MNIST Data
+### Table 3.1: SDC task on MNIST Data
 
-MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
-Focus is functionnaly zero, Classification is initialised with 
+- MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
+- Focus is functionnaly zero, Classification is initialised with Xavier_norm.
 
 | Dataset | focus mlp1 classify linear  | focus mlp1 classify mlp1 |
 | -------------------------- |  ---------------------------  |----------------------- |
 | MNIST  | <img src= ./plots/SDC/mnist/mlp1_linear/mnist_test.png width="450"> | <img src= ./plots/SDC/mnist/mlp1_mlp1/mnist_test.png width="450"> |
+
+### Table 3.2: SDC task on CIFAR Data
+
+- CNN-3 : conv1(32,3)-conv2(64,3)-conv3(64,3)-fc(512)-fc(64)-fc(10)
+- CNN-2 : conv1(6,5)-conv2(16,5)-fc(120)-fc(84)-fc(10)
+- Focus is functionnaly zero, Classification is initialised with Xavier_norm.
+
+| Dataset | focus CNN-3 classify CNN-2  | focus CNN-3 classify CNN-3 |
+| -------------------------- |  ---------------------------  |----------------------- |
+| CIFAR  | <img src= ./plots/SDC/cifar/cnn3_cnn2/cifar_test.png width="450"> | <img src= ./plots/SDC/cifar/cnn3_cnn2/cifar_test.png width="450"> |
 
 
 ### Table 4: SIN and CIN on MNIST and CIFAR
