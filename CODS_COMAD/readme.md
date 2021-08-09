@@ -24,7 +24,7 @@ MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 
 | Dataset | focus mlp1 classify linear  | focus mlp1 classify mlp1 |
 | -------------------------- |  ---------------------------  |----------------------- |
-| MNIST  | <img src= ./plots/SDC/mnist_mlp1_lin.JPG width="450"> | <img src= ./plots/SDC/mnist_mlp1_mlp1.JPG width="450"> |
+| MNIST  | <img src= ./plots/SDC/mnist/mlp1_linear/mnist_test.png width="450"> | <img src= ./plots/SDC/mnist/mlp1_mlp1/mnist_test.png width="450"> |
 
 
 ### Table 4: SIN and CIN on MNIST and CIFAR
