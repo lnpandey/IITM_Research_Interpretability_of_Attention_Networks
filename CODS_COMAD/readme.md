@@ -34,9 +34,14 @@ MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 
 ### Table 3.2: SDC task on CIFAR Data
 
+- fg_class = {0,1,2}, bg_class={3,4,5,6,7,8,9}
+- image = ( image - bg_mean(bg_class) ) / std_dev(bg_class)
+- from these images Mosaic data is formed with m=9.
+- mosaic_train = ( mosaic_train - mean(mosaic_train) ) / std_dev(mosaic_train)
+- mosaic_test = ( mosaic_test - mean(mosaic_train) ) / std_dev(mosaic_train)
 - CNN-3 : conv1(32,3)-conv2(64,3)-conv3(64,3)-fc(512)-fc(64)-fc(10)
 - CNN-2 : conv1(6,5)-conv2(16,5)-fc(120)-fc(84)-fc(10)
-- Focus is functionnaly zero, Classification is initialised with Xavier_norm.
+- Focus is functionnaly zero and no bias, Classification is initialised with Xavier_norm and bias with all zeros.
 
 | Dataset | focus CNN-3 classify CNN-2  | focus CNN-3 classify CNN-3 |
 | -------------------------- |  ---------------------------  |----------------------- |
