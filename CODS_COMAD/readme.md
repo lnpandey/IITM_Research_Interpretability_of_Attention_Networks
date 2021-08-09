@@ -20,6 +20,11 @@ MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 
 ### Table 3.1: SDC task on MNIST Data
 
+- fg_class = {0,1}, bg_class={2,3,4,5,6,7,8,9}
+- image = ( image - bg_mean(bg_class) ) / abs(max(bg_class))
+- from these images Mosaic data is formed with m=9.
+- mosaic_train = mosaic_train - mean(mosaic_train)
+- mosaic_test = mosaic_test - mean(mosaic_train)
 - MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 - Focus is functionnaly zero, Classification is initialised with Xavier_norm.
 
