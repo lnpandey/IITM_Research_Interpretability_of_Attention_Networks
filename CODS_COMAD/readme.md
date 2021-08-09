@@ -49,6 +49,11 @@ MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 
 
 ### Table 4: SIN and CIN on MNIST and CIFAR
+- Mosaic creation from CIFAR and MNIST is same as mentioned in Table 3.1 and 3.2
+- MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
+- CNN-2 : conv1(6,5)-conv2(16,5)-fc(120)-fc(84)-fc(10)
+- Mini-Inception-8 is having 8 inception layer
+- Mini-Inception-3 is having 3 inception layer
 
 | Dataset | convex_instance_noise  | substitution_instance_noise |
 | -------------------------- |  ---------------------------  |----------------------- |
