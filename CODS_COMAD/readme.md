@@ -43,9 +43,9 @@ MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 - CNN-2 : conv1(6,5)-conv2(16,5)-fc(120)-fc(84)-fc(10)
 - Focus is functionnaly zero and no bias, Classification is initialised with Xavier_norm and bias with all zeros.
 
-| Dataset | focus CNN-3 classify CNN-2  | focus CNN-3 classify CNN-3 |
-| -------------------------- |  ---------------------------  |----------------------- |
-| CIFAR  | <img src= ./plots/SDC/cifar/cnn3_cnn2/cifar_test.png width="450"> | <img src= ./plots/SDC/cifar/cnn3_cnn2/cifar_test.png width="450"> |
+| Dataset | focus CNN-3 classify CNN-2 Train  | focus CNN-3 classify CNN-2 Test |  focus CNN-3 classify CNN-3 Train  | focus CNN-3 classify CNN-3 Test |
+| -------------------------- |  ---------------------------  |----------------------- |-------|----------|
+| CIFAR  | <img src= ./plots/SDC/cifar/cnn3_cnn2/cifar_train.png width="350"> | <img src= ./plots/SDC/cifar/cnn3_cnn2/cifar_test.png width="350">  | <img src= ./plots/SDC/cifar/cnn3_cnn3/cifar_train.png width="350"> | <img src= ./plots/SDC/cifar/cnn3_cnn3/cifar_test.png width="350"> |
 
 
 ### Table 4: SIN and CIN on MNIST and CIFAR
