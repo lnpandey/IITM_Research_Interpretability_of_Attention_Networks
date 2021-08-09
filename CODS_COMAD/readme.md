@@ -26,7 +26,7 @@ MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 - mosaic_train = mosaic_train - mean(mosaic_train)
 - mosaic_test = mosaic_test - mean(mosaic_train)
 - MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
-- Focus is functionnaly zero, Classification is initialised with Xavier_norm.
+- Focus is functionnaly zero and no bias, Classification is initialised with Xavier_norm and bias with all zeros.
 
 | Dataset | focus mlp1 classify linear  | focus mlp1 classify mlp1 |
 | -------------------------- |  ---------------------------  |----------------------- |
