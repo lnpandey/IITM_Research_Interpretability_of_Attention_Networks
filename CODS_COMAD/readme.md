@@ -21,6 +21,7 @@ MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
 ### Table 3: SDC task on MNIST Data
 
 MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
+Focus is functionnaly zero, Classification is initialised with 
 
 | Dataset | focus mlp1 classify linear  | focus mlp1 classify mlp1 |
 | -------------------------- |  ---------------------------  |----------------------- |
