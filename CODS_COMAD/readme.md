@@ -5,10 +5,10 @@ MLP2 is 2 hidden layer with 50 and 10 neurons with ReLU activation.
 
 | Dataset | focus linear classify linear  | focus linear classify mlp2  | focus mlp2 classify linear  | focus mlp2 classify mlp2 |
 | - |     ------      |   --------------------------- |  ---------------------------  |----------------------- |
-| <img src= ./plots/convex_instance_noise/ds1_data.png width="300">  | <img src= ./plots/SDC/t0_lin_lin.JPG width="650"> | <img src= ./plots/SDC/t0_lin_mlp2.JPG width="650"> |  <img src= ./plots/SDC/t0_mlp2_lin.JPG width="650"> | <img src= ./plots/SDC/t0_mlp2_mlp2.JPG width="650"> |
-| <img src= ./plots/convex_instance_noise/ds2_data.png width="300">  | <img src= ./plots/SDC/t2_lin_lin.JPG width="650"> | <img src= ./plots/SDC/t2_lin_mlp2.JPG width="650"> |  <img src= ./plots/SDC/t2_mlp2_lin.JPG width="650"> | <img src= ./plots/SDC/t2_mlp2_mlp2.JPG width="650"> |
-| <img src= ./plots/convex_instance_noise/ds3_data.png width="300">  | <img src= ./plots/SDC/t3_lin_lin.JPG width="650"> | <img src= ./plots/SDC/t3_lin_mlp2.JPG width="650"> |  <img src= ./plots/SDC/t3_mlp2_lin.JPG width="650"> | <img src= ./plots/SDC/t3_mlp2_mlp2.JPG width="650"> |
-| <img src= ./plots/convex_instance_noise/ds4_data.png width="300">  | <img src= ./plots/SDC/t4_lin_lin.JPG width="650"> | <img src= ./plots/SDC/t4_lin_mlp2.JPG width="650"> |  <img src= ./plots/SDC/t4_mlp2_lin.JPG width="650"> | <img src= ./plots/SDC/t4_mlp2_mlp2.JPG width="650"> |
+| <img src= ./plots/convex_instance_noise/ds1_data.png width="300">  | <img src= ./plots/SDC/dataset_1/linear_linear/ds1_test.png width="500"> | <img src= ./plots/SDC/dataset_1/linear_mlp2/ds1_test.png width="500"> |  <img src= ./plots/SDC/dataset_1/mlp2_linear/ds1_test.png width="500"> | <img src= ./plots/SDC/dataset_1/mlp2_mlp2/ds1_test.png width="500"> |
+| <img src= ./plots/convex_instance_noise/ds2_data.png width="300">  | <img src= ./plots/SDC/dataset_2/linear_linear/ds2_test.png width="500"> | <img src= ./plots/SDC/dataset_2/linear_mlp2/ds2_test.png width="500"> |  <img src= ./plots/SDC/dataset_2/mlp2_linear/ds2_test.png width="500"> | <img src= ./plots/SDC/dataset_2/mlp2_mlp2/ds2_test.png width="500"> |
+| <img src= ./plots/convex_instance_noise/ds3_data.png width="300">  | <img src= ./plots/SDC/dataset_3/linear_linear/ds3_test.png width="500"> | <img src= ./plots/SDC/dataset_3/linear_mlp2/ds3_test.png width="500"> |  <img src= ./plots/SDC/dataset_3/mlp2_linear/ds3_test.png width="500"> | <img src= ./plots/SDC/dataset_3/mlp2_mlp2/ds3_test.png width="500"> |
+| <img src= ./plots/convex_instance_noise/ds4_data.png width="300">  | <img src= ./plots/SDC/dataset_4/linear_linear/ds4_test.png width="500"> | <img src= ./plots/SDC/dataset_4/linear_mlp2/ds4_test.png width="500"> |  <img src= ./plots/SDC/dataset_4/mlp2_linear/ds4_test.png width="500"> | <img src= ./plots/SDC/dataset_4/mlp2_mlp2/ds4_test.png width="500"> |
 
 ### Table 2: SDC task on Grid Data
 
