@@ -1,7 +1,11 @@
 
 ### Table 1: SDC task on Synthetic Datasets
 
-MLP2 is 2 hidden layer with 50 and 10 neurons with ReLU activation.
+- MLP2 is 2 hidden layer with 50 and 10 neurons with ReLU activation.
+- Whenever Focus is linear, there is no bias and weights are initialised to zero.
+- Whenever Classification is linear, there is bias and weights are initialised to Xavier_Norm and bias are initialised to zero.
+- Whenever Focus is MLP2, there are no bias and weights are initialised to Xavier_Norm. Also Focus is made functionally zero.
+- Whenever Classification is MLP2, there is bias and weights are initialised to Xavier_Norm and bias are initialised to zero.
 
 | Dataset | focus linear classify linear  | focus linear classify mlp2  | focus mlp2 classify linear  | focus mlp2 classify mlp2 |
 | - |     ------      |   --------------------------- |  ---------------------------  |----------------------- |
