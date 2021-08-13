@@ -1,6 +1,9 @@
 
 ### Table 1: SDC task on Synthetic Datasets
-
+- data_point = ( data_point - bg_mean(bg_class_D_0) ) / std_dev(bg_class_D_0)
+- from these data_point Mosaic data is formed with m=9.
+- mosaic_train = ( mosaic_train - mean(mosaic_train) ) / std_dev(mosaic_train)
+- mosaic_test = ( mosaic_test - mean(mosaic_train) ) / std_dev(mosaic_train)
 - MLP2 is 2 hidden layer with 50 and 10 neurons with ReLU activation.
 - Whenever Focus is linear, there is no bias and weights are initialised to zero.
 - Whenever Classification is linear, there is bias and weights are initialised to Xavier_Norm and bias are initialised to zero.
@@ -15,12 +18,19 @@
 | <img src= ./plots/convex_instance_noise/ds4_data.png width="300">  | <img src= ./plots/SDC/dataset_4/linear_linear/ds4_test.png width="500"> | <img src= ./plots/SDC/dataset_4/linear_mlp2/ds4_test.png width="500"> |  <img src= ./plots/SDC/dataset_4/mlp2_linear/ds4_test.png width="500"> | <img src= ./plots/SDC/dataset_4/mlp2_mlp2/ds4_test.png width="500"> |
 
 ### Table 2: SDC task on Grid Data
-
-MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
+- data_point = ( data_point - bg_mean(bg_class_D_0) ) / std_dev(bg_class_D_0)
+- from these data_point Mosaic data is formed with m=9.
+- mosaic_train = ( mosaic_train - mean(mosaic_train) ) / std_dev(mosaic_train)
+- mosaic_test = ( mosaic_test - mean(mosaic_train) ) / std_dev(mosaic_train)
+- MLP1 is 1 hidden layer with 64 neurons with ReLU activation.
+- Whenever Focus is linear, there is no bias and weights are initialised to zero.
+- Whenever Classification is linear, there is bias and weights are initialised to Xavier_Norm and bias are initialised to zero.
+- Whenever Focus is MLP1, there are no bias and weights are initialised to Xavier_Norm. Also Focus is made functionally zero.
+- Whenever Classification is MLP1, there is bias and weights are initialised to Xavier_Norm and bias are initialised to zero.
 
 | Dataset | focus linear classify linear  | focus linear classify mlp1  | focus mlp1 classify linear  | focus mlp1 classify mlp1 |
 | - |     ------      |   --------------------------- |  ---------------------------  |----------------------- |
-| <img src= ./plots/substitution_instance_noise/grid_data.JPG width="650">  | <img src= ./plots/SDC/gd_lin_lin.JPG width="650"> | <img src= ./plots/SDC/gd_lin_mlp1.JPG width="650"> |  <img src= ./plots/SDC/gd_mlp1_lin.JPG width="650"> | <img src= ./plots/SDC/gd_mlp1_mlp1.JPG width="650"> |
+| <img src= ./plots/substitution_instance_noise/grid_data.JPG width="650">  | <img src= ./plots/SDC/dataset_5/linear_linear/ds5_test.png width="500"> | <img src= ./plots/SDC/dataset_5/linear_mlp1/ds5_test.png width="500"> |  <img src= ./plots/SDC/dataset_5/mlp1_linear/ds5_test.png width="500"> | <img src= ./plots/SDC/dataset_5/mlp1_mlp1/ds5_test.png width="500"> |
 
 ### Table 3.1: SDC task on MNIST Data
 
