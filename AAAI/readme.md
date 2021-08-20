@@ -1,4 +1,9 @@
-### TABLE 1:  Analysis of Entropy and Layer averaging
+### Table 1: Datasets and Architecture
+| Dataset | Architecture |
+|---------|--------------|
+|<img src= ./plots/dataset1.JPG width="300"> | Focus is MLP with 2 hidden layers of 50 units and Classification is MLP with 1 hidden layer of 50 units. |
+
+### TABLE 2:  Analysis of Entropy and Layer averaging
 
 - Architecture 1 : Focus is MLP with 2 hidden layers of 50 units and Classification is MLP with 1 hidden layer of 50 units.
 
