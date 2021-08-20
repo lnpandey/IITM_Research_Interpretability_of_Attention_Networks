@@ -9,11 +9,11 @@
 
 | Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | Optimizer | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
 |---------|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
-| Dataset1 | zeroth layer | architecture1 | 20 | NO    | -     | Adam(lr=0.001) | 99.98 | 87.02 | 6  | 100   | 100   |
-| Dataset1 | zeroth layer | architecture1 | 20 | Yes   | 0.001 | Adam(lr=0.001) | 99.99 | 89.68 | 9  | 100   | 100   |
-| Dataset1 | zeroth layer | architecture1 | 20 | Yes   | 0.005 | Adam(lr=0.001) | 90.73 | 82.93 | 15 | 100   | 100   |
-| Dataset1 | first layer  | architecture1 | 20 | NO    | -     | Adam(lr=0.001) | 99.90 | 73.79 | 0  | -     | -     |
-| Dataset1 | first layer  | architecture1 | 20 | Yes   | 0.001 | Adam(lr=0.001) | 99.99 | 85.70 | 9  | 99.99 | 97.65 |
+| Dataset1 | zeroth  | architecture1 | 20 | NO    | -     | Adam(lr=0.001) | 99.98 | 87.02 | 6  | 100   | 100   |
+| Dataset1 | zeroth  | architecture1 | 20 | Yes   | 0.001 | Adam(lr=0.001) | 99.99 | 89.68 | 9  | 100   | 100   |
+| Dataset1 | zeroth  | architecture1 | 20 | Yes   | 0.005 | Adam(lr=0.001) | 90.73 | 82.93 | 15 | 100   | 100   |
+| Dataset1 | first   | architecture1 | 20 | NO    | -     | Adam(lr=0.001) | 99.90 | 73.79 | 0  | -     | -     |
+| Dataset1 | first   | architecture1 | 20 | Yes   | 0.001 | Adam(lr=0.001) | 99.99 | 85.70 | 9  | 99.99 | 97.65 |
 
 
 
