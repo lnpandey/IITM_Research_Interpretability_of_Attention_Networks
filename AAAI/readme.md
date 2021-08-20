@@ -6,6 +6,7 @@
 ### TABLE 2:  Analysis of Entropy and Layer averaging
 
 - Adam Optimizer is used and learning rate is tuned.
+- Best runs are those runs in which FTPT > 95%
 
 |S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
 |-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
