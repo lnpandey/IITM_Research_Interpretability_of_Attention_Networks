@@ -95,28 +95,28 @@
 
 #### When D0 > D_+1, D_-1
 
-<img src= ./plots/data_2/data_d0_gr_d1.png width="450">
+<img src= ./plots/data_d0_gr_d1.png width="450">
 
 - Loss heatmap for minimizing a with fix value of b and c
 
-<img src= ./plots/data_2/loss_heatmap_1.png width="450">
+<img src= ./plots/loss_heatmap_1.png width="450">
 
 - final a value heatmap for minimizing a with fix value of b and c
 
-<img src= ./plots/data_2/a_value_heatmap_1.png width="450">
+<img src= ./plots/a_value_heatmap_1.png width="450">
 
 
 #### When D0 < D_+1, D_-1
 
-<img src= ./plots/data_2/data_d0_ls_d1.png width="450">
+<img src= ./plots/data_d0_ls_d1.png width="450">
 
 - Loss heatmap for minimizing a with fix value of b and c
 
-<img src= ./plots/data_2/loss_heatmap_2.png width="450">
+<img src= ./plots/loss_heatmap_2.png width="450">
 
 - final a value heatmap for minimizing a with fix value of b and c
 
-<img src= ./plots/data_2/a_value_heatmap_2.png width="450">
+<img src= ./plots/a_value_heatmap_2.png width="450">
 
 
 
