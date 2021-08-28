@@ -40,7 +40,7 @@
 | 9.  |Dataset1 | second  | architecture1 | 10 | Yes   | 0.001 | 0.001 | 97.71 | 86.63 | 10  | 97.71 | 86.63 |
 | 10.  |Dataset1 | second  | architecture1 | 10 | Yes   | 0.005 | 0.001 | 99.85  | 87.32 | 10  | 99.85  | 87.32 |
 | 11.  |Dataset1 | second  | architecture1 | 10 | Yes   | 0.01  | 0.001 | 99.92  | 88.13 | 10  | 99.92  | 88.13 |
-| 11.  |Dataset1 | second  | architecture1 | 10 | Yes   | 0.02  | 0.001 | 99.93  | 89.97 | 10  | 99.93  | 89.97 |
+| 12.  |Dataset1 | second  | architecture1 | 10 | Yes   | 0.02  | 0.001 | 99.93  | 89.97 | 10  | 99.93  | 89.97 |
 
 
 
