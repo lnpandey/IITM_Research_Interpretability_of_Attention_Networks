@@ -1,11 +1,13 @@
 ### Table 1: Datasets and Architecture
 | Dataset | Dataset name | Architecture |
 |---------|--------------|---------------|
-|<img src= ./plots/dataset1.JPG width="300"> | Dataset 1 | Architecture 1 : Focus is MLP with 2 hidden layers of 50 units and Classification is MLP with 1 hidden layer of 50 units with weights initialised with Xavier norm and bias with zeros. |
+|<img src= ./plots/dataset1.JPG width="300"> | Dataset 1 | Architecture 1 : Focus is MLP with 2 hidden layers of 50 units with no bias and weights initialised with Xavier norm. Focus is functionally zero. Classification is MLP with 1 hidden layer of 50 units with weights initialised with Xavier norm and bias with zeros. |
 
 <!-- 
 ### TABLE 2:  Analysis of Entropy and Layer averaging 
 
+- Focus is MLP with 2 hidden layers of 50 units with no bias and weights initialised with Xavier norm. Focus is functionally zero.
+- Classification is MLP with 1 hidden layer of 50 units with weights initialised with Xavier norm and bias with zeros.
 - Adam Optimizer is used and learning rate is tuned.
 - Best runs are those runs in which FTPT > 95%
 
