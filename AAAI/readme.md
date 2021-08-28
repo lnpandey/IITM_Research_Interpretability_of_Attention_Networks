@@ -10,7 +10,7 @@
 
 |S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
 |-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
-| 1.  |Dataset1 | zeroth  | architecture1 | 20 | NO    | -     | 0.001 | 99.98 | 87.02 | 6  | 100   | 100   |
+| 1.  |Dataset1 | zeroth  | architecture1 | 20 | NO    | 0     | 0.001 | 99.98 | 87.02 | 6  | 100   | 100   |
 | 2.  |Dataset1 | zeroth  | architecture1 | 20 | Yes   | 0.001 | 0.001 | 99.99 | 89.68 | 9  | 100   | 100   |
 | 3.  |Dataset1 | zeroth  | architecture1 | 20 | Yes   | 0.005 | 0.001 | 90.73 | 82.93 | 15 | 100   | 100   |
 | 4.  |Dataset1 | first   | architecture1 | 20 | NO    | -     | 0.001 | 99.90 | 73.79 | 0  | -     | -     |
@@ -29,7 +29,7 @@
 
 |S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
 |-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
-| 1.  |Dataset1 | zeroth  | architecture1 | 10 | NO    | -     | 0.001 | 98.89 | 78.34 | 10  | 98.89 | 78.34 |
+| 1.  |Dataset1 | zeroth  | architecture1 | 10 | NO    | 0    | 0.001 | 98.16 | 74.72 | 10  | 98.16 | 74.72 |
 | 2.  |Dataset1 | zeroth  | architecture1 | 10 | Yes   | 0.0005| 0.001 | 95.60 | 70.56 | 9  | 98.45 | 74.02 |
 | 3.  |Dataset1 | zeroth  | architecture1 | 10 | Yes   | 0.001 | 0.001 | 91.93 | 66.31 | 9  | 98.14  | 73.43   |
 | 4.  |Dataset1 | zeroth  | architecture1 | 10 | Yes   | 0.005 | 0.001 | 92.48 | 65.95 | 9  | 98.75  | 73.03   |
