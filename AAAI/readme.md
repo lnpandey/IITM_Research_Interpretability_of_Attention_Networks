@@ -5,9 +5,6 @@
 
 <!-- 
 ### TABLE 2:  Analysis of Entropy and Layer averaging 
-
-- Focus is MLP with 2 hidden layers of 50 units with no bias and weights initialised with Xavier norm. Focus is functionally zero.
-- Classification is MLP with 1 hidden layer of 50 units with weights initialised with Xavier norm and bias with zeros.
 - Adam Optimizer is used and learning rate is tuned.
 - Best runs are those runs in which FTPT > 95%
 
@@ -25,7 +22,8 @@
 
 
 ### TABLE 2:  Analysis of Entropy and Layer averaging on Dataset 1 with Focus net functionally zero
-
+- Focus is MLP with 2 hidden layers of 50 units with no bias and weights initialised with Xavier norm. Focus is functionally zero.
+- Classification is MLP with 1 hidden layer of 50 units with weights initialised with Xavier norm and bias with zeros.
 - Adam Optimizer is used and learning rate is tuned.
 - Best runs are those runs in which Accuracy > 95%
 
