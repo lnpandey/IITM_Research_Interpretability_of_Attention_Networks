@@ -43,10 +43,11 @@
 | 4.  |Dataset2 | zeroth  | A_2_1 | 10 | Yes   | 0.01 | 0.001 | 99.98  | 89.10  | 10  | 99.98  | 89.10    |
 | 5.  |Dataset2 | zeroth  | A_2_1 | 10 | Yes   | 0.02 | 0.001 | 99.99 |  88.65 | 10  | 99.99  | 88.65    |
 | 6.  |Dataset2 | first   | A_2_1 | 10 | NO    | 0    | 0.001 | 100 | 93.53 | 10  | 100 | 93.53 |
-| 7.  |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.001| 0.001 |  | |  | | |
-| 8.  |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.005| 0.001 |  | |  | | |
-| 9.  |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.01 | 0.001 |  | |  | | |
-| 10. |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.02 | 0.001 |  | |  | | |
+| 7.  |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.001| 0.001 | 99.99 | 93.54 | 10  | 99.99 | 93.54 |
+| 8.  |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.005| 0.001 | 99.99 |  93.68 | 10  | 99.99| 93.68 |
+| 9.  |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.01 | 0.001 | 99.99  | 94.10 | 10  | 99.99 | 94.10 |
+| 10. |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.02 | 0.001 | 100  | 93.56 | 10 | 100 |  93.56 |
+
 
 ### TABLE 3: Dataset 2 with Focus net functionally zero (Architecture A_2_2)
 - Focus is MLP with 2 hidden layers of 6,12 units with no bias and weights initialised with Xavier norm. Focus is functionally zero.
