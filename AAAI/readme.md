@@ -36,7 +36,7 @@
 |S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
 |-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
 | 1.  |Dataset2 | zeroth  | A_2_1 | 10 | NO    | 0    | 0.001 | 99.99 | 89.13 | 10  | 99.99 | 89.13 |
-| 2.  |Dataset2 | zeroth  | A_2_1 | 10 | Yes   | 0.001| 0.001 |  |  |   |  |  |
+| 2.  |Dataset2 | zeroth  | A_2_1 | 10 | Yes   | 0.001| 0.001 | 99.99  | 89.15 | 10  | 99.99  | 89.15  |
 | 3.  |Dataset2 | zeroth  | A_2_1 | 10 | Yes   | 0.002| 0.001 |  |  |  |   |    |
 | 4.  |Dataset2 | zeroth  | A_2_1 | 10 | Yes   | 0.01 | 0.001 |  |  |  |   |    |
 | 5.  |Dataset2 | zeroth  | A_2_1 | 10 | Yes   | 0.02 | 0.001 |  |  |  |   |    |
