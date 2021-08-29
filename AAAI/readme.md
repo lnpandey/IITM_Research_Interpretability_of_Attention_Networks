@@ -3,12 +3,13 @@
 |---------|--------------|---------------|
 |<img src= ./plots/dataset1.JPG width="300"> | Dataset 1 | Architecture 1 : Focus is MLP with 2 hidden layers of 50 units with no bias and weights initialised with Xavier norm. Focus is functionally zero. Classification is MLP with 1 hidden layer of 50 units with weights initialised with Xavier norm and bias with zeros. |
 
+# Analysis of Entropy and Layer averaging on different Datasets
 
-### TABLE 2:  Analysis of Entropy and Layer averaging on Dataset 1 with Focus net functionally zero
+### TABLE 2: Dataset 1 with Focus net functionally zero
 - Focus is MLP with 2 hidden layers of 50 units with no bias and weights initialised with Xavier norm. Focus is functionally zero.
 - Classification is MLP with 1 hidden layer of 50 units with weights initialised with Xavier norm and bias with zeros.
 - Adam Optimizer is used and learning rate is tuned.
-- Best runs are those runs in which Accuracy > 95%
+- Best runs are those runs in which Accuracy > 90%
 
 |S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
 |-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
@@ -25,11 +26,11 @@
 | 11.  |Dataset1 | second  | architecture1 | 10 | Yes   | 0.01  | 0.001 | 99.92  | 88.13 | 10  | 99.92  | 88.13 |
 | 12.  |Dataset1 | second  | architecture1 | 10 | Yes   | 0.02  | 0.001 | 99.93  | 89.97 | 10  | 99.93  | 89.97 |
 
-### TABLE 2:  Analysis of Entropy and Layer averaging on Dataset 2 Architecture 1 with Focus net functionally zero
+### TABLE 2: Dataset 2 Architecture 1 with Focus net functionally zero
 - Focus is MLP with 1 hidden layers of 50 units with no bias and weights initialised with Xavier norm. Focus is functionally zero.
 - Classification is MLP with 1 hidden layer of 50 units with weights initialised with Xavier norm and bias with zeros.
 - Adam Optimizer is used and learning rate is tuned.
-- Best runs are those runs in which Accuracy > 95%
+- Best runs are those runs in which Accuracy > 90%
 
 |S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
 |-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
