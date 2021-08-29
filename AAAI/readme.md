@@ -18,14 +18,14 @@
 | 3.  |Dataset1 | zeroth  | A_1 | 10 | Yes   | 0.001 | 0.001 | 91.93 | 66.31 | 9  | 98.14  | 73.43   |
 | 4.  |Dataset1 | zeroth  | A_1 | 10 | Yes   | 0.005 | 0.001 | 92.48 | 65.95 | 9  | 98.75  | 73.03   |
 | 5.  |Dataset1 | zeroth  | A_1 | 10 | Yes   | 0.01  | 0.001 | 92.44 | 69.83 | 9  | 98.63  | 77.35   |
-| 5.  |Dataset1 | zeroth  | A_1 | 10 | Yes   | 0.02  | 0.001 | 56.07 | 25.28 | 3  | 99.43  | 78.67   |
-| 6.  |Dataset1 | first   | A_1 | 10 | NO    | 0     | 0.001 | 99.64 | 78.51 | 10  | 99.64 | 78.51 |
-| 7.  |Dataset1 | first   | A_1 | 10 | Yes   | 0.005 | 0.001 | 99.67 | 82.43 | 10  | 99.67 | 82.43 |
-| 8.  |Dataset1 | second  | A_1 | 10 | NO    | 0    | 0.001 | 99.68 | 85.95 | 10  | 99.68 | 85.95 |
-| 9.  |Dataset1 | second  | A_1 | 10 | Yes   | 0.001 | 0.001 | 97.71 | 86.63 | 10  | 97.71 | 86.63 |
-| 10.  |Dataset1 | second  | A_1 | 10 | Yes   | 0.005 | 0.001 | 99.85  | 87.32 | 10  | 99.85  | 87.32 |
-| 11.  |Dataset1 | second  | A_1 | 10 | Yes   | 0.01  | 0.001 | 99.92  | 88.13 | 10  | 99.92  | 88.13 |
-| 12.  |Dataset1 | second  | A_1 | 10 | Yes   | 0.02  | 0.001 | 99.93  | 89.97 | 10  | 99.93  | 89.97 |
+| 6.  |Dataset1 | zeroth  | A_1 | 10 | Yes   | 0.02  | 0.001 | 56.07 | 25.28 | 3  | 99.43  | 78.67   |
+| 7.  |Dataset1 | first   | A_1 | 10 | NO    | 0     | 0.001 | 99.64 | 78.51 | 10  | 99.64 | 78.51 |
+| 8.  |Dataset1 | first   | A_1 | 10 | Yes   | 0.005 | 0.001 | 99.67 | 82.43 | 10  | 99.67 | 82.43 |
+| 9.  |Dataset1 | second  | A_1 | 10 | NO    | 0    | 0.001 | 99.68 | 85.95 | 10  | 99.68 | 85.95 |
+| 10.  |Dataset1 | second  | A_1 | 10 | Yes   | 0.001 | 0.001 | 97.71 | 86.63 | 10  | 97.71 | 86.63 |
+| 11.  |Dataset1 | second  | A_1 | 10 | Yes   | 0.005 | 0.001 | 99.85  | 87.32 | 10  | 99.85  | 87.32 |
+| 12.  |Dataset1 | second  | A_1 | 10 | Yes   | 0.01  | 0.001 | 99.92  | 88.13 | 10  | 99.92  | 88.13 |
+| 13.  |Dataset1 | second  | A_1 | 10 | Yes   | 0.02  | 0.001 | 99.93  | 89.97 | 10  | 99.93  | 89.97 |
 
 ### TABLE 2: Dataset 2 Architecture 1 with Focus net functionally zero
 - Focus is MLP with 1 hidden layers of 50 units with no bias and weights initialised with Xavier norm. Focus is functionally zero.
