@@ -64,12 +64,12 @@
 |S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
 |-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
 | 1.  |Dataset2 | Zeroth  | A_2_2 | 10 | NO    | 0    | 0.001 | 99.89 | 87.62 | 10  | 99.89 | 87.62 |
-| 2.  |Dataset2 | Zeroth  | A_2_2 | 10 | Yes   | 0.001| 0.001 | 99.73 | 78.49 | 10  |  99.73 | 78.49|
+| 2.  |Dataset2 | Zeroth  | A_2_2 | 10 | Yes   | 0.001| 0.001 |  |  |  |   |    |
 | 3.  |Dataset2 | Zeroth  | A_2_2 | 10 | Yes   | 0.002| 0.001 |  |  |  |   |    |
 | 4.  |Dataset2 | Zeroth  | A_2_2 | 10 | Yes   | 0.01 | 0.001 |  |  |  |   |    |
 | 5.  |Dataset2 | Zeroth  | A_2_2 | 10 | Yes   | 0.02 | 0.001 |  |  |  |   |    |
 | 6.  |Dataset2 | First   | A_2_2 | 10 | NO    | 0    | 0.001 | 99.74 | 81.11 | 10  | 99.74 | 81.11 |
-| 7.  |Dataset2 | First   | A_2_2 | 10 | Yes   | 0.001| 0.001 |  | |  | | |
+| 7.  |Dataset2 | First   | A_2_2 | 10 | Yes   | 0.001| 0.001 | 99.73 | 78.49 | 10  |  99.73 | 78.49|
 | 8.  |Dataset2 | First   | A_2_2 | 10 | Yes   | 0.005| 0.001 |  | |  | | |
 | 9.  |Dataset2 | First   | A_2_2 | 10 | Yes   | 0.01 | 0.001 |  | |  | | |
 | 10. |Dataset2 | First   | A_2_2 | 10 | Yes   | 0.02 | 0.001 |  | |  | | |
