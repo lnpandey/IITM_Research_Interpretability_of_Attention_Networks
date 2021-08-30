@@ -29,7 +29,7 @@
 | 12.  |Dataset1 | second  | A_1 | 10 | Yes   | 0.01  | 0.001 | 99.92  | 88.13 | 10  | 99.92  | 88.13 |
 | 13.  |Dataset1 | second  | A_1 | 10 | Yes   | 0.02  | 0.001 | 99.93  | 89.97 | 10  | 99.93  | 89.97 |
 
-### TABLE 2: Dataset 2 with Focus net functionally zero (Architecture A_2_1)
+### TABLE 3: Dataset 2 with Focus net functionally zero (Architecture A_2_1)
 - Focus is MLP with 1 hidden layers of 50 units with no bias and weights initialised with Xavier norm. Focus is functionally zero.
 - Classification is MLP with 1 hidden layer of 50 units with weights initialised with Xavier norm and bias with zeros.
 - Adam Optimizer is used and learning rate is tuned.
@@ -55,7 +55,7 @@
 [Saved Files](https://drive.google.com/drive/folders/1-21r6Nq0J2aiuRxWth5vJFkT4q4xd96V?usp=sharing)
 
 
-### TABLE 3: Dataset 2 with Focus net functionally zero (Architecture A_2_2)
+### TABLE 4: Dataset 2 with Focus net functionally zero (Architecture A_2_2)
 - Focus is MLP with 2 hidden layers of 6,12 units with no bias and weights initialised with Xavier norm. Focus is functionally zero.
 - Classification is MLP with 2 hidden layers of 6,12 units with weights initialised with Xavier norm and bias with zeros.
 - Adam Optimizer is used and learning rate is tuned.
