@@ -8,7 +8,7 @@
 |-------------------------|----|-----|------|
 | 50  | 99.99 / 89.13 | 99.99 / 96.13 | 99.99 / 99.99 |
 | 100 | 99.96 / 92.17 | 99.99 / 92.66 | 99.99 / 93.59 |
-| 200 | 99.98 / 88.89 | 99.97 / 94.64 | 99.98 / 86.50 |
+| 200 | 99.98 / 89.13 | 99.97 / 94.64 | 99.98 / 86.50 |
 
 ### Table 2: Complexity effect on 5D elliptical blob data (First Layer averaging)
 - Focus is functionally zero with no bias and 1 hidden layer initialised to xavier norm.
