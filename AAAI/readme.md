@@ -50,7 +50,7 @@
 | 11.  |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.01 | 0.001 | 99.99  | 94.10 | 10  | 99.99 | 94.10 |
 | 12. |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.02 | 0.001 | 100  | 93.56 | 10 | 100 |  93.56 |
 | 13. |Dataset2 | first   | A_2_1 | 10 | Yes   | 0.05 | 0.001 | 83.65  | 70.96 | 7 | 100 |  100 |
-| 14.  |Dataset2 | zeroth  | A_2_1 | 10 | Yes   | 0.04 | 0.001 | 83.60 | 71.05  | 7  | 99.99 | 99.98    |
+| 14.  |Dataset2 | first  | A_2_1 | 10 | Yes   | 0.04 | 0.001 | 83.60 | 71.05  | 7  | 99.99 | 99.98    |
 
 [Saved Files](https://drive.google.com/drive/folders/1-21r6Nq0J2aiuRxWth5vJFkT4q4xd96V?usp=sharing)
 
@@ -80,6 +80,38 @@
 | 15.  |Dataset2 | Second  | A_2_2 | 10 | Yes   | 0.01 | 0.001 | 81.26 | 63.9 | 7 | 99.98 | 91.09 |
 | 16. |Dataset2 | Second  | A_2_2 | 10 | Yes   | 0.02 | 0.001 | 69.12  | 47.9 | 5  | 99.9 | 94.14 |
 
+
+
+### Table 5: Cifar data with zeroth layer averaging No Entropy
+
+| Seed | Run_  | train Accuracy  | train FTPT |  train FFPT | test Accuracy | test FTPT | test FFPT |   
+| ---- | ----  | ---             | ---        | ----        |   -----       | ----      | ----      | 
+|   0  |  1    |                 |            |             |          |   |   |
+|   1  |  2    |    99.29        |    82.51     |   16.78    |      95.26    |  79.96 | 15.30   |
+|   2  |  3   |                 |            |             |          |   |   |
+
+
+### Table 6: Cifar data with sixth layer (last) averaging No Entropy
+
+| Seed | Run_  | train Accuracy  | train FTPT |  train FFPT | test Accuracy | test FTPT | test FFPT |   
+| ---- | ----  | ---             | ---        | ----        |   -----       | ----      | ----      | 
+|   0  |  1    |     98.43       |    86.14   |   12.31     |   94.40       |  82.25 | 12.15   |
+|   1  |  2    |        99.32    |     89.21  |  10.10     |   96.05       | 85.99  | 10.06  |
+|   2  |  3   |      99.27       |   88.26    |     11.01        |   94.92       |  83.75 |  11.17 |
+
+
+### Table 7: Cifar data with sixth layer (last) averaging No Entropy
+
+| Seed | Run_  | k value |  train Accuracy  | train FTPT |  train FFPT | test Accuracy | test FTPT | test FFPT |   
+| ---- | ----  | --      |---             | ---        | ----        |   -----       | ----      | ----      | 
+|   0  |  1    | |            |     |   |         |   |   |
+|   1  |  2    |  |        |     |       |          |   |   |
+|   2  |  3   |   |         |      |             |          |   |   |
+
+
+
+
+ 
 
 
 
