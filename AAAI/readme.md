@@ -91,6 +91,19 @@
 |   2  |  3   |       98.79          |    80.43        |        18.36     |   94.65       | 77.34  | 17.31  |
 
 
+### Table 7: Cifar data with zeroth layer (last) averaging Entropy
+
+|S.NO| Seed | Run_  | k value |  train Accuracy  | train FTPT |  train FFPT | test Accuracy | test FTPT | test FFPT |   
+|-| ---- | ----  | --      |---             | ---        | ----        |   -----       | ----      | ----      | 
+|1|   0  |  1    | 0.001 |           |    | |        |   |    |
+|2|   1  |  2    | 0.001 |        |     |       |          |   |   |
+|3|   2  |  3   |  0.001 |         |      |             |          |   |   |
+|4|   0  |  1    | 0.005 |      99.38      |  82   | 17.38  |    95.64     | 79.07  |  16.57   |
+|5|   1  |  2    | 0.005 |        |     |       |          |   |   |
+|6|   2  |  3   |  0.005 |         |      |             |          |   |   |
+
+
+
 ### Table 6: Cifar data with sixth layer (last) averaging No Entropy
 
 | Seed | Run_  | train Accuracy  | train FTPT |  train FFPT | test Accuracy | test FTPT | test FFPT |   
@@ -100,7 +113,7 @@
 |   2  |  3   |      99.27       |   88.26    |     11.01        |   94.92       |  83.75 |  11.17 |
 
 
-### Table 7: Cifar data with sixth layer (last) averaging No Entropy
+### Table 7: Cifar data with sixth layer (last) averaging Entropy
 
 | Seed | Run_  | k value |  train Accuracy  | train FTPT |  train FFPT | test Accuracy | test FTPT | test FFPT |   
 | ---- | ----  | --      |---             | ---        | ----        |   -----       | ----      | ----      | 
