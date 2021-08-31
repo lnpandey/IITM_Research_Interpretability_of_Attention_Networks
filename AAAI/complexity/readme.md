@@ -22,6 +22,18 @@
 | 100 | 99.96 / 96.76 | 99.99 / 100 | 99.99 / 100 |
 | 200 | 99.99 / 99.99 | 99.97 / 99.99 | 99.98 / 100 |
 
+### Table 3: Complexity effect on 2D FG in Convex Hull of BG data (First Layer averaging)
+- Focus is functionally zero with no bias and 1 hidden layer initialised to xavier norm.
+- Classify has 1 hidden layer with bias initialised to zero and weights initialised to xavier norm.
+- Entry in the table is average over 10 runs and is of the form (avg Accuracy/ avg FTPT).
+- Adam optimizer is used with LR = 0.001
+
+| Focus \\ Classify ->  | 50 | 100 | 200 |
+|-------------------------|----|-----|------|
+| 50  | 98.52 / 47.08 | - / - | - / - |
+| 100 | 99.96 / 96.76 | - / - | - / - |
+| 200 | 99.99 / 99.99 | - / - | - / - |
+
 
 
 
