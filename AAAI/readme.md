@@ -97,7 +97,7 @@
 |   2  |  3   |       98.79          |    80.43        |        18.36     |   94.65       | 77.34  | 17.31  |
 
 
-### Table 7: Cifar data with zeroth layer averaging Entropy
+### Table 6: Cifar data with zeroth layer averaging Entropy
 
 |S.NO| Seed | Run_  | k value |  train Accuracy  | train FTPT |  train FFPT | test Accuracy | test FTPT | test FFPT |   
 |-| ---- | ----  | --      |---             | ---        | ----        |   -----       | ----      | ----      | 
@@ -113,7 +113,7 @@
 
 
 
-### Table 6: Cifar data with sixth layer (last) averaging No Entropy
+### Table 7: Cifar data with sixth layer (last) averaging No Entropy
 
 | Seed | Run_  | train Accuracy  | train FTPT |  train FFPT | test Accuracy | test FTPT | test FFPT |   
 | ---- | ----  | ---             | ---        | ----        |   -----       | ----      | ----      | 
@@ -122,7 +122,7 @@
 |   2  |  3   |      99.27       |   88.26    |     11.01        |   94.92       |  83.75 |  11.17 |
 
 
-### Table 7: Cifar data with sixth layer (last) averaging Entropy
+### Table 8: Cifar data with sixth layer (last) averaging Entropy
 
 |S.NO| Seed | Run_  | k value |  train Accuracy  | train FTPT |  train FFPT | test Accuracy | test FTPT | test FFPT |   
 |-| ---- | ----  | --      |---             | ---        | ----        |   -----       | ----      | ----      | 
@@ -136,4 +136,21 @@
 |8|   1  | 2    | 0.01   |   99.46      |  87.63    |    11.83         |       96.12  | 84.57   | 11.55  |
 |9|   2  | 3    | 0.01   |   99.13      |   78.93    |    20.19         |    95.02     |  76.21  |  18.81  |
 
+
+### TABLE 9: Dataset 3 - CIFAR with Focus net functionally zero (Architecture A_3)
+- Focus is MLP with 8 CNN layers with no bias and weights initialised with Xavier norm. Focus is functionally zero.
+- Classification is 8 CNN layers with weights initialised with Xavier norm and bias with zeros.
+- Adam Optimizer is used and learning rate is tuned.
+- Best runs are those runs in which Accuracy > 90%
+
+|S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
+|-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
+| 1.  |Dataset3 | Zeroth  | A_3 | 10 | NO    | 0    | 0.001 | 99.89 | 87.62 | 10  | 99.89 | 87.62 |
+| 2.  |Dataset3 | Zeroth  | A_3 | 10 | Yes   | 0.001| 0.001 | 95.33 | 80.06 | 9   | 99.84 | 85.68 |
+| 3.  |Dataset3 | Zeroth  | A_3 | 10 | Yes   | 0.005| 0.001 | 89.46 | 74.46 |  8  | 99.97 | 89.375|
+| 4.  |Dataset3 | Zeroth  | A_3 | 10 | Yes   | 0.01 | 0.001 | 83.41 | 66.29 | 7   | 99.97 | 89.80 |
+| 5.  |Dataset3 | Sixth   | A_3 | 10 | NO    | 0    | 0.001 | 99.74 | 81.11 | 10  | 99.74 | 81.11 |
+| 6.  |Dataset3 | Sixth   | A_3 | 10 | Yes   | 0.001| 0.001 | 99.73 | 78.49 | 10  | 99.73 | 78.49 |
+| 7.  |Dataset3 | Sixth   | A_3 | 10 | Yes   | 0.005| 0.001 | 93.59 | 69.97 | 9   | 99.86 | 77.65 |
+| 8.  |Dataset3 | Sixth   | A_3 | 10 | Yes   | 0.01 | 0.001 | 82.75 | 58.24 | 7   | 99.90 | 80.22 |
 
