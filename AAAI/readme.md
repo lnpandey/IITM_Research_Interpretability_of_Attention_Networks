@@ -145,26 +145,26 @@
 - Best runs are those runs in which Accuracy > 90%
 
 ##### On Training Data
-|S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
-|-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
-| 1.  |Dataset3 | Zeroth  | A_3 | 3 | NO    | 0    | 0.001 | 99.07 | 80.99 | 3  | 99.89 | 87.62 |
-| 2.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.001| 0.001 | 99.17 | 81.32 | 3  | 99.84 | 85.68 |
-| 3.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.005| 0.001 | 99.16 | 84.21 | 3  | 99.97 | 89.375|
-| 4.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.01 | 0.001 | 77.80 | 47.68 | 3  | 99.97 | 89.80 |
-| 5.  |Dataset3 | Sixth   | A_3 | 3 | NO    | 0    | 0.001 | 99.74 | 81.11 | 3  | 99.74 | 81.11 |
-| 6.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.001| 0.001 | 99.73 | 78.49 | 3  | 99.73 | 78.49 |
-| 7.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.005| 0.001 | 93.59 | 69.97 | 3  | 99.86 | 77.65 |
-| 8.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.01 | 0.001 | 82.75 | 58.24 | 3  | 99.90 | 80.22 |
+|S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | 
+|-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|
+| 1.  |Dataset3 | Zeroth  | A_3 | 3 | NO    | 0    | 0.001 | 99.07 | 80.99 |
+| 2.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.001| 0.001 | 99.17 | 81.32 |
+| 3.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.005| 0.001 | 99.16 | 84.21 |
+| 4.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.01 | 0.001 | 77.80 | 47.68 |
+| 5.  |Dataset3 | Sixth   | A_3 | 3 | NO    | 0    | 0.001 | 99.00 | 87.87 |
+| 6.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.001| 0.001 | 99.12 | 88.00 |
+| 7.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.005| 0.001 | 99.10 | 84.94 |
+| 8.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.01 | 0.001 | 99.29 | 81.42 |
 
 ##### On Testing Data
-|S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
-|-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|--------------|---------------|-------------|
-| 1.  |Dataset3 | Zeroth  | A_3 | 3 | NO    | 0    | 0.001 | 99.89 | 87.62 | 3  | 99.89 | 87.62 |
-| 2.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.001| 0.001 | 95.33 | 80.06 | 3  | 99.84 | 85.68 |
-| 3.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.005| 0.001 | 89.46 | 74.46 | 3  | 99.97 | 89.375|
-| 4.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.01 | 0.001 | 83.41 | 66.29 | 3  | 99.97 | 89.80 |
-| 5.  |Dataset3 | Sixth   | A_3 | 3 | NO    | 0    | 0.001 | 99.74 | 81.11 | 3  | 99.74 | 81.11 |
-| 6.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.001| 0.001 | 99.73 | 78.49 | 3  | 99.73 | 78.49 |
-| 7.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.005| 0.001 | 93.59 | 69.97 | 3  | 99.86 | 77.65 |
-| 8.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.01 | 0.001 | 82.75 | 58.24 | 3  | 99.90 | 80.22 |
+|S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | 
+|-----|----|---------------|--------------|-------------|---------|--------|--------|----------|-----------|
+| 1.  |Dataset3 | Zeroth  | A_3 | 3 | NO    | 0    | 0.001 | 95.04 | 78.15 |
+| 2.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.001| 0.001 | 94.76 | 78.32 |
+| 3.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.005| 0.001 | 95.75 | 81.41 |
+| 4.  |Dataset3 | Zeroth  | A_3 | 3 | Yes   | 0.01 | 0.001 | 67.62 | 46.62 |
+| 5.  |Dataset3 | Sixth   | A_3 | 3 | NO    | 0    | 0.001 | 95.12 | 83.99 |
+| 6.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.001| 0.001 | 94.88 | 84.41 |
+| 7.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.005| 0.001 | 95.39 | 81.74 |
+| 8.  |Dataset3 | Sixth   | A_3 | 3 | Yes   | 0.01 | 0.001 | 95.67 | 78.66 |
 
