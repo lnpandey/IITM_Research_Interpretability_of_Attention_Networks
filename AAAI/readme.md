@@ -96,7 +96,7 @@
 |   2  |  3   |       98.79          |    80.43        |        18.36     |   94.65       | 77.34  | 17.31  |
 
 
-### Table 7: Cifar data with zeroth layer (last) averaging Entropy
+### Table 7: Cifar data with zeroth layer averaging Entropy
 
 |S.NO| Seed | Run_  | k value |  train Accuracy  | train FTPT |  train FFPT | test Accuracy | test FTPT | test FFPT |   
 |-| ---- | ----  | --      |---             | ---        | ----        |   -----       | ----      | ----      | 
