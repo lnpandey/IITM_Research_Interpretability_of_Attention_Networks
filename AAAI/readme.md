@@ -14,8 +14,8 @@
 - Best runs are those runs in which Accuracy > 90%
 - LR = 0.001
 
-|S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
-|-----|----|---------------|--------------|-------------|---------|-------|----------|-----------|--------------|---------------|-------------|
+|S.No.| Dataset | Average layer | Architecture | nos_of_runs | Entropy | k-value | LR | avg Acc | avg FTPT | best runs | avg best Acc | avg best FTPT | 
+|-----|----|---------------|--------------|-------------|---------|-------|------|----|-----------|--------------|---------------|-------------|
 | 1.  |Dataset1 | zeroth  | A_1 | 10 | NO    | 0     | 0.001 | 98.16 | 74.72 | 10  | 98.16 | 74.72 |
 | 2.  |Dataset1 | zeroth  | A_1 | 10 | Yes   | 0.0005| 0.001 | 95.60 | 70.56 | 9  | 98.45 | 74.02 |
 | 3.  |Dataset1 | zeroth  | A_1 | 10 | Yes   | 0.001 | 0.001 | 91.93 | 66.31 | 9  | 98.14  | 73.43   |
