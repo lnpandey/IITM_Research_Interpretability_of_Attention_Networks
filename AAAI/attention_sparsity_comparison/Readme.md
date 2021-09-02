@@ -17,7 +17,7 @@
  - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
  - Attention is softmax
  - seed = 0
- - LR = 0.001
+ - LR = 0.001 (for all except row 8, lr=0.0005)
  
  |SNo | avg layer | k-value | Train Acc  | Train FTPT | Train avg sparsity | Test Acc  | Test FTPT | Test avg sparsity |
  |----|-----------|--------|-------|-------|--------|-------|-------|--------|
@@ -27,7 +27,7 @@
  | 4  | zeroth    |  0.005 | - | - | - | - | - | - |
  | 5  | sixth     |  0     | 98.77 | 85.92 | 4.6685 | 94.73 | 82.35 | 4.8302 |
  | 6  | sixth     |  0.001 | 99.46 | 78.03 | 3.9369 | 94.65 | 74.54 | 4.0924 |
- | 7  | sixth     |  0.003 | - | - | - | - | - | - |
+ | 7  | sixth     |  0.003 | 99.33 | 75.30 | 2.9134 | 94.33 | 72.64 | 2.9869 |
  | 8  | sixth     |  0.005 | - | - | - | - | - | - |
  
  #### Table 3: CIFAR - SparseMax / Spherical softmax / Softmax 
