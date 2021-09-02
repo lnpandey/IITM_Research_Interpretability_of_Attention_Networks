@@ -29,5 +29,22 @@
  | 6  | sixth     |  0.001 | 99.46 | 78.03 | 3.9369 | 94.65 | 74.54 | 4.0924 |
  | 7  | sixth     |  0.003 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
  | 8  | sixth     |  0.005 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
+ 
+ #### Table 3: CIFAR - SparseMax / Spherical softmax / Softmax (k=0)
+ - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
+ - seed = 0
+ - LR = 0.001
+ 
+ |SNo | avg layer | Attention | Train Acc  | Train FTPT | Train avg sparsity | Test Acc  | Test FTPT | Test avg sparsity |
+ |----|-----------|--------|-------|-------|--------|-------|-------|--------|
+ | 1  | zeroth    | SparseMax         | - | - | - | - | - | - |
+ | 2  | sixth     | SparseMax         | - | - | - | - | - | - |
+ | 3  | zeroth    | Spherical softmax | - | - | - | - | - | - |
+ | 4  | sixth     | Spherical softmax | - | - | - | - | - | - |
+ | 5  | zeroth    | Softmax (k=0)     | - | - | - | - | - | - |
+ | 6  | sixth     | Softmax (k=0)     | - | - | - | - | - | - |
+
+ 
+ 
   
  
