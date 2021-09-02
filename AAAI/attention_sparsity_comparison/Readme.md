@@ -12,3 +12,21 @@
  | zero | sparsemax  |   99.85 | 76.86 | 22.99 | 10 | 99.85 | 76.86 | 22.99 |
  | not-zero| softmax | 93.7 | 68.83 | 24.87 | 9 | 99.86 |76.47 | 23.39 |
  | not-zero| sparsemax | 93.45 | 84.21 | 9.24  | 9 | 99.976 | 93.48 | 6.49 |   
+ 
+ #### Table 2: CIFAR - Entropy
+ - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
+ - Attention is softmax
+ - seed = 0
+ - LR = 0.001
+ |SNo | avg layer | k-value | Train Acc  | Train FTPT | Train avg sparsity | Test Acc  | Test FTPT | Test avg sparsity |
+ |----|--------------------------------------------------------------------------------------------------------------------------|
+ | 1  | zeroth    |  0     | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
+ | 2  | zeroth    |  0.001 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
+ | 3  | zeroth    |  0.003 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
+ | 4  | zeroth    |  0.005 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
+ | 5  | sixth     |  0     | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
+ | 6  | sixth     |  0.001 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
+ | 7  | sixth     |  0.003 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
+ | 8  | sixth     |  0.005 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
+  
+ 
