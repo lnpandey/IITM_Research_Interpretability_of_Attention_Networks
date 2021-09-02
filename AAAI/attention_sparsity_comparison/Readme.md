@@ -17,18 +17,17 @@
  - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
  - Attention is softmax
  - seed = 0
- - LR = 0.001 (for all except row 8, lr=0.0005)
  
- |SNo | avg layer | k-value | Train Acc  | Train FTPT | Train avg sparsity | Test Acc  | Test FTPT | Test avg sparsity |
- |----|-----------|--------|-------|-------|--------|-------|-------|--------|
- | 1  | zeroth    |  0     | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
- | 2  | zeroth    |  0.001 | 98.83 | 84.18 | 3.8682 | 95.15 | 81.02 | 4.0746 |
- | 3  | zeroth    |  0.003 | 99.06 | 82.25 | 4.1836 | 95.41 | 79.21 | 4.4451 |
- | 4  | zeroth    |  0.005 | 98.52 | 86.10 | 2.4659 | 94.99 | 82.57 | 2.5934 |
- | 5  | sixth     |  0     | 98.77 | 85.92 | 4.6685 | 94.73 | 82.35 | 4.8302 |
- | 6  | sixth     |  0.001 | 99.46 | 78.03 | 3.9369 | 94.65 | 74.54 | 4.0924 |
- | 7  | sixth     |  0.003 | 99.33 | 75.30 | 2.9134 | 94.33 | 72.64 | 2.9869 |
- | 8  | sixth     |  0.005 | 99.59 | 88.35 | 3.6379 | 94.85 | 84.21 | 3.7670 |
+ |SNo | avg layer | k-value | Learning Rate | Train Acc  | Train FTPT | Train avg sparsity | Test Acc  | Test FTPT | Test avg sparsity |
+ |----|-----------|--------|-------|-------|--------|-------|-------|-------|--------|
+ | 1  | zeroth    |  0     | 0.001 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
+ | 2  | zeroth    |  0.001 | 0.001 | 98.83 | 84.18 | 3.8682 | 95.15 | 81.02 | 4.0746 |
+ | 3  | zeroth    |  0.003 | 0.001 | 99.06 | 82.25 | 4.1836 | 95.41 | 79.21 | 4.4451 |
+ | 4  | zeroth    |  0.005 | 0.001 | 98.52 | 86.10 | 2.4659 | 94.99 | 82.57 | 2.5934 |
+ | 5  | sixth     |  0     | 0.001 | 98.77 | 85.92 | 4.6685 | 94.73 | 82.35 | 4.8302 |
+ | 6  | sixth     |  0.001 | 0.001 | 99.46 | 78.03 | 3.9369 | 94.65 | 74.54 | 4.0924 |
+ | 7  | sixth     |  0.003 | 0.001 | 99.33 | 75.30 | 2.9134 | 94.33 | 72.64 | 2.9869 |
+ | 8  | sixth     |  0.005 | 0.0005| 99.59 | 88.35 | 3.6379 | 94.85 | 84.21 | 3.7670 |
  
  #### Table 3: CIFAR - SparseMax / Spherical softmax / Softmax 
  - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
