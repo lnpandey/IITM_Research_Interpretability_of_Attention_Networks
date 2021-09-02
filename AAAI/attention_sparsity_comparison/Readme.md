@@ -3,6 +3,8 @@
 - Dataset 2 (elliptical blob 5d data) Architecture 2 (6,12)
 - Adam optimizer with initial learning rate 0.001 (specified if some other is used)
 - zeroth layer averaging
+
+ #### Table A1
  |Focus Function | Attention Activation | Avg Accuracy  | Avg FTPT | Avg FFPT | Best Runs | Avg Best Acc | Avg Best FTPT | Average Best FFPT|
  | ---- | -----------------    | ---------     | -------  | -----    | ---       |        ----- |   ---------   | --------                  |
  | zero | softmax  |  99.89 |84.41 | 15.48 | 10 | 99.89 | 84.41 | 15.48 | 
