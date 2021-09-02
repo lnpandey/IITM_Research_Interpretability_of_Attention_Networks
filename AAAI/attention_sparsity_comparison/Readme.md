@@ -30,7 +30,7 @@
  | 7  | sixth     |  0.003 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
  | 8  | sixth     |  0.005 | 98.88 | 81.34 | 3.9187 | 94.34 | 78.38 | 4.1388 |
  
- #### Table 3: CIFAR - SparseMax / Spherical softmax / Softmax (k=0)
+ #### Table 3: CIFAR - SparseMax / Spherical softmax / Softmax 
  - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
  - seed = 0
  - LR = 0.001
