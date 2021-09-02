@@ -37,12 +37,12 @@
  
  |SNo | avg layer | Attention | Train Acc  | Train FTPT | Train avg sparsity | Test Acc  | Test FTPT | Test avg sparsity |
  |----|-----------|--------|-------|-------|--------|-------|-------|--------|
- | 1  | zeroth    | SparseMax         | - | - | - | - | - | - |
- | 2  | sixth     | SparseMax         | - | - | - | - | - | - |
- | 3  | zeroth    | Spherical softmax | - | - | - | - | - | - |
- | 4  | sixth     | Spherical softmax | - | - | - | - | - | - |
- | 5  | zeroth    | Softmax (k=0)     | - | - | - | - | - | - |
- | 6  | sixth     | Softmax (k=0)     | - | - | - | - | - | - |
+ | 1  | zeroth    | SparseMax            | - | - | - | - | - | - |
+ | 2  | sixth     | SparseMax            | - | - | - | - | - | - |
+ | 3  | zeroth    | Spherical softmax    | - | - | - | - | - | - |
+ | 4  | sixth     | Spherical softmax    | - | - | - | - | - | - |
+ | 5  | zeroth    | Softmax (no entropy) | - | - | - | - | - | - |
+ | 6  | sixth     | Softmax (no entropy) | - | - | - | - | - | - |
 
  
  
