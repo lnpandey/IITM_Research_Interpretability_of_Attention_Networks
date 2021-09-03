@@ -41,12 +41,24 @@
  
  |SNo | avg layer | Attention |  Learning Rate | Train Acc  | Train FTPT | Train avg sparsity | Test Acc  | Test FTPT | Test avg sparsity |
  |----|-----------|----------------------|-------|-------|-------|--------|-------|-------|--------|
- | 1  | zeroth    | SparseMax            | - | - | - | - | - | - | - |
- | 2  | sixth     | SparseMax            | - | - | - | - | - | - | - |
- | 3  | zeroth    | Spherical softmax    | - | - | - | - | - | - | - |
- | 4  | sixth     | Spherical softmax    | - | - | - | - | - | - | - |
- | 5  | zeroth    | Softmax (no entropy) | - | - | - | - | - | - | - |
- | 6  | sixth     | Softmax (no entropy) | - | - | - | - | - | - | - |
+ | 1  | zeroth    | SparseMax            | 0.0005| 99.01 | 86.06 | 1.89 | 94.7 | 82.88 | 1.98 |
+ | 2  | zeroth    | SparseMax            | 0.001| 98.75 | 80.03 | 3.25  | 95.22 | 76.87 | 3.39 |
+ | 3  | zeroth    | SparseMax            | 0.003 | 46.38 | 14.69 | 1.003 | 44.92 | 15.37 | 1.00 |
+ | 4  | sixth     | SparseMax            | 0.0005 | 98.95 | 86.33 | 2.33 | 94.39 | 82.26 | 2.44 |
+ | 5  | sixth     | SparseMax            | 0.001 | 99.29 | 87.48 | 2.17 | 95.56 | 84.39 | 2.25 |
+ | 6  | sixth     | SparseMax            | 0.003 | 33.79 | 4.55 | 1.003 | 33.53 | 4.54 | 1.003 |
+ | 7 | zeroth    | Spherical softmax    | 0.0005 | 99.26 | 85.08 | 4.78 | 94.77 | 81.62 | 5.05 |
+ | 8 | zeroth    | Spherical softmax    | 0.001 |  98.41  | 81.21     |  4.34     | 93.89   | 77.84    | 4.58 |
+ | 9 | zeroth    | Spherical softmax    | 0.003 |  |  |  |  |  |  |
+ | 10 |  sixth     | Spherical softmax    | 0.0005 | 99.34 | 87.80  | 6.19 | 94.17 | 83.13 | 6.31 |
+ | 11 |  sixth     | Spherical softmax    | 0.001 | 99.32 | 88.69  |  4.29 | 95.26  | 85.00 | 4.40  |
+ | 12 |  sixth     | Spherical softmax    | 0.003 | 99.39 | 87.51  | 4.66 | 95.41 | 83.80 | 4.78 |
+ | 13  | zeroth    | Softmax (no entropy) | 0.0005 | - | - | - | - | - | - |
+ | 14  | zeroth    | Softmax (no entropy) | 0.001 | - | - | - | - | - | - |
+ | 15  | zeroth    | Softmax (no entropy) | 0.003 | - | - | - | - | - | - |
+ | 16  | sixth     | Softmax (no entropy) | 0.0005 | 98.97 | 86.43 | 6.31 | 93.76 | 82.33 | 6.38 |
+ | 17  | sixth     | Softmax (no entropy) | 0.001 | 98.35 | 87.69 | 4.92 | 94.41 | 83.65 | 5.07 |
+ | 18  | sixth     | Softmax (no entropy) | 0.003 | - | - | - | - | - | - |
 
  
  
