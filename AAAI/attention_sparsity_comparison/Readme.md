@@ -54,7 +54,7 @@
  | 10 |  sixth     | Spherical softmax    | 0.0005 | 99.34 | 87.80  | 6.19 | 94.17 | 83.13 | 6.31 |
  | 11 |  sixth     | Spherical softmax    | 0.001 | 99.32 | 88.69  |  4.29 | 95.26  | 85.00 | 4.40  |
  | 12 |  sixth     | Spherical softmax    | 0.003 | 99.39 | 87.51  | 4.66 | 95.41 | 83.80 | 4.78 |
- | 13  | zeroth    | Softmax (no entropy) | 0.0005 | - | - | - | - | - | - |
+ | 13  | zeroth    | Softmax (no entropy) | 0.0005 | 98.79 | 83.69 | 3.72 | 95.03 | 80.26 | 3.94 |
  | 14  | zeroth    | Softmax (no entropy) | 0.001 | - | - | - | - | - | - |
  | 15  | zeroth    | Softmax (no entropy) | 0.003 | - | - | - | - | - | - |
  | 16  | sixth     | Softmax (no entropy) | 0.0005 | 98.97 | 86.43 | 6.31 | 93.76 | 82.33 | 6.38 |
