@@ -33,16 +33,15 @@
  #### Table 3: CIFAR - SparseMax / Spherical softmax / Softmax 
  - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
  - seed = 0
- - LR = 0.001
  
- |SNo | avg layer | Attention | Train Acc  | Train FTPT | Train avg sparsity | Test Acc  | Test FTPT | Test avg sparsity |
- |----|-----------|--------|-------|-------|--------|-------|-------|--------|
- | 1  | zeroth    | SparseMax            | - | - | - | - | - | - |
- | 2  | sixth     | SparseMax            | - | - | - | - | - | - |
- | 3  | zeroth    | Spherical softmax    | - | - | - | - | - | - |
- | 4  | sixth     | Spherical softmax    | - | - | - | - | - | - |
- | 5  | zeroth    | Softmax (no entropy) | - | - | - | - | - | - |
- | 6  | sixth     | Softmax (no entropy) | - | - | - | - | - | - |
+ |SNo | avg layer | Attention |  Learning Rate | Train Acc  | Train FTPT | Train avg sparsity | Test Acc  | Test FTPT | Test avg sparsity |
+ |----|-----------|----------------------|-------|-------|-------|--------|-------|-------|--------|
+ | 1  | zeroth    | SparseMax            | - | - | - | - | - | - | - |
+ | 2  | sixth     | SparseMax            | - | - | - | - | - | - | - |
+ | 3  | zeroth    | Spherical softmax    | - | - | - | - | - | - | - |
+ | 4  | sixth     | Spherical softmax    | - | - | - | - | - | - | - |
+ | 5  | zeroth    | Softmax (no entropy) | - | - | - | - | - | - | - |
+ | 6  | sixth     | Softmax (no entropy) | - | - | - | - | - | - | - |
 
  
  
