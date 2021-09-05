@@ -4,7 +4,7 @@
 - Adam optimizer with initial learning rate 0.001 (specified if some other is used)
 - zeroth layer averaging
 
- #### Table A1
+ ## Table A1
  |Focus Function | Attention Activation | Avg Accuracy  | Avg FTPT | Avg FFPT | Best Runs | Avg Best Acc | Avg Best FTPT | Average Best FFPT|
  | ---- | -----------------    | ---------     | -------  | -----    | ---       |        ----- |   ---------   | --------                  |
  | zero | softmax  |  99.89 |84.41 | 15.48 | 10 | 99.89 | 84.41 | 15.48 | 
@@ -13,12 +13,12 @@
  | not-zero| softmax | 93.7 | 68.83 | 24.87 | 9 | 99.86 |76.47 | 23.39 |
  | not-zero| sparsemax | 93.45 | 84.21 | 9.24  | 9 | 99.976 | 93.48 | 6.49 |   
  
- #### Table 2: CIFAR - Entropy
+ ## Table 2: CIFAR - Entropy
  - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
  - Attention is softmax
  - seed = 0
  - LR = 0.0005
-
+ #### Zeroth Layer
  |SNo | avg layer | k-value | Train Acc  | Train FTPT | Train avg sparsity | Train avg Simplex dist | Train avg entropy |Test Acc  | Test FTPT | Test avg sparsity | Test avg Simplex dist | Test avg entropy |
  |----|-----------|--------|-------|-------|--------|--------|--------|-------|-------|--------|--------|--------|
  |1.1 | zeroth    |  0     | 99.12 | 84.49 | 3.7806 | 0.2217 | 0.8835 | 95.00 | 81.13 | 4.0006 | 0.2429 | 0.9579 |
@@ -33,9 +33,25 @@
  |4.1 | zeroth    |  0.005 | 98.99 | 85.29 | 3.2804 | 0.1923 | 0.7434 | 95.17 | 82.06 | 3.4616 | 0.2095 | 0.8048 |
  |4.2 | zeroth    |  0.005 | 72.03 | 36.13 | 1.0066 | 0.0014 | - | 61.98 | 36.41 | 1.0078 | 0.0014 | - |
  |4.3 | zeroth    |  0.005 | 98.89 | 85.40 | 3.3360 | 0.1931 | 0.7521 | 94.91 | 81.94 | 3.5238 | 0.2132 | 0.8174 |
+ 
+  #### Sixth Layer
+ |SNo | avg layer | k-value | Train Acc  | Train FTPT | Train avg sparsity | Train avg Simplex dist | Train avg entropy |Test Acc  | Test FTPT | Test avg sparsity | Test avg Simplex dist | Test avg entropy |
+ |----|----------|--------|-------|-------|--------|--------|--------|-------|-------|--------|--------|--------|
+ |1.1 | sixth    |  0     | - | - | - | - | - | - | - | - | - | - |
+ |1.2 | sixth    |  0     | - | - | - | - | - | - | - | - | - | - |
+ |1.3 | sixth    |  0     | - | - | - | - | - | - | - | - | - | - |
+ |2.1 | sixth    |  0.001 | - | - | - | - | - | - | - | - | - | - |
+ |2.2 | sixth    |  0.001 | - | - | - | - | - | - | - | - | - | - |
+ |2.3 | sixth    |  0.001 | - | - | - | - | - | - | - | - | - | - |
+ |3.1 | sixth    |  0.003 | - | - | - | - | - | - | - | - | - | - |
+ |3.2 | sixth    |  0.003 | - | - | - | - | - | - | - | - | - | - |
+ |3.3 | sixth    |  0.003 | - | - | - | - | - | - | - | - | - | - |
+ |4.1 | sixth    |  0.005 | - | - | - | - | - | - | - | - | - | - |
+ |4.2 | sixth    |  0.005 | - | - | - | - | - | - | - | - | - | - |
+ |4.3 | sixth    |  0.005 | - | - | - | - | - | - | - | - | - | - |
 
  
- #### Table 3: CIFAR - SparseMax / Spherical softmax / Softmax 
+ ## Table 3: CIFAR - SparseMax / Spherical softmax / Softmax 
  - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
  - seed = 0
  
