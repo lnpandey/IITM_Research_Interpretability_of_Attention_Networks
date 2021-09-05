@@ -16,7 +16,7 @@
  ## Table 2: CIFAR - Entropy
  - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
  - Attention is softmax
- - seed = 0
+ - seed = 0,1,2 for run1,2,3
  - LR = 0.0005
  #### Zeroth Layer
  |SNo | avg layer | k-value | Train Acc  | Train FTPT | Train avg sparsity | Train avg Simplex dist | Train avg entropy |Test Acc  | Test FTPT | Test avg sparsity | Test avg Simplex dist | Test avg entropy |
