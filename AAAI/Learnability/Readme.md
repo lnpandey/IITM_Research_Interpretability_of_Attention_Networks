@@ -2,6 +2,7 @@
 
 - Cifar data, SDC task for different m values
 - initial learning rate for Adam optimizer 0.0005
+- focus network CNN 3-layer, classification network CNN 2-layer
 
 
 | m  | Train Accuracy | FTPT  | FFPT  | Test Accuracy  | FTPT  | FFPT  |
