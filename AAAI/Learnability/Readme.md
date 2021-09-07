@@ -13,7 +13,7 @@
 | 20 | 98.72          | 71.01 | 27.71 |  87.95         | 64.46 | 23.49 |
 | 50 | 99.13          | 60.12 | 39.01 |  82.59         | 55.94 | 26.65 |
 
-### Table 1:  CIN on Dataset 1
+<!-- ### Table 1:  CIN on Dataset 1
 - Base distribution fg_class = {0,1}, bg_class={2,3,4,5,6,7,8,9}
 - base_dist = ( base_dist - bg_mean(bg_class) ) / std_dev(bg_class)
 - from these base_dist, Mosaic data is formed with m segments.
@@ -65,23 +65,25 @@
 | 3. | 20   | -  | - |
 | 4. | 50   | -  | - |
 | 5. | 100  | -  | - |
-| 6. | 1000 | -  | - |
+| 6. | 1000 | -  | - | -->
 
 ### Table 4:  CIN on Dataset 4
 - Base distribution fg_class = {0,1,2}, bg_class={3,4,5,6,7,8,9}
 - base_dist = ( base_dist - bg_mean(bg_class) ) / std_dev(bg_class)
-- from these base_dist, Mosaic data is formed with m segments.
-- mosaic_train = mosaic_train - mean(mosaic_train)/ std_dev(mosaic_train)
-- mosaic_test = mosaic_test - mean(mosaic_test)/ std_dev(mosaic_test). Note that test mean and std_dev is used to make the dataset same transform numerically.
-- epochs = 1000, LR = 0.001
-- MLP2 has 50,10 units in respective 2 hidden layer
+- from these base_dist, 2000 Mosaic data is formed with m segments.
+- mosaic_data = mosaic_data - mean(mosaic_data[0:1000])/ std_dev(mosaic_data[0:1000])
+- mosaic_test = mosaic_data[1000:2000]
+- epochs = 1000, LR = 0.001, LR* = 0.0009
+- MLP2 has 50,10 units in respective 2 hidden layer and weights are initialised to xavier_normal and bias are initialised to zero.
 
 |SNo | m-value | Linear | MLP2 |
 |----|----------|---------|-------|
-| 1. | 5    | 100   | 84.20 |
-| 2. | 10   | 100   | 65.80 |
-| 3. | 20   | 99.90 | 64.30 |
-| 4. | 50   | 64.50 | 57.90 |
-| 5. | 100  | 31.60 | 32.30 |
-| 6. | 1000 | 42.30 | 27.80 |
+| 1. | 5    | 100   | 98.20 / 100* |
+| 2. | 10   | 100   | 99.30 |
+| 3. | 20   | 100   | 76.30 |
+| 4. | 50   | 100   | 54.20 |
+| 5. | 100  | 61    | 33.30 |
+| 5. | 250  | 68.30 | 0     |
+| 5. | 500  | 0     | 33.90 |
+| 6. | 1000 | 33.50 | 31.40 |
 
