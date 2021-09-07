@@ -24,6 +24,19 @@
 | 20 | 98.76         | 73.77  | 24.98 |  87.97         | 67.81 | 20.16 |
 | 50 |               |        |       |                |       |       |
 
+
+- MNIST Data Focus MLP Classify MLP
+
+| m  | Train Accuracy | FTPT  | FFPT  | Test Accuracy  | FTPT  | FFPT  |
+| -  | -------------- | ----  | ---   | -------------- | ---   | ----  |
+|  50  |   99.65      | 98.03 | 1.62  |    99.25       |97.76  | 1.49  |
+
+- MNIST Data Focus MLP Classify Linear 
+
+| m  | Train Accuracy | FTPT  | FFPT  | Test Accuracy  | FTPT  | FFPT  |
+| -  | -------------- | ----  | ---   | -------------- | ---   | ----  |
+| 50 |      99.61     | 95.88 | 3.73  |     99.14      | 95.31 | 3.83  |
+
 <!-- ### Table 1:  CIN on Dataset 1
 - Base distribution fg_class = {0,1}, bg_class={2,3,4,5,6,7,8,9}
 - base_dist = ( base_dist - bg_mean(bg_class) ) / std_dev(bg_class)
