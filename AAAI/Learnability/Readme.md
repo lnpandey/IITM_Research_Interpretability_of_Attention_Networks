@@ -65,7 +65,7 @@
 - train_data = (1/m)\*(sum(m_segments))
 - test_data = (1/m)\*(fg_segment)
 - epochs = 1500
-- LR = 0.001 
+- LR = 0.001 (by default) else \* = 0.0001
 - MLP2 has 50,10 units in respective 2 hidden layer
 
 |SNo | m-value | Linear | MLP2 |
@@ -78,7 +78,7 @@
 | 6. | 250  | 100 | 100 |
 | 7. | 500  | 100 | 100 |
 | 8. | 1000 | 64.50 | 68.50 |
-| 9. | 2000 | 64.50 | 34.20 |
+| 9. | 2000 | 64.50 | 34.20 / 64.50* |
 
 ### Table 3:  CIN on Dataset 3
 - Base distribution fg_class = {0,1,2}, bg_class={3,4,5,6,7,8,9}
