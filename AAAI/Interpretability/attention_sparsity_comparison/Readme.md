@@ -1,17 +1,31 @@
 ### Compare different algorithms
 
-- Dataset 2 (elliptical blob 5d data) Architecture 2 (6,12)
+- Dataset 2 (elliptical blob 5d data) Architecture (6,12)
 - Adam optimizer with initial learning rate 0.001 (specified if some other is used)
 - zeroth layer averaging
 
  ## Table A1
- |Focus Function | Attention Activation | Avg Accuracy  | Avg FTPT | Avg FFPT | Best Runs | Avg Best Acc | Avg Best FTPT | Average Best FFPT|
- | ---- | -----------------    | ---------     | -------  | -----    | ---       |        ----- |   ---------   | --------                  |
- | zero | softmax  |  99.89 |84.41 | 15.48 | 10 | 99.89 | 84.41 | 15.48 | 
+| Attention Activation | Avg Accuracy  | Avg FTPT | Sparsity value  | Simplex distance | entropy | 
+| -----------------    | ---------     | -------  | -----           | ---               | -----  |
+| softmax | 99.86  |  81.60  | 1.221   |  0.036  | 0.101 |
+| sparsemax | 99.99 |  99.36 |   1.0914 | 0.018   |  0.0509 |
+| spherical softmax |    |   |          |         |         |
+ 
+## Table A2: Dataset 1 (type4 data)  Architecture (focus-50,50, classification -50)
+
+| Attention Activation | Avg Accuracy  | Avg FTPT | Sparsity value  | Simplex distance | entropy | 
+| -----------------    | ---------     | -------  | -----    | ---       |        ----- | 
+| softmax |  98.89  |  77.50  | 2.407   |  0.241  | 0.677 |
+| sparsemax |  98.57  | 76.95 | 1.61  | 0.740  | 0.394|
+| spherical softmax |  96.16 |   71.38  |    3.294  |   0.338    |  1.0381     |
+
+
+
+ 
+ 
+ <!---  | zero | softmax  |  99.89 |84.41 | 15.48 | 10 | 99.89 | 84.41 | 15.48 | 
  | zero |  sparsemax (lr 0.01 just checked)|  80.81 | 67.19 | 13.61 |  7 | 99.90 | 94.90 | 5.08 | 
- | zero | sparsemax  |   99.85 | 76.86 | 22.99 | 10 | 99.85 | 76.86 | 22.99 |
- | not-zero| softmax | 93.7 | 68.83 | 24.87 | 9 | 99.86 |76.47 | 23.39 |
- | not-zero| sparsemax | 93.45 | 84.21 | 9.24  | 9 | 99.976 | 93.48 | 6.49 |   
+ | zero | sparsemax  |   99.85 | 76.86 | 22.99 | 10 | 99.85 | 76.86 | 22.99 |--->
  
  ## Table 2: CIFAR - Entropy
  - Focus net has no bias and weights are initialised to xavier norm, Classification weights are initialised to xavier norm and bias with zeros.
