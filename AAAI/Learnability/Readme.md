@@ -50,7 +50,7 @@
 | 50(1k)  |    99.70     | 51.10 | 48.60 |   90.80       | 48.69 | 42.11 |
 
 
-![Code Links](https://drive.google.com/drive/folders/1e8bDLemg_H2u9k-1hUOSwyUNvhTLadAN?usp=sharing)
+[Code Links](https://drive.google.com/drive/folders/1e8bDLemg_H2u9k-1hUOSwyUNvhTLadAN?usp=sharing)
 
 ### Table 1:  CIN on Dataset 1
 - Base distribution fg_class = {0,1}, bg_class={2,3,4,5,6,7,8,9}
