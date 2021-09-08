@@ -3,13 +3,14 @@
 - Dataset 2 (elliptical blob 5d data) Architecture (6,12)
 - Adam optimizer with initial learning rate 0.001 (specified if some other is used)
 - zeroth layer averaging
+- * only 2 out of 5 runs worked
 
  ## Table A1
 | Attention Activation | Avg Accuracy  | Avg FTPT | Sparsity value  | Simplex distance | entropy | 
 | -----------------    | ---------     | -------  | -----           | ---               | -----  |
 | softmax | 99.86  |  81.60  | 1.221   |  0.036  | 0.101 |
 | sparsemax | 99.99 |  99.36 |   1.0914 | 0.018   |  0.0509 |
-| spherical softmax |    |   |          |         |         |
+| spherical softmax* |  98.44  | 63.33  |   2.747       |   0.224      |  0.686       |
  
 ## Table A2: Dataset 1 (type4 data)  Architecture (focus-50,50, classification -50)
 
