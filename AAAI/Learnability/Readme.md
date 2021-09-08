@@ -58,7 +58,7 @@
 | 6. | 250  | 59.90 | 51.90 / 86.60* / 54.70**|
 | 7. | 500  | 48.10 | 48.10 |
 | 8. | 1000 | 48.10 | 48.10 | -->
-Below experiments as done on linear architecture
+Below experiments are done on linear architecture
 |SNo | m-value | size 100 | size 500 | size 1000 | size 2000 |
 |----|-------|-------|----------------|-------|-------|
 | 1. | 5     | 95.00 | 100 / 98.80*   | 98.80 | 99.35 |
