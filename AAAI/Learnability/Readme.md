@@ -80,7 +80,7 @@ Below experiments are done on linear architecture
 - LR = 0.001 (by default) else \* = 0.0001
 - MLP2 has 50,10 units in respective 2 hidden layer
 
-|SNo | m-value | Linear | MLP2 |
+<!-- |SNo | m-value | Linear | MLP2 |
 |----|----------|---------|-------|
 | 1. | 5    | 100 | 100 |
 | 2. | 10   | 100 | 100 |
@@ -90,7 +90,17 @@ Below experiments are done on linear architecture
 | 6. | 250  | 100 | 100 |
 | 7. | 500  | 100 | 100 |
 | 8. | 1000 | 64.50 | 68.50 |
-| 9. | 2000 | 64.50 | 34.20 / 64.50* |
+| 9. | 2000 | 64.50 | 34.20 / 64.50* | -->
+
+Below experiments are done on linear architecture
+|SNo | m-value | size 100 | size 500 | size 1000 | size 2000 |
+|----|-------|-------|----------------|-------|-------|
+| 1. | 5     | 100 | 100  | 100  | 100  |
+| 2. | 50    | 100 | 100  | 100  | 100  |
+| 3. | 100   | 70  | 100  | 100  | 100  |
+| 4. | 500   | 34  | 100  | 99.7 | 100  |
+| 5. | 1000  | 34  | 100  | 64.5 | 100  |
+| 6. | 2000  | 34  | 32.60| 31.5 | 90.80|
 
 ### Table 3:  CIN on Dataset 3
 - Base distribution fg_class = {0,1,2}, bg_class={3,4,5,6,7,8,9}
