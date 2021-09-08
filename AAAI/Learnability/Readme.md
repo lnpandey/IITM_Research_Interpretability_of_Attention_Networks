@@ -84,37 +84,39 @@
 - Base distribution fg_class = {0,1,2}, bg_class={3,4,5,6,7,8,9}
 - base_dist = ( base_dist - bg_mean(bg_class) ) / std_dev(bg_class)
 - from these base_dist, Mosaic data is formed with m segments.
-- mosaic_train = mosaic_train - mean(mosaic_train)/ std_dev(mosaic_train)
-- mosaic_test = mosaic_test - mean(mosaic_test)/ std_dev(mosaic_test). Note that test mean and std_dev is used to make the dataset same transform numerically.
-- epochs = 1000, LR = 0.001
+- train_data = (1/m)\*(sum(m_segments))
+- test_data = (1/m)\*(fg_segment)
+- epochs = 1500
+- LR = 0.001 (by default) else \* = 0.0001, \** = 0.0005, \*** = 0.00001, \**** = 0.00005
 - MLP2 has 50,10 units in respective 2 hidden layer
 
 |SNo | m-value | Linear | MLP2 |
 |----|----------|---------|-------|
-| 1. | 5    | -  | - |
-| 2. | 10   | -  | - |
-| 3. | 20   | -  | - |
-| 4. | 50   | -  | - |
-| 5. | 100  | -  | - |
-| 6. | 1000 | -  | - |
+| 1. | 5    | 81.80 | 96.30 / 49.40 / 83.00* / 76.70** |
+| 2. | 10   | 81.00 | 71.90 / 84.10* / 69.70** |
+| 3. | 20   | 56.80 | 33.90 / 49.70*** / 52**** |
+| 4. | 50   | 31.70 | 31.70 |
+| 5. | 100  | 31.50 | 33.00 |
+| 6. | 1000 | 31.50 | 35.50 |
+
+
 
 ### Table 4:  CIN on Dataset 4
 - Base distribution fg_class = {0,1,2}, bg_class={3,4,5,6,7,8,9}
 - base_dist = ( base_dist - bg_mean(bg_class) ) / std_dev(bg_class)
-- from these base_dist, 2000 Mosaic data is formed with m segments.
-- mosaic_data = mosaic_data - mean(mosaic_data[0:1000])/ std_dev(mosaic_data[0:1000])
-- mosaic_test = mosaic_data[1000:2000]
-- epochs = 1000, LR = 0.001, LR* = 0.0009
-- MLP2 has 50,10 units in respective 2 hidden layer and weights are initialised to xavier_normal and bias are initialised to zero.
+- from these base_dist, Mosaic data is formed with m segments.
+- train_data = (1/m)\*(sum(m_segments))
+- test_data = (1/m)\*(fg_segment)
+- epochs = 1500
+- LR = 0.001 (by default) else \* = 0.0001, \** = 0.00001
+- MLP2 has 50,10 units in respective 2 hidden layer
 
 |SNo | m-value | Linear | MLP2 |
 |----|----------|---------|-------|
-| 1. | 5    | 100   | 98.20 / 100* |
-| 2. | 10   | 100   | 99.30 |
-| 3. | 20   | 100   | 76.30 |
-| 4. | 50   | 100   | 54.20 |
-| 5. | 100  | 61    | 33.30 |
-| 6. | 250  | 68.30 | 0     |
-| 7. | 500  | 0     | 33.90 |
-| 8. | 1000 | 33.50 | 31.40 |
+| 1. | 5    | 71.20 | 35.50 / 99.60* |
+| 2. | 10   | 64.00 | 35.20 / 65.20** |
+| 3. | 20   | 31.50 | 31.50 |
+| 4. | 50   | 31.50 | 31.50 |
+| 5. | 100  | 31.50 | 31.50 |
+| 6. | 1000 | 31.50 | 31.50 |
 
