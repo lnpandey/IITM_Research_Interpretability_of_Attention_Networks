@@ -56,25 +56,29 @@
 | 5. | 100  | 79.00 | 99.10 / 97.30* / 85.60** |
 | 6. | 250  | 59.90 | 51.90 / 86.60* / 54.70**|
 | 7. | 500  | 48.10 | 48.10 |
-| 6. | 1000 | 48.10 | 48.10 |
+| 8. | 1000 | 48.10 | 48.10 |
 
 ### Table 2:  CIN on Dataset 2
 - Base distribution fg_class = {0,1,2}, bg_class={3,4,5,6,7,8,9}
 - base_dist = ( base_dist - bg_mean(bg_class) ) / std_dev(bg_class)
 - from these base_dist, Mosaic data is formed with m segments.
-- mosaic_train = mosaic_train - mean(mosaic_train)/ std_dev(mosaic_train)
-- mosaic_test = mosaic_test - mean(mosaic_test)/ std_dev(mosaic_test). Note that test mean and std_dev is used to make the dataset same transform numerically.
-- epochs = 1000, LR = 0.001
+- train_data = (1/m)\*(sum(m_segments))
+- test_data = (1/m)\*(fg_segment)
+- epochs = 1500
+- LR = 0.001 
 - MLP2 has 50,10 units in respective 2 hidden layer
 
 |SNo | m-value | Linear | MLP2 |
 |----|----------|---------|-------|
-| 1. | 5    | -  | - |
-| 2. | 10   | -  | - |
-| 3. | 20   | -  | - |
-| 4. | 50   | -  | - |
-| 5. | 100  | -  | - |
-| 6. | 1000 | -  | - |
+| 1. | 5    | 100 | 100 |
+| 2. | 10   | 100 | 100 |
+| 3. | 20   | 100 | 100 |
+| 4. | 50   | 100 | 100 |
+| 5. | 100  | 100 | 100 |
+| 6. | 250  | 100 | 100 |
+| 7. | 500  | 100 | 100 |
+| 8. | 1000 | 64.50 | 68.50 |
+| 9. | 2000 | 64.50 | 34.20 |
 
 ### Table 3:  CIN on Dataset 3
 - Base distribution fg_class = {0,1,2}, bg_class={3,4,5,6,7,8,9}
