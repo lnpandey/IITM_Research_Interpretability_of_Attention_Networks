@@ -375,18 +375,18 @@ def calculate_attn_loss(dataloader,what,where,criter):
     fidices = np.concatenate(fidices,axis=0)
     #print(alphas.shape,pred.shape,lbls.shape,fidices.shape) 
     
-    # value>0.01
+    # value>0.01  here sum over all data points is returned to take average divide by number of data points
     sparsity_val = np.sum(np.sum(alphas>0.01,axis=1))
     
     
-    # simplex distance
+    # simplex distance  here sum over all data points is returned to take average divide by number of data points
     argmax_index = np.argmax(alphas,axis=1)
     simplex_pt = np.zeros(alphas.shape)
     simplex_pt[np.arange(argmax_index.size),argmax_index] = 1
     
     shortest_distance_simplex = np.sum(np.sqrt(np.sum((alphas-simplex_pt)**2,axis=1))) 
     
-    # entropy
+    # entropy  here sum over all data points is returned to take average divide by number of data points
     entropy = np.sum(np.nansum(-alphas*np.log2(alphas),axis=1))
     
     
