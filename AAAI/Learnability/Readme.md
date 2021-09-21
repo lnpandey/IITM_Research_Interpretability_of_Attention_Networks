@@ -72,7 +72,7 @@
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      |  |  | |   |
 | 2. | 100    |  |  |  |   |
-| 3. | 2000   | 32.0 | 31.9 |  |   |  
+| 3. | 2000   | 32.0 | 31.9 | 33.80  |   |  
 
 
 [Code Links](https://drive.google.com/drive/folders/1e8bDLemg_H2u9k-1hUOSwyUNvhTLadAN?usp=sharing)
