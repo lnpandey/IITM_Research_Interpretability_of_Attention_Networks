@@ -57,6 +57,14 @@
 | 2. | 100    | 99.5 | 99.60 | 99.80 | 100  |
 | 3. | 2000   | 99.5 | 100 | 99.90 | 100  |
 
+- SDC on Dataset 2 Focus Linear Classification Linear
+
+|SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
+|----|-------|-------|----------------|---------------|---------|
+| 1. | 5      | 100  | 100 | 100 | 100  |
+| 2. | 100    |  |  |  |   |
+| 3. | 2000   |  |  |  |   |
+
 
 
 [Code Links](https://drive.google.com/drive/folders/1e8bDLemg_H2u9k-1hUOSwyUNvhTLadAN?usp=sharing)
