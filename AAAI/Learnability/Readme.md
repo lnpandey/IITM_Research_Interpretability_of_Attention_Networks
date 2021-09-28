@@ -74,6 +74,15 @@
 | 2. | 100    | 33.6 | 89.4  | 91.2 | 86.5  |
 | 3. | 2000   | 32.0 | 42.8 | 91.1 |  90.4 |  
 
+- SDC on Dataset 3 When Foreground classes are linearly separable Focus Linear Classification Linear
+
+
+|SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
+|----|-------|-------|----------------|---------------|---------|
+| 1. | 5      |  |  |  |  |
+| 2. | 100    | 100 |   |  |   100 |
+| 3. | 2000   |  32.0 | 100 | 99.90 | 100 |  
+
 - SDC on Dataset 4 Focus 1-hidden(50) classification Linear
 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
