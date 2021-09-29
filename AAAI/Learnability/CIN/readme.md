@@ -1,6 +1,7 @@
 ### Table 1: CIN on MNIST with MLP-1(50) classification
 - LR = [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5 ]
 - Grid search for Best LR
+
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 99.54 | 99.75 | 99.68 | 99.66  |
@@ -10,6 +11,7 @@
 ### Table 2: CIN on Dataset1 with MLP-1(50) classification
 - LR = [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5 ]
 - Grid search for Best LR
+
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 99.54 | 99.75 | 99.68 | 99.66  |
@@ -19,6 +21,7 @@
 ### Table 3: CIN on Dataset3 (modified fg non-overlaping) with MLP-1(50) classification
 - LR = [0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05, 0.1, 0.5 ]
 - Grid search for Best LR
+
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5    | 100   | 100   | 100   | 100  |
