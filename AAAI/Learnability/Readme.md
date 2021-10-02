@@ -110,6 +110,15 @@
 | 3. | 2000   | 32.0 | 32.3 | 30.7 | 29.9  |  
 
 
+- SDC on Dataset 4 Focus 1-hidden(50) classification Non-Linear(50)
+
+|SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
+|----|-------|-------|----------------|---------------|---------|
+| 1. | 5      | 97.7 |  |  | 100 |
+| 2. | 100    | 95.2 |  |  | 98.5 |
+| 3. | 2000   | 33.6 |  |  |  32.0 |  
+
+
 [Code Links](https://drive.google.com/drive/folders/1e8bDLemg_H2u9k-1hUOSwyUNvhTLadAN?usp=sharing)
 
 ### Table A1: CIN on cifar using CNN2 
