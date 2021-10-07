@@ -3,12 +3,28 @@
 - 2000 Data points for Dataset 1 
 - Network with one hidden layer and 50 units
 
+#### Table 1: Dataset 1
 | Model | m | Accuracy of True Data |
 | ----    | - | ----------            |  
-| Linear | 0.001 |     50%   |
-| Linear | 0.01 |  50% |
-| Linear | 0.2  | 50%  |
+| Linear | 0.001 |     50  |
+| Linear | 0.01 |  50 |
+| Linear | 0.2  | 50 |
 | Non-Linear | 0.001 | 100 |
-| Non-Linear | 0.01 | 100%|
-| Non-Linear | 0.2 | 99.9% | 
+| Non-Linear | 0.01 | 100|
+| Non-Linear | 0.2 | 99.9| 
+
+
   
+#### Table 2: Dataset 2
+| Model | m | Accuracy of True Data |
+| ----    | - | ----------            |  
+| Non-Linear | 0.001 | 100 |
+| Non-Linear | 0.01 | 100|
+| Non-Linear | 0.2 | 100| 
+
+#### Table 3: Dataset 3 (Fg overlapped)
+| Model | m | Accuracy of True Data |
+| ----    | - | ----------            |  
+| Non-Linear | 0.001 | 67.6 |
+| Non-Linear | 0.01 | 88.86 |
+| Non-Linear | 0.2 | 89.6 | 
