@@ -28,3 +28,12 @@
 | Non-Linear | 0.001 | 67.6 |
 | Non-Linear | 0.01 | 88.86 |
 | Non-Linear | 0.2 | 89.6 | 
+
+#### Table 3: Dataset 3 (Fg overlapped)
+| Model | m | Accuracy of True Data |
+| ----    | - | ----------            |  
+| Non-Linear | 0.001 | 37.06 |
+| Non-Linear | 0.01 | 100 |
+| Non-Linear | 0.2 | 100 | 
+
+
