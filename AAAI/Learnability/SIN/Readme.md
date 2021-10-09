@@ -1,17 +1,23 @@
 ### SIN Experiments on synthetic data
 
-- 2000 Data points for Dataset 1 
-- Network with one hidden layer and 50 units
 
-#### Table 1: Dataset 1
-| Model | m | Accuracy of True Data |
+#### Table 1: Dataset 1 (Non-Linear (50))
+
+|SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
+|----|-------|-------|----------------|---------------|---------|
+| 1. | 5      | 98.6 |  99.3  | 99.5  | 99.7 |
+| 2. | 100    | - | 94.8  |  95.3 |  99.6 |
+| 3. | 2000   | - |  - | - | 86.4 |  
+
+
+<!---| Model | m | Accuracy of True Data |
 | ----    | - | ----------            |  
 | Linear | 0.001 |     50  |
 | Linear | 0.01 |  50 |
 | Linear | 0.2  | 50 |
 | Non-Linear | 0.001 | 100 |
 | Non-Linear | 0.01 | 100|
-| Non-Linear | 0.2 | 99.9| 
+| Non-Linear | 0.2 | 99.9| ---> 
 
 
   
