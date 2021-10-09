@@ -22,18 +22,28 @@
 
   
 #### Table 2: Dataset 2
-| Model | m | Accuracy of True Data |
+|SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
+|----|-------|-------|----------------|---------------|---------|
+| 1. | 5      | 99.93 |  100  | 100  | 100 |
+| 2. | 100    | - | 100  | 98.6  |  100 |
+| 3. | 2000   | - |  - | - | 100 |  
+
+
+
+<!---| Model | m | Accuracy of True Data |
 | ----    | - | ----------            |  
 | Non-Linear | 0.001 | 100 |
 | Non-Linear | 0.01 | 100|
-| Non-Linear | 0.2 | 100| 
+| Non-Linear | 0.2 | 100| --->
 
 #### Table 3: Dataset 3 (Fg overlapped)
-| Model | m | Accuracy of True Data |
+
+
+<!---| Model | m | Accuracy of True Data |
 | ----    | - | ----------            |  
 | Non-Linear | 0.001 | 67.6 |
 | Non-Linear | 0.01 | 88.86 |
-| Non-Linear | 0.2 | 89.6 | 
+| Non-Linear | 0.2 | 89.6 | --->
 
 #### Table 3: Dataset 3 (Fg overlapped)
 | Model | m | Accuracy of True Data |
