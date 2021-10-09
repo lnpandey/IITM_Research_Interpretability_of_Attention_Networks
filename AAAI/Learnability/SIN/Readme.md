@@ -51,12 +51,19 @@
 | Non-Linear | 0.01 | 88.86 |
 | Non-Linear | 0.2 | 89.6 | --->
 
-#### Table 3: Dataset 3 (Fg overlapped)
-| Model | m | Accuracy of True Data |
+#### Table 4: Dataset 4 
+
+|SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
+|----|-------|-------|----------------|---------------|---------|
+| 1. | 5      | 100 |  100  | 100 | 100 |
+| 2. | 100    | - | 84.86 | 100  | 100  |
+| 3. | 2000   | - |  - | - | 33.36 |  
+
+<!---| Model | m | Accuracy of True Data |
 | ----    | - | ----------            |  
 | Non-Linear | 0.001 | 37.06 |
 | Non-Linear | 0.01 | 100 |
-| Non-Linear | 0.2 | 100 | 
+| Non-Linear | 0.2 | 100 | --->
 
 
 [Code Links ](https://drive.google.com/drive/folders/1ZnpwhwQOlOWeoI8NKnj6DMioir_c2LX9?usp=sharing)
