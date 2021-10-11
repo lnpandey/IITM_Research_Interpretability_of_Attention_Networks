@@ -1,13 +1,23 @@
 ### SIN Experiments on synthetic data
 
 
-#### Table 1: Dataset 1 (Non-Linear (50))
+#### Table 1A: Dataset 1 (Non-Linear (50))
 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 98.6 |  99.3  | 99.5  | 99.7 |
 | 2. | 100    | - | 94.8  |  95.3 |  99.6 |
 | 3. | 2000   | - |  - | - | 86.4 |  
+
+
+
+#### Table 1B: Dataset 1 (Linear)
+
+|SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
+|----|-------|-------|----------------|---------------|---------|
+| 1. | 5      | 50 |  50 | 50 | 50 |
+| 2. | 100    | - | 50  |  50 | 50|
+| 3. | 2000   | - |  - | - | 95.6 |  
 
 
 <!---| Model | m | Accuracy of True Data |
