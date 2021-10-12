@@ -102,6 +102,15 @@
 | Non-Linear | 0.2 | 100 | --->
 
 
+#### Table 5A: CIFAR 
+ 
+|SNo | m-value | size 10k | size 30K | 
+|----|-------|-------|----------------|
+| 1. | 5      | |   | 
+| 2. | 100    | |  | 
+
+
+
 [Code Links ](https://drive.google.com/drive/folders/1ZnpwhwQOlOWeoI8NKnj6DMioir_c2LX9?usp=sharing)
 
 
