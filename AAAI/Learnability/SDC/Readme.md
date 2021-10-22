@@ -30,7 +30,7 @@
 
 - SDC on Dataset 2 Focus Linear Classification Non-Linear(50)
 
-### Table 2A  dataset 2 (Non-Linear)
+#### Table 2A  dataset 2 (Non-Linear)
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 100  | | |  100 |
