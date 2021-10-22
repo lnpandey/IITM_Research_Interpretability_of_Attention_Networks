@@ -5,12 +5,20 @@
 - focus network CNN 3-layer, classification network CNN 2-layer--->
 
 
+- SDC on Dataset 1 Focus Linear Classification Non-Linear (50)
+
+#### Table 1A  dataset 1 (Non-Linear)
+|SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
+|----|-------|-------|----------------|---------------|---------|
+| 1. | 5      | 99.6  | 99.4 | 100 |  100 |
+| 2. | 100    | 99.9 | |  | 100  |
+| 3. | 2000   | 98.7 |  |  | 100  |
+
 
 
 - SDC on Dataset 1 Focus Linear Classification Linear
 
-
-#### Table 1A  dataset 1 
+#### Table 1B  dataset 1  (Linear)
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 98.6  | 98.7 | 100 |  100 |
@@ -18,18 +26,21 @@
 | 3. | 2000   | 99.2 | 100 | 99.90 | 100  |
 
 
-- SDC on Dataset 1 Focus Linear Classification Non-Linear (50)
 
-#### Table 1B  dataset 1 
+
+- SDC on Dataset 2 Focus Linear Classification Non-Linear(50)
+
+#### Table 2A  dataset 2 (Non-Linear)
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
-| 1. | 5      | 99.6  | 99.4 | 100 |  100 |
-| 2. | 100    | 99.9 | |  | 100  |
-| 3. | 2000   | 98.7 |  |  | 100  |
+| 1. | 5      | 100  | | |  100 |
+| 2. | 100    | 100 |  |  | 100  |
+| 3. | 2000   | |  | |   100 |  
+
 
 - SDC on Dataset 2 Focus Linear Classification Linear
 
-##### Table 2A  dataset 2
+##### Table 2B  dataset 2 (Linear)
 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
@@ -38,19 +49,21 @@
 | 3. | 2000   | 67.7 | 67.8 | 68.1 |  100 |  
 
 
-- SDC on Dataset 2 Focus Linear Classification Non-Linear(50)
 
-#### Table 2B  dataset 2
+- SDC on Dataset 3 Focus Linear Classification Non-Linear
+#### Table 3A  dataset 3 (Non-Linear)
+
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
-| 1. | 5      | 100  | | |  100 |
-| 2. | 100    | 100 |  |  | 100  |
-| 3. | 2000   | |  | |   100 |  
+| 1. | 5      |  | | | |
+| 2. | 100    |  |  | | |
+| 3. | 2000   |  | |  |   |  
+
 
 
 - SDC on Dataset 3 Focus Linear Classification Linear
 
-#### Table 3A  dataset 3 
+#### Table 3B  dataset 3 (Linear)
 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
@@ -60,7 +73,7 @@
 
 - SDC on Dataset 3 When Foreground classes are linearly separable Focus Linear Classification Linear
 
-##### Table 3B  dataset 3A 
+##### Table 3B1  dataset 3A 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 98.7 |  |  99.90 | 100 |
@@ -68,13 +81,21 @@
 | 3. | 2000   |  32.0 | 100 | 99.90 | 100 |  
 
 
+- SDC on Dataset 4 Focus 1-hidden(50) classification Non-Linear(50)
 
+
+#### Table 4A  dataset 4 (Non-Linear)
+|SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
+|----|-------|-------|----------------|---------------|---------|
+| 1. | 5      | 97.7 |  |  | 100 |
+| 2. | 100    | 95.2 |  |  | 98.5 |
+| 3. | 2000   | 33.6 |  |  |  32.0 |  
 
 
 - SDC on Dataset 4 Focus 1-hidden(50) classification Linear
 
 
-#### Table 4A  dataset 4 
+#### Table 4B  dataset 4 (Linear)
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 100 | 99.80 | 94.90 | 97.30 |
@@ -82,15 +103,7 @@
 | 3. | 2000   | 32.8 | 34.2 | 37.0 | 29.9  |  
 
 
-- SDC on Dataset 4 Focus 1-hidden(50) classification Non-Linear(50)
 
-
-#### Table 4B  dataset 4
-|SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
-|----|-------|-------|----------------|---------------|---------|
-| 1. | 5      | 97.7 |  |  | 100 |
-| 2. | 100    | 95.2 |  |  | 98.5 |
-| 3. | 2000   | 33.6 |  |  |  32.0 |  
 
 
 
