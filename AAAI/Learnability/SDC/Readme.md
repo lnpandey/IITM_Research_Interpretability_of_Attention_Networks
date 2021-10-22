@@ -30,7 +30,7 @@
 
 - SDC on Dataset 2 Focus Linear Classification Non-Linear(50)
 
-#### Table 2A  dataset 2 (Non-Linear)
+### Table 2A  dataset 2 (Non-Linear)
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 100  | | |  100 |
@@ -40,7 +40,7 @@
 
 - SDC on Dataset 2 Focus Linear Classification Linear
 
-##### Table 2B  dataset 2 (Linear)
+#### Table 2B  dataset 2 (Linear)
 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
@@ -73,7 +73,7 @@
 
 - SDC on Dataset 3 When Foreground classes are linearly separable Focus Linear Classification Linear
 
-##### Table 3B1  dataset 3A 
+#### Table 3B1  dataset 3A 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 98.7 |  |  99.90 | 100 |
