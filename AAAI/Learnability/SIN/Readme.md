@@ -126,14 +126,22 @@
 | Non-Linear | 0.01 | 100 |
 | Non-Linear | 0.2 | 100 | --->
 
-
-#### Table 5A: CIFAR 
+ 
+#### Table 5A: CIFAR (CNN 2)
  
 |SNo | m-value | size 10k | size 30K | 
 |----|-------|-------|----------------|
 | 1. | 5      | |   | 
 | 2. | 50   | |  | 
 
+
+
+#### Table 5B: CIFAR (CNN 1)
+ 
+|SNo | m-value | size 10k | size 30K | 
+|----|-------|-------|----------------|
+| 1. | 5      | |   | 
+| 2. | 50   | |  | 
 
 #### Table 6A: MNIST (MLP2 )
  
@@ -143,7 +151,7 @@
 | 2. | 50   | 90 |   | <!--- 96 --->
 
 
-#### Table 6A: MNIST (Linear )
+#### Table 6B: MNIST (Linear )
  
 |SNo | m-value | size 1k | size 10K | 
 |----|-------|-------|----------------|
