@@ -1,4 +1,4 @@
-#### Learning Dynamics of Attention Networks
+### Learning Dynamics of Attention Networks
 <!---
 - Cifar data, SDC task for different m values
 - initial learning rate for Adam optimizer 0.0005
@@ -10,7 +10,7 @@
 - SDC on Dataset 1 Focus Linear Classification Linear
 
 
-##### Table 1A  dataset 1 
+#### Table 1A  dataset 1 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 98.6  | 98.7 | 100 |  100 |
@@ -20,7 +20,7 @@
 
 - SDC on Dataset 1 Focus Linear Classification Non-Linear (50)
 
-##### Table 1B  dataset 1 
+#### Table 1B  dataset 1 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 99.6  | 99.4 | 100 |  100 |
@@ -40,7 +40,7 @@
 
 - SDC on Dataset 2 Focus Linear Classification Non-Linear(50)
 
-##### Table 2B  dataset 2
+#### Table 2B  dataset 2
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 100  | | |  100 |
@@ -50,7 +50,7 @@
 
 - SDC on Dataset 3 Focus Linear Classification Linear
 
-##### Table 3A  dataset 3 
+#### Table 3A  dataset 3 
 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
@@ -74,7 +74,7 @@
 - SDC on Dataset 4 Focus 1-hidden(50) classification Linear
 
 
-##### Table 4A  dataset 4 
+#### Table 4A  dataset 4 
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 100 | 99.80 | 94.90 | 97.30 |
@@ -85,7 +85,7 @@
 - SDC on Dataset 4 Focus 1-hidden(50) classification Non-Linear(50)
 
 
-##### Table 4B  dataset 4
+#### Table 4B  dataset 4
 |SNo | m-value | size 100 | size 500 | size 2000 | size 10000 |
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 97.7 |  |  | 100 |
@@ -94,7 +94,7 @@
 
 
 
-##### Table 5A CIFAR data (cl CNN-2)
+#### Table 5A CIFAR data (cl CNN-2)
 | m  | Train Accuracy | FTPT  | FFPT  | Test Accuracy  | FTPT  | FFPT  |
 | -  | -------------- | ----  | ---   | -------------- | ---   | ----  |
 | 5 (30k) | 99.45          | 85.29 | 14.16 |  91.70         | 78.39 | 13.31 |
@@ -109,7 +109,7 @@
 
 - Architecture 2 Focus CNN 3-layer, Classification CNN 1-Layer
 
-##### Table 5B CIFAR data (cl CNN-1)
+#### Table 5B CIFAR data (cl CNN-1)
 | m  | Train Accuracy | FTPT  | FFPT  | Test Accuracy  | FTPT  | FFPT  |
 | -  | -------------- | ----  | ---   | -------------- | ---   | ----  |
 | 5(30k)  | 99.81   | 86.48  | 13.32 |   90.48        | 79.06 | 11.42 |
@@ -122,7 +122,7 @@
 
 
 - MNIST Data Focus MLP Classify MLP
-##### Table 6A MNIST data (cl MLP)
+#### Table 6A MNIST data (cl MLP)
 | m  | Train Accuracy | FTPT  | FFPT  | Test Accuracy  | FTPT  | FFPT  |
 | -  | -------------- | ----  | ---   | -------------- | ---   | ----  |
 | 5(10k)  |   99.80      | 98.28 | 1.52  |     99.24     | 97.72  | 1.52 |
@@ -132,7 +132,7 @@
 
 
 - MNIST Data Focus MLP Classify Linear 
-##### Table 6B MNIST data (cl Linear)
+#### Table 6B MNIST data (cl Linear)
 | m  | Train Accuracy | FTPT  | FFPT  | Test Accuracy  | FTPT  | FFPT  |
 | -  | -------------- | ----  | ---   | -------------- | ---   | ----  |
 | 5(10k)  | 99.81         |  98.93 | 0.88 |     99.33     | 98.38 | 0.95  |
