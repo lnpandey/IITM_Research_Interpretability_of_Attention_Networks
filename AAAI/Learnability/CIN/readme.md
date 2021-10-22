@@ -71,6 +71,16 @@
 
 Below experiments are done on linear architecture -->
 
+### Table 2A:  CIN on Dataset 2 (Non-Linear)
+|SNo | m-value | size 100 | size 500  | size 2000 |
+|----|-------|-------|----------------|-------|
+| 1. | 5     |  |  |    |   |
+| 2. | 100   |   |   |   |   |
+| 3. | 2000  |  |  |   |  |
+
+
+
+
 ### Table 2B:  CIN on Dataset 2 (Linear)
 |SNo | m-value | size 100 | size 500 | size 1000 | size 2000 |
 |----|-------|-------|----------------|-------|-------|
@@ -100,6 +110,13 @@ Below experiments are done on linear architecture -->
 | 5. | 100  | 31.50 | 33.00 |
 | 6. | 1000 | 31.50 | 35.50 | 
 Below experiments are done on linear architecture -->
+
+### Table 3A:  CIN on Dataset 3 (Non-Linear)
+|SNo | m-value | size 100 | size 500  | size 2000 |
+|----|-------|-------|----------------|-------|
+| 1. | 5     |  |  |    |   |
+| 2. | 100   |   |   |   |   |
+| 3. | 2000  |  |  |   |  |
 
 ### Table 3B:  CIN on Dataset 3 (Linear)
 |SNo | m-value | size 100 | size 500 | size 1000 | size 2000 | size 10000 |
@@ -143,6 +160,13 @@ Below experiments are done on linear architecture -->
 | 6. | 1000 | 31.50 | 31.50 | 
 
 Below experiments are done on linear architecture -->
+
+### Table 4A:  CIN on Dataset 4 (Non-Linear)
+|SNo | m-value | size 100 | size 500  | size 2000 |
+|----|-------|-------|----------------|-------|
+| 1. | 5     |  |  |    |   |
+| 2. | 100   |   |   |   |   |
+| 3. | 2000  |  |  |   |  |
 
 ### Table 4B:  CIN on Dataset 4 (Linear)
 |SNo | m-value | size 100 | size 500 | size 1000 | size 2000 |
@@ -199,6 +223,11 @@ Below experiments are done on linear architecture -->
 |8. | 50 | 30k | 100 | 32.67 |
 
 ### Table 6B: CIN on CIFAR using CNN1
+|SNo | m-value | size 10k | size 30K  | 
+|----|-------|-------|----------------|
+| 1. | 5     |  |  |    
+| 2. | 50  |   |   |   
+
 
 
 <!-- ### Table : CIN on Dataset3 (modified fg non-overlaping) with MLP-1(50) classification
