@@ -1,13 +1,18 @@
 ### Hard Attention SDC
 
 
-#### Table 1A: Dataset 1 
+#### Table 1A: Dataset 1 (Non-Linear)
 
 
-#### Table 1B: Dataset 1 
+#### Table 1B: Dataset 1 (Linear)
 
 
-#### Table 2A: Dataset 2
+
+
+
+#### Table 2A: Dataset 2(Non-Linear)
+
+#### Table 2B: Dataset 2 (Linear)
 
 | m \ size |  100  | 500 | 2000 | 10000 |
 | --       | ----  | --  | ---- | ----- |
@@ -16,11 +21,10 @@
 | 2000 | 82.5 | 79.0 | 82.7 |83.7  |
 
 
+#### Table 3A: Dataset 3 (Non-Linear)
 
-#### Table 2B: Dataset 2
 
-
-#### Table 3A: Dataset 3
+#### Table 3B: Dataset 3 (Linear)
 
 | m \ size |  100  | 500 | 2000 | 10000 |
 | --       | ----  | --  | ---- | ----- |
@@ -29,10 +33,12 @@
 | 2000 |32.0| 91.1 | 90.2 | 90 |
 
 
-#### Table 4A: Dataset 4
+#### Table 4A: Dataset 4 (Non-Linear)
+
+#### Table 4B: Dataset 4 (Linear)
 
 | m \ size |  100  | 500 | 2000 | 10000 |
 | --       | ----  | --  | ---- | ----- |
 | 5 | 34.8 | 45.30 | 46.7 | 43.4|    
 | 100 |32.0 | 32.4 |34.6 |33.2|   
-| 2000 |32.0| |||
+| 2000 |32.0|32.4|35.8|33.2|
