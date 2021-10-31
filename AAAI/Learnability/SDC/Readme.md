@@ -69,7 +69,7 @@
 |----|-------|-------|----------------|---------------|---------|
 | 1. | 5      | 87.3 | 88.5  | 89.2 | 87.5 |
 | 2. | 100    | 88.2 | 89.4  | 91.2 | 86.5  |
-| 3. | 2000   | 32.0 | 42.8 | 91.1 |  90.4 |  
+| 3. | 2000   |  |  | 91.1 |  90.4 |  
 
 - SDC on Dataset 3 When Foreground classes are linearly separable Focus Linear Classification Linear
 
