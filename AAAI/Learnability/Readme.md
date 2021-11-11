@@ -1,9 +1,9 @@
 #### learning Dynamics
 
 SDC tasks with SIN trained weights
-- Dataset 2 m =2000 size =100
-   - train performance 74.0
-   - test performance 67.7
+<!-- - Dataset 2 m =2000 size =100 (Not scaled)
+   - train performance 100
+   - test performance 100 -->
 
 - Dataset 4 m = 2000, size = 100
    - train performance 47.0
