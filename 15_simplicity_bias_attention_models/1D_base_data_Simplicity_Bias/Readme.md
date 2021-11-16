@@ -1,7 +1,7 @@
 #### Simplicity Bias Experiments
 - m value =  9
 ##### 1d base data
-<img src= ./plots/1dbase_data.png width="800">
+<img src= ./1d_base_data.png width="800">
 
 
 #### Table 1: Both Focus and Classification Non-Linear
