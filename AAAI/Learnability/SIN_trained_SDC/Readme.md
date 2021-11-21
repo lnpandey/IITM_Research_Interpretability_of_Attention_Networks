@@ -22,6 +22,10 @@ SDC tasks with SIN trained weights
 - scaled by 8
     - train performance 39
     - test performance 31.2
+#### Dataset 4 m =100 size =100
+   - scaled by 1
+      - train performance 100
+      - test performance 100
 
 #### CIFAR m =50, size = 10k 
 - scaled by 1
