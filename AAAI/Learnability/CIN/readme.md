@@ -114,7 +114,7 @@ Below experiments are done on linear architecture -->
 ### Table 3A:  CIN on Dataset 3 (Non-Linear)
 |SNo | m-value | size 100 | size 500  | size 2000 |
 |----|-------|-------|----------------|-------|
-| 1. | 5     |  |  |    | 
+| 1. | 5     | 38.50| 59.40 |  80.10  | 
 | 2. | 100   |   |   |   |   
 | 3. | 2000  |  |  |   |  |
 
