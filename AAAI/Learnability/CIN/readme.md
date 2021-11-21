@@ -115,7 +115,7 @@ Below experiments are done on linear architecture -->
 |SNo | m-value | size 100 | size 500  | size 2000 |
 |----|-------|-------|----------------|-------|
 | 1. | 5     | 38.50| 59.40 |  80.10  | 
-| 2. | 100   |   |   |   |   
+| 2. | 100   |   |   |   39.90 |   
 | 3. | 2000  |  |  |   |  |
 
 ### Table 3B:  CIN on Dataset 3 (Linear)
