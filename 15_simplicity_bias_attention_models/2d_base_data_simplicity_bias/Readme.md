@@ -43,7 +43,7 @@
 | 5 | <img src= ./cl/plots/attended_data_0_run_5.png width="800">| <img src= ./cl/plots/focus_map_0_run_5.png width="800">| <img src= ./cl/plots/classification_map_0_run_5.png width="800">| <img src= ./cl/plots/attended_data_326_run_5.png width="800"> | <img src= ./cl/plots/focus_map_326_run_5.png width="800">| <img src= ./cl/plots/classification_map_326_run_5.png width="800">|
 
 
-#### Table 3: Focus Linear
+#### Table 4: Focus Linear
 
 
 |  Run | Initial Attended data |  Initial Focus Map | Initial Classification Map | Final Attended Data | Final Focus Map | Final Classification Map |
