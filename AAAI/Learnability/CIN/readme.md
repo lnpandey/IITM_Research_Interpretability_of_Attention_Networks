@@ -112,7 +112,7 @@ Below experiments are done on linear architecture -->
 Below experiments are done on linear architecture -->
 
 ### Table 3A:  CIN on Dataset 3 (Non-Linear)
-|SNo | m-value | size 100 | size 500  | size 2000 |
+|SNo | m-value | size 100 | size 500  | size 10k |
 |----|-------|-------|----------------|-------|
 | 1. | 5     | 38.50| 59.40 |  80.10  | 
 | 2. | 100   |   |   |   39.90 |   
@@ -162,11 +162,11 @@ Below experiments are done on linear architecture -->
 Below experiments are done on linear architecture -->
 
 ### Table 4A:  CIN on Dataset 4 (Non-Linear)
-|SNo | m-value | size 100 | size 500  | size 2000 |
+|SNo | m-value | size 100 | size 500  | size 10k |
 |----|-------|-------|----------------|-------|
 | 1. | 5     |  35.70 | 54.90 |  69.10  |  
 | 2. | 100   | 35.70  | 33.20 |    32 |
-| 3. | 2000  | 32 | 33.20 |  37.10 | 
+| 3. | 2000  |  |  |  | 
 
 ### Table 4B:  CIN on Dataset 4 (Linear)
 |SNo | m-value | size 100 | size 500 | size 1000 | size 2000 |
