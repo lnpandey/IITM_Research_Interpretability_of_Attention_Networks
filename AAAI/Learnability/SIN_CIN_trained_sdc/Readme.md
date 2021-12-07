@@ -1,6 +1,13 @@
 #### SIN CIN trained SDC
 
 - Dataset 4 m 100 size 100
+
+
+##### Table 1: train both 
+
+| scaled by \ - | intial db | final train| final test | final db |
+| ---------  | ------ | ----- | ------ | ------- |
+|  | | | |
 <!-- 
   - scaled by 1
     - train performance 74
