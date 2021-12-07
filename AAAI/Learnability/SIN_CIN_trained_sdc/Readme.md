@@ -1,9 +1,12 @@
 #### SIN CIN trained SDC
 
 - Dataset 4 m 100 size 100
+- SIN CIN Data training performance
+- train  41
+- test(true foreground) 82
 
 
-##### Table 1: train both 
+##### Table 1: train both plots
 
 | scaled by \ - | intial db | final train| final test | final db |
 | ---------  | ------ | ----- | ------ | ------- |
@@ -36,6 +39,25 @@
 | scaled by/ -  | inital db| final train | final test | train accuracy | train ftpt | train ffpt | test accuracy | test ftpt | test ffpt |
 |  ------       | ----     |     ------- | --------- |  ---------   | ----- | --- | ----- | ---- | ----- |  
 | 1 | <img src= ./plots/fg_train/initial_scaled_by_1.png width="800"> | <img src= ./plots/fg_train/final_scaled_by_1_train.png width="800"> | <img src= ./plots/fg_train/final_scaled_by_1_test.png width="800"> | 100 | 61 | 39 | 100 | 68.1 | 31.9 |  
+
+
+
+##### Table 4: focus only plots
+| scaled by \ - | intial db | final train| final test | final db |
+| ---------  | ------ | ----- | ------ | ------- |
+| 1 |<img src= ./plots/focus_only/initial_scaled_by_1.png width="800">  |  <img src= ./plots/focus_only/final_scaled_by_1_train.png width="800"> | <img src= ./plots/focus_only/final_scaled_by_1_test.png width="800"> | <img src= ./plots/focus_only/final_scaled_by_1_db.png width="800"> |
+| 2 |<img src= ./plots/focus_only/initial_scaled_by_2.png width="800">  |  <img src= ./plots/focus_only/final_scaled_by_2_train.png width="800"> | <img src= ./plots/focus_only/final_scaled_by_2_test.png width="800"> | <img src= ./plots/focus_only/final_scaled_by_2_db.png width="800"> |
+| 3 |<img src= ./plots/focus_only/initial_scaled_by_3.png width="800">  |  <img src= ./plots/focus_only/final_scaled_by_3_train.png width="800"> | <img src= ./plots/focus_only/final_scaled_by_3_test.png width="800"> | <img src= ./plots/focus_only/final_scaled_by_3_db.png width="800"> |
+| 4 |<img src= ./plots/focus_only/initial_scaled_by_4.png width="800">  |  <img src= ./plots/focus_only/final_scaled_by_4_train.png width="800"> | <img src= ./plots/focus_only/final_scaled_by_4_test.png width="800"> | <img src= ./plots/focus_only/final_scaled_by_4_db.png width="800"> |
+
+
+##### Table 5:  focus only performance
+|scaled by \ - | train accuracy | train ftpt  | train ffpt | test accuracy |test ftpt | test ffpt |
+| ------- | ---- | -- | --- |  --- | ---- | --- |
+| 1 | 74 | 35 | 39 | 67.6 | 35.6 | 32 |
+| 2 | 60| 37 | 23 | 63.3 |  30.7 | 32.6 |
+| 3 | 63 | 37 | 26 | 71.7 | 39.4 | 32.3 |
+| 4 | 87 | 63 | 24 | 86.2 | 56 | 30.2 | 
 
 <!-- 
   - scaled by 1
