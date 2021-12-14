@@ -81,6 +81,8 @@
 | - | -------  | ------- | ------- | -------- | ------ |
 | f(x) | <img src= ./plots/interpolation/base_data.png width="800"> |  <img src= ./plots/interpolation/f_0.png width="1000"> | <img src= ./plots/interpolation/f_1.png width="1000"> | <img src= ./plots/interpolation/f_2.png width="1000"> | <img src= ./plots/interpolation/f_argmax.png width="1000"> |
 | h(x) | <img src= ./plots/interpolation/base_data.png width="800"> |  <img src= ./plots/interpolation/h_0.png width="1000"> | <img src= ./plots/interpolation/h_1.png width="1000"> | <img src= ./plots/interpolation/h_2.png width="1000"> | <img src= ./plots/interpolation/h_argmax.png width="1000"> |
+| h(x) (after training focus only )| <img src= ./plots/interpolation/base_data.png width="800"> |  <img src= ./plots/interpolation/h_0f.png width="1000"> | <img src= ./plots/interpolation/h_1f.png width="1000"> | <img src= ./plots/interpolation/h_2f.png width="1000"> | <img src= ./plots/interpolation/h_argmaxf.png width="1000"> |
+
 
  
  
