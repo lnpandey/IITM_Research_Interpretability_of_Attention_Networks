@@ -79,7 +79,7 @@
  ##### Table 6:
 |  | Base Data | index 0 | index 1 | index 2  | argmax |
 | - | -------  | ------- | ------- | -------- | ------ |
-| f(x) | <img src= ./plots/interpolation/base_data.png width="800"> |  <img src= ./plots/interpolation/f_0.png width="800"> | <img src= ./plots/interpolation/f_1.png width="800"> | <img src= ./plots/interpolation/f_2.png width="800"> | <img src= ./plots/interpolation/f_argmax.png width="800"> |
+| f(x) | <img src= ./plots/interpolation/base_data.png width="800"> |  <img src= ./plots/interpolation/f_0.png width="1000"> | <img src= ./plots/interpolation/f_1.png width="1000"> | <img src= ./plots/interpolation/f_2.png width="1000"> | <img src= ./plots/interpolation/f_argmax.png width="1000"> |
 
  
  
