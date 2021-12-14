@@ -72,3 +72,15 @@
     - train performance 100
     - test performance 100
  -->
+ 
+ 
+ #### Interpolation f(x) and g(x)
+ 
+ ##### Table 6:
+|  | Base Data | index 0 | index 1 | index 2  | argmax |
+| - | -------  | ------- | ------- | -------- | ------ |
+| f(x) | <img src= ./plots/interpolation/base_data.png width="800"> |  <img src= ./plots/interpolation/f_0.png width="800"> | <img src= ./plots/interpolation/f_1.png width="800"> | <img src= ./plots/interpolation/f_2.png width="800"> | <img src= ./plots/interpolation/f_argmax.png width="800"> |
+
+ 
+ 
+ 
