@@ -225,8 +225,8 @@ Below experiments are done on linear architecture -->
 ### Table 6B: CIN on CIFAR using CNN1
 |SNo | m-value | size 10k | size 30K  | 
 |----|-------|-------|----------------|
-| 1. | 5     |  |  |    
-| 2. | 50  |   |   |   
+| 1. | 5   | 65.66 | 57.65 |    
+| 2. | 50  | 39.36 | 33.53 |   
 
 
 
