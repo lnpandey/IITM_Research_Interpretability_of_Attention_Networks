@@ -1,6 +1,6 @@
 In these Experiments We train classification models for SIN and CIN data with multiple fixed focus.
 
-h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
+<!-- h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x -->
 
 - For Dataset 4 we consider n = 100 m =100
 - For Dataset 5 we consider n = 100 m =100 
