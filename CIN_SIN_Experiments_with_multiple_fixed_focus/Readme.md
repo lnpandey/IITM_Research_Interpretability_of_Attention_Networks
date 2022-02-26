@@ -14,3 +14,12 @@ In these Experiments We train classification models for SIN and CIN data with mu
 | SIN L<sub>h</sub>(&alpha;) - L<sub>h</sub>(&alpha;')    |    <img src= ./plots/SIN_dataset_4_train-_loss_alpha.png width="300"> | <img src= ./plots/SIN_dataset_5_train-_loss_alpha.png width="300"> | <img src= ./plots/SIN_cifar_loss-loss_alpha_1.png width="300"> | <img src= ./plots/SIN_cifar_loss-loss_alpha_2.png width="300"> 
 | CIN L<sub>h</sub>(&alpha;)    |    <img src= ./plots/CIN_dataset_4_train_loss.png width="300"> | <img src= ./plots/CIN_dataset_5_train_loss.png width="300"> | <img src= ./plots/CIN_cifar_loss_1.png width="300"> | <img src= ./plots/CIN_cifar_loss_2.png width="300"> |
 | CIN L<sub>h</sub>(&alpha;) - L<sub>h</sub>(&alpha;')   |      <img src= ./plots/CIN_dataset_4_train-_loss_alpha.png width="300"> | <img src= ./plots/CIN_dataset_5_train-_loss_alpha.png width="300"> | <img src= ./plots/CIN_cifar_loss-loss_alpha_1.png width="300"> | <img src= ./plots/CIN_cifar_loss-loss_alpha_2.png width="300"> 
+
+
+### Dataset 6
+
+<img src= ./plots/base_data.png width="300">
+
+
+
+
