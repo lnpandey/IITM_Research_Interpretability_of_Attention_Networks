@@ -6,7 +6,8 @@ In these Experiments We train classification models for SIN and CIN data with mu
 - For Dataset 5 we consider n = 100 m =100 
 - For CIFAR data we consider n= 10k m = 5 
 - For CIFAR Dataset 1 is for &alpha; = 0.2, Dataset 2 is for &alpha; = 0.4, Dataset 3 is for &alpha;= 0.6, Dataset 4 is for &alpha; = 0.8 and Dataset 5 is for &alpha; = 1. 
-- For Dataset 4 and Dataset 5, legends show the &alpha; value.   
+- For Dataset 4 and Dataset 5, legends show the &alpha; value
+- directions starts from [1,0] and move in anti-clockwise direction at angle of 45 degrees
 
 |  | Dataset 4 (&alpha;' = &alpha;+0.01) | Dataset 5 (&alpha;' = &alpha;+0.01) | CIFAR (&alpha;' = &alpha;+0.1) | CIFAR (&alpha;' = &alpha;+0.01) |
 | - | -----    | -------   | ---------------          | ------------ |
