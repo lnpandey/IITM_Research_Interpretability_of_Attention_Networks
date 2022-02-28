@@ -20,6 +20,8 @@ In these Experiments We train classification models for SIN and CIN data with mu
 
 <img src= ./plots/base_data.png width="300">
 
+- Soft attention Performance(train[FTPT,FFPT,FFPT,FFPF], test[FTPT,FFPT,FFPT,FFPF]) - ([66, 34, 0, 0], [645, 355, 0, 0]) 
+- Hard attention Performance(train[FTPT,FFPT,FFPT,FFPF], test[FTPT,FFPT,FFPT,FFPF]) - ([100, 0, 0, 0], [1000, 0, 0, 0])
 
 #### plot 1A m value 100 size 100
 | |  CIN    |  SIN |
@@ -34,6 +36,8 @@ In these Experiments We train classification models for SIN and CIN data with mu
 | beta 2.56 | <img src= ./plots/cin_train_loss_1_loss_beta_11.png width="300"> | <img src= ./plots/sin_train_loss_1_loss_beta_11.png width="300"> |
 
 
+- Soft attention Performance(train[FTPT,FFPT,FFPT,FFPF], test[FTPT,FFPT,FFPT,FFPF]) - ([500, 0, 0, 0], [1000, 0, 0, 0])
+- Hard attention Performance(train[FTPT,FFPT,FFPT,FFPF], test[FTPT,FFPT,FFPT,FFPF]) - ([500, 0, 0, 0], [1000, 0, 0, 0])
 
 #### plot 1B m value 100 size 500
 | |  CIN    |  SIN |
@@ -49,6 +53,9 @@ In these Experiments We train classification models for SIN and CIN data with mu
 
 
 
+- Soft attention Performance(train[FTPT,FFPT,FFPT,FFPF], test[FTPT,FFPT,FFPT,FFPF]) - ([0, 43, 0, 57], [0, 323, 0, 677]) 
+- Hard attention Performance(train[FTPT,FFPT,FFPT,FFPF], test[FTPT,FFPT,FFPT,FFPF]) - ([100, 0, 0, 0], [1000, 0, 0, 0])
+
 #### plot 1C m value 500 size 100
 | |  CIN    |  SIN |
 | -----  | ----    | ---- |
@@ -62,6 +69,9 @@ In these Experiments We train classification models for SIN and CIN data with mu
 | beta 2.56 | <img src= ./plots/cin_train_loss_3_loss_beta_11.png width="300"> | <img src= ./plots/sin_train_loss_3_loss_beta_11.png width="300"> |
 
 
+
+- Soft attention Performance(train[FTPT,FFPT,FFPT,FFPF], test[FTPT,FFPT,FFPT,FFPF]) - ([500, 0, 0, 0], [1000, 0, 0, 0])
+- Hard attention Performance(train[FTPT,FFPT,FFPT,FFPF], test[FTPT,FFPT,FFPT,FFPF]) - ([500, 0, 0, 0], [1000, 0, 0, 0])
 
 #### plot 1D m value 500 size 500
 | |  CIN    |  SIN |
