@@ -46,10 +46,10 @@ experiments for training weights at different epochs
 
 
 - Soft attention trjaectory
-<img src= ./plots/soft_attn_trajectory_1.png width="300">
+<img src= ./plots/soft_attn_trajectory_2.png width="300">
 
 - Hard attention trjaectory
-<img src= ./plots/hard_attn_trajectory_1.png width="300">
+<img src= ./plots/hard_attn_trajectory_2.png width="300">
 
 
 ##### Tables 1B m value 100 size 500
