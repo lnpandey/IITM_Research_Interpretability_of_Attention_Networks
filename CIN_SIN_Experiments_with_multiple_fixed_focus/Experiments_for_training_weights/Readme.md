@@ -1,3 +1,8 @@
+### Dataset 6
+
+
+<img src= ./plots/dataset_6.png width="300">
+
 experiments for training weights at different epochs
 - angle 0 means direction [1,0] and angle increases in anticlock wise direction.
 
