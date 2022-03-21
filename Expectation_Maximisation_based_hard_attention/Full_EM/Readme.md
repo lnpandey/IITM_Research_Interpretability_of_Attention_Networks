@@ -13,7 +13,7 @@ Full EM here
                 
                 update g -->
   
-  
+  #### Table 1 Run 1 Results
   | m\size | 10k | 30k |
   | --    | ---  | --  |
   | 5     | 60.21/72.54 (ftpt/acc) | 76.54/85.39 |
