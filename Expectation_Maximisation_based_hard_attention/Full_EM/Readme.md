@@ -1,12 +1,17 @@
 Full EM here
 
 
-For em step in 1 to 20:
-  1. gamma values from E-step
-  2. for epoch in range(10):
-        3. for batch in train data
-                4. update f
-                5. update g
+<!-- For em step in 1 to 20:
+   
+     gamma values from E-step
+   
+   for epoch in range(10):
+        
+        for batch in train data
+                
+                update f
+                
+                update g -->
   
   
   | m\size | 10k | 30k |
